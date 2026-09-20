@@ -1,0 +1,649 @@
+                 INDIVIDUAL RECODE DOCUMENTATION
+
+ZAMBIA (DHSII)          Version 1 Doc 01                      ZM2
+
+Name of Survey Zambia Demographic and Health Survey
+
+Executing Agency    University of Zambia
+
+Year of fieldwork   1992
+
+Universe       All women, 15-49
+
+Coverage       National, 100%
+
+Size           7060 women
+               6209 households
+
+Weights        Weighted according to domains (Urban, Luapula
+               rural, North-West rural, Western rural and Others
+               rural)
+
+Contents       DHSII B-Core + AIDS module
+
+Languages      English, Bemba, Kaonde, Lozi, Luanda, Luvale,
+               Nyanja, Tonga
+
+Anthropometry  Mothers, Children aged 0-59 months
+
+Calendar       None
+
+Supplementary Data  Household schedule
+Files
+
+Recode Structure    DHSII
+
+Record size         Individual Flat File: 3283
+               Individual Hierarchical and Rectangular File: 172
+maximum
+               Household Flat File: 1122
+               Household Hierarchical and Rectangular File: 100
+maximum
+
+Records per case in Individual: 49
+Rectangular file    Household: 41
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH2     HV115-16  HV214-15
+
+INDIVIDUAL:
+
+REC11     V111      V128-V129 V144-V147
+     
+REC22     V228-V235
+
+REC32     V338-V339 V359-V360 V369-V371 V375      V385-V392
+     
+REC41     M2C       M2H-I          M2L-M     M3E       M3L-M
+          M2E       M2J       M3C       M3I-J
+     
+REC42     V413A-D   V424C-D   V424M-N   V424U-W   V427-V436
+          V414A-D   V424F-I   V424P-R   V424Y
+
+REC43     H12C-D    H12P-R    H18       H32M-N    H32U-W
+          H12F-I    H12U-W    H32C-D    H32P-R    H37A-D
+          H12M-N    H15E-H    H32F-I
+
+REC44     HW20-HW26
+
+REC71     V724-V728
+
+REC82     Calendar not used
+
+
+Sections Added
+
+RECH3     Household country specific single variables  
+
+SHDISTRI  District
+SHCSANUM  CSA number
+SHSEANUM  SEA number
+SHLANGUA  Language of the questionnaire
+
+REC91     Individual country specific single variables
+
+SDISTRI   District
+SCSANUM   CSA number
+SSEANUM   SEA number
+SLANGUA   Language of the questionnaire
+SLANINT   Language of the interview
+SLANRESP  Respondent's local language
+STRANSL   Translator used
+S116      Tribe respondent belong to
+S308B          Days avoid sexual intercourse
+S335A          Acceptable FP on radio
+S335B          Acceptable FP on television
+S801      Have heard of AIDS
+S802A          Heard of AIDS: on radio
+S802B          Heard of AIDS: on TV
+S802C          Heard of AIDS: on newspapers
+S802D          Heard of AIDS: health worker
+S802E          Heard of AIDS: at church
+S802F          Heard of AIDS: friends/relative
+S802G          Heard of AIDS: school/teachers
+S802H          Heard of AIDS: slogan/pamphlet
+S802I          Heard of AIDS: community meeting
+S802J          Heard of AIDS: others
+S802K          Heard of AIDS: none
+S803A          AIDS transmitted: sexual intercourse
+S803B          AIDS transmitted: needles/blades
+S803C          AIDS transmitted: mother-child
+S803D          AIDS transmitted: transfusion
+S803E          AIDS transmitted: other
+S803F          AIDS transmitted: don't know
+S804A          Get AIDS from handshaking
+S804B          Get AIDS from hugging
+S804C          Get AIDS from kissing
+S804D          Get AIDS from sharing clothes
+S804E          Get AIDS from sharing utensils
+S804F          Get AIDS from step on urine
+S804G          Get AIDS from mosquito/flea
+S805      Possible for AIDS to be on a healthy person
+S806      Give birth infected with AIDS
+S807      Can AIDS be prevented
+S808A          AIDS prevention: stick to one partner
+S808B          AIDS prevention: use condoms
+S808C          AIDS prevention: sterilize needles
+S808D          AIDS prevention: other
+S809      What government should do for AIDS
+S810      Who takes care of relatives with AIDSNotes on Recode File
+
+1.   The regions used in Zambia were the provinces, for that reason
+     provinces were not kept as country specific variables.
+
+2.   The sample domain (HV023) is recoded according to: Urban
+     areas, Luapula rural, North-west rural, Western rural, and
+     Other rural.
+
+3.   Codes 60 to 64 in the original occupation variables were
+     recoded as agriculture self employed.  The reason for that is
+     because there is no way to differentiate between self-employed
+     or employee, using those codes.  Variables V707 and V718 can
+     be used to make that differentiation.
+
+4.   There are 17 women who got married or began living with a man
+     before the age of 10.
+
+5.   There are more than 200 cases of respondents working as a self
+     employees (V718=3,4) and declared that they did not earn cash
+     for that work (V720 =0)
+
+6.   There are 3 households where there are no adults that are
+     usual residents.
+
+7.   Variable V131 "Ethnicity" was created out of question Q166 and
+     was recoded into the same categories published in the final
+     report.  However, the original question was also kept as
+     country specific in S116.
+
+Inconsistencies in the Data File
+
+1.   There are 8 cases where the respondent did not answer the
+     literacy question (V108), however later she declared that she
+     reads newspapers or magazines once a week (V109).
+
+2.   There are 37 dead children whose age at death was reported as
+     one year when it was supposed to be reported in months.  In 2
+     children the age at death was given in days when it was
+     supposed to be given in months.  For 5 children whose age at
+     death was reported in years there is a discrepancy between B6
+     and B7 because B7 was adjusted to fit in the interval.
+
+3.   There are 10 women currently using contraception but the
+     method they are using is missing (V312=missing).  They were
+     classified as currently using folkloric method in V313.
+
+4.   There are 6 women who had used male sterilization, however
+     they are currently using a different method or not using at
+     all.  
+
+5.   There are 21 cases of twins where any of the maternity
+     variables (M1-M17) are not the same.
+
+6.   There are 5 cases where there is an inconsistency between the
+     duration of amenorrhea (M6, M7) and time since last menstrual
+     period (V215).
+
+7.   There are 23 cases where there is an inconsistency between the
+     duration of abstinence (M8, M9) and time since last sexual
+     intercourse (V527).
+
+8.   There are 3 cases where there is an inconsistency between the
+     duration of breastfeeding (M4) and the age at death (B7).
+
+9.   There are 19 cases of children who had a vaccination card
+     (H1=1), however none of the vaccinations were given (H2-H9=0).
+
+10.  There are 5 children whose dates of vaccinations were reported
+     previously to the month of birth of the child.
+
+11.  There are 13 children with either the weight (HW2) or height
+     (HW3) missing, however they were reported as measured
+     (HW13=0).
+
+12.  Children under 24 were supposed to be measured lying and 24 or
+     over standing.  There are 125 children where this condition
+     was not met.
+
+13.  There are 539 children where there is an inconsistency between
+     the BCG vaccination (H2) and the BCG scar observed by the
+     interviewer (HW14).
+
+14.  There are 70 cases of inconsistency between age at first sex
+     (V525) and the age at first birth (V212).  In most of these
+     cases the difference is only of one year.  
+
+15.  There are 134 cases where there are inconsistencies between
+     sex in the last four weeks (V526) and time since last (V527)
+     sex. 
+
+16.  There are 4 cases with zero or negative duration of interview
+     (V803).  In 28 other cases the duration was more than 180
+     minutes and there was only one visit (V804) to complete the
+     interview.
+
+17.  There are 50 cases where V215 exceeds the interval since last
+     birth.
+
+18.  There are 230 cases where the vaccinations were given less
+     than 7 days apart of the previous one.                        Occupation Codes
+
+     00   Does not work
+     01   Chemists
+          Physicists
+          Physical Scientists not elsewhere classified
+          Physical Science Technicians
+     02   Architects and town planners
+          Civil Engineers
+          Electrical and Electronic Engineers
+          Mechanical Engineers
+          Chemical Engineers
+          Metallurgists
+          Mining Engineers
+          Industrial Engineers
+          Engineers not elsewhere classified
+     03   Surveyors
+          Draughtsmen
+          Civil Engineering Technicians
+          Chemical Engineering Technicians
+          Electrical and Electronic Engineering Technicians
+          Mechanical Engineering Technicians
+          Mining Technicians
+          Metallurgical Technicians
+          Engineering Technicians not elsewhere classified
+     04   Aircraft Pilots, Navigators and Flight Engineers
+          Ships Deck Officers and Pilots
+          Ships Engineers
+     05   Biologists, Zoologists and related Scientists
+          Bacteriologists, Pharmacologists and related Scientists
+          Agronomists and related Scientists
+          Life Sciences Technicians
+     06   Medical Doctors
+          Medical Assistants
+          Dentists
+          Dental Assistants
+          Veterinarians
+          Veterinary Assistants
+          Pharmacists
+          Pharmaceutical Assistants
+          Dieticians and Public Health Nutritionists
+     07   Professional Nurses
+          Nursing Personnel not elsewhere classified
+          Professional Midwives
+          Midwifery Personnel not elsewhere classified
+          Optometrists and Opticians
+          Physiotherapists and Occupational Therapists
+          Medical X-Ray Technicians
+          Medical, Dental, Veterinary and related workers not
+elsewhere classified
+     08   Statisticians
+          Mathematicians and Actuaries
+          Systems Analyst
+          Statistical and Mathematical Technicians
+     09   Economists
+     11   Accountants
+     12   Lawyers
+          Judges
+          Jurists not elsewhere classified
+     13   University and Higher Education Teachers
+          Secondary Education Teachers
+          Primary Education Teachers
+          Pre-Primary Education Teachers
+          Special Education Teachers
+          Teachers not elsewhere classified
+     14   Ministers of Religion and Related Members of Religious
+Orders
+          Workers in Religion not elsewhere classified
+     15   Authors and Critics
+          Authors, Journalists and related workers not elsewhere
+classified
+     16   Sculptors, Painters and related Artists
+          Commercial Artists and Designers
+          Photographers and Cameramen
+     17   Composers, Musicians and Singers
+          Choreographers
+          Actors and Stage Directors
+          Producers, Performing Arts
+          Circus Performers
+          Performing Artists not elsewhere classified
+     18   Athletes, Sportsmen and related Workers
+     19   Librarians, Archivists and Curators
+          Sociologists, Anthropologists and related Scientists
+          Social Workers
+          Personnel and Occupational Specialists
+          Philologists, Translators and Interpreters
+          Other Professional, Technical and related Workers
+     20   Legislative Officials
+          Government Administrators
+     21   General Managers
+          Production Managers (Except Farm)
+          Managers not elsewhere classified
+     30   Clerical Managers (Supervisors)
+     31   Government Executive Officials
+     32   Stenographers, Typists and Teletypists
+          Card and Tape - Punching Machine Operators
+     33   Book - Keepers and Cashiers
+          Book - Keepers, Cashiers and related Workers not
+elsewhere classified
+     34   Book - Keeping and Calculating Machine Operators
+          Automatic Data - Processing Machine Operators
+     35   Railway Station Masters
+          Postmasters
+          Transport Communication Supervisors not elsewhere
+classified
+     36   Transport Conductors
+     37   Mail Distribution Clerks
+     38   Telephone and Telegraph Operators
+     39   Stock Clerks
+          Receptionist and Travel Agency Clerk
+          Material and Production Planning Clerks
+          Correspondence and Reporting Clerks
+          Library and Filling Clerk
+          Clerks not elsewhere classified
+     40   Managers (Wholesale and Retail Trade)
+     41   Working Proprietors (Wholesale and Retail Trade)
+     42   Sales Supervisors
+          Buyers
+     43   Technical Salesmen and Service and Service Advisers
+          Commercial Travelers and Manufactures Agents
+     44   Insurance, Real State and Securities Salesman
+          Business Services Salesman
+          Auctioneers
+     45   Salesman, Shop Assistants and Demonstrators
+          Street Vendors, Canvassers and Newsvendors
+     49   Sales Workers not elsewhere classified
+     50   Managers (Catering Lodging Services)
+     51   Working Proprietors (Catering and Lodging Services)
+     52   Housekeeping and Related Services Supervisor
+     53   Cooks
+          Waiters, Bartenders and Related Workers
+     54   Maids and Related Housekeeping Services Workers not
+elsewhere classified
+     55   Building Caretakers
+          Charworkers, Cleaners and Related Workers
+     56   Launderers, Dry Cleaners and Pressers
+     57   Hairdressers, Barbers, Beauticians and Related Workers
+     58   Policeman and Detectives
+          Fire Fighters
+          Protective Service Workers not elsewhere classified
+     59   Guides
+          Undertakers and Embalmers
+          Other Service Workers
+     60   Farm Managers and Supervisors
+     61   General Farmers
+          Specialized Farmers
+     62   General Farm Workers
+          Field Crop and Vegetable Farm Growers
+          Orchard, Vineyard and Related Tree and Shrub Crop Workers
+          Livestock Workers
+          Dairy Farm Workers
+          Poultry Farm Workers
+          Nursery Workers and Gardeners
+          Farm Machinery Operators
+          Agricultural and Animal Husbandry Workers not elsewhere
+classified
+     63   Loggers
+          Forestry Workers (Except logging)
+     64   Fishermen
+          Fishermen, Hunters and Related Workers not elsewhere
+classified
+     65   Bricklayers, Stonemasons and Tile Setters
+          Reinforced-Concretes, Cement Finishers and Terrazzo
+Workers
+          Roofers
+          Carpenters, Joiners and Parquetry Workers
+          Plasters
+          Insulators
+          Glaziers
+          Construction Workers not elsewhere classified
+     66   Power-Generating Machinery Operators
+          Stationary Engine and Related Equipment Operators not
+elsewhere classified
+     67   Dockers and Freight Handlers
+          Riggers and Cable Splicers
+          Crane and Hoist Operators
+          Earth-Moving and Related Machinery Operators
+          Material-Handling Equipment Operators not elsewhere
+classified
+     68   Ships Deck Ratings, Barge Crew and Batmen
+          Ships Engine-Room Ratings
+          Railway Engine Drivers and Firemen
+          Railway Brakemen, Signalmen and Shunters
+          Motor Vehicle Drivers
+          Animal and Animal-Drawn Vehicle Drivers
+          Total Equipment Operators not elsewhere classified
+     70   Production Supervisors and General Foreman
+     71   Miners and Quarrymen
+          Mineral and Stone Treaters
+          Well Drillers, Borers and Related Workers
+     72   Metal Smelting Converting and Refining Furnacemen
+          Metal Rolling-Mill Workers
+          Metal Melters and Reheaters
+          Metal Casters
+          Metal Moulders and Coremakers
+          Metal Annealers, Traparers and Case-Hardeners
+          Metal Drawers and Extruders
+          Metal Platers and Coaters
+          Metal Processors not elsewhere classified
+     73   Metal Mood Treaters
+          Sawyers, Plywood Makers and Related Wood Processing
+Workers
+          Paper Pulp Preparers
+          Paper Makers
+     74   Crushers, Grinders and Mixers
+          Cookers, Roasters and Related Heat-Treaters
+          Filter and Separator Operators
+          Still and Reactor Operators
+          Petroleum-Refining Workers
+          Chemical Processors and Related Workers not elsewhere
+classified
+     75   Fibre Preparers
+          Spinners and Winders
+          Weaving and Knitting-Machine Setters and Pattern-card
+          Preparers Weavers and Related Workers
+          Knitters
+          Bleachers, Dyers, Textile Product Finishers
+          Spinners, Weavers, Knitters, Dyers and Related Workers
+not elsewhere classified
+     76   Tanners and Fellmongers
+          Pelt Dressers
+     77   Grain Millers and Related Workers
+          Sugar Processors and Refiners
+          Butchers and Meat Preparers
+          Food Preservers
+          Dairy Product Processors
+          Bakers, Pastrycooks and Confectionery Makers
+          Tea, Coffee and Cocoa Preparers
+          Brewers, Wine and Beverage Makers
+          Food and Beverage Processors not elsewhere classified
+     78   Tobacco Preparers
+          Cigar Makers
+          Cigarette Makers
+          Tobacco Preparers and Tobacco Product Makers not
+elsewhere classified
+     79   Tailors and Dressmakers
+          For Tailors and Related Workers
+          Millers and Hat Makers
+          Patternmakers and Cutters
+          Sewers and Embroiderers
+          Upholsterers and Related Workers
+          Tailors, Dressmakers, Sewers, Upholsterers and Related
+Workers not elsewhere classified
+     80   Shoemakers and Repairers
+          Shoe Cutters, Lasters, Sewers and Related Workers
+          Leather Goods Makers
+     81   Cabinetmakers
+          Woodworking-Machine Operators
+          Cabinetworkers and Related Woodworkers not elsewhere
+classified
+     82   Stone Cutters and Carvers
+     83   Blacksmiths, Hasseraiths and Forging-Press Operators
+          Toolmakers, Metal Patternmakers and Metal Makers
+          Machine-Tool Setter-Operators
+          Machine Tool Operator
+          Metal Grinders, Polishers and Tool Sharpeners
+          Blacksmiths, Toolmakers and Machine-Tool Operators not
+elsewhere classified
+     84   Machine Fitters and Machine Assemblers
+          Watch, Clock and Precision Instrument Makers
+          Motor Vehicle Mechanics
+          Aircraft Engine Mechanics
+          Machine Fitters, Machine Assemblers and Precision
+Instrument
+          Makers (Except Electrical) not elsewhere classified
+     85   Electrical Fitters
+          Electronics Fitters
+          Electrical and Electronic Equipment Assemblers
+          Radio and Television Repairers
+          Electrical Wiremen
+          Telephone and Telegraph Installers
+          Electric Linemen and Cable Joiners
+          Electrical Fitters and Related Electrical and Electronics
+Workers not elsewhere classified
+     86   Broadcasting Station Operators
+          Sound Equipment Operators and Cinema Projectionists
+     87   Plumbers and Fitters
+          Structural Metal Prepares and Erectors
+          Welder and Flame Cutter
+          Sheet Metal Workers
+     88   Jewelry and Precious Metal Workers
+     89   Glass Formers, Cutters, Grinders and Finishers
+          Potters and Related Clay and Abrasive Formers
+          Glass and Ceramic Kilnmen
+          Glass Engravers and Etchers
+          Glass and Ceramics Painters and Decorators
+          Glass Formers, Potters and Related Workers not elsewhere
+classified
+     90   Rubber and Plastics Products Makers (Except Tire Makers
+and Tire Vulcanizers)
+          Tire Maker and Vulcanizer
+     91   Paper and Paperboard Products Makers
+     92   Compositors and Typesetters
+          Printing Pressmen
+          Stereotypers and Electrotypers
+          Printing Engravers
+          Photo Engravers
+          Book-Binders and Related Workers
+          Photographic Darkroom Workers
+          Printers and Related Workers not elsewhere classified
+     93   Painters, Construction
+          Painters not elsewhere classified
+     94   Musical Instrument Makers and Tuners
+          Basketry Weavers and Brush Makers
+          Non-metallic Mineral Product Makers
+          Other Production and Related Workers
+     95   Laborers not elsewhere classified
+     96   Workers Reporting Occupations Unidentifiable or
+Inadequately Described
+     998  Don't Know
+     999  Not Stated, Missing
+
+                           Tribe Codes
+
+BEMBA SPEAKING
+
+     01   Bemba
+     02   Lunda (Luapula)
+     03   Lala
+     04   Bisa
+     05   Ushi
+     06   Chishinga
+     07   Ngumbo
+     08   Lamba
+     09   Kabende
+     10   Tabwa
+     11   Swaka
+     12   Mukulo
+     13   Ambo
+     14   Lima
+     15   Shila
+     16   Unga
+     17   Bwile
+     18   Luano
+
+TONGA SPEAKING
+
+     19   Tonga
+     20   Lenje
+     21   Soli
+     22   Ila
+     23   Toka-Leya
+     24   Sala
+     25   Gowa
+
+NORTH-WESTERN GROUP
+
+     26   Luvale
+     27   Lunda (North-Western)
+     28   Mbunda
+     29   Luchazi
+     30   Ndembu
+     31   Mbowe
+     32   Chokwe
+     33   Kaonde Sub-GroupBAROSTE LANGUAGE GROUP
+
+                                        34   Luana Sub-Group
+                                        35   Kwanga
+                                        36   Kwandi
+                                        37   Koma
+                                        38   Nyengo
+                                        39   Simaa
+                                        40   Nwenyi
+                                        41   Imilangu
+                                        42   Mashi
+                                        43   Lozi
+                                        44   Totela
+                                        45   Subiya
+                                        46   Nkoya
+                                        47   Mashasha
+
+NYANJA SPEAKING
+
+                                        48   Chewa
+                                        49   Nsenga
+                                        50   Ngoni
+                                        51   Nyanja
+                                        52   Kunda
+                                        53   Chicunda
+
+MAMBWE LANGUAGE GROUP
+
+                                        54   Lungu
+                                        55   Mambwe
+                                        56   Namwanga
+                                        57   Wina
+                                        58   Tambo
+
+TUMBUKA LANGUAGE GROUP
+
+                                        59   Tumbuka
+                                        60   Senga
+                                        61   Yombe
+
+OTHER GROUPS
+
+                                        62   Other Africans
+                                        63   American
+                                        64   Asian
+                                        65   European
+                                        98   Don't know
+                                        99   MissingBrands of Pills Codes
+
+     01   Microgynon
+     02   Neogynon
+     03   Eugynon
+     04   Microlut
+     05   Lofeminol
+     06   Nordette
+     07   Ovral
+     08   Nordiol
+     09   Microovral
+     10   Ovrette
+     11   Rigavidon
+     12   Noriday
+     13   Feminol
+     25   Other
+     98   Don't Know
+     99   Missing

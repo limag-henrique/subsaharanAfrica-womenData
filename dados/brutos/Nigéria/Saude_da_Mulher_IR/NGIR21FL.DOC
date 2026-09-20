@@ -1,0 +1,431 @@
+                 INDIVIDUAL RECODE DOCUMENTATION
+
+NIGERIA (DHSII)         Version 1 Doc 01                      NG2
+
+Name of Survey      Demographic and Health Survey
+
+Executing Agency    Federal Office of Statistics
+
+Year of fieldwork   1990
+
+Universe            All women, 15-49
+
+Coverage            National, 100%
+
+Size                8781 women
+                    8999 households
+
+Weights             Weighted by urban/rural domains
+
+Contents            DHSII B-Core
+
+Language            Efik, Hausa, Igbo, Kanuri, Tiv, Yoruba, English
+
+Anthropometry       Children 0 - 59 months
+
+Calendar            None
+
+Supplementary Data  Household schedule
+Files               Service Availability
+
+Recode Structure    DHSII
+
+Record size         Individual Flat File: 3487
+                    Individual Hierarchical and Rectangular File: 172 maximum
+                    Household Flat File: 1818
+                    Household Hierarchical and Rectangular File: 100 maximum
+
+Records per case in Individual: 61
+Rectangular file    Household: 68
+
+Maximum entries in  65
+household schedule
+
+
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH0     HV003
+
+RECH1     HV111     HV113
+
+RECH2     HV201-HV216
+
+INDIVIDUAL:
+
+REC11     V109           V128-V129 V131      V144-V147
+
+REC22     V228-V235
+
+REC32     V338           V359-V360 V369-V370 V375      V384-V392
+
+REC41     M2E       M2H       M2L-M     M3E       M3H-J
+          M3L-M     M25
+
+REC42     V413A-D   V413      V414A-D   V424D     V424F-J
+          V424M-R   V424U-W   V427-V447
+
+REC43     H12D      H12F-J    H12M-R    H12V-W    H15F-H
+          H32D      H32F-J    H32M-R    H32W      H37A-D
+
+REC61     V615
+
+REC71     V724-V728
+
+
+Sections Added
+
+RECH3     Country specific household variables.
+
+SHTATE    State of residence.
+
+REC91     Country specific single variables.
+
+SEC91
+SSTATE    State of residence.
+SLANGQ    Language of questionnaire.
+SLANGI    Language of interview.
+SLANGR    Language of respondent.
+STRANS    Translator used.
+SNLANGI   Language of interview (more detailed code for LANGI, see notes).
+SNLANGR   Language of respondent (mode detailed code for LANGR).
+S122A     Does any member of household own a clock/watch.
+S122B     Does any member of household own a donkey/horse/camel.
+S122C     Does any member of household own a canoe.
+S302M1    Traditional method of contraception heard of (other 1).
+S302M2    Traditional method of contraception heard of (other 2).
+S302M3    Traditional method of contraception heard of (other 3).
+S303o1    Ever used method of contraception (other 1).
+S303o2    Ever used method of contraception (other 2).
+S303o3    Ever used method of contraception (other 3).
+S317      Cost of condom/tablets.
+S318      Number of condoms/tables used in 1 month.
+S319      Source of current contraception used.
+S320      Who operated source of current contraception used.  (For
+          hospital, health center, maternity center, family
+          planning clinic or health clinic
+          post only).
+S321      Source of current contraception  method provided by a doctor.
+S327      Mean reason for using a method of family planning.
+S332      Source of preferred future method of contraception.
+S334      Source of known method of contraception.
+S335      Who operated source of known method of contraception. (See
+          also S320 above).
+S336      Doctorþs source of known contraception method.
+S339      Who would you talk to if you wanted to get factual information.
+S340      Who would you talk to for personal advise.
+S485C     Code for water containers used to prepare ORS.
+S485N     Number of containers used to prepare ORS.
+S488      Did respondent ever make a home solution.
+S489      Who taught preparation of home made solution..
+S490C     Code for water containers used to prepare home made
+          solution.
+S490N     Number of containers used to prepare home made solution.
+S491C     Code for sugar containers used to prepare home made
+          solution.
+S491N     Amount of sugar used to prepare home made solution.
+S492      Among of salt used to prepare home made solution.
+S493      Home fluid effective for diarrhea or not.
+S710      Kind of worker: employee, self-employed or an employer.
+S711      Do you earn cash for work.
+S712      Do you do this work at home or away from home.
+S810M     Number of measurer in anthropometric section.
+S810A     Number of assistant in anthropometric section.
+
+REC94     Country specific maternity variables
+
+IDX94     Index to birth history.
+S424      Did you feed colostrum from the breast or wait until colostrum
+          had passed.
+S425      What did you feed when waiting for colostrum to pass.
+
+REC95     Country specific health history variables
+
+IDX95     Index to birth history
+
+S455      Was treatment for fever or cough given at home or away from
+          home.
+S456C     Code for travel time to source.
+S456N     Number for travel time to source.
+S457      Cost for travel to source.
+S458C     Code for payment.
+S458N     Number for travel to source .
+S459A     Nothing given for treatment of fever/cough.
+S459B     Treatment: Injection.
+S459C     Treatment: Antibiotic (pill or syrup).
+S459D     Treatment: Antimalarial (pill or syrup).
+S459E     Treatment: cough syrup.
+S459F     Treatment: Other pill or syrup.
+S459G     Treatment: Unknown pill or syrup.
+S459H     Treatment: Home remedy/herbal medicine.
+S459I     Treatment: Other.
+S460      Where were drugs for fever/cough purchased.
+S461      What was the most important reason to go to this source of care.
+S467      What does respondent think was reason for diarrhea.
+S468      Does respondent think that diarrhea was dangerous.
+
+
+Notes on Recode File
+
+RECH0
+
+HV023      Taken as groupings of provinces:
+           Northeast: Bauchi, Borno, Gongola, Kano, Plateau
+           Northwest: Abuja FCT, Kaduna, Katsina, Kwara, Niger, Sokoto
+           Southeast: Akwa Ibom, Anambra, Benue, Cross Rivers, Imo, Rivers
+           Southwest: Bendel, Lagos, Ogun, Ondo, Oyo
+
+HV024/V024 Region 1: Southeast
+           Region 2: Southwest
+           Region 3: Northwest
+           Region 4: Northeast
+
+RECH1
+
+HV108-HV109    In 1988 the number of grades to complete secondary education
+               changed from 5 to 6. The computation of the education in
+               single years (HV108) and educational achievement (HV109) are
+               based on highest level and grade within that level attended.
+               Since no additional information is available, it was assumed
+               that secondary education still consistuted of 5 grades, thus
+               underestimating the education in single years for those who
+               graduated from secondary school after 1988 and
+               overestimating the educational achievement for those who
+               left secondary education in grade 6 after 1988 or attended
+               this grade at the time of the survey. However, since the
+               survey was held in 1990, this should affect very few cases.
+
+
+REC11
+
+V101/V139  Region 1: Southeast
+           Region 2: Southwest
+           Region 3: Northwest
+           Region 4: Northeast
+
+V116      Bucket recode to other 1, other to other 2.
+
+V139-V141 No information of usual residence of visiting women. For women
+          who slept in the household but who are not usual residents these
+          variables were recoded to not applicable.
+
+REC31
+
+V304A-V306     Foaming tablets is occurrence 13 and are included with
+               modern methods of contraception.
+
+REC32
+
+V312      Foaming tablets are coded as method 13.
+
+V313      Foaming tablets are included under modern methods of
+          contraception.
+
+V326      Whether hospital or health center etc. are operated by the
+          government or by a mission or private organization is derived
+          from Q320. Q321 was used to determine whether the doctor is at a
+          government facility or a mission or private organization. The
+          source of the other categories is Q319.
+
+V327      Hospital, health and maternity center, family planning clinic,
+          or health clinic/post are grouped under Government
+          clinic/pharmacy. Planned Parenthood Federation under NGO. Doctor
+          and private clinic under private clinic/delivery. Husbands and
+          respondents place of work and church are listed under þotherþ.
+
+V363      Foaming tablets are coded 13.
+
+V377      Whether hospital or health center etc. are operated by the
+          government or by a mission or private organization is derived
+          from Q335. Q336 was used to determine whether the doctor is at a
+          government facility or a mission or private organization. The
+          source of the other categories is Q332.
+
+V378      See V327
+
+V379      Whether hospital or health center etc. are operated by the
+          government or by a mission or private organization is derived
+          from Q335. Q336 was used to determine whether the doctor is at a
+          government facility or a mission or private organization. The
+          source of the other categories is Q334.
+
+V380      See V327
+
+REC41
+
+M2D       Country specific health profession: village health worker.
+
+M3D       See M2D above.
+
+M15       The categories health clinic/post, health center, maternity
+          center and hospital are listed under the public sector since no
+          information pertaining to what institution is running these
+          facilities is available.
+
+M24       Only one category: child was given plain water and other liquids
+          was used in the NDHS. Therefore, M24 (was child given plain
+          water?) was put to NA and M25 (was child given other liquids?)
+          includes both plain water and other liquids.
+
+REC42
+
+V413A     Country specific other fluids: soya milk.
+
+V416      Code 2 (heard of ORS) is not availble, since this question is
+          not included in the questionnaire.
+
+V420-V421 The codes assigned to the person measuring height and weight and
+          to the assistant consist of three digits in Nigeria, not the
+          standard two digit code, and these variables have therefore been
+          transferred to the country specific listing (S810M and S810A).
+
+V423      Responses recorded as bottle sizes (soft drink bottle and beer
+          bottle and beer bottle) are recorded into their estimated sizes
+          (e.g. 290 and 580 ml.). Since the contents of a cup is not
+          defined answers given in cups are coded as 9996.
+
+V425      Since additional information is not available the categories
+          village health worker, health clinic/post, health center and
+          hospital are listed under the public sector.
+
+
+
+REC43
+
+H12A - H12E    See V425.
+
+H13       Category 1 (respondent spontaneously reported use of ORS) is not
+          used, since this question was not included in questionnaire.
+
+H13A- H14A     The question on number of days given ORS was combined with
+               the number of days that home-made fluids were given to the
+               child. Q473 (Was child given ORS) and Q474 (Was child given
+               home fluid) were used to separate the number of days ORS and
+               home made fluid were provided.
+
+H31       No specific information on cough during the last 24 hours
+          available. The categories 1 (during last 24 hours) and 2 (during
+          2-14 days) are collapsed into 2 (during last 14 days).
+
+H32A-H32Z See V425. The category þmyself/relativesþ listed under H32U.
+          Market traders under H32V and other under H32X.
+
+REC61
+
+V616      Categories 992 (any time)  and 993 (up to God) added.
+
+REC71
+
+V705-V717 For partnerþs employed in agriculture no distinction is possible
+          between self-employed and employees; both are combined in
+          category 4: agriculture. Likewise no distinction is possible
+          between skilled and unskilled manual. Both are combined in
+          category 8: production workers. Students and applicants are
+          listed under 0 (never worked) and the category other is
+          transferred to 96.
+
+Notes on inconsistencies in the Data File
+
+ 1.  10 Households are listed as having no de jure residents (HV012).
+
+ 2.  There are 607 cases where child attended shool (HV110) and was less
+     than 6 years of age, indicating that there was no lower cut off age in
+     the household questionnaire or pre-primary was erroneously classified
+     as primary. Furthermore, there are 20 cases where children aged six
+     and over reported a grade that would imply that they started primary
+     education before age 6.
+
+ 3.  There were 20 individual questionnaires dated (V008) before household
+     questionnaire (HV008).
+
+ 4.  There is one woman whose response to whether she is a usual resident
+     or a visitor is missing  in the household (HV102) and the individual
+     questionnaire (V135). She slept in the household (HV103) and was
+     included in the individual questionnaire.
+
+ 5.  Eight woman reported to have borne a child before age 10 (B3 and
+     V011).
+
+ 6.  Three women were recorded as not currently using contraception (V312),
+     but their husband as sterilized (V305).
+
+ 7.  There is one case were duration of breastfeeding (M4) exceeds age of
+     child (B3 and V008)
+
+ 8.  Four women reported never to have menstruated, but to have children,
+     therefore V227 = 8, but also responded on another question that period
+     returned, therefore making reponses to M6, M7 and M28 inconsistent
+     with V215, V226 and V227.
+
+ 9.  Four respondents reported no health card  (M12), not to know the
+     timing of antenatal visits (M13), no antenatal visits (M14),  but
+     mentioned  some kind of prenatal care (M2N). One repondent reported no
+     prenatal care and M12, M13 and M14 are recorded as missing.
+
+10.  There are 2 cases were age at which solid foods are provided (M26) is
+     higher than current age of child.
+
+11.  There is one case with first entries on health card (H2D-Y, H3D-Y,
+     H4D-Y) before birthdate of child.
+
+12.  For 123 cases the reported date of vaccination was  within 7 days
+     after previous vacination  (H2D-Y, H3D-Y, H4D-Y.
+
+13.  Seventy women reported to have married before age 10 (V509).
+
+13   There are 100 cases where the reported age at first intercourse (V525)
+     came after the age at first birth (V202).
+
+
+
+Coding Additions
+
+SNLANGR        SEMITIC        EDE-YORUBA     PLATEAU
+               10   Shuwa     410  Yoruba    630  Basa
+                              411  Egun      631  Gurmana
+               WEST CHADIC    412  Sekiri    635  Buji
+               20   Hausa     413  Igala     636  Ibera
+               21   Gwandara                 637  Gune
+               25   Mupun     NUPE           638  Kurama
+               26   Doemak    420  Gwari     639  Surubu
+               27   Angas     421  Nupe      640  Afizare
+               28   Mwaghavui                641  Kadara
+               30   Afo       EDO            642  Jaba
+               31   Ron       430  Edo       643  Kaje
+               40   Kare-Kare 431  Esan/Ishan644  Koro
+               41   Boli      432  Etsako    650  Birom
+               42   Maha      433  Isoko     660  Mada
+               43   Tangale   434  Urhobo    670  Egom
+               44   Bogghom   435  Okpameri
+                              436  Ora       JUNKENOID
+               BIU-MANDARA                   675  Jukun
+               60   Ganda     IGBO           680  Kuteb
+               61   Tergama   500  Igbo
+               70   Margi     501  Ika       EBIRA
+               71   Kilba     502  Kwale     690  Ebira
+               72   Babur     503  Ikwerre
+               80   Higgi                    ADAMAWA
+               85   Bacanma   IDOMA          700  Dadiya
+               90   Mandara   510  Alago     701  Bayegunji
+               91   Guduf     511  Idoma     702  Waja
+                              512  Igede     710  Jenjo
+               SAHARA                        720  Lunguda
+               110  Kanuri    CROSS RIVER    730  Yungur
+               111  Magawa    600  Ogbia     740  Mumuye
+                              601  Mini      750  Chamba
+               FULFULDE       602  Abuba
+               200  Fulani    610  Khana     TIVOID
+               201  Fulfulde  611  Gokana    810  Tiv
+                              612  Eleme
+               IJAW           620  Efik      MAMBILOID
+               310  Ijaw      621  Ebibio    820  Mambilla
+               311  Ezon      622  Agbor
+               312  Nembe     625  Bagobiri  EKOID
+               313  Kalaberi                 830  Ekoi
+               314  Okrika
+                                             JARAWAN
+                                             840  Kantana
+                                             841  Bubanci
+                                             842  Jarawa
+

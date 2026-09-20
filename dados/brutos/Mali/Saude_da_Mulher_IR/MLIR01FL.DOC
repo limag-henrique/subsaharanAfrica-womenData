@@ -1,0 +1,213 @@
+                      INDIVIDUAL RECODE DOCUMENTATION
+
+MALI                         Version 01 Doc 02                           ML
+
+Name of Survey      Enquˆte DŠmographique et de Sant‚ au Mali
+
+Executing Agency    Centre d'Etudes et de Recherches sur la Population
+                    pour le D‚veloppement
+                    Institut du Sahel
+
+Year of fieldwork   1987
+
+Universe            All women, 15-49
+
+Coverage            National
+                    Urban areas 100%
+                    Rural areas 90% - excluded Nomadic population in region
+                    of Gao
+
+Size                3200
+
+Weights             Weighted by four factors: Urban original, rural original,
+                    Urban modified, Rural modified
+
+Contents            DHS B-Core + Value of children
+
+Languages           Bambara, Peul, Songoy and others
+
+Anthropometry       Children aged 3-36 months
+
+Record size         Flat file: 2600
+                    Hierarchical and Rectangular File: 155 maximum
+
+Supplementary Data  Household members
+Files               Males aged 20-55Sections and Variables Unused
+
+REC33     Contraceptive History
+
+REC31     Contraceptive Table - method 11 (Norplant) is unused
+
+V109-V111      V128           V365           H12-H13   H32
+V115           V315-V325      HW13           H16-H19   V503
+V117           V328           V401           H23       V514-V524
+V126           V331-V360      V420-V421      H25-H26   V601
+
+Sections Added
+
+REC91          Country specific single variables
+
+SCCERCLE       Circle
+SCARROND       District
+SCNOCON        Compound
+SLANGUE        Language of interview
+S115           Nationality
+S118           Role in organization
+S122           Type of toilet - children
+S221           Period during last month
+S222           Days since last period
+S228           Month of prenatal visit
+S229           Last period
+S320           Source of FP assistance
+S321A          Not enough information
+S321B          Too expensive
+S321C          Opposed to family planning
+S321D          Bad for health
+S321E          Access difficulty
+S321F          Opposition of husband
+S321G          Religion
+S321H          Fatalism
+S321I          Opposition of other people
+S321J          Fear of being judged
+S321K          Other
+S321L          Don't know
+S415E          Mint tea yesterday
+S415G          Millet porridge yesterday
+S507           Husband had other wives
+S508           First marriage
+S604           Best birth interval
+S611A          Ideal number of boys
+S611B          Ideal number of girls
+S612A          Advantages of many children I
+S612B          Advantages of many children II
+S612C          Advantages of many children III
+S613A          Disadvantages of many children I
+S613B          Disadvantages of many children II
+S613C          Disadvantages of many children III
+S614           Definition of many children
+S615           Preferred number of children
+SREGION        Region
+
+REC95     Country Specific Health History
+
+IDX95          Index to birth history
+S426A          Diarrhea treated - ORT
+S426C          Diarrhea treated - Porridge
+S426D          Diarrhea treated - Intravenous
+S426E          Diarrhea treated - Baobob fruit
+S426F          Diarrhea treated - Plants
+S426H          Diarrhea treated - Hospital
+S426I          Diarrhea treated - Other
+S426J          Diarrhea treated - Don't know
+S429C          Fever treated - Pills
+S429E          Fever treated - Hospital, PMI, Dispensary
+S429F          Fever treated - Plants
+S429G          Fever treated - Other
+S429H          Fever treated - Don't know
+S432E          Respiratory prob treated - Hospital, PMI, Dispensary
+S432G          Respiratory prob treated - Don't know
+S433           Had measles
+S434           Treated the measles
+S435A          Treated measles - Antibiotic
+S435B          Treated measles - Liquid
+S435C          Treated measles - Tablet
+S435D          Treated measles - Injection
+S435E          Treated measles - Hospital, PMI
+S435F          Treated measles - Other
+S435G          Treated measles - Don't know
+S436           Has a handicap
+S437           Reason for handicap
+STET1N         Tetanus - recorded
+STET1J         Tetanus - Day
+STET1M         Tetanus - Month
+STET1A         Tetanus - Year
+STET2N         Tetanus II - recorded
+STET2J         Tetanus II - Day
+STET2M         Tetanus II - Month
+STET2A         Tetanus II - Year
+STETRN         Tetanus III - recorded
+STETRJ         Tetanus III - Day
+STETRM         Tetanus III - Month
+STETRA         Tetanus III - Year
+SFVRJN         Yellow fever - recorded
+SFVRJJ         Yellow fever - Day
+SFVRJM         Yellow fever - Month
+SFVRJA         Yellow fever - Year
+SMENN          Menangitis - recorded
+SMENJ          Menangitis - Day
+SMENM          Menangitis - Month
+SMENA          Menangitis - Year
+Notes on Recode File
+
+1.   In Mali, there was a weighted Male survey of 970 men ages 20 - 55.  The
+     men were chosen from a subsample consisting of two thirds of the urban
+     households, along with one third of the rural households.  If a male
+     respondent's wife completed a questionnaire, selected variables from her
+     questionnaire were added to the man's records in the male data file. 
+     There were 970 men interviewed and 586 couples.
+
+2.   After data editing and imputation had been completed, it was determined
+     that the months of birth, for both female respondents and her children,
+     as well as the month of marriage for the woman, were heaping in the
+     early months of each year.  The data was re-imputed using a new
+     algorithm which alternately employed year and age when the month was not
+     present.  If the year was used in imputation, the flag variable was set
+     to 7.  If age was used in imputation, the flag variable was set to 8.
+
+3.   Variable V326 includes users of medicinal plants and gris-gris.
+
+4.   Variable V329 excludes users of withdrawal and prolonged abstinence, but
+     includes sources for periodic abstinence information, gris-gris, and
+     medicinal plants.  It also excludes women for whom the current method
+     response was "don't know" or missing.
+
+5.   The base for H10 included all living children less than five years of
+     age.
+
+6.   For variable V607, the base is non-pregnant women who are not currently
+     using contraception.
+
+7.   The base for variable S604 is all currently married women, including one
+     woman for whom marital status was missing.
+
+8.   Variables V403, M2 and M3 all have categories "Nurse/Midwife" combined,
+     in addition to two non-standard categories: 1: Hospital, PMI, Dispensary
+     and 2: Matron.
+
+
+Inconsistencies in the Recode File
+
+1.   There was one case where two children were less than seven months apart.
+
+2.   There were four cases where the women reported her last menstrual period
+     as being before her last birth although she had no children.
+
+3.   There was one case where the woman stated she was not currently using
+     although she reported ever use of male sterilization.
+
+4.   There were three cases where health and breastfeeding information was
+     not identical for twins.
+
+5.   There were 15 cases where the duration of breastfeeding and the interval
+     between the last birth and the date of interview were inconsistent.
+
+6.   There were 27 cases where the duration of amenorrhea and the interval
+     between the last birth and the date of interview were inconsistent.
+
+7.   There were 10 cases where the duration of abstinence and the interval
+     between the last birth and the date of conception of a following birth
+     were inconsistent.
+
+8.   There were 20 cases where the duration of abstinence and the interval
+     between the last birth and the date of interview were inconsistent.
+
+9.   There were 35 cases where the duration of abstinence after the last
+     birth and the time since last sex were inconsistent.
+
+10.  There were 5 cases where the date of immunization was inconsistent with
+     the reported date of a previous dose.
+
+11.  There was one case where current marital status was missing.
+
+12.  There were 4 cases where the educational level was inconsistent with the
+     woman's age.

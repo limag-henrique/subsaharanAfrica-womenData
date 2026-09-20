@@ -1,0 +1,827 @@
+                         INDIVIDUAL RECODE DOCUMENTATION
+
+CENTRAL AFRICAN REPUBLIC                                     CF3
+                         Version 1 Doc 01
+
+Name of Survey      Demographic and Health Survey of Central African Republic
+
+Executing Agency    Ministry of Economy, Plan and International Cooperation
+
+Year of fieldwork   1994-1995
+
+Universe            All women, 15-49
+
+Coverage            National, 100%
+
+Size                Households:    5551
+                    Women:    5884
+                    Men:      1729
+                    Couples:   939
+
+Weights             Weighted for six regions
+
+Contents            DHSIII B-Core + AIDS Module + Maternal Mortality
+
+Language            Sango and French
+
+Anthropometry       Mothers, Children aged 0-35 months
+
+Calendar            None
+
+Supplementary Data  Household schedule
+Files               Male questionnaire
+                    Service Availability
+
+Recode Structure    DHSIII
+
+Record size         Individual Flat File: 5138
+                    Individual Hierarchical and Rectangular File: 178 maximum
+                    Household Flat File: 1086
+                    Household Hierarchical and Rectangular File: 114 maximum
+                    Male Flat File: 603
+                    Male Hierarchical and Rectangular File: 144 maximum
+                    Couples Flat File: 2307
+                    Couples Hierarchical and Rectangular File: 178
+
+Records per case in Individual:    78
+Rectangular file    Household:     39
+                    Male:          11
+                    Couples:  44
+
+Maximum entries in  36
+household schedule
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH1     HV115     HV116
+
+RECH2     HV202     HV203
+
+INDIVIDUAL:
+
+REC11     V111      V114      V142      V144
+
+
+REC22     V229-V233 V235
+
+REC31     Methods 13 through 15 are not used.
+          Method 12 is used for long term abstinence.
+
+REC32     V359      V360      V369      V369B
+
+REC41     M2D-M2F   M2H-M2J   M2L-M2M   M3D-M3F   M3I-M3J
+          M3L-M3M   M37H-M37K M37M-M37O M40I-M40O
+
+REC42     V413A-D   V414A-C   V436      V450K-M   V451I-K
+
+REC43     H12D      H12H-I    H12M      H12Q-R    H12V-W
+          H15A      H15E-H    H32D      H32H-I    H32M
+          H32Q-R    H32V-W
+
+REC44     HW20-HW26
+
+REC61     V630J-L
+
+REC75     V752L-O   V754A     V754M-O   V754Z     V755B-Z
+          V757      V760A     V760F     V760M-P   V760V-W
+          V762
+
+REC82     Not used
+
+REC83     MM5       MM11-MM13 MM15
+
+REC84     MMC3 MMC4
+
+REC85     V850A     V851-V853 V856F-K   V858F-J   V860D
+          V860F     V860H     V860M     V860P-Q   V860T
+          V860W     V860Z     V863D-F   V863W     V864D
+          V864L-P   V868D     V868K-P   V869D     V869K-P
+Sections Added
+
+
+RECH3     Country specific household single variables
+
+SHPREF    Prefecture
+SHLANGQ   Language of the household questionnaire
+SHLANGI   Language of the household interview
+SHINTERP  Interpreter used for the interview
+SH22C     Household owns a canoe or boat
+SH24      Result of the iodine test
+
+
+REC91     Country specific single variables
+
+SPREF          Prefecture
+SLANGQ         Language of the individual questionnaire
+SLANGI         Language of the individual interview
+SINTERP        Interpreter used for the interview
+S122           Dejure prefecture of residence
+S128C          Household owns canoe or boat
+S240           Number of pregnancies lost
+S241A          Number of abortions
+S241B          Number of miscarriages
+S241C          Number of still births
+S242A          Pregnancy lost - no consultation
+S242B          Pregnancy lost - illness
+S242C          Pregnancy lost - sorcery
+S242D          Pregnancy lost - evil eye
+S242E          Pregnancy lost - provoked abortion
+S242F          Pregnancy lost - other
+S242G          Pregnancy lost - don't know
+S514           Blood relation to husband
+S517           Knowledge of source of condoms
+S518A          Condom source: Public hospital
+S518B          Condom source: Public health center
+S518C          Condom source: Public health subcenter
+S518D          Condom source: Public health post
+S518E          Condom source: Public health worker
+S518F          Condom source: other public
+S518G          Condom source: private hospital/clinic
+S518H          Condom source: pharmacy
+S518I          Condom source: private doctor
+S518J          Condom source: private health centr
+S518K          Condom source: private health worker
+S518L          Condom source: other private
+S518M          Condom source: Market or shop
+S518N          Condom source: church/ mosque
+S518O          Condom source: friends/family
+S518P          Condom source: other
+S522           Sex with partner in previous 4 weeks
+S523           Was a condom used
+S524           Partner for last sexual experience
+S526           Number of persons beside partner with whom had sex
+S527           Number of times had sex in previous 4 weeks
+S528           Was a condom used
+S530           Number of persons with whom had sex in previous 4 weeks
+S531           Number of times had sex in previous 4 weeks
+S532           Was a condom used
+S533A          Condom used: prevent pregnancy
+S533B          Condom used: prevent STD
+S533C          Condom used: prevent AIDS
+S533D          Condom used: other reasons
+S610           Reasons for not intending use of family planning (all responses)
+S612           Would use family planning method if married (all responses)
+S613           Ideal number of children
+S618A          Radio Rurale Magazine
+S618B          Sant‚ magazine
+S626           Ever had unwanted pregnancy
+S627           Interval since last unwanted pregnancy
+S628           What was done regarding last unwanted pregnancy
+S629A          To stop pregnancy: prayed
+S629B          To stop pregnancy: heavy work
+S629C          To stop pregnancy: took herbs
+S629D          To stop pregnancy: took medicines
+S629E          To stop pregnancy: massage or abdominal pressure
+S629F          To stop pregnancy: catheter or object inserted
+S629G          To stop pregnancy: injection
+S629H          To stop pregnancy: aspiration
+S629I          To stop pregnancy: curettage
+S629J          To stop pregnancy: other unspecified
+S629K          To stop pregnancy: don't know
+S630A          Assistance with unwanted pregnancy: doctor/TSS
+S630B          Assistance with unwanted pregnancy: nurse/midwife
+S630C          Assistance with unwanted pregnancy: traditional birth attendant
+S630D          Assistance with unwanted pregnancy: pharmacy
+S630E          Assistance with unwanted pregnancy: family/friends
+S630F          Assistance with unwanted pregnancy: other unspecified
+S630G          Assistance with unwanted pregnancy: no one
+S631           Had health problems after
+S632           Was hospitalized
+S633           Number of nights in hospital
+S634           Ever stopped unwanted pregnancy
+S701A          Age of spouse (current/most recent)
+S701B          Partner's religion
+S701C          Partner's ethnicity
+S808A          Paid for consultation last STD episode
+S808B          Paid for treatment last STD episode
+S808CA         Paid: pharmacy
+S808CB         Paid: at time of consultation
+S808CC         Paid: shop
+S808CD         Paid: other
+S818A          Can an apparently healthy person transmit AIDS
+S819A          AIDS cure: medicine
+S819B          AIDS cure: vaccination
+S819C          AIDS cure: traditional practitioner
+S819D          AIDS cure: religion
+S819E          AIDS cure: other
+S821A          Knows someone with AIDS
+S821B          Knows someone who died from AIDS
+S821C          Would you help someone with AIDS
+S821DA         AIDS help: lodging
+S821DB         AIDS help: pay for medicine
+S821DC         AIDS help: care for family
+S821DD         AIDS help: give money
+S821DE         AIDS help: give food
+S821DF         AIDS help: pray
+S821DG         AIDS help: visit at hospital
+S821DH         AIDS help: visit at home
+S821DI         AIDS help: other unspecified
+S903           Number of siblings prior (original report)
+S1001          Respondent circumcised
+S1002          Age at circumcision
+S1003          Has had problems related to circumcision
+S1004A         Circumcision problem: infections
+S1004B         Circumcision problem: pain
+S1004C         Circumcision problem: fever
+S1004D         Circumcision problem: urination difficult
+S1004E         Circumcision problem: difficulty with first sexual experience
+S1004F         Circumcision problem: difficulty with menses
+S1004G         Circumcision problem: small vaginal opening
+S1004H         Circumcision problem: vaginal opening closed
+S1004I         Circumcision problem: delivery difficulty
+S1004J         Circumcision problem: hemorrhage
+S1004K         Circumcision problem: other unspecified
+S1005          Circumcision: continue or stop
+S1006A         Continue: good tradition
+S1006B         Continue: custom and tradition
+S1006C         Continue: religion
+S1006D         Continue: proper to be done
+S1006E         Continue: better marriage prospects
+S1006F         Continue: husband's pleasure
+S1006G         Continue: protect virginity
+S1006H         Continue: prevent immorality
+S1006I         Continue: other unspecified
+S1006J         Continue: don't know why
+S1007A         Stop: bad tradition
+S1007B         Stop: against religion
+S1007C         Stop: medical complications
+S1007D         Stop: painful personal experience
+S1007E         Stop: against woman's dignity
+S1007F         Stop: lessens sexual satisfaction
+S1007G         Stop: prevents immorality
+S1007H         Stop: other unspecified
+S1007I         Stop: don't know why
+
+
+REC94          Country specific section for births in last three years
+
+IDX94          Index to birth history
+S407B          Place of consultation
+S407C          Has a health card for pregnancy
+S408A          Consultation reason: prevent complications
+S408B          Consultation reason: vaccination
+S408C          Consultation reason: health problems
+S408D          Consultation reason: normal behavior
+S408E          Consultation reason: other unspecified
+S413B          Cost of delivery
+S438           Probe for other foods if breastfeeding
+S447F          Yellow fever vaccination
+S447FD         Yellow fever day
+S447FM         Yellow fever month
+S447FY         Yellow fever year
+S455A          Cost of treatment or consultation
+S455B          Were medicines prescribed
+S455CA         Medicine gotten: same place
+S455CB         Medicine gotten: other place
+S455CC         Medicine gotten: not gotten
+S455D          Cost of prescribed medicine
+S465A          Cost of treatment or consultation
+S465B          Were medicines prescribed
+S465CA         Medicine gotten: same place
+S465CB         Medicine gotten: other place
+S465CC         Medicine gotten: not gotten
+S465D          Cost of prescribed medicine
+S476A          Cause of death
+S476BA         Treatment: public hospital
+S476BB         Treatment: public health center
+S476BC         Treatment: public health sub-center
+S476BD         Treatment: public health post
+S476BE         Treatment: public health worker
+S476BF         Treatment: public other
+S476BG         Treatment: private hospital or clinic
+S476BH         Treatment: private pharmacy
+S476BI         Treatment: private doctor
+S476BJ         Treatment: private health center
+S476BK         Treatment: private health worker
+S476BL         Treatment: private other
+S476BM         Treatment: shop
+S476BN         Treatment: traditional healer
+S476BO         Treatment: friends or family
+S476BP         Treatment: other unspecified
+S476C          Place of death
+S478A          Difficult delivery
+S478B          Child malformed
+S478C          1st days of life - sucking normal
+S478D          Days before death- sucking normal
+S478E          Sick before death: convulsions or spasms
+S479A          Sick before death: cough
+S479B          Duration of cough (days)
+S479C          Difficult breathing with cough
+S479D          Duration of difficult breathing (days)
+S481A          Sick before death: diarrhea
+S481B          Degree of diarrhea or runny bowel
+S481C          Duration of diarrhea
+S481D          Sick before death: blood in stools
+S482A          Sick before death: had cough
+S482B          Duration of cough
+S482C          Sick before death: rapid or difficult breathing
+S482D          Duration of difficult respiration
+S483A          Sick before death: fever
+S483B          Fever moderate or severe
+S483C          Duration of fever
+S483D          Sick before death: unconscious
+S483E          Sick before death: convulsions
+S484A          Sick before death: eruption of pustule
+S484B          Duration of eruptions
+S485A          Sick before death: very thin
+S485B          Duration of thinness
+S485C          Sick before death: swollen legs or feet
+S485D          Duration of swelling
+
+Notes on Recode File
+
+1    There are 21 households in which there are no dejure adult members,
+     including 15 households in which there are no dejure memmbers.
+
+2.   There is 1 household in which the head of the household is not the first
+     member listed in the household listing, but the second.
+
+3.   There is one case in which HV216 (rooms for sleeping) was corrected from
+     "00" to missing.
+
+4.   There are 717 cases in which the field supervisor reported in the
+     individual questionnaire is not the same as that reported in the
+     household.
+
+5.   There are 93 cases in which the field editor reported in the individual
+     questionnaire is not the same as that reported in the household.
+
+6.   There are 6 cases in which the office editor reported in the individual
+     questionnaire is not the same as that reported in the household.
+
+7.   There are 46 cases in which the respondent's report of current school
+     enrollment is different from that reported in the household.
+
+8.   There is 1 case in which it is not possible to classify the respondent
+     regarding literacy (V108 = missing), but the respondent reports reading a
+     newspaper (V109 = 1).
+
+9.   There are 24 births for which the age at death was reported as 1 year.
+
+10.  There are 2 cases in which the woman reported ever use of male
+     sterilization, but is not currently using male sterilization.
+
+11.  There is 1 case in which the mother is currently breastfeeding because of
+     the penultimate child's being breastfed while the last birth is not being
+     breastfed.
+
+12.  There is birth case in which M4 is missing and M34 is blank because the
+     response to the question regarding ever breastfed is missing.
+
+13.  There is 1 child with a vaccination card, but no vaccinations given.
+
+14.  There is 1 case in which the woman's reported age at marriage is 8 years.
+
+15.  There are 116 cases in which the woman's reported age for her spouse is
+     two or more years different from that reported in the household.
+
+16.  Country specific variable S610 includes all responses to question 610,
+     while V376 includes the response of only those women not intending to use
+     in the future.
+
+17.  There are 5 cases in which V801 = 0 minutes there are 37 cases in which
+     V801 is greater than 180 minutes.
+
+18.  MM14 is applicable for only those women who died from complications due to
+     pregnancy or delivery.
+
+19.  Country specific variable S903 contains the originally reported number of
+     siblings born before the respondent.  Due to inconsistencies related to
+     the constructed century month code of births, the corrected number of
+     siblings born before the respondents is reported in MMC2.
+
+Notes on couples (linking the male and female recode files)
+
+In linking the couples that can be found in the women's and men's recode files,
+there are some mismatches.  Only couples for which there is consistency in
+reporting should be used for analysis.
+
+1.   There are 46 cases in which the husband reported in V034 of the women's
+     recode file is not in the men's recode file because he was not eligible.
+
+2.   There are 26 cases in which the husband reported in V034 of the women's
+     recode file is in the men's recode file, but he does not have a complete
+     questionnaire.
+
+3.   There are 6 cases in which the husband reported in V034 of the women's
+     recode file is in the men's recode file, but he does not report the woman
+     as his wife in his variable MV034.
+
+4.   There are 107 cases in which the wife reported in MV034 of the men's
+     recode file is not in the women's recode file because she was not
+     eligible.
+
+5.   There are 14 cases in which the wife reported in MV034 of the men's recode
+     file is in the women's recode file, but she does not have a complete
+     questionnaire.
+
+6.   There are 8 cases in which the wife reported in MV034 of the men's recode
+     file is in the women's recode file, but she does not report the man as her
+     husband in her variable V034.
+
+Inconsistencies in the Data File
+
+1.   There are 2 cases in which V215 exceeds the interval since the last birth;
+     both are flagged.
+
+2.   There is 1 case in which V215 = 96 (never menstruated), but the woman has
+     given birth.
+
+3.   There are 85 children for whom a date of vaccination is less than 7 days
+     after a previous vaccination.
+
+4.   There are 328 children who are less than 24 months of age but for whom
+     HW15 = 2 (measured standing); there are 162 children 24 months of age or
+     greater for whom HW15 = 1 (measured lying down).
+
+5.   There are 7 children whose BCG scar was reported as seen (HW14 = 1), but
+     for whom H2 equals 0; there are 317 children whose BCG scar was reported
+     as not seen (HW14 = 0), but H2 equal 1.
+
+6.   There are 3 cases for whom V525 (sexual experience) = 0, but they report
+     being married.
+
+7.   There are 25 cases in which V502 = 0 (never married), but V630A = 1.
+
+8.   There are 64 cases in which V212 (age at first birth) is less than V525
+     (age at first sexual experience); all cases are flagged.
+
+9.   V867 is constructed from two questions.  The original responses have been
+     placed in country specific variables S821A and S821B.
+
+10.  In the maternal mortality section, there are 34 cases for which an
+     inconsistency was found between the reported number of births prior to the
+     respondent's birth and the century month codes of birth that have been
+     imputed.  The originally reported number of births is stored in country
+     specific variable S903; the "corrected" number of births is stored in
+     MM2C.
+
+Coding Additions
+
+1.   The range for V154 has been extended to include the code "11", labelled
+     "No birth certificate".
+
+2.   The range for V375A has been extended to include the code "95", labelled
+     "No reason given".
+
+3.   V704 and V716 (Occupation)
+
+     00   Not working
+     01   Chemist, scientist
+     02   Engineer, architect
+     03   Engineering, architectural technician
+     04   Pilot and other transport professionals
+     05   Biologist and other scientists
+     06   Doctor, Dentist
+     07   Medical technician
+     08   Statistician
+     09   Economist
+     11   Accountant
+     12   Judge, lawyer
+     13   Professor, teacher
+     14   Clergy
+     15   Author, writer, journalist
+     16   Sculptor, photographer
+     17   Musician
+     18   Athlete
+     19   Librarian
+     20   Government official
+     21   Director
+     30   Head of administration
+     31   Administrative clerk
+     32   Clerical, secretarial worker
+     33   Cashier
+     34   Computer and calculator operator
+     35   Head of services
+     37   Telex, telephone operator
+     38   Postman
+     39   Other administrative or clerical
+     40   Commercial director
+     41   Store owner
+     42   Head salesman
+     43   Salesman
+     44   Sales clerk
+     45   Sales employee
+     49   Other commercial employee
+     50   Hotel, restaurant manager
+     51   Hotel, restaurant owner
+     52   Hotel bookkeeper
+     53   Cook, waitress, bartender
+     54   Maid, cleaning person
+     55   Guard
+     56   Dry cleaner, laundress
+     57   Beautician, barber
+     58   Police, prison guard
+     59   Guide, other service worker
+     60   Farm manager
+     61   Farmers, animal husbandry worker
+     62   Shepherd, other farm worker
+     63   Forestry worker
+     64   Fisherman
+     69   Other agricultural worker
+     70   Quarryman, excavator
+     71   Miner
+     72   Lumberman
+     73   Textile worker
+     74   Tanner
+     75   Food preparation worker
+     76   Seamstress, tailor
+     78   Carpenter, wood artist
+     79   Stone carver
+     80   Blacksmith
+     81   Mechanic
+     82   Electrician
+     83   Radio, TV operator
+     84   Plumber, metal frame worker
+     85   Jeweler
+     86   Potter, glass blower
+     87   Garage serviceman
+     89   Type setter
+     90   Painter
+     91   Other production worker
+     92   Construction worker, brick layer
+     93   Electrical installation worker
+     94   Dock worker
+     95   Transportation conductor
+     96   Unskilled laborer
+     97   Army
+     98   Don't know
+     99   Missing
+
+4.   V705 and V717 (Standard Occupation Codes)
+
+       V704 recoded into V705
+       V716 recoded into  V717
+       notappl           notappl
+     0,missing           missing
+        1-29             1
+       30-39             2
+       40-49             3
+       60-69             5
+       54                6
+       97,50-59          7
+       70-91             8
+       92-96,98          9
+
+     The code of 4 exists in these two variables based on the follow-up
+     questions asked if the occupation was farming.  For V705, a code of 4 was
+     used if V707 = 0 or 1; for V717, a code of 4 was used if V740 = 0 or 1.
+
+Male Recode Sections and Variables Unused
+
+MREC11    MV111
+
+MREC31    Methods 13 through 15 are not used.
+          Method 12 is used for long term abstinence.
+
+MREC51    MV503     MV535
+
+REC61     MV611     MV630A-MV630X
+
+REC75     MV752L-O  MV754A    MV754M-O  MV755B-Z  MV757
+          MV760A    MV760F    V760M-W   MV761-MV763
+
+REC85     MV850A-MV853        MV856F-K  MV858D    MV858F-J
+MV860D    MV860F    MV860H    MV860M    MV860P-Q  MV860T
+MV860W    MV860Z    MV863D-F  MV863W
+          MV864D    MV864L-P  MV868D    MV868K-P  MV869D
+MV869K-P  MV875
+
+Sections Added
+
+MREC91    Country specific single variables for men
+
+SMPREF         Prefecture
+SMLANGQ        Language of the male questionnaire
+SMLANGI        Language of the interview
+SMINTERP       Interpreter used for the male interview
+SM112          Reason stopped attending school
+SM202A         Age of spouse (monogamous)
+SM202B1        Age of the youngest spouse (polygamous)
+SM202B2        Age of the oldest spouse (polygamous)
+SM205          Ever married or lived with a woman
+SM221M         Month of birth of last child
+SM221Y         Year of birth of last child
+SM221C         Century month code of birth of last child
+SM221F         Completeness of information for birth date of last child
+SM222          Last child alive
+SM316A         Radio Rurale Magazine
+SM316B         Sant‚ magazine
+SM319          Sex with partner in previous 4 weeks
+SM320          Was a condom used
+SM321          Partner for last sexual experience
+SM323          Number of persons beside partner with whom had sex
+SM324          Number of times had sex in previous 4 weeks
+SM325          Was a condom used
+SM326B         Number of persons with whom had sex in previous 4 weeks
+SM326C         Number of times had sex in previous 4 weeks
+SM326D         Was a condom used
+SM402          Woman's opinion of family planning (in union and with reg. partner)
+SM403          Woman's ideal number of children (in union and with reg. partner)
+SM410          Reason not intending to use
+SM509          Treatment after last STD episode
+SM510A         Paid for consultation last STD episode
+SM510B         Paid for treatment last STD episode
+SM510CA        Paid: pharmacy
+SM510CB        Paid: at time of consultation
+SM510CC        Paid: shop
+SM510CD        Paid: other
+SM510CE        Paid: don't know
+SM520A         Can an apparently healthy person transmit AIDS
+SM521A         AIDS cure: medicine
+SM521B         AIDS cure: vaccination
+SM521C         AIDS cure: traditional practitioner
+SM521D         AIDS cure: religion
+SM521E         AIDS cure: other
+SM523A         Knows someone with AIDS
+SM523B         Knows someone who died from AIDS
+SM523C         Would you help someone with AIDS
+SM523DA        AIDS help: lodging
+SM523DB        AIDS help: pay for medicine
+SM523DC        AIDS help: care for family
+SM523DD        AIDS help: give money
+SM523DE        AIDS help: give food
+SM523DF        AIDS help: pray
+SM523DG        AIDS help: visit at hospital
+SM523DH        AIDS help: visit at home
+SM523DI        AIDS help: other unspecified
+
+Notes on Male Recode File
+
+1.   There are 398 cases in which the field supervisor reported in the
+     individual questionnaire is not the same as that reported in the
+     household.
+
+2.   There are 40 cases in which the field editor reported in the individual
+     questionnaire is not the same as that reported in the household.
+
+3.   There are 16 cases in which the respondent's report of current school
+     enrollment is different from that reported in the household.
+
+4.   There are 6 cases in which the age of the wife reported in MV034 is
+     reported in the household as less than 15.
+
+5.   There are 25 cases in which the man reported ever use of female
+     sterilization but is not currently using it.
+
+6.   There are 5 cases in which the age at marriage is less than 12; 3 reported
+     information for marriage at 11; 2 reported marriage at 10.
+
+7.   There is one case in which MV801 = 0 minutes; there is one case in which
+     MV801 is greater than 180 minutes.
+8.   MV867 is constructed from two questions.  The original responses have been
+     placed in country specific variables S523A and S523B.
+
+9.   MV213, MV610 and MV621 are applicable only for men for whom MV502 = 1 (in
+     union) or MV534 = 1 (has a regular partner).
+
+Notes on couples (linking the male and female recode files)
+
+In linking the couples that can be found in the women's and men's recode files,
+there are some mismatches.  Only couples for which there is consistency in
+reporting should be used for analysis.
+
+1.   There are 46 cases in which the husband reported in V034 of the women's
+     recode file is not in the men's recode file because he was not eligible.
+
+2.   There are 26 cases in which the husband reported in V034 of the women's
+     recode file is in the men's recode file, but he does not have a complete
+     questionnaire.
+
+3.   There are 6 cases in which the husband reported in V034 of the women's
+     recode file is in the men's recode file, but he does not report the woman
+     as his wife in his variable MV034.
+
+4.   There are 107 cases in which the wife reported in MV034 of the men's
+     recode file is not in the women's recode file because she was not
+     eligible.
+
+5.   There are 14 cases in which the wife reported in MV034 of the men's recode
+     file is in the women's recode file, but she does not have a complete
+     questionnaire.
+
+6.   There are 8 cases in which the wife reported in MV034 of the men's recode
+     file is in the women's recode file, but she does not report the man as her
+     husband in her variable V034.
+
+Inconsistencies in the Male Data File
+
+1.   There is 1 case for whom MV525 (sexual experience) = 0, but he reports
+     being married.
+
+2.   There is 1 case for which MV613 = 10, but MV625 = 5 and MV628 and MV629
+     equal 96.
+
+3.   There is 1 case for which MV602 = 4 MV616 = 998.  All men are asked if
+     they would like additional children, even those men who have been
+     sterilized.  The woman's recode excludes sterilized women from that
+     question.
+
+Coding Additions to the Male Data File
+
+1.   The range for V375A has been extended to include the code "95", labelled
+     "No reason given".
+
+2.   MV716 (Occupation)
+
+     00   Not working
+     01   Chemist, scientist
+     02   Engineer, architect
+     03   Engineering, architectural technician
+     04   Pilot and other transport professionals
+     05   Biologist and other scientists
+     06   Doctor, Dentist
+     07   Medical technician
+     08   Statistician
+     09   Economist
+     11   Accountant
+     12   Judge, lawyer
+     13   Professor, teacher
+     14   Clergy
+     15   Author, writer, journalist
+     16   Sculptor, photographer
+     17   Musician
+     18   Athlete
+     19   Librarian
+     20   Government official
+     21   Director
+     30   Head of administration
+     31   Administrative clerk
+     32   Clerical, secretarial worker
+     33   Cashier
+     34   Computer and calculator operator
+     35   Head of services
+     37   Telex, telephone operator
+     38   Postman
+     39   Other administrative or clerical
+     40   Commercial director
+     41   Store owner
+     42   Head salesman
+     43   Salesman
+     44   Sales clerk
+     45   Sales employee
+     49   Other commercial employee
+     50   Hotel, restaurant manager
+     51   Hotel, restaurant owner
+     52   Hotel bookkeeper
+     53   Cook, waitress, bartender
+     54   Maid, cleaning person
+     55   Guard
+     56   Dry cleaner, laundress
+     57   Beautician, barber
+     58   Police, prison guard
+     59   Guide, other service worker
+     60   Farm manager
+     61   Farmers, animal husbandry worker
+     62   Shepherd, other farm worker
+     63   Forestry worker
+     64   Fisherman
+     69   Other agricultural worker
+     70   Quarryman, excavator
+     71   Miner
+     72   Lumberman
+     73   Textile worker
+     74   Tanner
+     75   Food preparation worker
+     76   Seamstress, tailor
+     78   Carpenter, wood artist
+     79   Stone carver
+     80   Blacksmith
+     81   Mechanic
+     82   Electrician
+     83   Radio, TV operator
+     84   Plumber, metal frame worker
+     85   Jeweler
+     86   Potter, glass blower
+     87   Garage serviceman
+     89   Type setter
+     90   Painter
+     91   Other production worker
+     92   Construction worker, brick layer
+     93   Electrical installation worker
+     94   Dock worker
+     95   Transportation conductor
+     96   Unskilled laborer
+     97   Army
+     98   Don't know
+     99   Missing
+
+3,   MV717 (Occupation)
+
+       NV716 recoded into     MV717
+       notappl           notappl
+     0,missing           missing
+        1-29             1
+       30-39             2
+       40-49             3
+       60-69             5
+       54                6
+       97,50-59          7
+       70-91             8
+       92-96,98          9
+
+     The code of 4 exists in this variable based on the follow-up question
+     asked if the occupation was farming.  For MV717, a code of 4 was used if
+     MV740 = 0 or 1.
+

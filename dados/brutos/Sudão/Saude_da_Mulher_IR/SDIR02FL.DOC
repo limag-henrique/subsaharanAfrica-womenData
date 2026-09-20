@@ -1,0 +1,266 @@
+                                        INDIVIDUAL RECODE DOCUMENTATION
+
+SUDAN                                          Version 02 Doc 01                                            SD
+
+Name of Survey        Sudan Demographic and Health Survey         
+
+Executing Agency      Department of Statistics, Ministry of Economic & National Planning
+                                            
+Date of Fieldwork     1989-90
+
+Universe              Ever married women 15-49
+
+Coverage              100% of North Sudan excluding the nomadic population
+
+Size                  5860                   
+
+Weights               None
+
+Contents              DHS B-Core + female circumcision, maternal mortality and additional health questions
+
+Languages used        Arabic
+
+Anthropometry         None
+                      
+Record size           Flat file: 2963
+                      Hierarchical and Rectangular file: 155 maximum
+                      
+Supplementary data    Household members
+filesSections and Variable Unused
+
+REC33  Contraceptive history
+REC44  Height/weight table
+
+V115          V131-V132      V351-V357      V420-V421     V601
+V117          V315-V322      V359-V360      H22-H38       V608-V609
+V118          V324           V365           V514-V521     V712-V713
+V129          V332-V349      V401           V525
+
+Sections Added
+
+REC91         Country specific single variables
+
+AWFACTT       All woman factor - Total
+AWFACTU       All woman factor - Urban/rural
+AWFACTR       All woman factor - Regions
+AWFACTE       All woman factor - Education (V106)
+AWFACTE5      All woman factor - Education (5 levels)
+SPROV         District
+SFLDEDIT      Field editor identification
+SCODER        Office coder identification
+S104A         Name of childhood province/country
+S106A         Name of previous residence
+S110          Education level
+S111          Grade completed
+S120A         Cooking fuel type
+S222A         Number of tetanus injections for current pregnancy
+S222B         Source of tetanus injections for current pregnancy
+S227          Ever circumcised
+S228          Type of circumcision
+S230          Daughters circumcised
+S231          Plan circumcision of daughters
+S232          Circumcision should continue
+S233          Type of circumcision preferred
+S234A         Why circumcision continues
+S234B         Why circumcision continues (2)
+S235A         Why opposed to circumcision
+S235B         Why opposed to circumcision (2)
+S236          Why does circumcision continue
+S237          How to abolish circumcision
+S239          Husband in favor circumcision
+S240          Type of circumcision husband favors
+S315E         Stopped because of no supplies
+S315I         Source for last method
+S4151         Given sugar water
+S4156         Given bottled baby formula
+S417A         Other milk on regular basis
+S417B         Age for other milk
+S417C         Given solid/semi-sol regularly
+S417D         Age first started solid
+S447          Ever seen packet shown
+S448          Ever prepared ORS packet
+S449          Kind of container
+S450A         Amount of packet used (type)
+S450B         Amount of packet used (units)
+S451          What added to solution
+S453          Cost of packet
+S454          Packet available in house
+S452A         ORS from Government Hospital
+S452B         ORS from Government Health Center
+S452C         ORS from Dispensary
+S452D         ORS from Dressing Station
+S452E         ORS from Primary Health Facility
+S452F         ORS from Mobile Clinic
+S452G         ORS from Private Doctor
+S452H         ORS from Private Clinic
+S452I         ORS from Pharmacy
+S452J         ORS from Shop
+S452K         ORS from Traditional Doctor
+S452L         ORS from Other
+S452M         Don't know source for ORS
+S455A         Vaccination from Government Hospital
+S455B         Vaccination from Government Health Clinic
+S455C         Vaccination from Mobile Clinic
+S455D         Vaccination from Private Doctor
+S455E         Vaccination from Private Hospital
+S455F         Vaccination from Dispensary
+S455G         Vaccination from Dressing Station
+S455H         Vaccination from Primary Health Facility
+S455I         Vaccination from Outreach Station
+S455J         Vaccination from Other
+S455K         Don't know source for Vaccination
+S515A         Why did not live with parents after marriage
+S604A         Husband's desire for additional children
+S703          Husband's highest level of education
+S704          Husband's highest grade
+S709          Husband's employment status
+S717A         Respondent's occupation
+SREC97        Number of persons in REC97 (Maternal mortality)
+S815P         Number of sisters in household listing
+S815A         Line number of sister in household
+S815B         Line number of sister in household
+S815C         Line number of sister in household
+S815D         Line number of sister in household
+S901          Respondent's language
+S902          Language of the interview
+S903          Portion of interview with interpreter
+
+REC94  Country specific Maternity variables
+
+IDX94         Index to birth history
+S403A         Number of tetanus toxoid injections
+S406A         Why never breastfed
+S408A         Why stopped breastfeedingREC95  Country specific Health variables
+
+IDX95         Index to birth history
+S422A         BCG reported by mother
+S422B         Polio reported by mother
+S422C         DPT reported by mother
+S422D         Measles reported by mother
+S425          Where vaccines were received
+S435          Days ago diarrhea started
+S436          Any blood in stools
+S438          Breastfeeding during diarrhea episode
+S439          Other fluids during diarrhea episode
+S440          Solid foods during diarrhea episode
+S442          Given home solution
+S443A         No treatment given for diarrhea episode
+S443B         Antibiotic pill given during diarrhea episode
+S443C         Antibiotic syrup given during diarrhea episode
+S443D         Other pill or syrup given during diarrhea episode
+S443E         Injection given during diarrhea episode
+S443F         Intravenous treatment given during diarrhea episode
+S443G         Home/herbal medicines given during diarrhea episode
+S443H         Other treatment given during diarrhea episode
+S444A         Treatment at government hospital during diarrhea episode
+S444B         Treatment at health center during diarrhea episode
+S444C         Treatment at private doctor during diarrhea episode
+S444D         Treatment at private hospital during diarrhea episode
+S444E         Treatment from pharmacy during diarrhea episode
+S444F         Treatment at dispensary during diarrhea episode
+S444G         Treatment at dressing station during diarrhea episode
+S444H         Treatment at primary health care center during diarrhea episode
+S444I         Treatment at outreach station during diarrhea episode
+S444J         Treatment at traditional doctor during diarrhea episode
+S444K         Other treatment during diarrhea episode
+S444L         No treatment sought during diarrhea episode
+S444M         Don't know if treatment sought during diarrhea episode
+S426          Had fever in the last two weeks
+S427          Had cough in the last two weeks
+S428          Days of cough
+S429          With cough, faster breathing
+S431A         Treatment at government hospital during fever/cough episode
+S431B         Treatment at health center during fever/cough episode
+S431C         Treatment at private doctor during fever/cough episode
+S431D         Treatment at private hospital during fever/cough episode
+S431E         Treatment at pharmacy during fever/cough episode
+S431F         Treatment at dispensary during fever/cough episode
+S431G         Treatment at dressing station during fever/cough episode
+S431H         Treatment at primary health care center during fever/cough episode
+S431I         Treatment at outreach station during fever/cough episode
+S431J         Treatment at traditional doctor during fever/cough episode
+S431K         Other treatment during fever/cough episode
+S431L         Don't know if treatment sought during fever/cough episode
+S431M         No treatment sought during fever/cough episode
+S432A         No treatment given during fever/cough episode
+S432B         Antibiotic pill given during fever/cough episode
+S432C         Antibiotic syrup given during fever/cough episode
+S432D         Other pill or syrup given during fever/cough episode
+S432E         Injection given during fever/cough episode
+S432F         Intravenous treatment given during fever/cough episode
+S432G         Home remedies/herbal medicine given during fever/cough episode
+S432H         Other treatment given during fever/cough episode
+
+REC97  Country specific Maternal Mortality variables
+
+S91COL        Column number of sibling      
+S803          Sex of sibling
+S804          Sibling alive or not
+S805          Age of living sibling
+S806          Sibling ever married
+S807          Years ago sibling died
+S808          Age at death of sibling
+S809          Dead sister ever married
+S810          Sister died during pregnancy/childbirth
+S811          Sister died within 2 months of childbirth
+S812          Number of children ever born
+
+Notes on Recode File
+
+1.     The sample selected for the individual survey was an ever married sample.  To produce estimates for all women it is
+       necessary to apply inflation factors to account for the proportion of women never married.  The factors are stored in
+       the following variables:
+
+              AWFACTT        All women factor for the total sample.
+              AWFACTU        All women factor for urban/rural breakdowns (V102).
+              AWFACTR        All women factor for regional breakdowns (V101).
+              AWFACTE        All women factor for educational breakdowns (V106).
+              AWFACTE5       All women factor for educational breakdowns with 5 values (S110,S111).
+
+       These factors are stored in 5 digit variables, with two implied decimal places.  A value of 00150 means an inflation
+       factor of 1.5 should be applied to this individual case to allow for never married women.  This means that for every
+       two married women found in the household schedule of a particular age and with the same background characteristic,
+       there are 3 women in total, i.e. the two married women plus one never married woman.  These inflation factors have
+       been used in the calculation of fertility rates, median ages at first marriage and first birth, mean number of children
+       ever born, etc.
+
+2.     Section 97 contains the maternal mortality section, listing the siblings of the respondents and their survival status. 
+       Please see the questionnaire for skip instructions.
+
+3.     Only currently married women were asked V312, V313 and V526.  V312 and V313 for women not currently married
+       have been assigned a code of zero (0) assuming that they are not current users.  V526 is coded not applicable for those
+       women.
+
+4.     For V304 through V309 and V314, the following are codes for country specific other methods: (13) Breastfeeding (14)
+       Seeds and (15) Some Pill/Aspirin.
+
+5.     Because the series of questions in the Health section that query a recent fever or cough episode are very different for
+       the Core questionnaire, they have not been placed in H22-H38 (REC43).  Rather the complete series can be found
+       in REC95, variables S426 through s432H.  Treatment for the most recent diarrheal incident can also be found in
+       REC95, variables S435-S444M.
+
+6.     Because age at first intercourse was not asked in the Sudan DHS, V525 has been coded "96", question not asked.
+
+
+Inconsistencies in the Recode file
+
+1.     There are 37 cases in which the respondent was sexually active in the last 4 weeks, but her responses did not permit
+       standard coding in V527 and V528.  These variables have been coded (995) and (95) - within the last 4 weeks, exact
+       time not specified.
+
+2.     There are 3 cases in which ever use of female sterilization (V305(6)) is coded as "yes" (1) but current use (V312) is
+       coded as zero (0), not using.  These respondents are not currently married and were not asked the question about
+       current use.
+
+3.     There are 6 cases in which current use (V312) is coded as "other method" (10) while V305 for method 10 is not
+       applicable.  For 4 of these cases, ever use of method 15 (V305(14)) is coded "yes" (1) and for 2 of these cases, ever
+       use of method 15 (V305(15)) is coded "yes" (1).
+
+4.     There is 1 case for which M6 - duration of amenorrhea - is longer than the interval between births.
+
+5.     There is 1 case for which M8 - duration of postpartum abstinence - is longer than the interval between births.
+
+
+Variable value labels not listed in the dictionary
+
+V704 and S717A        Husband's and Respondent's occupations - not currently available

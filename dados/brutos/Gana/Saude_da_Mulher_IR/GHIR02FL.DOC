@@ -1,0 +1,352 @@
+                     INDIVIDUAL RECODE DOCUMENTATION
+
+GHANA                       Version 02 Doc 01                           GH
+
+Name of Survey     Demographic and Health Survey
+
+Executing Agency   Ghana Statistical Service
+
+Year of fieldwork  1988
+
+Universe           All women, 15-49
+
+Coverage           National, 100%
+
+Size               4488
+
+Weights            Self-weighted
+
+Contents           DHS B-Core + Contraceptive brand changes, Advertising
+                   awareness, Bilharzia and Guinea Worm infestation in
+                   children, Woman's Employment module.
+
+Languages          Fante, Twi, Ga, Ewe, Nzema, Hausa, Dagbani, English
+
+Anthropometry      Children aged 3-36 months
+
+Record size        Flat file: 2628
+                   Hierarchical and Rectangular File: 156 maximum
+
+Supplementary Data Household members
+Files              Husbands
+Sections and Variables Unused
+
+REC31         Contraceptive Table - methods 11-12,14-15 are unused. Method
+              13 is Foaming tablet.
+
+REC33         Contraceptive Practice History
+
+V109-V111     V132           V328           V401      V710-V713
+V115          V315-V322      V331-V360      V601
+V118          V325           V365           V706
+
+Sections Added
+
+REC91    Country specific single variables
+
+S001          Eco-region
+S110          Highest level of education attended
+S111          Highest grade completed at that level
+S150A         Financial association membership
+S150B         Occupational association membership
+S150C         Religious association membership
+S150D         Social association membership
+S150E         Other association membership
+S314A         Contraceptive brand currently used
+S314B         Used other brands
+S314C         Other brand used
+S314D         Reason changed brand
+S315C         Transport to source
+S315DH        Time to get to source (hours)
+S315DM        Time to get to source (minutes)
+S315E         Source convenient
+S315F         Using preferred method
+S315G         Reason not using preferred
+S315H         Reason stopped using method
+S316A         Reason not intending to use
+S319AA        Heard of Norminest (Social marketing pill)
+S319AB        Heard of Kamal (Social marketing foaming tablet)
+S319AC        Heard of Panther (Social marketing condom)
+S319AD        Heard of Bojo (Non existent control)
+S319CA        Advertising on Radio
+S319CB        Advertising on TV
+S319CC        Advertising on Sticker
+S319CD        Advertising on Billboard
+S319CE        Advertising in Newspaper/Magazine
+S319CF        Advertising on Poster
+S319CG        Advertising in In-store display
+S319CH        Advertising in Health clinic
+S319CI        Advertising at Rally
+S319CJ        Other advertisement
+S319CK        Don't know if seen advert
+S417B         Age given supplementary food
+S417C         Food given
+S429AA        Vaccinations available from Hospital
+S429AB        Vaccinations available from Clinic
+S429AC        Vaccinations available from Village health worker
+S429AD        Vaccinations available from Private doctor
+S429AE        Vaccinations available from Special campaigns
+S429AF        Vaccinations available from Other source
+S429AG        Don't know vaccination source
+S703          Partner's highest level or education attended
+S704          Partner's highest grade completed
+S709          Husband works most of the time
+S713          Respondent's occupation
+S713A         Respondent's occupation (grouped)
+S714A         Amount earned
+S714B         Unit of earnings
+S715          Work most of the time
+S716          Hours worked per day
+S717H         Time to get to work (hours)
+S717M         Time to get to work (minutes)
+S718          Decides how money to be used
+S719          Alright to work away from home
+S720          Family feels about work away
+S722          Children with you at work
+S723          Who takes care of children
+S725          Husband's age at marriage
+S727          Occupation before marriage
+S727A         Occupation before marriage (grouped)
+S728          Decided how money used
+S729          Worked continuously since last birth
+SREC97        Entries in work history
+S900          Language of questionnaire
+S901          Respondent's language
+S902          Language of interview
+S903          Interpreter used
+SINTSEX       Sex of interviewer
+
+REC94    Country specific maternity variables
+
+IDX94         Index to birth history
+S407A         Reason stopped breastfeeding
+
+REC95    Country specific health variables
+
+IDX95         Index to birth history
+S427C         Diarrhea: Traditional medicine
+S427H         Diarrhea: Other treatment
+S433F         Fever: Traditional Medicine
+S433G         Fever: Other treatment
+S436E         Cough: Traditional Medicine
+S436F         Cough: Other treatment
+SGUW          Guinea-worm infestation
+SGUW1         Guinea-worm: Antibiotics
+SGUW2         Guinea-worm: Liquid or syrup
+SGUW3         Guinea-worm: Aspirin
+SGUW4         Guinea-worm: Injection
+SGUW5         Guinea-worm: Traditional Medicine
+SGUW6         Guinea-worm: Other treatment
+SGUW7         Guinea-worm: No treatment
+SBIL          Bilharzia
+SBIL1         Bilharzia: Antibiotics
+SBIL2         Bilharzia: Liquid or syrup
+SBIL3         Bilharzia: Aspirin
+SBIL4         Bilharzia: Injection
+SBIL5         Bilharzia: Traditional Medicine
+SBIL6         Bilharzia: Other treatment
+SBIL7         Bilharzia: No treatment
+
+REC97    Country specific woman's employment history
+
+IDX97         Index to birth history
+SWKA          Worked for money
+SWKB          Occupation
+SWKBA         Occupation (grouped)
+SWKC          Worked most of the time
+SWKDH         Time to get to work (hours)
+SWKDM         Time to get to work (minutes)
+SWKE          Hours worked
+SWKFY         Duration worked (years)
+SWKFM         Duration worked (months)
+
+REC98         Husband's questionnaire
+
+SHWIFE        Wife entry number
+SHWIVES       Number of wives entered
+SHMONTH       Month of interview
+SHYEAR        Year of interview
+SHINTNUM      Interviewer number
+SHINTSEX      Sex of interviewer
+SHVISITS      Number of visits
+SH100H        Start of interview (hour)
+SH100M        Start of interview (minutes)
+SH101         Childhood residence
+SH102         Current residence
+SH103M        Month of birth
+SH103Y        Year of birth
+SH103C        CMC Husbands birth date
+SH103F        Flag for SH103C
+SH104         Age in completed years
+SH105         Ethnic group
+SH106         Number of wives
+SH108         Highest level of education attended
+SH109         Highest grade completed at that level
+SH111         Can read a letter or newspaper
+SH112         Listen to radio once a week
+SH113         Occupation
+SH113A        Occupation (grouped)
+SH115         Work most of the time
+SH116         Works on family land
+SH117         Works for money or crops
+SH202         Ever heard of method
+SH203         Ever used method
+SH204         Source of method
+SH205         Problem with method
+SH209         Children before first use
+SH210         Currently using a method
+SH211         Current method
+SH211A        Other method
+SH211B        Other method
+SH212         Intend to use a method
+SH213         Reason not intending to use
+SH214         Method preferred
+SH215         Intend to use method in 12 months
+SH216         Source for family planning information
+SH217         Family planning information acceptable on TV
+SH218         Talked about family planning with wife
+SH219         Approve family planning
+SH220A        Own sons
+SH220B        Own daughters
+SH221         Want another child
+SH222A        Time to wait for future birth (units)
+SH222B        Time to wait for future birth (number)
+SH223H        Time of end of interview (hour)
+SH223M        Time of end of interview (minutes)
+SH224         Ideal number of children
+SH300         Language of questionnaire
+SH301         Respondents language
+SH302         Language of interview
+SH303         Interpreter used
+Notes on Recode File
+
+1.  V014, B10, SH103F - The flags for the date of birth of the respondent,
+    her children and her husband contain an additional code 7 meaning that
+    the year of birth and age are both stated, but month of birth was not
+    given, and year of birth plus age equalled 88 (the year of interview).
+    For these dates the year of birth was ignored in the imputation
+    process and the final imputed year of birth may be different from the
+    original reported year of birth.  See the note on date imputation.
+
+2.  V106-V107, V133, S110-S111 & V701-V702, V715, S703-S704 - The
+    education system in Ghana does not follow the standard education
+    pattern found in many DHS surveys.  Students who complete Primary
+    school go on to Middle school for two to four years.  After Middle
+    school students may go to a Post-Middle school for a number of years,
+    usually two or four, before going to Secondary school or they may go
+    directly to Secondary school.
+
+    Variables S110-S111 and S703-S704 record the highest education level
+    and grade for the respondent and her partner as reported in the
+    interview.  V106-V107, V133 and V701-V702, V715 contain standard
+    variables for use in comparative analyses.
+
+3.  V312, SH211 - For the current contraceptive method, Foaming Tablets
+    are treated as a separate category from code 4 (Diaphragm/Jelly)
+    although they are grouped together in the contraceptive knowledge and
+    use tables (V304-V307 and SH202-SH205).
+
+4.  V314 - There is an additional response code 6 meaning that no specific
+    system was used for periodic abstinence.
+
+5.  V323 - An additional code 96 was used if the respondent was not able
+    to name the pill brand used.
+
+6.  REC97 - An employment module was used to collect information about a
+    respondent's working life, including details of her current work, her
+    work before she was first married and a history of work between the
+    births of her children.  The history of births contains up to four
+    entries.  The first entry relates to the period since the respondent's
+    last birth, the second entry is for the period before the first birth,
+    the third relates to the interval before the last birth but after the
+    penultimate birth and the fourth is for the interval between the
+    penultimate birth and the birth preceding that.
+
+    The index variable IDX97 points to the interval to which the entry
+    pertains.  If IDX97 is 0 the entry is for the interval since the last
+    birth.  If IDX97 is any value other than 0 then the entry is for the
+    interval prior to that birth in the birth history (REC21).  Using the
+    example in the Description of the DHS Individual Recode (page 11), the
+    entries in the employment history may be as follows:
+
+         IDX97 SWKA SWKBSWKBA SWKCSWKDHSWKDM SWKESWKFYSWKFM
+             0    1   41    3    1    3    0    4    0    6
+             7    1   60    4    3    0   15    6    2    0
+             1    2
+             3    1   41    3    2   95   95    6    1    6
+
+    The first entry is for the interval since the last birth.  The second entry is for the interval prior to the first birth.
+    This respondent has had seven births and so birth 7 in the birth history is the first birth.  The third entry is for the
+    interval before the last birth (the first entry in the birth history).  This birth produced twins and so the interval is
+    between births 1 and 3 in the birth history.  The fourth entry is for the interval between the next to last birth
+    (birth 3) and the birth preceding that (birth 4).
+7.  REC98 - The husbands questionnaire information has been matched with the women's data and all of the
+    information has been appended to each case.  For husbands who are married to more than one interviewed woman
+    the husbands information is matched to each wife.
+
+    There are two variables added to the file SHWIVES and SHWIFE which relate to this matching process.
+    SHWIVES indicates how many wives of the current husband were interviewed, and SHWIFE indicates which of
+    these wives is the current one.  To analyze just the male data, counting husbands only once, select the cases where
+    SHWIFE is 1.  To analyze husbands with their wives select all of the husbands.
+
+
+Inconsistencies in the Data File
+
+1.  B6 - There are 256 children for whom the age at death was recorded as one year and the interviewer did not probe
+    further to find out the age at death in months.
+
+2.  V310, V311 - There is one case in which the original response given was inconsistent with the number of children
+    to whom the respondent had ever given birth.  This is recorded as code 97 on V310 and code 7 on V311.
+
+
+Differences from previous version
+
+1.     V710 (How earnings before marriage are shared) is no longer used, and S728 (Who decided how earnings before
+       marriage are shared) has been added, replacing V710.Date imputation
+
+In many cases the year of birth of the respondent, a child or her husband was calculated by the interviewer based on the
+age reported when the date of birth was not known.  This calculation was incorrectly performed by subtracting the age
+from 88 (the year of interview) to give the year of birth.  When the data were entered the month of birth is left unknown,
+the year of birth and age are recorded.  The result is that the data are consistent, but the distribution of births imputed
+according to the usual procedure is heavily biased towards the months before the survey, whereas if the month of birth was
+given the year of birth and age are very close to the expected distribution.
+
+The table below separates the respondents, their children and their husbands into two categories according to whether the
+year of birth plus age sums to 88 (the year of interview) or 87 (the year before interview), implying that the birthday is in
+one of the months before the interview or in one of the months after the interview respectively.  The table is broken down
+according to whether the month of birth was stated.  The approximate distribution of births expected in the two categories
+according to the date of the interview is also given.
+
+       Percent Distribution of the Sum of Year of Birth and Age by Whether
+       Month of Birth was Given for Respondents, Living Children and Husbands.
+
+                            Original Data After correction
+                            Year+  Year+  Year+    Year+  Year or
+                            Age =  Age =  Age =    Age =  Age not  Total
+                             88     87     88       87    given N  Number
+       Respondent
+
+       Month not given              86.6   13.2     25.3   74.7      133      2301
+       Month given 36.1             63.9   36.6     63.4    0       2187
+       Total       61.4             38.6   30.8     69.2  133       4488
+
+       Living Children
+
+       Month not given              83.9   16.1     27.5   72.5       14      2519
+       Month given 37.0             63.0   37.5     62.5    1       9261
+       Total       47.0             53.0   35.3     64.7   15      11780
+
+       Husbands
+
+       Month not given              85.5   14.5     26.7   73.3       25       431
+       Month given 35.2             64.8   35.9     64.1    0        512
+       Total       57.4             42.6   31.7     68.3   25        943
+
+       Expected    30.0             70.0   30.0     70.0
+
+Due to this problem a different imputation procedure was used.  The year of birth was ignored during the imputation
+process for dates where the month of birth was not given and the year of birth plus age equalled 88.  This corrected the
+problem of heaping of births in the early months of each year, although the final year of birth imputed is different from the
+original year of birth recorded by the interviewer.  Dates where the year of birth was ignored in the imputation process are
+recorded as code 7 in the relevant date flag variables.
+

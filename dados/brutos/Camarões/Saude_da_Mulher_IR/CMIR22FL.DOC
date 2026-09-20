@@ -1,0 +1,510 @@
+                      INDIVIDUAL RECODE DOCUMENTATION
+
+
+CAMEROON (DHSII)             Version 1 Doc 01                           CM2
+
+Name of Survey      Demographic and Health Survey
+
+Executing Agency    Cameroon National Census Bureau
+
+Year of fieldwork   1991
+
+Universe            All women, 15-49
+                    (subsample of husbands of eligible women)
+
+Coverage            National, 100%
+
+Size                Individual:    3871
+                    Household:     3538
+                    Husbands:       814
+                    Couples:        894
+
+Weights             Weighted for Yaound‚+Douala/Other Urban/Rural
+
+Contents            DHSII B-Core + Husbands Questionnaire
+
+Language            French, English, Fulfulde, Ewondo, Pidgin
+
+Anthropometry       Children aged 0-59 months
+
+Calendar            None
+
+Supplementary Data  Household schedule
+Files               Husband's questionnaire
+                    Causes of death
+                    Service Availability
+
+Recode Structure    DHSII (Male=DHSIII)
+
+Record size         Individual Flat File: 3782
+                    Individual Hierarchical and Rectangular File: 172 maximum
+                    Household Flat File: 1304
+                    Household Hierarchical and Rectangular File: 100 maximum
+                    Male Flat File: 447
+                    Male Hierarchical and Rectangular File: 132 maximum
+                    Couples Flat File: 1853
+                    Couples Hierarchical and Rectangular File: 152 maximum
+
+Records per case in Individual:    70
+Rectangular file    Household:     77
+                    Male:          10
+                    Couples:       41
+
+Maximum entries in  37
+household schedule
+
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH0     HV002     HV003
+
+RECH1     HV115     HV116
+
+RECH2     HV214     HV215
+
+INDIVIDUAL:
+
+REC01     V002
+
+REC11     V109      V111      V128-129       V144-147
+
+REC22     V228-235
+
+REC32     V338-339  V359-360  V369-371       V375      V385-392
+
+REC41     M2D-F     M2H-J     M2L-M          M3D-F     M3I-J
+          M3L-M
+
+REC42     V413B-D   V414A-D   V424C-E        V424H-J   V424M-N
+          V424R-S   V424V-W   V427-447
+
+REC43     H12C-E    H12H-J    H12M-N         H12R-S    H12V-W
+          H15G-H    H18       H32C-E         H32H-J    H32M-N
+          H32R-S    H32V-W    H35A           H37C-D
+
+REC44     HW20-26
+
+REC61     V615
+
+REC71     V724-728
+
+Sections Added
+
+RECH3     Country specific household single variables
+
+SHPROV    Province
+SHSTRATE  Stratum number
+SHARROND  Arrondissement/District
+SHSTRUCT  Structure number
+SHMENAGE  Household number
+SHNUMERQ  Questionnaire sequence number
+SHNOMBRQ  Number of questionnaires
+SHMENINH  Start of household interview: hour
+SHMENINM  Start of household interview: minute
+SH20U     Time to fetch non-drinking water: units
+SH20N     Time to fetch non-drinking water: number of units
+SH23U     Time to fetch drinking water: units
+SH23N     Time to fetch drinking water: number of units
+SH25E     Does household have a gas or electric oven
+SH25F     Does household have a portable gas or electric stove
+SH27      Maximum number of people sleeping in one room
+SH30H     End of household interview: hour
+SH30M     End of household interview: minute
+
+RECH4     Country specific household schedule variables
+
+IDXH4     Index to household schedule
+SNIVEAU   Educational attainment
+SHECRLIT  Can person read and write?
+SHFEMMEU  Is woman married or in other type of union?
+
+REC91     Country specific single variables
+
+SPROV     Province
+SSTRATE   Stratum number
+SARROND   Arrondissement/District
+SSTRUCT   Structure number
+SMENAGE   Household number
+SQUESTL   Questionnaire language
+SLANGUE   Language used for interview
+SINTERPR  Was interpreter needed for interview?
+S113A     Listen to "Entre Nous Mesdames"?
+S113B     Listen to "Calling the Women"?
+S113C     Listen to "Sant‚ pour Tous"?
+S113D     Listen to "Medical Hotline"?
+S113E     Listen to other woman/health programs?
+S113F     Listen to other programs?
+S113G     Listen to no woman/health program?
+S113H     Don't know listening habits
+S115A     Watch "Pavillon Ecran"?
+S115B     Watch "Health Watch"?
+REC91     Country specific single variables - (continued)
+
+S115C     Watch "Tout Feu Tout Femme"?
+S115D     Watch "Feminine Line"?
+S115E     Watch "Les Gestes qui Sauvent"?
+S121U     Time to fetch non-drinking water: units
+S121N     Time to fetch non-drinking water: number of units
+S124U     Time to fetch drinking water: units
+S124N     Time to fetch drinking water: number of units
+S126E     Does household have a gas or electric oven
+S126F     Does household have a portable gas or electric stove
+S128      Maximum number of people sleeping in one room
+S210      Any pregnancies that did not end in live birth?
+S211      Number of pregnancies that did not end in live birth
+S228      Have menstrual period currently?
+S229      Number of days since period started
+S231      Age at first menstrual period
+S313      Method to determine days of periodic abstinence
+S318B     How many cycles does package of pills last?
+S319      Is it difficult or easy to obtain current method?
+S329      Main reason not using preferred method
+S337C     Hear about FP in newspaper/magazine
+S441      How long should woman breastfeed child
+S486      Have heard of home fluid preparation
+S487      Have used home fluid preparation?
+S488A     Home fluid preparation teacher: public hospital
+S488B     Home fluid preparation teacher: MCH center
+S488C     Home fluid preparation teacher: public health center
+S488D     Home fluid preparation teacher: ProPharmacy
+S488E     Home fluid preparation teacher: private religious hospital
+S488F     Home fluid preparation teacher: private lay hospital
+S488G     Home fluid preparation teacher: missionary dispensary
+S488H     Home fluid preparation teacher: pharmacy
+S488I     Home fluid preparation teacher: private doctor
+S488J     Home fluid preparation teacher:friends/relatives
+S488K     Home fluid preparation teacher: traditional healer
+S488L     Home fluid preparation teacher: other
+S488M     Home fluid preparation teacher: don't know
+S489      Amount of water used in home fluid preparation
+S490      Number of lumps of sugar used in home fluid preparation
+S491      Number coffee spoons salt used in home fluid preparation
+S608      Total times married/in union
+S719G     Number of sons
+S719F     Number of daughters
+S720A     Main advantage of having many children
+S720B     Second advantage of having many children
+S720C     Third advantage of having many children
+S721A     Main disadvantage of having many children
+S721B     Second disadvantage of having many children
+S721C     Third disadvantage of having many children
+REC91     Country specific single variables - (continued)
+
+S722      Number of children considered many
+S723      Prefer many or few children
+S808      Husband's religion
+S809      Husband's nationality
+
+REC94     Country specific maternity history variables
+
+IDX94     Index to birth history
+S414      Number of months pregnant when gave birth
+S446J     Yellow fever vaccination
+S446JD    Yellow fever day
+S446JM    Yellow fever month
+S446JY    Yellow fever year
+
+REC97     Causes of death (part 1)
+
+IDX97     Index to birth history
+S503      Death due to accident or illness
+S504      What type of accident
+S505A     Illness 1
+S505B     Illness 2
+S506A     Illness: public hospital
+S506B     Illness: MCH center
+S506C     Illness: public health center
+S506D     Illness: ProPharmacie
+S506E     Illness: private religious hospital
+S506F     Illness: private lay hospital
+S506G     Illness: missionary dispensary
+S506H     Illness: pharmacy
+S506I     Illness: private doctor
+S506J     Illness: traditional healer
+S506K     Illness: other
+S506L     Illness: nowhere
+S507      Where did death take place?
+S508      Did child breastfeed/take bottle well?
+
+REC98     Causes of death (part 2)
+
+IDX98     Index to birth history
+SMALADIE  Symptom
+S509      Symptoms during the illness
+S510      Was symptom serious
+S511U     Time symptom started before death (unit)
+S511N     Number of units
+S512      Did symptom last until death?
+S513U     Time symptom stopped before death (unit)
+S513N     Number of units
+
+REC99     Husband's basic data
+
+SMPROV    Province
+SMSTRATE  Stratum number
+SMARROND  Arrondissement/District
+SMGRAPPE  Cluster number
+SMSTRUCT  Structure number
+SMMENAGE  Household number
+SMLIGNE   Husband's line number
+SMFEMME   Line number of wife(s)
+SMINTJ    Day of interview
+SMINTM    Month of interview
+SMINTA    Year of interview
+SMINTNUM  Interviewer number
+SMRESULT  Result of husband's interview
+SMVISITS  Total number of visits
+SMQUESTL  Language of questionnaire
+SMLANGUE  Language of interview
+SMINTERP  Interpreter used for interview
+SMKEYER   Keyer identification
+SMINTC    Date of interview (CMC)
+SMWEIGHT  Sample weight for husbands questionnaire
+SMCOUPLE  Couple number
+SMNWIVES  Number of wives
+
+REC9A     Husband's basic data
+
+SMQ101H   Start of interview (hour)
+SMQ101M   Start of interview (minutes)
+SMQ102M   Month of birth
+SMQ102A   Year of birth
+SMQ103    Husband's current age
+SMQ104    Ever attended school
+SMQ105    Highest educational level
+SMQ106    Highest class at that level
+SMQ107    Occupation
+SMQ108    Religion
+SMQ109    Nationality
+SMQ110    Number of wives
+SMQ111    Intention to take another wife
+SMQ112    Age at first union
+SMQ113M   Date of first union (month)
+SMQ113A   Date of first union (year)
+SMQ102C   Date of birth (CMC)
+SMQ102F   Completeness of info (SMQ102C)
+SMQ103C   Husband's calculated age
+SMQ112C   Age at first union (calc)
+SMQ113C   Date of first union (CMC)
+SMQ113F   Completeness of info (SMQ113C)
+SMQ201    Contraceptive method
+REC9A     Husband's basic data - (continued)
+
+SMQ202    Ever heard of method
+SMQ203    Ever used method
+SMQ205    Ever used any fp method
+SMQ207    Currently using method
+SMQ208    Current contraceptive method
+SMQ209    Intention to use
+SMQ210    Preferred future method
+SMQ211    Main reason not to use
+SMQ212    Acceptability of media message
+SMQ301    Have any children?
+SMQ302G   Number of sons
+SMQ302F   Number of daughters
+SMQ304    Want a(another) child?
+SMQ305    Does partner approve of FP
+SMQ306    Number of times discussed FP with partner in last year
+SMQ307    Discussed number of children with partner
+SMQ308    Partner want same number of children
+SMQ309U   Time to wait before resuming sexual relations (units)
+SMQ309N   Time to wait before resuming sexual relations (number)
+SMQ310    End breastfeeding before resuming sexual relations
+SMQ311    Approve of FP methods
+SMQ312    Ideal number of children
+SMQ313G   Ideal number of sons
+SMQ313F   Ideal number of daughters
+SMQ314A   Main advantage of having many children
+SMQ314B   Second advantage of having many children
+SMQ314C   Third advantage of having many children
+SMQ315A   Main disadvantage of having many children
+SMQ315B   Second disadvantage of having many children
+SMQ315C   Third disadvantage of having many children
+SMQ316    Number of children considered many
+SMQ317H   End of interview (hour)
+SMQ317M   End of interview (minutes)
+
+Notes on Recode File
+
+1.   HV002 - In Cameroon households were identified by a three digit
+     structure number and a two digit household number.  These variables are
+     stored as country specific variables SHSTRUCT and SHMENAGE.
+
+2.   HV109 - Cases with either 6 or 7 years of primary education were
+     classified as completed primary.
+
+3.   HV023 - The sample was designed with three domains: Yaound‚+Douala,
+     other urban and rural.  Each domain has its own distinct weight,
+     however, the weights for 18 clusters were adjusted because of under
+     coverage.  As a result there are 21 different weights in the data.
+
+4.   V002 - In Cameroon households were identified by a three digit structure
+     number and a two digit household number.  These variables are stored as
+     country specific variables SSTRUCT and SMENAGE.
+
+5.   V023 - see HV023.
+
+6.   V139 - De jure region of residence was not determined for visitors.
+
+7.   V149 - Cases with either 6 or 7 years of primary education were
+     classified as completed primary.
+
+8.   To merge the woman's individual data with the men's (SNMR21.DAT), the
+     user should use the first 12 characters of CASEID concatenated to
+     SMLIGNE read as 3 characters with leading blanks.  The recode files
+     produce only 977 weighted couples if the woman's weight (V005/1000000)
+     is used.  The user should be aware that there are 20 couples for which
+     there is an inconsistency between the wife's report of husband line
+     number and the husband's report of wife's line number.  If the user
+     wishes to exclude those couples, the user should require that one of the
+     occurrences of the husband variable HV034 equals the woman's line number
+     (V003).
+
+9.   The user should be aware that the husband's data are available within
+     the woman's individual recode file and it is not necessary to merge the
+     two recode files.  See REC99 and REC9A for these data.
+
+Inconsistencies in the Data File
+
+1.   HV006, HV007, HV008 -  There are 121 households with no date of
+     interview.  These correspond to the 121 households with result of
+     interview "other".  HV006 and HV007 are not applicable and HV007 is 9999
+     for these households.
+
+2.   HV220 - There is one household with head age 6.  All other heads of
+     household are 14 years old and above.
+
+3.   B3 - date of birth of child.  Five cases of births with "impossible"
+     intervals were corrected by the recode program using reasonable values
+     for the date of birth.  Other variables depending on B3 are changed as
+     a result.
+
+4.   From CMIR21 to CMIR22, variable HV118 was corrected for 41 men in the
+     household (RECH1).  Of these changes, 18 men were corrected from "1"
+     (eligible) to "0", and 23 were corrected from "0" (not eligible) to "1".
+     The household variable HV011 (number of eligible men) was changed if
+     necessary.MALE RECODE
+
+Sections and Variables Unused
+
+MREC01    MV002     MV030     MV031     MV032
+
+MREC11    MV103     MV104     MV105     MV108     MV109
+          MV110     MV111     MV112     MV148
+
+MREC22    MV201     MV202     MV203     MV204     MV205
+          MV206     MV207     MV213     MV225
+
+MREC32    MV366A    MV366B    MV367     MV375A    MV384A
+          MV384B    MV384C    MV384D    MV384E
+
+MREC51    MV503     MV525     MV527     MV531     MV532
+          MV534     MV535
+
+MREC61    MV603     MV604     MV605     MV616     MV629
+          MV630A    MV630B    MV630C    MV630D    MV630E
+          MV630F    MV630G    MV630H    MV630I    MV630J
+          MV630K    MV630L    MV630X
+
+MREC71    MV714     MV719     MV731     MV732     MV733
+          MV736     MV740
+
+MREC75    MV751     MV752A    MV752B    MV752C    MV752D
+          MV752E    MV752F    MV752G    MV752H    MV752I
+          MV752J    MV752K    MV752L    MV752M    MV752N
+          MV752O    MV752X    MV753     MV754A    MV754B
+          MV754C    MV754D    MV754E    MV754F    MV754G
+          MV754H    MV754I    MV754J    MV754K    MV754L
+          MV754M    MV754N    MV754O    MV754X    MV754Z
+          MV755B    MV755C    MV755D    MV755E    MV755F
+          MV755L    MV755M    MV755N    MV755O    MV755X
+          MV755Z    MV756     MV757     MV758     MV760A
+          MV760B    MV760C    MV760D    MV760E    MV760F
+          MV760G    MV760I    MV760L    MV760M    MV760N
+          MV760O    MV760P    MV760V    MV760W    MV760X
+          MV760Y    MV760Z    MV761     MV762     MV763
+          MV764     MV765
+
+MREC85    No variables are used on this record.
+Sections Added
+
+REC91     Country specific - single variables
+
+SMPROVI   Province
+SMSTRAT   Strata number
+SMARRON   Arrondissement/District
+SMSTRUC   Structure number
+SMMENAG   Household number
+SMQUESL   Language of questionnaire
+SMLANG    Language of the interview
+SMINTER   Interpretor used
+SMRELAT   Relationship to household head
+SM111     Intention to take another wife
+SM212     Media messages acceptable
+SM302A    Number of living sons
+SM302B    Number of living daughters
+SM307     Discussed number of children
+SM309     Time to wait for sexual activity after birth
+SM310     Stop breastfeeding before sexual activity
+SM314A    First advantage of many children
+SM314B    Second advantage of many children
+SM314C    Third advantage of many children
+SM315A    First disadvantage of many children
+SM315B    Second disadvantage of many children
+SM315C    Third disadvantage of many children
+SM316     What number of children for a woman means many children?
+
+Notes on Recode File
+
+1.   Husbands are included in this file whether or not they are DEFACTO
+     residents of the household.
+2.   Four men who were eligible respondents were not entered into the raw
+     data.
+3.   MV034 has been corrected from the raw data file where incorrect line
+     numbers of wives appear.
+4.   MV312 has been corrected from the raw data for the cases that were
+     missing method currently being used and following skips for non-users.
+     These cases have been coded as non-users.
+5.   For one case, MV602 has been corrected to missing from not applicable.
+6.   For eight cases, MV610, MV611, MV612 and MV621 were corrected to missing
+     from not applicable.
+7.   There are 18 cases for which MV628 and MV629 do not sum to MV613.  This
+     is because the code of 30 for MV613 represents 30+ children.
+8.   MV009 and MV507 (imputed month of birth and marriage) are skewed.
+9.   There are 55 cases in which the respondentþs wife has an incomplete
+     questionnaire.
+
+Inconsistencies in the Data File
+
+1.   There is one case in which MV801 equals 0 minutes; there is one case  in
+     which MV801 equals less than 0 minutes; there are two cases in which
+     MV801 is greater than 180 minutes.
+2.   These is one case in which ever use of female sterilization is reported
+     but is not currently being used.
+3.   There is one case in which there is an inconsistency between the wifeþs
+     report of her husbandþs line number and his report of his wifeþs line
+     number.
+4.   There are 18 men who are reported as eligible for interview in the
+     household roster who are not present in the husbandþs data file.
+
+Coding Additions
+
+MV012     range 15-81
+MV013     11       65+
+
+Note: The following presents the recode of occupations to MV717 :
+
+     MV716          MV717               MV716          MV717
+     0, 95, 96      0                   57, 70-73,
+     Missing        Missing             78-80,
+     1-28,                              82, 83         8
+     35-37,                             58-69,
+     42-44, 50, 52       1              74-77, 81,
+     29-34               2              84, 85         9
+     38-41               3              All others     98
+     53-56               4
+     46                  6
+     45, 47-49,
+     51, 86              7
+

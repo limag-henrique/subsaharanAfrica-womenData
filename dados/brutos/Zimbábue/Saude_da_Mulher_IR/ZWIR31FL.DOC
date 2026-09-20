@@ -1,0 +1,806 @@
+                         INDIVIDUAL RECODE DOCUMENTATION
+
+ZIMBABWE(DHSIII)                Version 1 Doc 01                             ZW3
+
+Name of Survey      Zimbabwe Demographic and Health Survey
+
+Executing Agency    Central Statistical Office
+
+Year of fieldwork   1994
+
+Universe            All women, 15-49
+
+Coverage            National, 100%
+
+Size                Households:    5984
+                    Women:    6128
+                    Men:      2141
+                    Couples:   703
+
+Weights             Weighted according to the combination of urban/rural and regions.
+
+Contents            DHSIII A-Core + Questions on pill compliance, AIDS module, Maternal
+                    Mortality module, and Maternal Anthropometry.
+
+Languages           Shona, Ndebele, and English.
+
+Anthropometry       2292 children 0-35 months old, out of them 2014 were fully measured
+                    and within the international ranges for height and weight.
+
+Calendar            January 1989 - December 1994
+
+Supplementary       Household schedule
+Data Files          Service availability
+                    Male questionnaire
+
+Recode Structure    DHSIII
+
+Record size         Individual Flat File: 4840
+                    Individual Hierarchical and Rectangular File: 158 maximum
+                    Household Flat file: 848
+                    Household Hierarchical and Rectangular File: 114 maximum
+                    Male Flat File: 1269
+                    Male Hierarchical and Rectangualr File: 144 maximum
+                    Couple Flat File: 2232
+                    Couple Hierarchical and Rectangular File: 149 maximum
+
+Records per case in Individual:    83
+Rectangualr file    Household:     30
+                    Male:          32
+                    Couples:       44
+
+Maximum entries in  27
+household schedule
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH1     HV115     HV116
+
+RECH2     HV202     HV214     HV215     HV221     HV222
+          HV203
+
+INDIVIDUAL:
+
+REC11     V104-V105 V114      V128-V129 V142      V153
+          V112
+
+REC21     B14
+
+REC22     V236
+
+REC31     Methods 12-15 not used
+
+REC32     V369B
+
+REC41     M2D-E     M2L-M     M3L-M     M37I-K    M40D-E
+          M2H       M3D-E     M19A      M37Q-R    M40K-O
+          M2J       M3J       M37D
+
+REC42     V410A     V413B-F   V436      V450K-M   V451I-K
+
+REC43     H0        H0Y       H12Q-R    H15E-H    H32Q-R
+          H0D       H12C-D    H12U-W    H32C-D    H32U-W
+          H0M       H12M      H15A      H32M
+
+REC44     HW20-26
+
+REC51     V506      V534
+
+REC61     V611      V630I-L
+
+REC71     V730
+
+REC75     V752K-O   V755L-O   V760A     V760L-P   V760V-W
+          V754L-O   V757      V760F
+
+REC82     Column 5 not used
+
+REC83     MM5       MM11-13   MM15
+
+REC84     MMC3 MMC4
+
+
+REC85     V850      V860D     V860Z     V864J-P   V869D
+          V850A     V860F     V863D-F   V868F     V869J_l
+          V851-53   V860M     V863W     V868J-L   V869P
+          V856F-K   V860P-Q   V864D     V868P
+          V858F-J   V860V-W
+
+Sections Added
+
+RECH3     Household country specific single variables
+
+SHLANGQ   Language of the questionnaire
+SHLANGI   Language of the interview
+SH22A     Modern oxcart
+
+REC91     Individual country specific single variables
+
+SLANGQ    Language of the questionnaire
+SLANGI    Language of the interview
+S128A     Modern oxcart
+S314      At first use pill consult doctor
+S316      Correctness of pill taken
+S317      Why pills not taken in order
+S318      Why don't have pills at home
+S320A     Past month had spotting/bleed
+S320B     Past month had other illness
+S320C     Past month period did not come
+S320D     Past month ran out of pills
+S320E     Past month forgot/misplaced pills
+S320F     Past month loss of libido
+S320G     Past month other
+S321      Fail to take the pill for any reason
+S322      What did you do last time that forget pill
+S323      Days ago took the last pill
+S325      Why didn't take pills those days
+S326      Consulted doctor for last pills
+S328      Place where sterilization was performed
+S341B     Other reasons use current source
+S342B     Other reasons not using a method
+S348      Anyone at health facility refused to provide family planning information
+S475      Ever used salt/sugar solution
+S520      Last time who did you had sex with
+S521      Sex with husband last 4 weeks
+S522      Times had sex with husband last 4 week
+S523      Condom used on those occasions
+S524      Had sex with others in the last 4 weeks
+S525      Number of others you had sex with
+S526      Times had have sex with others
+S527      Condom used on those occasions
+S528      Had sex anyone in the last 4 weeks
+S529      Persons did have sex last 4 weeks
+S530      Times did have sex last 4 weeks
+S531      Condom used on those occasions
+S616      Ever recommended family planning to a friend
+S617C     Acceptable family planning information information by community
+          based distributor
+S618F     Heard of family planning by community based distributor in the last
+          6 months
+S621      Women you know use family planning
+S624      Discuss number of children with partner
+S627      Ever pregnant when you didn't want to be
+S628      Years ago pregnant when didn't want
+S629      What did you do about it
+S630      What was done
+S631      Who provided the methods
+S632      What caused the miscarriage
+S633      Health problems as a result
+S634      Was necessary to be hospitalized
+S635      Nights spent at the hospital
+S636      Had earlier unwanted pregnancy
+S719      Hours worked in typical day
+S726A     Who decide major purchases in household
+S726      Main person who decides major purchases
+S727A     Who decide respondent's work
+S727      Main person who decide respondent's work
+S728A     Who decide number of children
+S728      Main person decide number of children
+S825      Where person with AIDS should be cared for
+
+REC94     Country specific maternity variables
+
+IDX94     Index to birth history
+S414E     At birth - Other complications
+S426      Reason did not breastfeed
+S439      Get something different from breastmilk
+S448A     Weight on card
+S448B     Weight on card in grams
+
+Notes on the recode
+
+1.   There are 18 domains (HV023 and V023) that come from the combination of the
+     10 provinces in the country and "Urban/Rural".  Harare and Bulawayo provinces
+     do not have rural clusters.
+
+2.   Variables that refer to locality of the place of the interview (HV026, V026,
+     V134) were created from the variable locality (main town/other urban/rural)
+     on the front page of the questionnaire.  However, the category "Main town"
+     was split into the categories "Capital, large city" if the interview was done
+     in Harare and "City" for the remaining cases.
+
+3.   Variable V034 was created by identifying those women who were declared as
+     being the wife of men interviewed in the male survey and that at the same
+     time were interviewed in the women's questionnaire.  Women who were not
+     declared as being the wife of any of the males interviewed, were assigned a
+     code "0" (Husband not in the household).  In the core questionnaire this
+     variable comes directly from a specific question asking for the line number
+     of the husband in the household schedule.  This variable should be used when
+     linking the female and male data files.  There are 703 women who have a match
+     with the men questionnaire.  However, 5 of them reported that they are not
+     currently married, but it was decided to leave them as couples because of the
+     different perceptions of marital status in Zimbabwe.
+
+4.   In variables V103 and V141 (for non-dejure respondents) it is not possible
+     to differentiate "main town" from capital or large city.  Because of that
+     "main town" was classified with the code "1-city".
+
+5.   Variables V242A to V242Z are not applicable because unlike the core
+     questionnaire, the Zimbabwe Q630 is not a multiple choice question.  Q630 was
+     kept as country specific.
+
+6.   Variable V217 applies only to those women currently using "periodic
+     abstinence"
+
+7.   Variable V325 (cost of pills) has two decimals.  In order to properly use it,
+     it has to be divided by 100.  Codes 999996 and 999998 are "free" and don't
+     know respectively but because of the number of digits it could not be
+     labeled.
+
+8.   Questions 339, 344, and 762 are used to generate the variables V326, V379 and
+     V762 respectively; code 14 is "ZNFPC mobile clinic".  This label was changed
+     by "ZNFPC clinic" in order to include both the mobil and fixed ZNFPC clinics.
+     Code 17 was collapsed with code 16, because all the community based
+     distributors ultimately come from ZNFPC.
+
+9.   Variable V326 (source for current users) is derived from questions 328 for
+     sterilization and 339 for other modern methods.  Codes 11, 12, and 13 from
+     Q328 (Central hospital, provincial hospital, and district/rural hospital)
+     were collapsed as "government hospital/clinic", because they are all
+     government hospitals.  In the final report, however, they were collapsed as
+     government hospital/clinic, rural/municipal clinic, and rural health center,
+     respectively.  In order to preserve the original codes Q328 was also kept as
+     country specific.
+
+10.  Due to the skip pattern regarding current use of contraception for currently
+     pregnant women, in  variable V375A (main reason not using a method) code 27
+     (pregnant) was assigned to those women who had ever used a method and are
+     currently pregnant.  Note that this code does not exist in the questionnaire.
+
+11.  Variables V384A to V384E in Zimbabwe refer to the last six months.  In the
+     core questionnaire they refer to the last few months.
+
+12.  Question 353 was kept as country specific because in Zimbabwe the base for
+     it is all non-pregnant women, whereas in the core it is for non-pregnant non-
+     users of modern methods.
+
+13.  The number of days that porridge and fruit/vegetables were given are kept in
+     M40I and M40J respectively.
+
+14.  Variables H12x and H32x were recode as follows:  Central hospital in
+     H12A/H32A, Rural health centre as H12B/H32B, Provincial hospital in
+     H12F/H32F, District/rural hospital in H12G/H32G, Rural/municipal clinic in
+     H12H/H32H,  Other public in H12I/H32I, Mission hospital/clinic in H12P/H32P.
+     All the remaining categories were assigned to their corresponding variables
+     in H12 and H32.  H12F/H32F, H12G/H32G and H12H/H32H can be considered as
+     government hospitals but they were kept separately, so that the original
+     questions were not lost.  Mission hospitals are in part supported by the
+     government but their main source of support comes from religious
+     organizations.
+
+15.  In variables V705 and V717 the occupations related to agriculture were recode
+     as self employed, since there is no way to determine from the original
+     questions (Q705, Q711) if those categories are either employed, or self-
+     employed.
+
+16.  In variables V707 and V740 the original category "2-communal/resettlement
+     land" from questions Q707 and Q713 was recoded as "family land".  The reason
+     is that this land is assigned by the government and passes within the family
+     from generation to generation, although there are no documents of ownership.
+     (check with George)
+
+17.  Respondents who had never had sex (V525 = 0) skipped questions on future use
+     (V362, V363, V364 and V375A) as well as attitude towards becoming pregnant
+     (V606).  Variables V362 and V364 were assigned codes 6 and 5 respectively
+     (never had sex).  Fertility preferences for those respondents (V602) who at
+     the same time are married were classified with code 6 (never had sex).
+
+18.  Maternal mortality variable MM14 (number of sibling's children) was asked
+     only for those siblings who died as a result of a pregnancy or child delivery
+     complication.  Variable MM10 was asked of siblings whose death was related
+     to pregnancy or delivery, unlike to the core questionnaire that asks the
+     question only of those women who died while pregnant or within the two months
+     after giving birth.
+
+19.  Variable V399 (currently relying on breastfeeding) was asked regardless of
+     whether the respondent is using sterilization.
+
+20.  Variable M39 (times ate other food yesterday), was asked of all children
+     except for those currently being breastfed who did not receive any other food
+     in the last 24 hours.  In the core questionnaire this variable is only asked
+     of those children who were given any liquids or solids in the last 24 hours.
+
+21.  Variables related to education of the household members were asked of
+     children 5 years and older.  The core questionnaire asks these questions to
+     children 6 years and older.
+
+Inconsistencies in the file
+
+1.   There are 2 cases in which the head of the household is not the first line
+     in the household schedule.  In 12 more households there are no adults that
+     are usual residents of the household, they were assigned code 0 in HV217.
+
+2.   There are 27 cases of children under 15 years of age in the household
+     questionnaire, for whom either or both the sex of the line number (HV112) of
+     the mother is male or the sex of the line number for the father (HV114) is
+     female.
+
+3.   There are 65 cases in which the respondent's reporting being at the school
+     differs from the information provided in the household.
+
+4.   There are 6 cases in which the respondent's age (V012) appears inconsistent
+     with number of years of education (V133).
+
+5.   In 4 cases the respondent did not provide information on literacy (V108 =
+     missing); however later she declared that she read newspapers at least once
+     a week.
+
+6.   There are 2 cases in which the imputed age at death B7 is inconsistent with
+     the declared age at death B6.  B7 had to be adjusted to fit in the interval.
+
+7.   There is 1 case of a woman who had never menstruated (V215 = 996) but she had
+     children (V210 = 01).
+
+8.   There are 59 cases in which the time since last menstrual period (V215)
+     exceeds the interval since the last birth and date of the interview.
+
+9.   There are 5 cases of women whose partners where sterilized at some point
+     (V305(7) = 1), however they do not report current use of male sterilization
+     (V312 <> 7).
+
+10.  There are 4 cases of women who declared that they are currently using a
+     contraceptive method (V312 <> 0) but in column 1 of the calendar they are not
+     using a method.  In 1 of those cases the women gave birth in the month of the
+     interview.  In 2 other cases the woman is currently using according to the
+     calendar but not using according to V312.
+
+11.  There are 24 cases of children who died and whose age at death was reported
+     as one year.
+
+12.  There are 6 births for which the duration of amenorrhea (M6, M7) extends
+     beyond the following pregnancy, when compared with the calendar.
+
+13.  There are 10 sets of twins that have some differences between variables M1
+     to M17.  All of these variables are related to prenatal care and assistance
+     at delivery and therefore should be the same for multiple births.
+
+14.  There is one case of a woman who is not breastfeeding her last child but is
+     currently breastfeeding the penultimate child.  As a result, V404 (currently
+     breastfeeding) is inconsistent with M4 for the last child and V407 and V408
+     (times breastfed during day and night), are not applicable because this
+     information is only asked of last births currently being breastfed.
+
+15.  There are 28 cases in which are inconsistencies between duration of
+     amenorrhea (M6 and M7), the time since last period (V215) and the open
+     interval.  In the majority of these cases, the period has not returned (M6
+     = 96) but the last period reported in V215 occurred near the conception of
+     the last birth.
+
+16.  There are 26 cases in which there are inconsistencies between duration of
+     abstinence (M6 and M7), the time since last sex (V527) and the open interval.
+     In the majority of these cases, sex was not resumed (M8 = 96) but last sex
+     in V527 occurred near the conception of the last birth.
+
+17.  There are 234 cases of children who were given something to drink or eat on
+     the previous day (M37x), but when asked for the number of days that a
+     particular food was given in the last seven days (M40x), the answer was none.
+     Of the 234 cases, 2 of them correspond to plain water, 39 to any kind of milk
+     (other than breast milk), 140 to other liquids (other than plain water or
+     milk), 24 to eggs/fish/poultry, 14 to meat, and 15 to other solid foods.
+
+18.  There are 12 children whose dates of vaccination are inconsistent.  For
+     instance, the polio 3 vaccination was given at an earlier date than the polio
+     2.  In 51 other cases the number of days between vaccinations was less than
+     7 days.
+
+19.  There are 7 children who are missing data for either weight (HW2 = missing)
+     or height (HW3 = missing) and the code for reason for not measured was 0
+     (HW13 = 0).
+
+20.  There are 322 cases of children who were less than 24 months old and were
+     measured standing (HW15=2) or who were 24 months or older and were measured
+     lying down (HW15=1).
+
+21.  There are 266 cases in which there are inconsistencies between HW14 (BCG scar
+     on arm or shoulder) and H2 (received BCG).
+
+22.  There are 2 cases in which variable V501 (current marital status) is missing
+     but it is known that these women were previously married (V502 = 2).  16
+     women were married before their 10th birthday.
+
+23.  There are 5 cases in which the respondent reported never having had sex, but
+     she has been married.
+
+24.  There are 9 cases of women who have had only one union (V503 =1 ) and it
+     occurred after January, 1989 (the beginning of the calendar).  When comparing
+     the date at union (V509) and the first month of union in the calendar, they
+     are inconsistent.  In 14 other cases, there are inconsistencies between the
+     marital status in the first month of the calendar,  the CMC at first union
+     (V509) and the number of union (V503).
+
+25.  There are 330 cases of inconsistencies between age at first sexual
+     intercourse (V525) and age at first birth (V212).  When the difference
+     between the two variables is more than one year, variable V531 (Age at first
+     sex imputed) is assigned code 97 (inconsistent) and variable V532 (flag for
+     age at first sex) is assigned code 2 (after conception >= 1 year).  If the
+     difference is just one year then variable V531 keep the same value as V525
+     but V532 is assigned code 3 (after conception < 1 year).
+
+26.  There are 14 cases in which there are inconsistencies between the total ideal
+     number of children (V613) and the ideal number of children by gender (V627,
+     V629, and V629).
+
+27.  There are 14 cases of women who declared that they have discussed family
+     planning with their partners in the last six months (V630A = 1), but those
+     women are not currently married (V502 <> 1).  It is believed that in most of
+     these cases those women discussed family planning with their boy friends or
+     occasional partners.
+
+28.  There are 20 cases of inconsistencies between the time when the interview
+     begins (V801) and the time when it ends (V802), for interviews with only one
+     visit (V804 = 1) to complete the questionnaire.  In 1 of them the duration
+     is negative; in the remaining 19 the duration is greater than 180 minutes.
+     There are also 4 cases with a duration of interview less than 5 minutes,
+     including one with a duration of 0 minutes.
+
+29.  In the maternal mortality section there are 81 cases in which the respondent
+     said that she had a number of preceding siblings (MMC2).  However when the
+     respondent's century month code of birth (V011) is compared with the
+     corresponding CMC of her siblings (MM4), there are inconsistencies.
+
+30.  There are 3 pregnancies in the calendar with a duration other than 9 months.
+
+31.  There are 47 cases in which either the field supervisor (HV030) or the office
+     editor (HV032) of the household questionnaire is different from that of the
+     individual questionnaire (V030, V032).
+
+32.  There are 10 cases of respondents who reported that they worked in the last
+     12 months, but report working 0 days in the last year (V715 = 0).
+Occupation Codes (V704, V716, MV716)
+
+
+A. Government and Senior Officials
+
+     11   Legislators
+          Senior goverment officials
+          Traditional chiefs and heads of villages
+          Senior officials of special interest groups
+
+B. Directors, Managers and Company Secretaries
+
+     12   Directors and chief executives
+          Managers and company secretaries
+
+C. Natural Sciences
+
+     21   Physicists and related professionals
+          Mathematicians, statisticians and related professionals
+
+D. Business and Finance
+
+     21   Computing professionals and associates
+     24   Business professionals
+     34   Finance and sales associate professionals
+          Business services agents and trade brokers
+          Customs, tax and related (Govt.) associate professionals
+     52   Fashion and other models
+          Shop salespersons and demostrators
+          Stall and market salesperson
+          Businesspersons
+
+E. Administration
+
+     34   Administrative associate professionals
+
+F. Engineers and Technicians
+
+     21   Architects and associate professionals
+          Engineers
+     31   Physical and engineering science technicians
+          Ship and aircraft controllers and technicians
+          Technicinas - uncertified
+
+G. Life Science Professionals
+
+     22   Life science professionals
+          Medical doctors
+          Nursing and midwifery professionals
+          Dentists
+          Veterinarians
+          Pharmaceuticals chemists, pharmacists and pharmacologists
+          Other health professionals
+     32   Life science technicians and related associate professionals
+          Modern health associate professionals
+          Medical assistants
+          Traditional medicine practioners and faith healers
+
+H. Education
+
+     23   College, university and higher education teaching professionals
+          Secondary education teaching professionals
+          Primary education teaching professionals
+          Special education teaching professionals
+          Other education teaching professionals
+          Pre-primary teachers including associates
+          Adult education and literacy teachers
+     32   Temporary (untrained) secondary teachers
+     33   Temporary (untrained) primary teachers
+          Other teaching associate professionals
+
+I. Law and Security
+
+     24   Legal professionals
+     31   Safety quality inspectors
+     34   Police inspectors and detectives
+     51   Protective services workers
+
+J. Information
+
+     24   Archivists, librarians and related professionals
+
+K. Social Science
+
+     24   Social science and related professionals
+
+L. Artists
+
+     24   Writers and creative performance artists
+          Artistic, entertainment and sports associate professionals
+     51   Astrologers, fortune tellers and related workers
+
+M. Religion
+
+     24   Religion
+
+N. Transport
+
+     51   Travel attendants and related workers
+     83   Locomotive engine drivers and related workers
+          Motor vehicle drivers
+          Ships deck crews and related workers
+     93   Transport labours and freight handlers
+
+O. Services
+
+     51   Housekeeping and restaurant services workers
+          Personal care and related workers
+          Other personal service workers
+          Domestic workers (private homes)
+     91   Street venders and related workers (goods)
+          Shoe cleaning and other street services - elementary occupations
+(services)
+          Domestic and related helpers, cleaners and launderers (not home-based)
+          Building caretakers, window and related cleaners
+          Messengers, porters, doorkeepers and related workers
+          Garbage collectors and related labourers
+
+P. Clerks and Secretaries
+
+     41   Secretaries and keyboard operator clerks
+          Numerical clerks
+     41   Material-recording and transport clerks
+          Library, mail and related clerks
+          Other office clerks
+     42   Cashiers, tellers and related clerks
+          Client information clerks
+          Other clerks
+
+Q. Agriculture
+
+     61   Commercial farmers
+          Forestry and related workers
+          Fishery workers, hunters and trappers
+     62   Communal/subsistence agricultural workers
+     92   Agriculture, fishery and related labourers
+
+R. Mining and Construction
+
+     71   Miners, shotfirers, stone cutters and carvers
+          Building frame and related trades workers
+          Building finishers and related trades workers
+          Painters, building structure cleaners and related trades workers
+          Gold panners
+     72   Metal moulders, welders, sheet metal workers, structural metal preparers
+          and related workers
+     93   Mining and construction labourers
+
+S. Mechanics
+
+     72   Blacksmiths, toolmakers and related workers
+          Machinery mechanics and fitters
+          Electrical and electronic mechanics and fitters
+
+T. Manufacturing
+
+     73   Precision workers in metal and related materials
+          Potters, glass-makers and related trades workers
+          Handicraft workers in wood, textile, leather and related materials
+     74   Food processing and related trades workers
+          Wood treaters, cabinet-makers and related trades workers
+          Textile, garment and related trades workers
+          Pelt, leather and shoe making trades workers
+     93   Manufacturing labourers
+
+U. Machine Operators
+
+     31   Optical and electronic machine operators
+          Printing and related trades operators
+     81   Plant and machine Operators (all types)
+     82   Plant and machine assemblers
+          Other machine operators and assemblers
+     83   Agricultural and other mobile plant operators
+
+V. Armed Forces
+
+     01   Armed forces
+
+W. Others - Not Elsewhere Stated
+
+     00   Never worked
+     96   Others not elsewhere classified
+     98   Don't Know
+     99   Missing
+
+
+Occupation Recodification
+
+     Variables V705 (Husband's occupation), V717 (Respondent's occupation) and
+MV717 (Males occupation) were created from variables V704, V716, MV716
+respectively, according to the following recodification schema:
+
+
+    99                   => missing;
+    0                    => Not working
+    11,12,21,22-24,31-34 => Professional, technical, manager
+    41,42                => Clerical
+    52                   => Sales
+    61,62,92             => Agriculture
+    01,51,91             => Services
+    72-74,81-83          => Skilled manual
+    71,93,96             => Unskilled manual
+    98                   => Don't know
+
+Male Recode Sections and Variables Unused
+
+MREC11    MV104     MV105     MV112
+
+MREC31    Methods 12-15 not used
+
+MREC32    MV375A
+
+MREC51    MV503
+
+MREC61    MV611     MV630J-L
+
+MREC75    MV752K-O  MV755L-O  MV760A    MV760L-P  MV763
+          MV754L-O  MV757     MV760F    MV760V-W
+
+MREC83    SMM5      SMM11-13  SMM15
+
+MREC84    SMMC3     SMMC4
+
+MREC85    MV850     MV860D    MV860Z    MV864J-P  MV869D
+          MV850A    MV860F    MV863D-F  MV868F    MV869J-L
+          MV851-853 MV860M    MV863W    MV868J-L  MV869P
+          MV856F-K  MV860P-Q  MV864D    MV868P    MV875
+          MV858F-J  MV860V-W
+
+Sections Added
+
+MREC91    Country specific single variables for men
+
+SLANGQ    Language of the questionnaire
+SMLANGI   Language of the interview
+SM112     Reason stop attending school
+SM222M    Month of birth of last child
+SM222Y    Year of birth of last child
+SM222C    Imputed date of birth of last birth (CMC)
+SM222F    Date flag for SM222C
+SM223     Is last child still alive
+SM311     Where sterilization took place
+SM312     Do you regret sterilization
+SM313     Why do you regret sterilization
+SM314M    Month of sterilization
+SM314Y    Year of sterilization
+SM314C    Date of sterilization (CMC)
+SM314F    Date flag for SM314C
+SM315     Where last method was obtained
+SM324     Who did you have sex with, last time
+SM325     Have had sex with wife last 4 weeks
+SM326     Times had sex with wife last 4 weeks
+SM327     Condom used with wife
+SM328     Have had sex with other than wife last 4 weeks
+SM329     How many persons had sex with last 4 weeks
+SM330     Times had sex with others than wife
+SM331     Condom used when had sex with others
+SM332     Have had sex with anyone in the last 4 weeks
+SM333     How many persons had sex with last 4 weeks
+SM334     Times had with someone
+SM335     Condom used when had sex
+SM402     Desire for future children
+SM405     Would be happy if wife become pregnant
+SM412     Would ever use method if married
+SM416     Ever recommended family planning to a friend
+SM417C    Acceptable family planning information by community based distributor
+SM418F    Heard of family planning by a community based distributor in the last
+          6 months
+SM421     Do you think that men that you know use family planning
+SM424     Discuss number of children with partner
+SM525     Where a person with AIDS should be cared
+Notes on Recode File
+
+1.   The Zimbabwe Men's Questionnaire was administered to all men age 15-54 living
+     in every 2.5 households in the ZDHS sample (i.e., a 40 percent subsample).
+     The Men's Questionnaire collected much of the same information found in the
+     Women's Questionnaire, but was shorter because it did not contain questions
+     on reproductive history and maternal and child health.
+
+2.   As in the case of women, the men's questionnaire also has the AIDS and
+     maternal mortality modules.  In order to keep consistency with the female
+     recode, sections MREC75, MREC83, MREC84 and MREC85, were included in the
+     file.  Those sections are exactly the same as the corresponding REC75, REC83,
+     REC84, and REC85 in the women recode.  However, the variable names are
+     different in order to allow the men's file to be used as an external file.
+
+3.   Because of the type sample used (as described above), all variables such as
+     domains (MV023), regions (MV024), sample strata (MV022) and ultimate area
+     selection probability (MV033), are the same as for the women.
+
+4.   Variables that refer to locality of the place of the interview (MV026 and
+     MV134) were created from the variable locality (main town/other urban/rural)
+     on the front page of the questionnaire.  However, the category "Main town"
+     was split into the categories "Capital, large city" if the interview was done
+     in Harare and "City" for the remaining cases.
+
+5.   Variable MV034(i) is a vector of up to 8 elements that holds the line number
+     of the wives of the respondent in the household schedule.  This variable
+     should be used when linking the male with the female recode files.  Variable
+     MV035 contains the number of entries in variable MV034 (up to 4 wives in the
+     same household).
+
+6.   In variables MV103 and MV141 (for non-dejure respondents) it is not possible
+     to differentiate "main town" from capital or large city.  Because of that
+     "main town" was classified with the code "1-city".
+
+7.   Unlike the core questionnaire, questions on ever use of methods in the
+     contraceptive table were asked only to those men who have ever had sex,
+     regardless of whether they know the method. In variables MV305(i) those
+     respondents who had never had sex but who know the method, were assigned code
+     "0-never used'.
+
+8.   Questions about family planning messages on the media (MV384x) refer to a
+     period of six months.  In the core questionnaire those question refer to the
+     last few months.
+
+9.   Question M412 is used to construct variable MV602.  When constructing MV602
+     those respondents who are sterilized or whose wives are sterilized are
+     classified under code 4 (sterilized).  In order to keep the original values,
+     question M412 was also kept as a country specific variable.
+
+10.  Variable MV603 doesn't fully agreed with variable MV616 because there are 3
+     men who are sterilized (male or female), but still want more children.
+
+11.  In variable MV740 the original category "2-communal/resettlement land" from
+     questions M124 was recoded as "family land".  The reason is that this land
+     is assigned by the government and passes within the family from generation
+     to generation, although there are no documents of ownership.
+
+12.  Question M415 is used to construct variable MV612.  The original category "No
+     opinion" was recoded in MV612 as "Don't know".
+
+13.  Maternal mortality variable SMM14 (number of sibling's children) was asked
+     only for those siblings who died as a result of a pregnancy or child delivery
+     complication.  Variable SMM10 was asked of siblings whose death was related
+     to pregnancy or delivery, unlike the core questionnaire that asks the
+     question of those women who died while pregnant or within the two months
+     after giving birth.
+
+14.  The occupation codes for MV716 and the recoding to create MV717 are the same
+     as those described for the women's recode.
+
+Inconsistencies in the file
+
+1.   There are 13 cases with a duration of interview less than 10 minutes,
+     including one with a duration of 0 minutes.
+
+2.   There are 13 cases of men who married before they were 12 years old.
+
+Extension of Standard Ranges
+
+Variables      Ranges
+
+MV511          8-64
+MV36           code 99999995 "No cash earned"
+
+

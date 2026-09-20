@@ -1,0 +1,1197 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}
+{\f14\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f28\fnil\fcharset0\fprq2{\*\panose 00000400000000000000}WP TypographicSymbols;}{\f268\froman\fcharset238\fprq2 Times New Roman CE;}{\f269\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f271\froman\fcharset161\fprq2 Times New Roman Greek;}{\f272\froman\fcharset162\fprq2 Times New Roman Tur;}{\f273\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f274\froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f275\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f276\fswiss\fcharset238\fprq2 Arial CE;}{\f277\fswiss\fcharset204\fprq2 Arial Cyr;}{\f279\fswiss\fcharset161\fprq2 Arial Greek;}{\f280\fswiss\fcharset162\fprq2 Arial Tur;}
+{\f281\fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f282\fswiss\fcharset178\fprq2 Arial (Arabic);}{\f283\fswiss\fcharset186\fprq2 Arial Baltic;}{\f284\fmodern\fcharset238\fprq1 Courier New CE;}{\f285\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f287\fmodern\fcharset161\fprq1 Courier New Greek;}{\f288\fmodern\fcharset162\fprq1 Courier New Tur;}{\f289\fmodern\fcharset177\fprq1 Courier New (Hebrew);}{\f290\fmodern\fcharset178\fprq1 Courier New (Arabic);}
+{\f291\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red255\green255\blue255;}{\stylesheet{
+\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\s1\ql \li0\ri0\keepn\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\outlinelevel0\rin0\lin0\itap0 \b\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\sbasedon0 \snext0 heading 1;}{\s4\qj \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \b\fs28\ul\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\qj \fi-720\li720\ri0\nowidctlpar\tx720\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext15 1MENU;}{\s16\qj \fi-720\li1440\ri0\nowidctlpar\tx720\tx1440\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext16 2MENU;}{\s17\qj \fi-720\li2160\ri0\nowidctlpar\tx720\tx1440\tx2160\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext17 3MENU;}{
+\s18\qj \fi-720\li2880\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext18 4MENU;}{\s19\qj \fi-720\li3600\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext19 5MENU;}{\s20\qj \fi-720\li4320\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\faauto\rin0\lin4320\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext20 6MENU;}{\s21\qj \fi-720\li5040\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext21 
+7MENU;}{\s22\qj \fi-720\li5760\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext22 8MENU;}{\s23\qj \fi-720\li720\ri0\nowidctlpar
+\tx720\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext23 1DIR;}{\s24\qj \fi-720\li1440\ri0\nowidctlpar\tx720\tx1440\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext24 2DIR;}{
+\s25\qj \fi-720\li2160\ri0\nowidctlpar\tx720\tx1440\tx2160\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext25 3DIR;}{\s26\qj \fi-720\li2880\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext26 4DIR;}{\s27\qj \fi-720\li3600\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext27 5DIR;}{
+\s28\qj \fi-720\li4320\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext28 6DIR;}{\s29\qj \fi-720\li5040\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext29 7DIR;}{\s30\qj \fi-720\li5760\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext30 8DIR;}{\s31\qj \fi-720\li720\ri0\nowidctlpar\tx720\faauto\rin0\lin720\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext31 1DL;}{\s32\qj \fi-720\li1440\ri0\nowidctlpar\tx720\tx1440\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext32 2DL;}{
+\s33\qj \fi-720\li2160\ri0\nowidctlpar\tx720\tx1440\tx2160\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext33 3DL;}{\s34\qj \fi-720\li2880\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext34 4DL;}{\s35\qj \fi-720\li3600\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext35 5DL;}{
+\s36\qj \fi-720\li4320\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext36 6DL;}{\s37\qj \fi-720\li5040\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext37 7DL;}{\s38\qj \fi-720\li5760\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext38 8DL;}{\s39\qj \fi-720\li720\ri0\nowidctlpar\tx720\faauto\rin0\lin720\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext39 1OL;}{\s40\qj \fi-720\li1440\ri0\nowidctlpar\tx720\tx1440\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext40 2OL;}{
+\s41\qj \fi-720\li2160\ri0\nowidctlpar\tx720\tx1440\tx2160\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext41 3OL;}{\s42\qj \fi-720\li2880\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext42 4OL;}{\s43\qj \fi-720\li3600\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext43 5OL;}{
+\s44\qj \fi-720\li4320\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext44 6OL;}{\s45\qj \fi-720\li5040\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext45 7OL;}{\s46\qj \fi-720\li5760\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext46 8OL;}{\s47\qj \fi-720\li720\ri0\nowidctlpar\tx720\faauto\rin0\lin720\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext47 1UL;}{\s48\qj \fi-720\li1440\ri0\nowidctlpar\tx720\tx1440\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext48 2UL;}{
+\s49\qj \fi-720\li2160\ri0\nowidctlpar\tx720\tx1440\tx2160\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext49 3UL;}{\s50\qj \fi-720\li2880\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext50 4UL;}{\s51\qj \fi-720\li3600\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext51 5UL;}{
+\s52\qj \fi-720\li4320\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext52 6UL;}{\s53\qj \fi-720\li5040\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext53 7UL;}{\s54\qj \fi-720\li5760\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext54 8UL;}{\s55\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\f1\fs36\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext55 doc title;}{\s56\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs32\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext56 major head;}{
+\s57\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext57 minor head;}{\*\cs58 \additive \f2 literal HTML;}{\s59\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext59 sub head;}{\s60\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext60 preformatted;}{
+\s61\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext61 line break;}{\*\cs62 \additive blink;}{\s63\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\f1\fs36\cf15\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext63 title only;}{\s64\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f6\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext64 listing;}{
+\s65\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f2\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext65 example HTML;}{\s66\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext66 
+address;}{\*\cs67 \additive \f2 monospaced;}{\*\cs68 \additive citation;}{\*\cs69 \additive definition;}{\*\cs70 \additive variable;}{\*\cs71 \additive \f2 keyboard key;}{\*\cs72 \additive \f2 sample;}{\*\cs73 \additive \f2 code;}{\*\cs74 \additive 
+strong;}{\*\cs75 \additive emphasized;}{\s76\ql \li720\ri0\nowidctlpar\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext76 block quote;}{\s77\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext77 sub sub sub;}{\s78\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext78 sub sub head;}{
+\s79\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs36\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext79 doc head;}{\*\cs80 \additive \cf2 SYS_HYPERTEXT;}{\s81\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext81 footnote text;}{\*\cs82 \additive \super \sbasedon10 footnote reference;}{\s83\ql \fi-1920\li1920\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin1920\itap0 
+\fs24\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 \sbasedon0 \snext83 Body Text Indent 2;}}{\*\listtable{\list\listtemplateid997773542{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440
+{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid241254233}{\list\listtemplateid997773542{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold
+\levelspace0\levelindent1440{\leveltext\'01\u-4063 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li1440 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440
+{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid373503322}{\list\listtemplateid174471112\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li1800\jclisttab\tx1800 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li2520\jclisttab\tx2520 }{\listlevel\levelnfc4\levelnfcn4
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc2
+\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li3960\jclisttab\tx3960 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li4680\jclisttab\tx4680 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5400
+\jclisttab\tx5400 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-180\li6120\jclisttab\tx6120 }{\listname ;}\listid527185869}{\list\listtemplateid1111499992\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703
+\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713
+\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li1800\jclisttab\tx1800 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li2520\jclisttab\tx2520 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360
+\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li3960\jclisttab\tx3960 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li4680\jclisttab\tx4680 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5400\jclisttab\tx5400 }{\listlevel\levelnfc2\levelnfcn2\leveljc2
+\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li6120\jclisttab\tx6120 }{\listname ;}\listid573860935}
+{\list\listtemplateid997773542{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4063 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li1440 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }
+{\listname ;}\listid616301087}{\list\listtemplateid-1278993842\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li720\jclisttab\tx720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1440\jclisttab\tx1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}
+\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li2160\jclisttab\tx2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers
+\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li2880\jclisttab\tx2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713
+\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3600\jclisttab\tx3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li4320\jclisttab\tx4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5040\jclisttab\tx5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360
+\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5760\jclisttab\tx5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li6480\jclisttab\tx6480 }{\listname ;}\listid721446627}{\list\listtemplateid997773542{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc255
+\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1086074918}{\list\listtemplateid306840710\listhybrid{\listlevel\levelnfc0\levelnfcn0
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc4\levelnfcn4
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc2
+\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li1800\jclisttab\tx1800 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li2520\jclisttab\tx2520 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3240
+\jclisttab\tx3240 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-180\li3960\jclisttab\tx3960 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1 \fi-360\li4680\jclisttab\tx4680 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5400\jclisttab\tx5400 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}
+\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li6120\jclisttab\tx6120 }{\listname ;}\listid1094932482}{\list\listtemplateid1607242326{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li1440 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li2880 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'02.;}{\levelnumbers
+\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'03.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li5760 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1 \fi-1440\li7200 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-1440\li8640 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li10080 }
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li11520 }{\listlevel\levelnfc2
+\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1101606071}
+{\list\listtemplateid-57240300\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1800\jclisttab\tx1800 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li2520\jclisttab\tx2520 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360
+\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3960\jclisttab\tx3960 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li4680\jclisttab\tx4680 }{\listlevel\levelnfc23\levelnfcn23
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li5400\jclisttab\tx5400 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li6120\jclisttab\tx6120 }
+{\listname ;}\listid1112936695}{\list\listtemplateid997773542{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1137187035}{\list\listtemplateid997773542{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4063 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li1440 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1178883200}{\list\listtemplateid1171006410\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1800\jclisttab\tx1800 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li2520\jclisttab\tx2520 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc4\levelnfcn4
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3960\jclisttab\tx3960 }{\listlevel\levelnfc2
+\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li4680\jclisttab\tx4680 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5400\jclisttab\tx5400 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li6120
+\jclisttab\tx6120 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-180\li6840\jclisttab\tx6840 }{\listname ;}\listid1243106276}{\list\listtemplateid926705680\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689
+\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext
+\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1800\jclisttab\tx1800 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li2520\jclisttab\tx2520 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3960\jclisttab\tx3960 }{\listlevel\levelnfc23\levelnfcn23
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li4680\jclisttab\tx4680 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li5400\jclisttab\tx5400 }
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li6120
+\jclisttab\tx6120 }{\listname ;}\listid1267075799}{\list\listtemplateid1607242326{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'00.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li1440 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1 \fi-1440\li2880 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-1440\li4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li5760 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li7200 }{\listlevel\levelnfc0\levelnfcn0
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li8640 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li10080 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelold\levelspace0\levelindent1440{\leveltext\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1290281770}{\list\listtemplateid1064701060\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc23\levelnfcn23
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1800\jclisttab\tx1800 }
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li2520
+\jclisttab\tx2520 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-360\li3240\jclisttab\tx3240 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3960\jclisttab\tx3960 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li4680\jclisttab\tx4680 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2
+\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li5400\jclisttab\tx5400 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li6120\jclisttab\tx6120 }{\listname ;}\listid1411389978}{\list\listtemplateid997773542{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4063 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li1440 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1580408100}{\list\listtemplateid-2051121142{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold
+\levelspace0\levelindent0{\leveltext\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext
+\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext\'02\'03.;}{\levelnumbers\'01;}\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold
+\levelspace0\levelindent0{\leveltext\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent0{\leveltext
+\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 }{\listname ;}\listid1635133904}{\list\listtemplateid579119700\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360
+\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1080\jclisttab\tx1080 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li1800\jclisttab\tx1800 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li2520\jclisttab\tx2520 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3240\jclisttab\tx3240 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li3960
+\jclisttab\tx3960 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 
+\fi-360\li4680\jclisttab\tx4680 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li5400\jclisttab\tx5400 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f14\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li6120\jclisttab\tx6120 }{\listname ;}\listid1654329545}{\list\listtemplateid997773542{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0
+{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440
+{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext
+\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1821074580}{\list\listtemplateid997773542{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold
+\levelspace0\levelindent1440{\leveltext\'01\u-4063 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li1440 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0
+\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440
+{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1845826321}{\list\listtemplateid1096308536\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li720\jclisttab\tx720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li1440\jclisttab\tx1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2
+\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li2160\jclisttab\tx2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li2880\jclisttab\tx2880 }{\listlevel\levelnfc4\levelnfcn4
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li3600\jclisttab\tx3600 }{\listlevel\levelnfc2
+\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-180\li4320\jclisttab\tx4320 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5040\jclisttab\tx5040 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 \fi-360\li5760
+\jclisttab\tx5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1 
+\fi-180\li6480\jclisttab\tx6480 }{\listname ;}\listid1859998672}{\list\listtemplateid997773542{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4062 ?;}{\levelnumbers;}\f28
+\chbrdr\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li2880 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4001 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li4320 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4061 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li5760 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4054 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li7200 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-4053 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li8640 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3947 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li10080 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\u-3976 ?;}{\levelnumbers;}\f28\chbrdr
+\brdrnone\brdrcf1 \chshdng0\chcfpat1\chcbpat1\fbias0 \fi-1440\li11520 }{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent1440{\leveltext\'01\'08;}{\levelnumbers\'01;}\chbrdr\brdrnone\brdrcf1 
+\chshdng0\chcfpat1\chcbpat1 \fi-1440\li12960 }{\listname ;}\listid1896700121}}{\*\listoverridetable{\listoverride\listid1290281770\listoverridecount0\ls1}{\listoverride\listid1101606071\listoverridecount0\ls2}{\listoverride\listid1635133904
+\listoverridecount0\ls3}{\listoverride\listid1580408100\listoverridecount0\ls4}{\listoverride\listid1178883200\listoverridecount0\ls5}{\listoverride\listid1845826321\listoverridecount0\ls6}{\listoverride\listid616301087\listoverridecount0\ls7}
+{\listoverride\listid373503322\listoverridecount0\ls8}{\listoverride\listid721446627\listoverridecount0\ls9}{\listoverride\listid1094932482\listoverridecount0\ls10}{\listoverride\listid241254233\listoverridecount0\ls11}{\listoverride\listid1821074580
+\listoverridecount0\ls12}{\listoverride\listid1137187035\listoverridecount0\ls13}{\listoverride\listid1086074918\listoverridecount0\ls14}{\listoverride\listid1896700121\listoverridecount0\ls15}{\listoverride\listid1411389978\listoverridecount0\ls16}
+{\listoverride\listid1267075799\listoverridecount0\ls17}{\listoverride\listid1112936695\listoverridecount0\ls18}{\listoverride\listid1654329545\listoverridecount0\ls19}{\listoverride\listid1859998672\listoverridecount0\ls20}{\listoverride\listid1243106276
+\listoverridecount0\ls21}{\listoverride\listid527185869\listoverridecount0\ls22}{\listoverride\listid573860935\listoverridecount0\ls23}}{\info{\author themme}{\operator bjames}{\creatim\yr2002\mo6\dy10\hr13\min8}{\revtim\yr2004\mo5\dy3\hr12\min25}
+{\printim\yr2002\mo6\dy12\hr11\min31}{\version115}{\edmins2360}{\nofpages15}{\nofwords6312}{\nofchars35979}{\*\company ORCMacro}{\nofcharsws44184}{\vern8269}}\margl1440\margr1440\margt720\margb720 
+\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind1\viewscale100\nolnhtadjtbl \fet0\sectd 
+\sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pnf28\pnstart1 {\pntxta ?}}{\*\pnseclvl2\pnf28\pnstart1 {\pntxta ?}}{\*\pnseclvl3\pnstart1 {\pntxta _}}{\*\pnseclvl4\pnf28\pnstart1 {\pntxta ?}}{\*\pnseclvl5\pnstart1 {\pntxta *}}{\*\pnseclvl6\pnstart1 
+{\pntxta +}}{\*\pnseclvl7\pnstart1 {\pntxta \'95}}{\*\pnseclvl8\pnstart1 {\pntxta x}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \s55\qc \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs36\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\f0\fs28 
+Individual Recode Documentation
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs28 
+\par {\*\bkmkstart A1}Ethiopia{\*\bkmkend A1} (}{\b\i\fs28 MEASURE/DHS+}{\b\fs28 )     }{\b\fs28 Version 1 Doc 01\tab \tab \tab \tab ET4
+\par }{
+\par }\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl
+\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Name of Survey}{\fs22 \cell Demographic and Health Survey\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\trowd 
+\trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Executing Agency }{\fs22 \cell National Statistical Office\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 
+Year of Fieldwork}{\fs22 \cell 2000\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard 
+\ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Universe}{\fs22 \cell All women 15-49
+\par All men 15-59 in selected households \cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard 
+\ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Coverage}{\fs22 \cell National, 100%\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd 
+\trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Size}{\fs22 \cell 15367 women\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\fs22 \cell 
+14072 households\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone 
+\clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {
+\fs22 \cell 2607 men\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb
+\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard 
+\ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Weights}{\fs22 \cell Weighted by region and urban/rural residence\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd 
+\trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Contents}{\fs22 \cell 
+Measure/DHS+, birth history with an additional history of terminated pregnancy since Meserem 1987, AIDS and other sexually transmitted diseases,  maternal mortality and female circumcision\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Language}{
+\fs22 \cell Amarigna, Oromigna, Tigrigna, Somaligna and Afarigna\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt
+\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard 
+\ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Anthropometry}{\fs22 \cell Children aged 0-59 months\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd 
+\trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Calendar}{\fs22 \cell No\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 
+Supplementary Data Files}{\fs22 \cell Household recode
+\par Male recode\cell }\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr
+\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\cell \cell 
+}\pard \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\cell }\pard\plain 
+\s81\ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cell }\pard\plain \ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\trowd 
+\trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone 
+\clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\pard \ql \li0\ri0\nowidctlpar\intbl\faauto\rin0\lin0 {\b\fs22 Recode Structure}{\fs22 \cell DHSIV\cell }\pard 
+\ql \li0\ri0\widctlpar\intbl\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\trowd \trgaph57\trrh403\trkeep\trftsWidth1\trpaddl57\trpaddr57\trpaddfl3\trpaddfr3 \clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth2160 \cellx2160\clvertalt\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth7200 \cellx9360\row }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\b\fs22 
+Supplementary Data}{\fs22 \tab Household members:\tab 68642\tab \tab \tab (Weighted: 70680.4)
+\par }{\b\fs22 Files}{\fs22 \tab \tab \tab Couples\tab \tab   1271\tab \tab \tab (Weighted:   1355.1)
+\par \tab \tab \tab Children < 60 months\tab 10873\tab \tab \tab (Weighted:   2260.2)
+\par }\pard\plain \s83\ql \fi-2160\li2160\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin2160\itap0 \fs24\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\fs22 
+\par }{\b\fs22 Recode Structure}{\fs22   \tab DHSIV
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs22 
+\par }\pard\plain \s4\qj \fi720\li720\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin720\itap0 \b\fs28\ul\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\b0\fs22\ulnone \tab \tab \tab Flat\tab \tab \tab Rectangular
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs22 Record size and}{\fs22  \tab }{\fs22\ul Type of file}{\fs22 \tab }{\fs22\ul Length}{\fs22  \tab \tab  }{\fs22\ul Maximum}{\fs22 
+\tab }{\fs22\ul Records per case
+\par }\pard\plain \s4\qj \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \b\fs28\ul\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\fs22\ulnone records per case}{\b0\fs22\ulnone \tab Household\tab 2250\tab \tab 129
+\tab \tab \tab 57
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs22 in rectangular file}{\fs22 \tab Members\tab  427\tab \tab 231\tab \tab \tab 2
+\par }\pard\plain \s4\qj \fi720\li720\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin720\itap0 \b\fs28\ul\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\b0\fs22\ulnone \tab Women\tab \tab 5838\tab \tab 224\tab \tab \tab 104
+
+\par }\pard\plain \ql \fi720\li1440\ri0\nowidctlpar\faauto\rin0\lin1440\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs22 Men\tab \tab 1119\tab \tab 295\tab \tab \tab 10 
+\par Couples\tab 3105\tab \tab 295\tab \tab \tab 43
+\par Children\tab 1382\tab \tab 492\tab \tab \tab 5
+\par }\pard\plain \s83\ql \fi-2160\li2160\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin2160\itap0 \fs24\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\fs22 
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs22 
+\par }\pard\plain \s83\ql \fi-2160\li2160\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin2160\itap0 \fs24\lang1034\langfe1033\cgrid\langnp1034\langfenp1033 {\b\fs22 Maximum entries in:
+\par Household schedule}{\fs22 \tab 20
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\page 
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b Sections and Variables Unused
+\par }{\f0\fs20 \sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}
+{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b 
+\par }\pard\plain \s59\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 HOUSEHOLD:
+\par }{\f0\fs20 
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 RECH0}{\fs20 \tab HV040}{\field\fldedit{\*\fldinst {\fs20  GOTOBUTTON note1 }}{\fldrslt }}{\fs20 
+\par }{\b\fs20 RECH1}{\fs20 \tab HV115\tab HV116
+\par }\pard \s60\ql \fi-8640\li8640\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8640\itap0 {\b\fs20 RECH2}{\fs20 \tab HV209\tab 
+HV214\tab HV228\tab HV230\tab HV231\tab HV231
+\par }\pard \s60\ql \fi-4320\li4320\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin4320\itap0 {\fs20 \tab HV232\tab HV233\tab HV234
+\tab HV234}{\cs82\fs20\super \chftn {\footnote \pard\plain \s81\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\cs82\super \chftn }{
+ HV234 (test salt for iodine) not used because the test used in Ethiopia had the following categories: 0, 25, 50 and 75 ppm and HV234 has: 0, 7, 15 and 30 ppm. Please refer to SH35  }}}{\fs20 
+\par }{\b\fs20 RECH3\tab -
+\par RECH4\tab -
+\par }\pard \s60\ql \fi-8640\li8640\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8640\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 
+RECH5}{\fs20\lang1036\langfe1033\langnp1036 \tab HA35\tab HA50\tab HA51\tab HA52\tab HA53\tab HA54
+\par \tab HA55\tab HA56\tab HA57\tab HA58
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 RECH6}{\fs20\lang1036\langfe1033\langnp1036 \tab HC51\tab HC52\tab HC53\tab HC55\tab HC56\tab HC57
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\fs20\lang1036\langfe1033\langnp1036 \tab }{\fs20 HC58
+
+\par 
+\par }{\b\f1\fs20 FEMALE INDIVIDUAL:
+\par }{\fs20 \sect }\sectd \margrsxn1296\sbknone\linex0\sectdefaultcl \pard\plain \s59\ql \li0\ri0\nowidctlpar
+\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 \f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par }\pard\plain \s60\ql \fi-5760\li5760\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 REC01}{\fs20 \tab V017\tab V040\tab 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 REC11}{
+\fs20\lang1036\langfe1033\langnp1036 \tab V122\tab V128\tab V156\tab V162\tab V163\tab V164
+\par \tab V165\tab V166
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 REC21\tab -}{\fs20\lang1036\langfe1033\langnp1036 
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 
+REC22}{\fs20\lang1036\langfe1033\langnp1036 \tab V235\tab V239\tab V240\tab V241\tab V242\tab V243
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 REC31\tab -}{
+\fs20\lang1036\langfe1033\langnp1036 
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 
+REC32}{\fs20\lang1036\langfe1033\langnp1036 \tab V315\tab V316\tab V317\tab V318\tab V319\tab V320\tab 
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 \tab }{\fs20 V321\tab V322\tab V337\tab V359\tab V360\tab V375A
+\par \tab V3A00A\tab V3A00B\tab V3A00C\tab V3A00D\tab V3A00E\tab V3A00F
+\par \tab V3A00G\tab V3A00H\tab V3A00I\tab V3A00J\tab V3A00K\tab V3A00L
+\par \tab V3A00M\tab V3A00N\tab V3A00O\tab V3A00P\tab V3A00Q\tab V3A00R
+\par \tab V3A00S\tab V3A00T\tab V3A00U\tab V3A00V\tab V3A00W\tab V3A00X
+\par \tab V3A00Y\tab V3A00Z\tab V3A01\tab V3A02\tab V3A03\tab V3A04
+\par \tab V3A05\tab V3A06\tab V3A08U\tab V3A08V\tab V3A08W
+\par }\pard \s60\ql \fi-7200\li7200\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin7200\itap0 {\b\fs20 REC41}{\fs20 \tab M2A\tab M2B
+\tab M2C\tab M2E\tab M2H\tab M2I
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 \tab M2J\tab M2L\tab M2M\tab M3A
+\tab M3B\tab M3C
+\par }\pard \s60\ql \fi-4320\li5760\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin5760\itap0 {\fs20 M3E\tab M3I\tab M3J\tab M3L\tab 
+M3M\tab M37B
+\par }\pard \s60\ql \fi-5760\li5760\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin5760\itap0 {\fs20 \tab M37D\tab M37E\tab M37F\tab 
+M37G\tab M37I\tab M37J
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 \tab }{
+\fs20\lang1036\langfe1033\langnp1036 M37K\tab M37M\tab M37N\tab M37P\tab M37S\tab M37T
+\par \tab M37X\tab M37Z\tab M37XX\tab M37XY\tab M37XZ\tab M40B
+\par }\pard \s60\ql \fi-5760\li5760\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin5760\itap0 {\fs20\lang1036\langfe1033\langnp1036 
+\tab }{\fs20 M40D\tab M40E\tab M40F\tab M40G\tab M40I\tab M40J
+\par \tab }{\fs20\lang1036\langfe1033\langnp1036 M40K\tab M40M\tab M40N\tab M40P\tab M40S\tab M40T
+\par }\pard \s60\ql \fi-7020\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20\lang1036\langfe1033\langnp1036 
+M40X\tab M40Z\tab M40XX\tab M40XY\tab M40XZ\tab M45
+\par }{\fs20 M46\tab M49E\tab M49F\tab M49G\tab M55A\tab M55B
+\par M55C\tab M55D\tab M55E\tab M55F\tab M55G\tab M55H
+\par M55I\tab M55J\tab M55K\tab M55L\tab M55M\tab M55N
+\par M55X\tab M55Z\tab M56
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20 REC42\tab }{\fs20 V420\tab 
+{\*\bkmkstart S001}{\*\bkmkend S001}V421\tab V452A\tab V452B\tab V452C\tab V453
+\par \tab V454\tab V455\tab V456\tab V457\tab V458\tab V460
+\par \tab V461\tab V463A\tab V463B\tab V463C\tab V463D\tab V463E
+\par \tab V463F\tab V463G\tab V463Z\tab V464\tab V467A\tab V467B
+\par \tab V467C\tab V467D\tab V467E\tab V467F\tab V467G\tab V469B
+\par \tab V469D\tab V469E\tab V469F\tab V469G\tab V469I\tab V469J
+\par \tab }{\fs20\lang1036\langfe1033\langnp1036 V469K\tab V469M\tab V469N\tab V469P\tab V469S\tab V469T
+\par \tab V469X\tab V469Z\tab V469XX\tab V469XY\tab V469XZ\tab V470B
+\par \tab }{\fs20 V470D\tab V470E\tab V470F\tab V470G\tab V470I\tab V470J
+\par \tab }{\fs20\lang1036\langfe1033\langnp1036 V470K\tab V470M\tab V470N\tab V470P\tab V470S\tab V470T
+\par \tab V470X\tab V470Z\tab V470XX\tab V470XY\tab V470XZ
+\par }\pard \s60\ql \fi-7200\li7200\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin7200\itap0 {\b\fs20 REC43}{\fs20 \tab H12D\tab H12H
+\tab H12I\tab H12M\tab H12R\tab H12V
+\par }{\b\fs20 \tab }{\fs20 H12W\tab H15A\tab H15E\tab H15F\tab H15G\tab H15H
+\par \tab H32D\tab H32H\tab H32I\tab H32M\tab H32R\tab H32V
+\par \tab H32W\tab H33\tab H33D\tab H33M\tab H33Y\tab H36D
+\par \tab H36E\tab H36F\tab H37G\tab H37H
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20 REC51\tab -}{\fs20 
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20\lang1043\langfe1033\langnp1043 
+REC61}{\fs20\lang1043\langfe1033\langnp1043 \tab V630J\tab V630K\tab V630L\tab V630M\tab V630N\tab V630O
+\par \tab }{\fs20 V633A\tab V633B\tab V633C\tab V633D\tab V633E\tab V633F
+\par \tab V633G
+\par }{\b\fs20 REC71}{\fs20 \tab V742\tab V743A\tab V743B\tab V743C\tab V743D\tab V743E
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 REC75}{\fs20\lang1036\langfe1033\langnp1036 \tab V754A\tab V754T\tab V754U\tab V754V\tab V754JP\tab V754WP
+\par \tab }{\fs20 V759A\tab V759B\tab V759C\tab V759D\tab V759E\tab V759F
+\par }\pard \s60\ql \fi-7020\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 V759G\tab V759H\tab V759I\tab 
+V761C\tab V762AG\tab V762AH
+\par V762AI\tab V762AR\tab V762AT\tab V762AW\tab V762BA\tab V762BB
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 \tab V762BC\tab V762BD\tab V762BE
+\tab V762BF\tab V762BG\tab V762BH
+\par }\pard \s60\ql \fi-7020\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 V762BI\tab V762BJ\tab V762BK\tab 
+V762BL\tab V762BM\tab V762BN
+\par V762BO\tab V762BP\tab V762BQ\tab V762BR\tab V762BS\tab V762BT
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 \tab V762BU\tab V762BV\tab V762BW
+\tab V762BX\tab V762BZ\tab V763A
+\par \tab }{\fs20\lang1043\langfe1033\langnp1043 V763B\tab V763C\tab V763D\tab V763E\tab V763F\tab V763G
+\par }\pard \s60\ql \fi-7020\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\fs20 V765A\tab V765B\tab V765C\tab 
+V767C\tab V768C\tab V769A
+\par V770\tab V770A\tab V770B\tab V770C\tab V770D\tab V770E
+\par V770F\tab V770G\tab V770H\tab V770I\tab V771\tab V772
+\par V773A\tab V773B\tab V773C\tab V773D\tab V773E\tab V773F
+\par V773X\tab V779\tab V780\tab V781\tab V782\tab V783
+\par V784\tab V785I\tab V785Q\tab V786I\tab V786Q\tab V787
+\par }{\fs20\lang1036\langfe1033\langnp1036 V788\tab V789\tab V790
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20\lang1036\langfe1033\langnp1036 REC81\tab -}{
+\fs20\lang1036\langfe1033\langnp1036 
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 REC83\tab }{\fs20\lang1036\langfe1033\langnp1036 MM5\tab MM10\tab MM11\tab MM12\tab MM13\tab MM15\tab 
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 REC84\tab }{\fs20\lang1036\langfe1033\langnp1036 MMC3\tab MMC4
+\par }{\b\fs20\lang1036\langfe1033\langnp1036 RECFG}{\fs20\lang1036\langfe1033\langnp1036 \tab FG104\tab FG105\tab FG107\tab FG108\tab FG112\tab FG113
+\par \tab }{\fs20 FG117A\tab FG117B\tab FG117C\tab FG117D\tab FG118\tab FG119A
+\par \tab FG119B\tab FG119C\tab FG119D\tab FG119E\tab FG119F\tab FG119G
+\par \tab FG119H\tab FG119I\tab FG119J\tab FG119X\tab FG119Y\tab FG119Z
+\par \tab FG120A\tab FG120B\tab FG120C\tab FG120D\tab FG120E\tab FG120F
+\par \tab FG120G\tab FG120H\tab FG120I\tab FG120J\tab FG120X\tab FG120Y
+\par \tab FG120Z\tab FG121\tab FG122\tab FG124
+\par }\pard \s60\ql \fi-1440\li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\fs20 \tab \tab 
+\par \sect }\sectd \sbknone\linex0\sectdefaultcl \pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\f1\fs20 MALE INDIVIDUAL:
+\par }{\fs20 \sect }\sectd \margrsxn1296\sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl2\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl4\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl5
+\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl6\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl7\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl8\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \s59\ql \li0\ri0\nowidctlpar
+\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 \f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par }\pard\plain \s60\ql \fi-5760\li5760\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 MREC01}{\fs20 \tab MV034A\tab \tab 
+\par }{\b\fs20 MREC11}{\fs20 \tab MV156\tab MV167\tab MV168\tab MV463A\tab MV463B\tab MV463C
+\par }{\b\fs20 \tab }{\fs20\lang1043\langfe1033\langnp1043 MV463D\tab MV463E\tab MV463F\tab MV463G\tab MV463Z\tab MV464
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20 MREC22}{\fs20 \tab MV202\tab 
+MV203\tab MV204\tab MV205\tab MV206\tab MV207
+\par \tab MV212\tab MV217\tab MV245\tab MV246
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20 MREC31\tab -}{\fs20 
+\par }\pard \s60\ql \fi-8460\li8460\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin8460\itap0 {\b\fs20 MREC32}{\fs20 \tab MV312C\tab 
+MV313C\tab MV363\tab MV375A\tab MV375B\tab MV375C
+\par }{\b\fs20 \tab }{\fs20 MV376A\tab MV396\tab MV3B0\tab MV3B1\tab MV3B2A\tab MV3B2B
+\par \tab MV3B2C\tab MV3B2D\tab MV3B2E\tab MV3B2F\tab MV3B2G\tab MV3B2H
+\par \tab MV3B2I\tab MV3B2J\tab MV3B2K\tab MV3B2L\tab MV3B2X\tab MV3B2Z
+\par \tab MV3B3A\tab MV3B3B\tab MV3B3C\tab MV3B3D\tab MV3B3E\tab MV3B3F
+\par \tab MV3B3G\tab MV3B3H\tab MV3B3I\tab MV3B3J\tab MV3B3 K\tab MV3B3L
+\par \tab MV3B3M\tab MV3B3N\tab MV3B3X\tab MV3B3Z\tab MV3B11\tab MV3B12A
+\par \tab MV3B12B\tab MV3B12C\tab MV3B12D\tab MV3B12E\tab MV3B12F\tab MV3B12G
+\par \tab MV3B12H\tab MV3B12X\tab MV3B13\tab MV3B14A\tab MV3B14B\tab MV3B14C
+\par \tab MV3B14D\tab MV3B14E\tab MV3B14F\tab MV3B14G\tab MV3B14H\tab MV3B14I
+\par \tab MV3B14I\tab MV3B14J\tab MV3B14X\tab MV3B15A\tab MV3B15B\tab MV3B15C
+\par \tab MV3B15D\tab MV3B15E\tab MV3B15F\tab MV3B15G\tab MV3B15H\tab MV3B15I
+\par \tab MV3B15J\tab MV3B15K\tab MV3B15L\tab MV3B15M\tab MV3B15X\tab MV3B15Y
+\par \tab MV3B16\tab MV3B17\tab MV3B18\tab MV3B19\tab MV3B20\tab MV3B21A
+\par \tab MV3B21B\tab MV3B21C\tab MV3B21D\tab MV3B21E\tab MV3B22\tab MV3B23A
+\par \tab MV3B23B\tab MV3B23C\tab MV3B23D\tab MV3B23E\tab MV3B23F\tab MV3B23G
+\par \tab MV3B23H\tab MV3B23I\tab MV3B23J\tab MV3B23K\tab MV3B23X\tab MV3B24A
+\par \tab MV3B24B\tab MV3B24C\tab MV3B24D\tab MV3B24E\tab MV3B24F\tab MV3B24G
+\par \tab MV3B24H\tab MV3B24I\tab MV3B24J\tab MV3B24K\tab MV3B24L\tab MV3B24X
+\par \tab MV3B25A\tab MV3B25B\tab MV3B25C\tab MV3B25D
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20 MREC51\tab }{\fs20 MV534A\tab MV538\tab MV539
+
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 {\b\fs20 MREC61\tab }{\fs20 MV610\tab 
+MV611\tab MV621\tab MV630A \tab MV630B \tab MV630C MV630D\tab MV630E \tab MV630F \tab MV630G\tab MV630H \tab MV630I MV630J \tab MV630K \tab MV630L \tab MV630M \tab MV630N \tab MV630O MV630X\tab MV631\tab MV633A\tab MV633B\tab MV633C\tab MV633D
+\par }{\b\fs20 \tab }{\fs20 MV633E\tab MV633F\tab MV633G\tab MV634A\tab MV634B\tab MV634C
+\par \tab MV634D\tab MV635\tab MV636\tab MV637\tab MV638\tab MV640\tab 
+\par \tab MV641\tab MV642\tab MV643\tab MV644\tab MV645\tab MV646
+\par \tab MV647\tab MV648\tab MV649A\tab MV649B\tab MV649C\tab 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\b\fs20 MREC71\tab }{\fs20 MV719\tab MV721\tab MV732
+\tab MV733\tab MV740\tab MV741\tab 
+\par \tab MV742\tab MV743A\tab MV743B\tab MV743C\tab MV743D\tab MV743E
+\par \tab MV743F\tab MV743G\tab MV745
+\par }{\b\fs20 MREC75\tab }{\fs20 MV754A\tab MV754Q\tab MV754R\tab MV754S\tab MV754T\tab MV754U
+\par \tab MV754V\tab MV754JP\tab MV754WP\tab MV759A\tab MV759B\tab MV759C
+\par \tab MV759D\tab MV759E\tab MV759F\tab MV759G\tab MV759H\tab MV759I
+\par \tab MV761C\tab MV762AA\tab MV762AB\tab MV762AC\tab MV762AD\tab MV762AE
+\par \tab }{\fs20\lang1043\langfe1033\langnp1043 MV762AF\tab MV762AG\tab MV762AH\tab MV762AI\tab MV762AJ\tab MV762AK
+\par \tab }{\fs20 MV762AL\tab MV762AM\tab MV762AN\tab MV762AO\tab MV762AP\tab MV762AQ
+\par \tab MV762AR\tab MV762AS\tab MV762AT\tab MV762AU \tab MV762AV\tab MV762AW  \tab MV762AX\tab MV762AZ\tab MV762BA \tab MV762BB\tab MV762BC\tab MV762BD
+\par  \tab MV762BE\tab MV762BF\tab MV762BG\tab MV762BH\tab MV762BI\tab MV762BJ
+\par \tab MV762BK\tab MV762BL\tab MV762BM\tab MV762BN\tab MV762BO\tab MV762BP
+\par \tab MV762BQ\tab MV762BR\tab MV762BS\tab MV762BT\tab MV762BU\tab MV762BV
+\par \tab MV762BW\tab MV762BX\tab MV762BZ\tab MV763D\tab MV763E\tab MV763F
+\par \tab MV763G\tab MV765C\tab MV767C\tab MV768C\tab MV769\tab MV769A
+\par \tab MV770B\tab MV770D\tab MV770E\tab MV770F\tab MV770G\tab MV770H
+\par \tab MV770I\tab MV773C\tab MV773F\tab MV779\tab MV780\tab MV783
+\par \tab MV784\tab MV785I\tab MV785Q\tab MV786I\tab MV786Q\tab MV787
+\par \tab MV788\tab MV789\tab MV790
+\par \tab 
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 {\fs20 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\fs20 
+\par 
+\par 
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\page \sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3
+\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s57\ql \li0\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 \f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b Sections Added
+\par }\pard\plain \s59\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 
+\par HOUSEHOLD:
+\par }{\f0\fs20 
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\f1\fs20 RECH3\tab Household country\_specific}{\b\fs20 
+\par }\pard\plain \s59\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 SHINTD\tab Day of interview (Gregorian calendar)
+\par SHINTM\tab Month of interview (Gregorian calendar)
+\par SHINTY\tab Year of interview (Gregorian calendar)
+\par SHINTC\tab CMC date of interview (Gregorian calendar)
+\par SH25E\tab Household owns an electric mitad
+\par SH25F\tab Household owns a kerosene lamp
+\par SH25G\tab Household owns a portable bed
+\par SH25AA\tab Household owns the house it is living in
+\par SH25AB\tab Household owns cropland
+\par SH25AC\tab Household owns cattle or camels
+\par SH25AD\tab Household owns horse or mule or donkey
+\par SH25AE\tab Household owns sheep or goats
+\par SH25AF\tab Household owns cash crops
+\par SH27B\tab Number of rooms in the house used for sleeping
+\par SH28D\tab Any member in the household owns a horse or mule
+\par SH29A\tab In the past 12 month any household member received: treatment for a sick child
+\par SH29B\tab In the past 12 month any household member received: immunization
+\par SH29C\tab In the past 12 month any household member received: prenatal, postnatal or delivery care
+\par SH29D\tab In the past 12 month any household member received: family planning education or services
+\par SH29E\tab In the past 12 month any household member received: information on STD/HIV/AIDS
+\par SH29F\tab In the past 12 month any household member received: information on breastfeeding and infant feeding practices.
+\par SH29BA\tab Health facilities that provided services in the past 12 months: government hospital
+\par SH29BB\tab Health facilities that provided services in the past 12 months: government health center
+\par SH29BC\tab Health facilities that provided services in the past 12 months: government health station or clinic
+\par SH29BD\tab Health facilities that provided services in the past 12 months: government health post
+\par SH29BE\tab Health facilities that provided services in the past 12 months: government community bases outlet
+\par SH29BF\tab Health facilities that provided services in the past 12 months: other government 
+\par SH29BG\tab Health facilities that provided services in the past 12 months: non-governmental organization (NGO)
+\par SH29BH\tab Health facilities that provided services in the past 12 months: community bases outlet
+\par SH29BI\tab Health facilities that provided services in the past 12 months: other NGO
+\par SH29BJ\tab Health facilities that provided services in the past 12 months: private hospital
+\par SH29BK\tab Health facilities that provided services in the past 12 months: private doctor / clinic
+\par SH29BL\tab Health facilities that provided services in the past 12 months: other private
+\par SH29BM\tab Health facilities that provided services in the past 12 months: KEBELE (during campaign)
+\par SH29BX\tab Health facilities that provided services in the past 12 months: other
+\par SH29CA\tab Any member in the household bought drugs during the 12 months preceding the survey
+\par SH29DA\tab Drugs used during last 12 months bought from a pharmacy or other medical facility
+\par SH29DB\tab Drugs used during last 12 months bought from a non-medical facility
+\par SH29GA\tab The bed-net used in the household was treated with a product that kills mosquitoes
+\par SH35\tab The iodine content of salt used in household.
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+\par 
+\par }{\b\f1\fs20 RECH4\tab Household schedule country-specific}{\fs20 
+\par IDXH4\tab Index to household schedule
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 SH14\tab 
+Household able to read and write a simple sentence
+\par 
+\par }\pard\plain \s59\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 FEMALE INDIVIDUAL:
+\par }{\f0\fs20 
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\f1\fs20 REC91\tab Country specific \_ single variables\tab }{\fs20 
+\par SINTD\tab Day of interview (Gregorian calendar)
+\par SINTM\tab Month of interview (Gregorian calendar)
+\par SINTY\tab Year of interview (Gregorian calendar)
+\par SINTC\tab CMC of interview (Gregorian calendar)
+\par SSUPERV\tab Field supervisor (3 digits)
+\par SFEDIT\tab Field editor (3 digits)
+\par SLAN\tab Language of questionnaire
+\par SINTV\tab Language of interview
+\par SRESP\tab Respondent\rquote s native language
+\par STRANS\tab Translator used during interview
+\par S101T\tab Start of interview in the morning or in the evening (Ethiopian time)
+\par S101H\tab Hour at start of interview (Ethiopian time) 
+\par S101M\tab Minutes at start of interview (Ethiopian time)
+\par S105M\tab Month of birth of respondent (Gregorian calendar)
+\par S105Y\tab Year of birth of respondent (Gregorian calendar)
+\par S105C\tab CMC of birth of respondent (Gregorian calendar)
+\par S109\tab Highest grade of schooling the respondent completed.
+\par S227CG\tab CMC of date of last conception (Gregorian calendar)
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 S230AC\tab 
+CMC of last terminated pregnancy (Gregorian calendar)
+\par S230AF\tab Flag for S230AC
+\par S230B\tab Months or years since last terminated pregnancy ended
+\par S230AM\tab Month of end of last pregnancy that ended in a miscarriage, abortion or stillbirth (Gregorian calendar)
+\par S230AY\tab Year of end of last pregnancy that ended in a miscarriage, abortion or stillbirth (Gregorian calendar)
+\par S230AC\tab CMC of end of last pregnancy that ended in a miscarriage, abortion or stillbirth (Gregorian calendar)
+\par S230F\tab The number of other pregnancies that ended in a miscarriages, abortion or stillbirths for women who had such a pregnancy since Meskerem 1987.
+\par S234\tab Respondent received a tetanus toxoid injection
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\fs20 S234A\tab 
+Respondent has a vaccination card where tetanus toxoid injection is recorded
+\par SD234B1\tab Day of first tetanus toxoid injection (Ethiopian calendar)
+\par SM234B1\tab Month of first tetanus toxoid injection (Ethiopian calendar)
+\par SY234B1\tab Year of first tetanus toxoid injection (Ethiopian calendar)
+\par SD234B2\tab Day of second tetanus toxoid injection (Ethiopian calendar)
+\par SM234B2\tab Month of second tetanus toxoid injection (Ethiopian calendar)
+\par SY234B2\tab Year of second tetanus toxoid injection (Ethiopian calendar)
+\par SD234B3\tab Day of third tetanus toxoid injection (Ethiopian calendar)
+\par SM234B3\tab Month of third tetanus toxoid injection (Ethiopian calendar)
+\par SY234B3\tab Year of third tetanus toxoid injection (Ethiopian calendar)
+\par SD234B4\tab Day of fourth tetanus toxoid injection (Ethiopian calendar)
+\par SM234B4\tab Month of fourth tetanus toxoid injection (Ethiopian calendar)
+\par SY234B4\tab Year of fourth tetanus toxoid injection (Ethiopian calendar)
+\par SD234B5\tab Day of fifth tetanus toxoid injection (Ethiopian calendar)
+\par SM234B5\tab Month of fifth tetanus toxoid injection (Ethiopian calendar)
+\par SY234B5\tab Year of fifth tetanus toxoid injection (Ethiopian calendar)
+\par S312\tab Brand name of contraceptive pill last used
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 S319\tab 
+Place where respondent obtained or learned about current method. V326 only provides information for current users, whereas S319 provides information for all users.
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\fs20 S319D\tab 
+Time taken to go to place where respondent go her current contraceptive method the last time
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 S329\tab 
+Among respondents who have never used a contraceptive method or who are currently pregnant the place they know where to get a contraceptive method.
+\par S482\tab The respondents with at least one living child born since 1987 (Ethiopian calendar) washed her hands immediately before feeding this child
+\par S483\tab The respondents with at least one living child born since 1987 (Ethiopian calendar) washed her hands immediately after she cleaned her child who had just defecated.
+\par S484\tab Among respondents with at least one living child born since 1987 (Ethiopian calendar) the place where she usually disposes of her child\rquote s stool.
+\par S489\tab The respondent sought medical treatment the last time she was sick.
+\par S489AA\tab Reason why respondent did not seek treatment the last time she was sick: she did not know where to go.\tab 
+\par S489AB\tab Reason why respondent did not seek treatment the last time she was sick: She did not have permission to go.\tab 
+\par S489AC\tab Reason why respondent did not seek treatment the last time she was sick: She had no money for treatment.\tab 
+\par S489AD\tab Reason why respondent did not seek treatment the last time she was sick: There was no health facility nearby.\tab 
+\par S489AE\tab Reason why respondent did not seek treatment the last time she was sick: She had no transport.\tab 
+\par S489AF\tab Reason why respondent did not seek treatment the last time she was sick: She did not want to go alone.\tab 
+\par S489AG\tab Reason why respondent did not seek treatment the last time she was sick: She was concerned that there may not be a female health provider.\tab 
+\par S489AH\tab Reason why respondent did not seek treatment the last time she was sick: She believed she would recover soon.\tab 
+\par S489AI\tab Reason why respondent did not seek treatment the last time she was sick: The sickness was not serious enough to seek treatment.\tab 
+\par S489AJ\tab Reason why respondent did not seek treatment the last time she was sick: She does not like or is scared of modern treatment.\tab 
+\par S489AK\tab Reason why respondent did not seek treatment the last time she was sick: She used traditional treatments or drugs.\tab 
+\par S489AL\tab Reason why respondent did not seek treatment the last time she was sick: She did not feel sick.\tab 
+\par S489AX\tab Reason why respondent did not seek treatment the last time she was sick: Other reasons.\tab 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\fs20 S508MG\tab 
+Month the respondent started living with her first husband (Gregorian calendar)
+\par S508YG\tab Year the respondent started living with her first husband (Gregorian calendar)
+\par S508CG\tab CMC respondent started living with her first husband (Gregorian calendar)
+\par S617D\tab During the last few months, the respondent heard about family planning from pamphlet or posters.
+\par S617E\tab During the last few months, the respondent heard about family planning from community events.
+\par S702A\tab Husband is able to read and write a simple sentence.
+\par S705\tab Highest educational grade completed by husband/partner
+\par S712A\tab Among workers in agriculture the seasonality of work throughout the agricultural season..
+\par S1001AA\tab Source of information about AIDS: Radio
+\par S1001AB\tab Source of information about AIDS: Television
+\par S1001AC\tab Source of information about AIDS: Newspaper/magazines
+\par S1001AD\tab Source of information about AIDS: Pamphlets/posters
+\par S1001AE\tab Source of information about AIDS: Health workers
+\par S1001AF\tab Source of information about AIDS: Churches/mosques
+\par S1001AG\tab Source of information about AIDS: Schools/teachers
+\par S1001AH\tab Source of information about AIDS: Community event
+\par S1001AI\tab Source of information about AIDS: Friends/relatives
+\par S1001AJ\tab Source of information about AIDS: Work place
+\par S1001AK\tab Source of information about AIDS: Drama/performance
+\par S1001AX\tab Source of information about AIDS: Other
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 S1005\tab 
+Among women who did not state that either \'93to limit sex to one partner or stay faithful to one partner\'94 or \'93limiting the number of sexual partners\'94 can reduce a person\rquote s chances of getting AIDS, the view that a person\rquote 
+s chance of getting AIDS is influenced by the number of sexual partners she has.
+\par S1006\tab Among women who did not state that either \'93to limit sex to one partner or stay faithful to one partner\'94 or \'93limiting the number of sexual partners\'94 can reduce a person\rquote 
+s chances of getting AIDS, the view that when a person has sex with only one partner, this person has a greater or a lesser chance of getting AIDS than a person who has sex with many partners.
+\par S1008\tab Among respondents who did not mention the use of condoms during sex to reduce the chance of getting AIDS, the view that using condoms during sexual intercourse will decrease the chanc
+e of getting AIDS, will increase the chance of getting AIDS or whether it does not make a difference.
+\par S1013A\tab The HIV virus can be transmitted from mother to a child during: During pregnancy
+\par S1013B\tab The HIV virus can be transmitted from mother to a child during: At delivery 
+\par S1013C\tab The HIV virus can be transmitted from mother to a child during: During breastfeeding
+\par S1013D\tab The HIV virus can be transmitted from mother to a child during: At other times
+\par S1013Z\tab The HIV virus can be transmitted from mother to a child during: Don\rquote t know
+\par S1111\tab Respondent knows a place where she can get condoms
+\par S1112\tab Place where respondent can get condoms
+\par S1113\tab Respondent could get condoms herself, if she wanted.
+\par S1114T\tab Morning or evening time at the end of the interview (Ethiopian time)
+\par S1114H\tab Hour at the end of the interview (Ethiopian time)
+\par S1114M\tab Minutes at the end of the interview (Ethiopian time)
+\par 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\b\f1\fs20 REC92\tab Country specific \endash  Birth History
+\tab }{\b\fs20 
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 IDX92\tab Index to birth history
+\par S215MG\tab Month of birth of child (Gregorian calendar)
+\par S215YG\tab Year of birth of child (Gregorian calendar)
+\par S215CG\tab CMC of birth of child (Gregorian calendar)
+\par 
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\b\f1\fs20 REC94\tab Country specific \_ Maternity\tab }{
+\b\fs20 
+\par }{\fs20 IDX94\tab Index to birth history
+\par }\pard \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 {\fs20 S406A\tab 
+During her last pregnancy since Meskerem 1987, the respondent stopped eating specific types of food that she normally eats for cultural reasons.
+\par S406BA\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Milk
+\par S406BB\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Cheese or butter
+\par S406BC\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Any kind of meat
+\par S406BD\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Any kind of vegetable
+\par S406BE\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Any kind of fruit
+\par S406BX\tab During her last pregnancy since Meskerem 1987, the respondent stopped eating: Other products
+\par S432C\tab For last-born children born since Meskerem 1987 and still alive, the time period after birth before the child was exposed to sunlight.
+\par S440A\tab After the birth of the child the respondent threw away the first milk.
+\par }\pard \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 {\fs20 S442A\tab 
+Reason why respondent stopped breastfeeding last child born since Meskerem 1987
+\par S475C\tab When child had diarrhea in last 2 weeks mother gave child other home made fluid.\tab 
+\par 
+\par }{\b\f1\fs20 REC97\tab Country specific \endash  Pregnancies with non-live outcomes
+\par }{\fs20 S231AM\tab Month terminated pregnancy ended
+\par S231AY\tab Year terminated pregnancy ended
+\par S231AC\tab CMC terminated pregnancy ended
+\par S231BU\tab Time since terminated pregnancy ended (Unit)
+\par S231BN\tab Time since terminated pregnancy ended (Number)
+\par S231C\tab Number of months pregnant when terminated pregnancy ended
+\par S231AMG\tab Month terminated pregnancy ended (Gregorian calendar)
+\par S231AYG\tab Year terminated pregnancy ended (Gregorian calendar)
+\par S231ACG\tab CMC terminated pregnancy ended (Gregorian calendar)
+\par S231F\tab Flag for month and year information when terminated pregnancy ended\tab 
+\par 
+\par }{\b\f1\fs20 RECFG\tab Country specific \endash  Female circumcision
+\par }{\fs20 \tab \tab 
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard\plain \s59\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8640\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 MALE INDIVIDUAL:
+\par }{\f0\fs20 
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\fs20 MREC91\tab Country specific \endash  Single variables
+\par }\pard\plain \s59\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 
+\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 SMHINTD\tab Day of interview (Gregorian calendar)
+\par SMHINTM\tab Month of interview (Gregorian calendar)
+\par SMHINTY\tab Year of interview (Gregorian calendar)
+\par SMHINTC\tab CMC date of interview (Gregorian calendar)
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 SMLAN\tab Language of questionnaire
+\par SMINTV\tab Language of interview
+\par SMRESP\tab Respondent\rquote s language
+\par SMTRANS\tab Translator used during interview
+\par }\pard\plain \s60\ql \li0\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 SM101T\tab Start of interview in the morning or in the evening (Ethiopian time)
+\par SM101H\tab Hour at start of interview (Ethiopian time) 
+\par SM101M\tab Minutes at start of interview (Ethiopian time)
+\par SM105M\tab Month of birth of respondent (Gregorian calendar)
+\par SM105Y\tab Year of birth of respondent (Gregorian calendar)
+\par SM105C\tab CMC of birth of respondent (Gregorian calendar)
+\par SM109\tab Highest grade of schooling the respondent completed.
+\par 
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 SM309\tab Brand name of condoms used
+\par SM310\tab Respondent uses more condoms than a year ago, about the same amount or less.
+\par SM311\tab Main reason why respondent uses more condoms that a year ago.
+\par SM312\tab Main reason why the respondent is not using a contraception method to avoid pregnancy
+\par }\pard \s57\ql \li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 {\f0\fs20 
+Note the in the standard MV375A is restricted to last sex, MV375B is restricted to last sex with an \'93other woman (1) and MV375C to last sex with \'93other woman (2)\'94. 
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 SM410MG\tab 
+Month of first marriage (Gregorian calendar)
+\par SM410YG\tab Year of first marriage (Gregorian calendar)
+\par SM410CG\tab Century month code of date of first marriage (Gregorian calendar)
+\par SM512D\tab Respondent saw family planning message on posters or pamphlets during the last months
+\par }\pard \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 {\f0\fs20 SM512E\tab 
+Respondent heard about family planning during community events during the last few months
+\par SM518A\tab Presence of children under age 10 during interview
+\par SM518B\tab Presence of spouse during interview
+\par SM518C\tab Presence of other males during interview
+\par SM518D\tab Presence of other females during interview
+\par SM606A\tab Method used during last intercourse: female sterilization
+\par SM606B\tab Method used during last intercourse: male sterilization
+\par SM606C\tab Method used during last intercourse: pill
+\par SM606D\tab Method used during last intercourse: IUD
+\par SM606E\tab Method used during last intercourse: injections
+\par SM606F\tab Method used during last intercourse: implants
+\par SM606G\tab Method used during last intercourse: condom
+\par SM606H\tab Method used during last intercourse: diaphragm/foam/jelly
+\par SM606I\tab Method used during last intercourse: periodic abstinence
+\par SM606J\tab Method used during last intercourse: withdrawal
+\par SM606X\tab Method used during last intercourse: other
+\par SM606Z\tab Method used during last intercourse: don\rquote t know
+\par SM613A\tab Method used during last intercourse with \'93other\'94 woman: female sterilization
+\par SM613B\tab Method used during last intercourse with \'93other\'94 woman: male sterilization
+\par SM613C\tab Method used during last intercourse with \'93other\'94 woman: pill
+\par SM613D\tab Method used during last intercourse with \'93other\'94 woman: IUD
+\par SM613E\tab Method used during last intercourse with \'93other\'94 woman: injections
+\par SM613F\tab Method used during last intercourse with \'93other\'94 woman: implants
+\par SM613G\tab Method used during last intercourse with \'93other\'94 woman: condom
+\par SM613H\tab Method used during last intercourse with \'93other\'94 woman: diaphragm/foam/jelly
+\par SM613I\tab Method used during last intercourse with \'93other\'94 woman: periodic abstinence
+\par SM613J\tab Method used during last intercourse with \'93other\'94 woman: withdrawal
+\par SM613X\tab Method used during last intercourse with \'93other\'94 woman: other
+\par SM613Z\tab Method used during last intercourse with \'93other\'94 woman: don\rquote t know
+\par SM701AA\tab Source of information about AIDS: Radio
+\par SM701AB\tab Source of information about AIDS: TV
+\par SM701AC\tab Source of information about AIDS: Newspaper / magazines
+\par SM701AD\tab Source of information about AIDS: Pamphlets / posters
+\par SM701AE\tab Source of information about AIDS: Health workers
+\par SM701AF\tab Source of information about AIDS: Mosques / churches
+\par SM701AG\tab Source of information about AIDS: Schools / teachers
+\par SM701AH\tab Source of information about AIDS: Community events
+\par SM701AI\tab Source of information about AIDS: Friends / relatives
+\par SM701AJ\tab Source of information about AIDS: Work place
+\par SM701AK\tab Source of information about AIDS: Drama / performance
+\par SM701AX\tab Source of information about AIDS: Other
+\par SM705\tab Chance of getting AIDS is influenced by number of partners
+\par SM708\tab Among respondents who did not mention that condoms during 
+sex decreases the chance of getting AIDS the perception that using condoms during sexual intercourse decrease, increases or does not make a difference in his or her chances of getting AIDS
+\par SM712A\tab The virus that causes AIDS can be transmitted from the mothe
+r to child during pregnancy (note variable in MV774A is also based on this variable, but QM712A is an alphanumeric variable in the Ethiopian questionnaire and thus allows for multiple responses, whereas it is a numeric variable in the standard DHS recode 
+questionnaire).
+\par SM712B\tab The virus that causes AIDS can be transmitted from mother to child at delivery (see SM712A in regards to MV774B).
+\par SM712C\tab The virus that causes AIDS can be transmitted from mother to child during breastfeeding (see SM712A in regards to MV774C).
+\par SM712D\tab The virus that causes AIDS can be transmitted from mother to child at other times
+\par SM712Z\tab The respondent does not know whether the virus that causes AIDS can be transmitted from mother to child.
+\par SM733\tab Place where the respondent sought treatment the last time he had a sexually transmitted disease, discharge from the penis or sore or ulcer on the penis
+\par }\pard\plain \s60\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1440\tx-720\tx0\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 SM736T\tab Morning or evening time at the end of the interview (Ethiopian time)
+\par SM736H\tab Hour at the end of the interview (Ethiopian time)
+\par SM736M\tab Minutes at the end of the interview (Ethiopian time)
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0  }{\b Notes on Recode File
+\par }{\f0\fs20 
+\par HOUSEHOLD DATA FILE
+\par 
+\par \sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl2\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl4
+\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl5\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl6\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl7\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl8
+\pndec\pnstart1\pnindent1440\pnhang{\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent1440\pnhang}{\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 1.\tab}\pard\plain \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls1\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+Note that all standard variables based on calendar dates and century month codes are given in the }{\b\fs20 Ethiopian Calendar}{\fs20 . In general, the Ethiopian year consists of 
+365 days, divided into 12 months of 30 days and one month of 5 days (6 days in a leap year).  Ethiopia\rquote 
+s new year falls on September 11and ends the following September 10 according to the Gregorian calendar.  From September 11 to December 31, the Ethiopian
+ year runs seven years behind the Gregorian year, thereafter, the difference is eights years. Since the exact day is not available for most dates, it is not possible to convert the dates exactly, but only approximate it to the month.  There is a differenc
+e of 92 months between the two dates systems. The 13}{\fs20\super th}{\fs20 
+ month of the Ethiopian calendar falls in September.  Thus, to keep the higher precision available in the Ethiopian calendar, these were used for all standard recode variables where applicable. In genera
+l, dates in the Gregorian calendar are provided as country specific variables. 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 2.\tab}There are 7 households with no de-jure household members (HV012 = 0) and 12 households with not adult de-jure household members (HV217  = 0 and HV012 = 0).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 3.\tab}There are 161 households with no de-facto household members (HV013 = 0).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 4.\tab}There are 19 cases where HA13 is either 3 or 4 (not present or refused height and weight measurement), but either the weight (HA2) or the height (HA3) was provided.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 5.\tab}There are 67 cases where according to 
+the birth history the child is older than 5 years, but the same child is listed as under age 5 in the household schedule. This child is not eligible to provide height and weight information (HV120 = 0), although height and weight information was collected
+.  
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 6.\tab}There are 630 cases where the age of the child is less than 2 years and the child was measured standing up (HC15 = 2), or the child was over 2 years and was measured lying down (HC15 = 1). 
+
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par FEMALE INDIVIDUAL DATA FILE
+\par 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 7.\tab}}\pard\plain \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls1\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 In order to compute 
+\'93Highest year of education\'94 (V107), \'93Education in single years\'94 (V133) and \'93educational attainment\'94 (V149) it is assumed that both primary and secondary education take 6 years to complete.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 8.\tab}Not all value labels for V131 (ethnicity) are available.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 9.\tab}There are 2 cases where the age of the respondent is less than 4 years higher than her education in single years, as computed in V133. 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 10.\tab}There are 84 cases where the age at death of a child (B6) was given as more than 31 days (these should have been reported in months) and 122 ca
+ses where the age at death was reported as 1 year.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 11.\tab}There are 44 cases where the respondent gave birth before age 10.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 12.\tab}Note that occurrence \'934\'94 in V304, V304A, V305, V307 and V363 includes besides \'93diaphragm\'94 also \'93foam and jelly\'94. Normally \'93foam and jelly\'94 
+are listed under occurrence 15.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 13.\tab}V363 is based on Q611 and during the recoding of the \'93other\'94 answers from Q611 a new category \'93ask advice from a health professional\'94
+ was created. However, since this is not a contraceptive method, these responses were grouped under V363 = 98 (Don\rquote t know).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 14.\tab}There are 4 cases where twins have a different response to one or more of the following variables M3A-M3N, M6, M7, M8, M9, M17 or M50.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 15.\tab}There are 9 children where mother is still breastfeeding her penultimate child (M4 = 95).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 16.\tab}For M44 the skipping pattern on the Ethiopian questionnaire differs from the DHS standard in that a response of \'93Don\rquote t know\'94
+ (8) to M43 (Respondent was told about pregnancy complications) did not result in a skip over M44 (Respondent was told where to go in case of pregnancy complications). 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 17.\tab}There are 18 cases where V447 (result of Height and Weight measurement of respondent) is not 1 (completed), but there is an entry for either the height (V438) or the weight (V437).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 18.\tab}S484 (disposal of child\rquote s stools) is
+ made country specific, since V465 is restricted to children living with the mother. This restriction was not included in the Ethiopian questionnaire.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 19.\tab}There are 1780 cases where the interval between subsequent vaccinations is less than 7 days.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 20.\tab}There are 82 cases where HW13 (result of Height and Weight measurement or child) is not 1 (completed), but there is an entry for height (HW3) or weight (HW2).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 21.\tab}There are 576 cases where the age of the child is less than 2 years and the child was measured standing up (HW15 = 2), or the child was over 2 years and was measured lying down (HW15 = 1).
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 22.\tab}There are 3 cases with missing information for HW4 through HW7 (height for age information), because the month of birth of the child is unknown or inconsistent. 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 23.\tab}V705 (Partner\rquote s occupation in broad categories) was derived from V704 in the following way:
+\par }\pard \s47\ql \li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 {\fs20 
+V704: 11 to 13, 21 to 24 and 31-34 are recoded to \'931\'94 (Prof, tech, managerial)
+\par V704: 41 to 42 are recoded to \'932\'94 (clerical)
+\par V704: 52 and 91 recoded to \'933\'94 (sales)
+\par V704: 61, 62 and 92 recoded to \'935\'94 (agric-employee)
+\par V704: 51 recoded to \'937\'94 (services)
+\par V704: 71 to 74 and 81 recoded to 83 to \'938\'94 (skilled manual)
+\par V704: 93 recoded to \'939\'94 (unskilled manual).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 24.\tab}}\pard \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls1\rin0\lin1440\itap0 {\fs20 V717 (Respondent\rquote s occupation derived from V716. See NOTE 22.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 25.\tab}There are 23 cases where the number of siblings of the respondent (MMC1) was missing. For these respondents there is no maternal mortality information.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 26.\tab}There are 152 cases where the number of siblings born before the respondent could be wrong, since the respondent did not know where the sibling was still alive or not.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 27.\tab}There are 35 cases where the field supervisor or field editor for the household questionnaire is not the same as the field supervisor or field editor for the individual questionnaire.
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 28.\tab}V774A, V774B and V774C (HI
+V transmission from mother to daughter) are normally derived from 3 different questions with numeric responses. In Ethiopia they were taken from one question with alphanumeric categories. The original responses are retained in S1013A, S1013B and S1013C.
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 29.\tab}Th
+e time the interview started (V801) and the time the interview ended (V802) are derived from the Ethiopian hour notation. Q101T indicates whether the time was recorded in the morning or evening hours. The morning starts at roughly 6 am. (12 o\rquote 
+clock in the morning Ethiopian time). E.g. 7 am is 1 o\rquote clock in the morning Ethiopian time.  Likewise the evening starts at 6 o\rquote clock pm. (or 12 o\rquote clock in the evening Ethiopian time).  E.g. 7 pm is 1 o\rquote 
+clock in the evening Ethiopian time.
+\par }\pard \s47\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\fs20  
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {MALE INDIVIDUAL DATA FILE
+\par }\pard\plain \s47\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 30.\tab}}\pard \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls1\rin0\lin1440\itap0 {\fs20 In order to compute \'93Highest year of education\'94 (MV107), \'93
+Education in single years\'94 (MV133) and \'93educational attainment\'94 (MV149) it is assumed that both primary and secondary education take 6 years to complete. There is one respondent age 21 who reported to have received 18 years of education (MV133).
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 31.\tab}Not all value labels for MV131 (ethnicity) are available.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 32.\tab}M304A (Type of method) and MV312 (current contraceptive method) = 4 (diaphragm) also includes \'93foam and jelly\'94.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 33.\tab}Question M602 did not list as skip to 
+question 617 for men who reported to have had last intercourse more than 1 year ago. This skip is present in the female individual questionnaire and in the DHS standard male questionnaire.  Thus, there are 197 cases where MV761, MV765A, MV312a and MV768A 
+have information even though the respondent might have had last intercourse more than one year ago.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 34.\tab}MV312A (most recent contraceptive method) is based on question M606. M606 is alphanumeric in Ethiopia, but numeric in the DHS standard questionnaire. In case
+ of multiple responses the most modern method (indicated by the letter that appears earliest in the alphabet) was used for MV312A.  Also note that MV312A = 4 includes besides \'93diaphragm\'94 also \'93foam and jelly\'94
+. The original responses are provided in SM606A through SM606Z. 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 35.\tab}MV312B (contraceptive method used with \'93other\'94
+ woman) is based on question M613. M613 is alphanumeric in Ethiopia, but numeric in the DHS standard questionnaire. In case of multiple responses the most modern method (indicated by the letter
+ that appears earliest in the alphabet) was used for MV312B.  Also note that MV312B = 4 includes besides \'93diaphragm\'94 also \'93foam and jelly\'94. The original responses are provided in SM613A through SM613Z.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 36.\tab}MV754CP = 0 (the use of condoms does not reduce the chance of getting AIDS) includes both \'93the use decreases the chance\'94 and \'93
+the use of condoms does not make a difference in the chance of getting AIDS\'94. The original responses can be found in SM708.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 37.\tab}MV767A = 3 (relation with last sex partner = \'93other friend\'94) includes also \'93acquaintance\'94, which is normally code \'934\'94 in MV767A.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 38.\tab}MV767B = 3 (relation with other sex partner (1) = \'93other friend\'94) includes also \'93acquaintance\'94, which is normally code \'934\'94 in MV767B.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 39.\tab}MV774A, MV774B and MV774C are derived from numeric variables in the standard questionnaire. 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 40.\tab}
+The time the interview started (MV801) and the time the interview ended (MV802) are derived from the Ethiopian hour notation. SM101T and SM736T indicate whether the time was recorded in the morning or evening hours. 
+The morning starts at roughly 6 am. (12 o\rquote clock in the morning Ethiopian time). E.g. 7 am is 1 o\rquote clock in the morning Ethiopian time.  Likewise the evening starts at 6 o\rquote clock pm. (or 12 o\rquote 
+clock in the evening Ethiopian time).  E.g. 7 pm is 1 o\rquote clock in the evening Ethiopian time.
+\par }\pard \s47\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 { 
+\par \page 
+\par }\pard\plain \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+\par }{\b Inconsistencies in the Data File}{\f0\fs20 \sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl2\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl4\pndec\pnstart1 
+{\pntxta .}}{\*\pnseclvl5\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl6\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl7\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl8\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \ql \li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin360\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard\plain \s1\ql \li0\ri0\keepn\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\outlinelevel0\rin0\lin0\itap0 
+\b\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {Household and individual 
+\par }\pard\plain \ql \li360\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin360\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 1.\tab}}\pard\plain \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls3\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+There are 45 cases where mother line number (HV112) is missing or 0 (not in the household), but the child is listed in the birth history of the respondent 
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 2.\tab}There are 26 cases where the sex of the child in the household schedule (HV104) differs from the gender of the child given in the birth history (B4).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 3.\tab}There are 67 cases where the age of the child in the household schedule (HV105) differs from the age given in the birth history (B8).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 4.\tab}There are 40 cases where the information on place of usual residence given in the household schedule (HV102) differs from the same information provided in the birth history (B9).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 5.\tab}There are 58 cases where a child reports a respondent to the individual interview as mother (HV112), but the respondent does not report this child in the birth history.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 6.\tab}There are 8 cases where the respondent had given birth (V201 > 0), but she also reported to have never menstruated (V215 = 996).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 7.\tab}There are 20 ca
+ses where the respondent reported that her period had not yet returned after the last birth (M6 = 96), but she also provided a time since last menstrual period. Instead of reporting 995 (before last birth) to V215 and V226, she reported the duration betwe
+en her last menstruation and the date of the interview.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 8.\tab}There are 169 cases where the response to M39 (Times ate food yesterday) is inconsistent with the responses provided to M37M through M37XZ (Times ate specific foods yesterday).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 9.\tab}There are 149 cases wher
+e the age at first intercourse (V525) is lower than the age at first birth (V212). In these cases V531 (age at first intercourse imputed) is set to 97 (inconsistent) and V532 (flag for age at first intercourse) is set to 2 (age at first intercourse after 
+conception by more than one year). 21 Respondents state that they have never had sex (V525 = 0), but that they have been married.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 10.\tab}21 Respondents state that they have never had sex (V525 = 0), but that they have been married.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 11.\tab}There are 43 cases where the age
+ of the child derived from the height and weight measurement in the household questionnaire (HW1) if different from the information provided in the individual questionnaire (V008 and B3).
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 12.\tab}There are 31 cases where the respondent discussed family planning with her partner (V630A  = 1), but her current marital status is never married (21 cases) or formerly married (10 cases).
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 13.\tab}There are 45 respondents who state that they are not currently working (V714 = 0), but they worked in the past year (V731 = 1). The occu
+pation for these respondents was recorded as 0 (not working), but this should have been the occupation while they were working.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 14.\tab}There are 112 cases where the partner\rquote s age (V730) differs from his age listed in the household schedule (HV105) by more than 2 years.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 15.\tab}There are 137 cases where the computed length of the interview (V803) was negative. This is most likely due to the way, \'93morning\'94 and \'93evening\'94
+ were entered by the enumerator (see NOTE 28).  
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard\plain \s1\ql \li0\ri0\keepn\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\outlinelevel0\rin0\lin0\itap0 
+\b\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {Male survey
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 16.\tab}}\pard\plain \s47\ql \fi-1440\li1440\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls3\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+There are 42 cases where MV312A indicates that the respondent is used a method during last sexual intercourse, but MV302 = 0 (never used a method).  Note that ever use in the contraceptive table refers to contraceptive use with \'93partner\'94
+, whereas MV312A might refer to last sex with someone else than the respondent\rquote s partner.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 17.\tab}There are 2 cases where the partner is pregnant, but the respondent was using a method during last sex with the partner.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 18.\tab}There are 2 cases where the respondent reported that he ever used female sterilization with his partner, bu
+t that he is currently using the pill or is not using a method. It is possible that the respondent presently has a different partner or has more than one partner.
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 19.\tab}There are 3 cases where the respondent is currently working (MV731 = 2), but indicates in MV716 and MV717 that he is a pensioner, which is recoded to \'930\'94 or \'93not working\'94.
+
+\par {\listtext\pard\plain\s47 \fs20 \hich\af0\dbch\af0\loch\f0 20.\tab}There are 93 cases where the computed length of the interview (MV803) was negative. This is most likely due to the way, \'93morning\'94 and \'93evening\'94
+ were entered by the enumerator (see NOTE 38).  
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par }\pard\plain \s47\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+\par }\pard\plain \ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\par 
+\par }{\b\f1\fs28 Coding Additions
+\par }\pard\plain \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par HV204\tab Time to get to water source\sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang
+{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7
+\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\listtext\pard\plain\s47 \f3\fs20 
+\loch\af3\dbch\af0\hich\f3 \'b7\tab}\pard\plain \s47\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls14\rin0\lin360\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+                     995 = one day or longer
+\par }\pard\plain \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par HV226\tab Type of cooking fuel\sect }\sectd \sbknone\linex0\sectdefaultcl {\listtext\pard\plain\s47 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}\pard\plain \s47\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls14\rin0\lin360\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+                     9 = does not cook at home
+\par }\pard\plain \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par SH29BM\tab Any household member received service from a facility located at the workplace\sect }\sectd \sbknone\linex0\sectdefaultcl {\listtext\pard\plain\s47 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}\pard\plain \s47\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls14\rin0\lin360\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20 
+                     1 = at least one household member received service during past 12 months
+\par }\pard\plain \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 
+\par SH29BN\tab Any household member received service during KEBELE (national campaign)\sect }\sectd \sbknone\linex0\sectdefaultcl {\*\pnseclvl1\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl2\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}
+{\*\pnseclvl3\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl4\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl5\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl6\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl7
+\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl8\pnf28\pnstart1\pnindent1440\pnhang{\pntxta ?}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent1440\pnhang}{\listtext\pard\plain\s47 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}\pard\plain 
+\s47\ql \fi-360\li360\ri0\nowidctlpar\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls15\rin0\lin360\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs20                       1 = at least one household member received service during past 12 months
+\par }\pard \s47\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\fs20 
+\par }\pard\plain \s57\ql \fi-1440\li1440\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin1440\itap0 
+\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f0\fs20 SINTV\tab Language of interview
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls16\rin0\lin360\itap0 {\f0\fs20                       7 = Gamogna
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}                      8 = Kefigna
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par SRESP\tab Respondent\rquote s native language
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls17\rin0\lin360\itap0 {\f0\fs20                       7 = Gamogna
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}                      8 = Kefigna
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V326\tab Last source for current users
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                       27 = Family guidance (NGO)
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V379\tab Source known for any method
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                       27 = Family guidance (NGO)
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par M15\tab Place of delivery
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                      13 = Forest, bush
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V603\tab Preferred waiting time to next birth
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                       992 = As God wishes
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V613\tab Ideal number of children\tab 
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                      94 = Can\rquote 
+t decide, never thought about it
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}                     95 = As God wishes
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V754P\tab What can a people do to ovoid getting AIDS: avoid sharing clothes
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: avoid sharing clothes
+
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V754Q\tab What can a people do to ovoid getting AIDS: avoid eating
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: avoid eating
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V754R\tab What can a people do to ovoid getting AIDS: avoid contact with patients
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 =
+ Yes: avoid contact with patients
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V754S\tab What can a people do to ovoid getting AIDS: avoid eating/drinking with patients
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: avoid eating/drinking with patients
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V762AP\tab Source for condoms: NGO Family Guidance\tab \tab 
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: Family Guidance
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V785M\tab Signs and symptoms of sexually transmitted diseases in a man: back-pain
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: back-pain
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V785N\tab Signs and symptoms of sexually transmitted diseases in a man: sores / warts / itching on body
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20       
+                1 = Yes: sores / warts / itching on body
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V785O\tab Signs and symptoms of sexually transmitted diseases in a man: problems walking
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: problems walking
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V785P\tab Signs and symptoms of sexually transmitted diseases in a man: sores / warts on face
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: sores / warts on face
+
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V786M\tab Signs and symptoms of sexually transmitted diseases in a woman: back-pain
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: back-pain
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V786N\tab Signs and symptoms of sexually transmitted diseases in a woman: sores / warts / itching on body
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: sores / warts / itching on body
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V786O\tab Signs and symptoms of sexually transmitted diseases in a woman: problems walking
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: problems walking
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par V786P\tab Signs and symptoms of sexually transmitted diseases in a woman: sores / warts on face
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: sores / warts on face
+
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par S489AH\tab Reason for not seeking medical treatment: Respondent believed that she would recover soon
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                      
+ 1 = Yes: believed that she would recover soon.
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par S489AI\tab Reason for not seeking medical treatment: Sickness not serious enough to seek medical treatment
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: sickness not serious enough to seek medical treatment
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par S489AJ\tab Reason for not seeking medical treatment: Does not like or is scared of modern treatment
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: does not like or is scared of modern treatment
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par S489AK\tab Reason for not seeking medical treatment: Used traditional treatment or drugs
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20               
+        1 = Yes: used traditional treatment or drugs
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par S489AL\tab Reason for not seeking medical treatment: respondent did not feel sick
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: respondent did not feel sick
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par 
+\par MV613, MV614\tab Ideal number of children
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls18\rin0\lin360\itap0 {\f0\fs20                       95 = As God wishes
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV785M\tab Signs and symptoms of sexually transmitted diseases in a man: back-pain
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: back-pain
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV785N\tab Signs and symptoms of sexually transmitted diseases in a man: sores / warts / itching on body
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                 
+      1 = Yes: sores / warts / itching on body
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV785O\tab Signs and symptoms of sexually transmitted diseases in a man: problems walking
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: problems walking
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV785P\tab Signs and symptoms of sexually transmitted diseases in a man: sores / warts on face
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: sores / warts on face
+
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV786M\tab Signs and symptoms of sexually transmitted diseases in a woman: back-pain
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: back-pain
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV786N\tab Signs and symptoms of sexually transmitted diseases in a woman: sores / warts / itching on body
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20 
+                      1 = Yes: sores / warts / itching on body
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV786O\tab Signs and symptoms of sexually transmitted diseases in a woman: problems walking
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: problems walking
+\par }\pard \s57\ql \li0\ri0\nowidctlpar\tx-1080\tx-720\tx0\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\rin0\lin0\itap0 {\f0\fs20 
+\par MV786P\tab Signs and symptoms of sexually transmitted diseases in a woman: sores / warts on face
+\par {\listtext\pard\plain\s57 \f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s57\ql \fi-360\li360\ri0\nowidctlpar
+\tx-1080\tx-720\tx0\jclisttab\tx360\tx1440\tx2880\tx4320\tx5760\tx7200\tx8460\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\faauto\ls19\rin0\lin360\itap0 {\f0\fs20                       1 = Yes: sores / warts on face
+
+\par }}

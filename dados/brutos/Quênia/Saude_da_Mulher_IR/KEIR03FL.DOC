@@ -1,0 +1,443 @@
+                                     INDIVIDUAL RECODE DOCUMENTATION
+
+KENYA                                       Version 03 Doc 01                                         KE
+
+Name of Survey              Kenya Demographic and Health Survey
+
+Executing Agency            National Council for Population and Development
+                            Ministry of Home Affairs and National Heritage
+
+
+Year of Fieldwork           1988-89
+
+Universe                    All women 15-49
+
+Coverage                    National excluding North Eastern Province and four
+                            northern districts (7 districts excluded for
+                            access/security problems), 95% of population
+
+Size                        7150
+
+Weights                     Rural by district for 13 districts, other rural, and
+                            urban.  See note 2.
+
+Contents                    DHS B-Core with Additional Health Questions + ORS access
+                            and preparation questions, supplemental feeding, access
+                            to family planning services.
+
+Languages used              Kalenjin, Kamba, Kikuyu, Kisii, Luhya, Luo, Meru/Embu,
+                            Mijikenda, Kiswahili, English and Other
+
+Anthropometry               None
+
+Record size                 Flat File: 2753
+                            Hierarchical and Rectangular Files: 155 maximum
+
+Supplementary Data          Household members
+Files                       Husband's survey (for a subset of interviewed women's
+husbands)Sections and Variable Unused
+
+REC31         Contraceptive Table - methods 11-15 are unused.
+REC33         Contraceptive History
+REC44         Height/Weight Table
+
+V109          V129                 V338-V360            H24-H29             V713
+V110          V315-V324            V401                 V514-V523
+V111          V328                 V416                 V601
+V128          V331-V334            V420-V421            V710
+
+Sections Added
+
+REC91         Country specific single variables.
+
+SWIFE1        Primary wife or not
+SHUSBNO       Husband line number
+SDIST         Household district
+SLANGQ        Language of the questionnaire
+SLANGI        Language of the interview
+SLANGL        Language locally
+STRANS        Translator present
+S110          Level of education
+S112A         Ever attended adult literacy
+S121E         Own land
+S121F         Own cattle, goat, sheep
+S121G         Own cash crops
+S121H         Own a permanent house
+S150A         Belong Maendeleo ya wanawake
+S150B         Belong mother's union/religions
+S150C         Belong local women's group
+S150D         Belong other group
+S222A         Number of injections
+S222B         Place of last injection
+S302A1        Knows how to use pill
+S302A4        Knows how to use diaphragm
+S302A8        Knows how to use periodic abstinence
+S302A10       Knows how to use other methods
+S315H         Hours to get to source
+S315M         Minutes to get source
+S315I         Method of transport
+S317A2        Heard about Family Planning on television
+S317A3        Heard about Family Planning in paper/magazine
+S317A4        Heard about Family Planning from poster
+S317A5        Heard about Family Planning from friends/relatives
+S415E         Any porridge or uji
+S427A         Where learn to prepare home solution
+S428A         Where got ORS packet
+S428B         Cost of ORS packet
+S428C         Has packet in house
+S428D         Type of packet
+S428E         Reason for packet
+S428F         Type of water used last time
+S428G         When mixed packet
+S428H         Type of container to measure H2O
+S428I         Container for mixing
+S428J         How often prepared mixture
+S428K1        Hospital for vaccination
+S428K2        Health center/clinic for vaccination
+S428K3        Mobil clinic for vaccination
+S428K4        Village health worker for vaccination
+S428K5        Private doctor for vaccination
+S428K6        School for vaccination
+S428K7        Other source for vaccination
+S509A         Other wives at time of marriage
+S509B         Number of other wives at marriage
+S518A         Number of towns
+S520A         Original age at first sex as reported
+S611M         Ideal number of boys
+S611F         Ideal number of girls
+S703          Highest level of education
+S315R         Original contraceptive source as reported Q315
+S315CR        Original contraceptive source funding agency as reported in
+              Q315C
+EDUCRPT       Education as used in report
+
+REC94         Country specific maternity history variables.
+
+IDX94         Index to birth history
+S405A         Where delivery took place
+S406A         Why never breastfed
+S408A         Why stopped breastfeeding
+S408B         Any other beside breastmilk
+S408C         Age given other beside breastmilk
+
+REC95         Country specific health history variables.
+
+IDX95         Index to birth history
+SD4N          DPT4 given
+SD4D          Day of immunization (DPT4)
+SD4M          Month of immunization (DPT4)
+SD4Y          Year of immunization (DPT4)
+SP4N          Polio4 given
+SP4D          Day of immunization (Polio4)
+SP4M          Month of immunization (Polio4)
+SP4Y          Year of immunization (Polio4)
+S424A         Days since diarrhea started
+S424C         Breastfed when child had diarrhea
+S424D         Given more or less to drink
+S424E         More, less, or same solid food
+S424G         Given home solution or ORS
+S424H         Got any better
+S424I         Quantity of solution given
+S424J         Number of days solution given
+S426A         Injection for Diarrhea
+S426B         Intravenous for Diarrhea
+S426C         Tablets or capsules for Diarrhea
+S426D         Syrups for Diarrhea
+S426E         ORS for Diarrhea
+S426F         Herbs for Diarrhea
+S426G         Other for Diarrhea
+S426H         Nothing given for Diarrhea
+S426          Why not taken to Medical for Diarrhea
+S430A         Cause of fever
+S435A         Capsules for cough/DB
+S435D         Other tablets for cough/DB
+S435F         Uvulectomy for cough/DB
+S435H         Nothing mentioned for cough/DB
+
+REC97         Husband's Questionnaire Cover Page and Husband's Background
+
+       *****  It should be noted that in the husband data, there are two
+              types of variable names - those that begin with SHV and those
+              that begin with SH.  The variable names that include a "V"
+              have the same standard codes as the respondent's variables.
+              For example, SHV103 for the husband is equivalent to V103 for
+              the respondent.  The other husband variable names refer to the
+              original question number in the husband's questionnaire.
+
+              Variable SHV005 should be used to weight the data when
+              analyzing the husband's data.  Results may vary slightly from
+              those reported in the First Country report since the
+              individual woman's weight variable was used for that analysis.
+
+SHV003        Husband line number
+SHWINT        Number of wives interviewed
+SHWIVE1       WIFE1 line number
+SHWIFE2       WIFE2 line number
+SHWIFE3       WIFE3 line number
+SHV006        Month of interview
+SHV007        Year of interview
+SHV805        Interviewer identification
+SHV804        Number of visits
+SHLANGQ       Husband's language of questionnaire
+SHLANGI       Husband's language of interview
+SHLANGL       Husband's local language
+SHTRANS       Husband translator used
+SHV806        Keyer identification
+SH100H        Hour interview began
+SH100M        Minutes interview began
+SHV103        Childhood place of residence (H101)
+SHV104        Years lived in place of residence (H102)
+SHV009        Husband's month of birth (H103)
+SHV010        Husband's year of birth (H103)
+SHV011        Husband's date of birth (CMC)
+SHV012        Current age of husband (H104)
+SHV014        Completeness of date information
+SHV130        Religion (H105)
+SHV131        Ethnicity (H106)
+SH107         Number of times married
+SH108         Number of current wives/partners
+SH109         Number of wives of father
+SH110         Desire additional wives in future
+SH111A        Lost wife through death
+SH111B        Lost wife through divorce
+SH111C        Lost wife through separation
+SH112M        Month of first marriage
+SH112Y        Year of first marriage
+SH113         Age at first marriage
+SH114         Approve of divorce
+SH115         Approve of polygamy
+SH116         Ever attended school
+SH117         Highest level
+SH118         Highest year completed at level
+SHV106        Highest education level (H119)
+SH120         Ever attended adult literacy
+SHV108        Literacy (H121)
+SH122         Listen radio
+SHV704        Occupation (H123)
+SHV705        Husband's occupation (grouped)
+SH125         Husband works for self or others
+SH126         Earn regular wage or salary
+SH127         Husband works on own land
+SH128         Lease land or wages
+HEDUCRPT      Husband's education as used in report
+SHV005        Husband's weight adjusted for non-response
+
+REC98         Husband's Contraceptive Table
+
+SHV301        Knowledge of any method
+SHV302        Ever use of any method
+SHV303        Knows source for modern method
+SHV304        Knows method (10 methods - standard order) (H202)
+SH202A        Knows how to use method (specific methods)
+SHV305        Ever used method (10 methods - standard order) (H203)
+SHV306        Source known for method (specific methods) (H204)
+SHV307        Source for method by type (specific methods)
+
+REC99         Husband's Contraceptive Use and Fertility Preferences
+
+SH208         Number of children at first use
+SH209         Currently using
+SHV313        Current use by method type
+SH210         Using specific methods (10 methods - standard order)
+SH211         Future use
+SH212         Reason for no future use
+SH213         Preferred method in future
+SH214         Intend to use in next 12 months
+SHV362        Intention to use family planning
+SH215         Family Planning information on media acceptable
+SH216         How often talked with wife about Family Planning
+SH217         Think wife approves of Family Planning
+SH218         Husband approves of Family Planning
+SH219A        Approves of condom
+SH219B        Approves of male sterilization
+SH219C        Approves of withdrawal
+SH220A        Main problem with condom
+SH220B        Main problem with male sterilization
+SH220C        Main problem with withdrawal
+SH221A        Number of own sons
+SH221B        Number of own daughters
+SH221C        Total living children
+SH222         Desires additional children
+SH223A        Time to wait for next child
+SH223B        Time to wait for next child
+SHV605        Fertility preferences
+SH224A        Time wait sexual intercourse
+SH224B        Time wait sexual intercourse
+SH225         Stop breastfeeding before sexual intercourse
+SH226         Chance to get pregnant
+SH227         Ideal number of children
+SH228A        Ideal number of boys
+SH228B        Ideal number of girls
+SH229H        Hour interview terminated
+SH229M        Minute interview terminated
+Notes on Recode File
+
+1.     The following variables have too many codes for labels in the dictionary.  Their codes are listed below.
+
+       SDIST: 10     Nairobi
+              21     Kiambu
+              22     Kirinyaga
+              23     Murang'a
+              24     Nyeri
+              25     Nyandarua
+              31     Kilifi
+              32     Kwale
+              33     Lamu
+              34     Mombasa
+              35     Taita-Taveta
+              36     Tana River
+              41     Embu
+              43     Kitui
+              44     Machakos
+              46     Meru
+              61     Kisii
+              62     Kisumu
+              63     Siaya
+              64     South Nyanza
+              71     Kajiado
+              72     Kericho
+              73     Laikipia
+              74     Nakuru
+              75     Nandi
+              76     Narok
+              81     Baringo
+              82     Elgeyo Marakwet
+              84     Trans Nzoia
+              86     Uasin Gishu
+              87     West Pokot
+              91     Bungoma
+              92     Busia
+              93     Kakamega
+       V704   Husband's occupation
+
+              11     Engineers, technicians and draughtsmen
+              12     Medical, para-medical and nursing workers
+              13     Physical and life scientists
+              14     Human relations and resource workers
+              15     Statisticians, mathematicians and economists
+              16     Teachers, lecturers and instructors
+              17     Jurists and legal practitioners
+              18     Cultural workers
+              19     Other professional, technical and related workers
+              21     Public administrators
+              22     Private and parastatal managers and administrators
+              23     Accountants, bookkeepers and cashiers
+              24     Office clerks and office machine operators
+              25     Transport supervisors and clerks
+              26     Post, radio & telecommunication supervisors and clerks
+              29     Other administrative, managerial and clerical workers
+              31     Sales workers
+              41     Protective service workers (police, guards, etc)
+              42     Lodging, catering and cleaning service workers
+              43     Personal service workers
+              44     Other service workers
+              51     Agricultural workers
+              52     Forestry workers
+              53     Fishermen
+              54     Wild life workers
+              59     Other agricultural, forestry and related workers
+              61     Production supervisors and controllers
+              62     Mine, quarry and related workers
+              63     Chemical and mineral processing workers
+              64     Metal fabrication workers
+              65     Wood and paper preparers
+              66     Textile preparers
+              67     Textile and leather goods makers
+              68     Food, beverage and tobacco processors
+              69     Woodworkers and woodworking machine operators
+              70     Smiths, welders and sheet metal workers
+              71     Metalworking machine operators and machine fitters
+              72     Engine maintenance workers
+              73     Electrical and electronic workers
+              74     Printing and reproduction workers
+              75     Other production and maintenance workers
+              76     Painters
+              77     Brick-layers and carpenters
+              78     Stationery engine operators
+              79     Other manufacturing workers
+              81     Packers and packing machine operators
+              82     Loading and storage workers
+              83     Transport workers
+              91     General labourers
+              95     Members of the Armed Forces
+              96     Never worked
+              99     Not stated2.     Nairobi and the following rural districts were oversampled so that they could be analyzed individually.  Weights do not
+       need to be used when analyzing each of these districts by selecting SDIST equal to 10 for Nairobi or SDIST equal to
+       the following codes with V102 equal to 2 (rural).
+
+          SDIST CODE        V102          VALUE
+
+              10             1            Nairobi
+              22             2            Kirinyaga
+              23             2            Murang'a
+              24             2            Nyeri
+              31             2            Kilifi
+              44             2            Machakos
+              46             2            Meru
+              61             2            Kisii
+              63             2            Siaya
+              64             2            South Nyanza
+              72             2            Kericho
+              86             2            Uasin Gishu
+              91             2            Bungoma
+              93             2            Kakamega
+
+3.     Only those husbands who had a complete interview have been added to the file.  Using the variable SWIFE1 permits
+       the user correct access to the data.  If the variable is not applicable (blank), no husband was interviewed or the
+       interview was incomplete.  If the variable is equal to one, the data can be used to analyze the husband file.  If the
+       variable is equal to zero or one, the data can be used to analyze couples in the data file.  The husband's data should
+       be weighted with the variable SHV005/1000000.
+
+4.     The following are exceptions to standard coding of variables related to a variable coded as missing.
+
+       a)     If V606 is coded missing, V607 is coded as not applicable.
+       b)     If V704 is coded missing, V706 through V708 are coded as not applicable.
+       c)     If V709 is coded missing, V710 is coded as not applicable.
+
+5.     The country specific variable S520A, age at first sex as originally recorded was kept in the file since so many cases had
+       an age at first sex that was inconsistent with the conception of the first reported birth or too long after the age
+       reported for first marriage.
+
+6.     The country specific variables S315R and S315CR, originally reported source of currently used contraceptive method,
+       have been retained.  As analysis began, inconsistencies between funding agencies and the type of source were found.
+       The basic problem was in the respondent perception of FPAK clinics as hospitals.  The data were corrected based on
+       responses found in the Contraceptive Knowledge and Ever Use table.  The corrected responses are found in V326.
+Inconsistencies in the data file
+
+1.     There are two respondents whose age and years of education appear to be inconsistent - that is, the number of years
+       of education appear to be too great for the age of the respondent.
+
+2.     There are 9 respondents who report ever having used female sterilization while reporting current use of no method
+       or some other method.
+
+3.     There are 15 respondents who report their first marriage as having occurred before they reached the age of 10.
+
+4.     There are 3 husbands who report ever use of male sterilization while reporting current use of no method or some other
+       method.
+
+Differences from version 1 to version 2
+
+1.     A modification to the editing and imputation rules was made affecting V525 (Age at first sex).  Previously, if the age
+       at first sex was after the age at first marriage, the age at first sex was changed to the inconsistent code.  This rule has
+       now been dropped and the original data for age at first sex is now used.  A similar editing rule, in which age at first
+       sex is coded inconsistent if after age at first birth, is still in effect and is standard in DHS surveys.
+
+Differences from version 2 to version 3
+
+1.     Because of an inconsistency between age at first sex and the birth history, the imputation program produced bad birth
+       histories for five cases in which there was no information for the date of the first birth.  Each of these cases were found
+       to contain negative birth intervals between certain births.  V525 was changed to 97 for each of these cases using an
+       automatic correction program.  Two additional cases of inconsistency between this variable and a first birth were
+       discovered and these cases were also corrected by coding V525 as 97.
+
+       The following are case identifications of the problem cases:
+
+              U/R           Cluster       HHno          Line
+               2             435            80           2
+               2             628           156           2
+               2             227           116           2
+               2             262            41           2
+               1             790            35           2
+               2             443            25           2
+               1             652            47           1
+

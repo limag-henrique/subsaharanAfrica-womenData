@@ -1,0 +1,846 @@
+                      INDIVIDUAL RECODE DOCUMENTATION
+
+KENYA (DHSIII)               Version 2 Doc 01                           KE3
+
+Name of Survey      Demographic and Health Survey
+
+Executing Agency    National Council for Population and Development &
+                    Central Bureau of Statistics
+
+Year of fieldwork   1993
+
+Universe            All women, 15-49
+
+Coverage            National in scope but excluding North-East Province and four
+                    other northern districts (Samburu and Turkana in Rift Valley
+                    Province and Isiolo and Marsabit in Eastern Province).
+
+Size                7540 women
+                    7950 households
+                    2336 men
+                    1257 couples
+
+Weights             Urban: Weighted for Nairobi, Mombasa and Other Urban Areas.
+                    Rural: 15 special districts were targeted, each with a
+                    separate weight. These districts were: Bungoma, Kakamega,
+                    Kericho, Kilifi, Kisii, Machakos, Meru, Murang'a, Nakuru,
+                    Nandi, Nyeri, Siaya, South Nyanza, Taita-Taveta and Uasin
+                    Gishu. The other rural areas have one weight.
+
+Contents            DHSII B-Core + AIDS module
+
+Language            Kalenjin, Kamba, Kikuyu, Kisii, Luhya, Luo, Meru/Embu,
+                    Mijikenda, Kiswahili, English
+
+Anthropometry       Mothers, Children aged 0-59 months
+
+Calendar            None
+
+Supplementary Data  Household schedule
+Files               Male questionnaire
+                    Service Availability
+
+Recode Structure    DHSII (Male=DHSIII)
+
+Record size         Individual Flat File: 3491
+                    Individual Hierarchical and Rectangular File: 172 maximum
+                    Household Flat File: 1255
+                    Household Hierarchical and Rectangular File: 100 maximum
+                    Male Flat File: 557
+                    Male Hierarchical and Rectangular File: 168
+                    Couple Flat File: 1996
+                    Couple Hierarchical and Rectangular File: 168
+
+Records per case in Individual: 76
+Rectangular file    Household: 67
+                    Male: 10
+                    Couple: 42
+
+Maximum entries in  32
+household schedule
+Sections and Variables Unused
+
+HOUSEHOLD:
+
+RECH1     HV115     HV116
+
+RECH2     HV211
+
+INDIVIDUAL:
+
+REC11     V111      V124      V125      V144      V145
+          V146      V147
+
+REC22     V228      V229      V230      V232      V233
+          V234      V234
+
+REC32     V323      V338      V339      V359      V360
+          V365      V366      V369      V370      V371
+          V372      V374      V375      V383      V384
+          V385      V386      V387      V388      V389
+          V390      V391      V392
+
+REC41     M2C-E     M2H-J     M2L-M     M3C-E     M3J
+          M3L-M
+
+REC42     V410A     V413A-D   V414B-C   V414      V424F-I
+          V424M-N   V424Q-R   V424V-W   V424Y     V425
+          V427-V436
+
+REC43     H12F-I    H12M-N    H12Q-R    H12V-W    H14
+          H14A      H15E-H    H18       H32F-I    H32M-N
+          H32Q-R    H32V-W    H35A      H37A-D
+
+REC44     HW20-HW26
+
+REC51     V506      V533
+
+REC61     V618      V619
+
+REC71     V724-V728
+Sections Added
+
+REC91     Country specific - single variables from sections 11 through 43
+
+SDISTRI   Individual district
+SNASSEP   NASSEP cluster number
+SLANQ     Language of individual questionnaire
+SLANI     Language used in interview
+SLANLO    Respondent's local language
+STRANS    Translator used
+S109A     Highest certificate obtained
+S109B     Educational groups
+S116A     Women's organization
+S119      Usual district of residence
+S128B     Land
+S128D     Cattle, goats, or sheep
+S302A     Rhythm, counting days - knows
+S303A     Rhythm, counting days - used
+S304A     Rhythm, counting days - source
+S302B     Natural Family Planning - know
+S303B     Natural Family Planning - use
+S304B     Natural Family Planning - source
+S307B     Avoid sexual intercourse
+S312      Current contraceptive method
+S320      Walk or uses transportation
+S325      Main reason not to use a method
+S327      Preferred future method
+S333      Walk or use transport
+S333A     First heard about family planning
+S333B     Got the most information
+S334      Heard radio program about Family Planning
+S334AA    Which program - Mwenda Pole
+S334AB    Which program - Panga Uzazi
+S334AC    Which program - Maisha Ya Jamii Yako
+S334AD    Which program - Jifunze Na Uendelea
+S334AE    Which program - Maisha Bora
+S334AF    Which program - Afya Yako
+S334AG    Which program - Daktari Akushauri
+S334AH    Which program - Kuelewana Ni Kuzungumza
+S334AI    Which program - Other
+S334AJ    Which program - DK/Remember
+S335      Information for young people
+S335A     Services for young people
+S336      Community supplier
+S337      Times visited
+S484      Last time used whole packet
+S485      Quantity of water for ORS
+S485A     Number of containers for ORS
+S504      Partner has other wives
+S505      Number of other wives
+S607      Recommend sterilization
+S608      Why not recommend
+S610      Partner approves couples using
+S610A     Talked about cost of children
+S611      Ever discussed Family Planning
+S611A     How often discussed Family Planning last year
+S612      Discussed children
+S613      Husbands desire vs wives
+S615      Stop breastfeeding before sex
+S617AB    How many boys
+S617AG    How many girls
+S707A     Earn a regular wage
+S812      Name of measurer
+S812A     Name of assistant
+
+REC92     Country specific - births
+
+IDX92     Index to birth history
+S219      Person child lives with
+
+REC94     Country specific - Maternity
+
+IDX94     Index to birth history
+S437D     Age for porridge or uji
+SPB       Received POLIO BIRTH
+SPBD      POLIO BIRTH day
+SPBM      POLIO BIRTH month
+SPBY      POLIO BIRTH year
+S463A     How many stools
+
+
+REC97     Country specific - single variables from sections 51 through 71
+
+S516      Number of different men
+S517      Use of condom
+S518      Total number of men
+S520      Ever heard of AIDS
+S521A     Source AIDS info - Radio
+S521B     Source AIDS info - TV
+S521C     Source AIDS info - Newspapers
+S521D     Source AIDS info - Health work
+S521E     Source AIDS info - Priests/Preachers/Kadhis
+S521F     Source AIDS info - Husband
+S521G     Source AIDS info - Friends/Relatives
+S521H     Source AIDS info - School
+S521I     Source AIDS info - Booklets/Pamphlets
+S521J     Source AIDS info - Barazas
+S521K     Source AIDS info - Other
+S521L     Source AIDS info - None
+S522A     AIDS transmission - Sexual Intercourse
+S522B     AIDS transmission - Shaving/razors
+S522C     AIDS transmission - Injections
+S522D     AIDS transmission - Circumcision, Tattoos
+S522E     AIDS transmission - Mother to child
+S522F     AIDS transmission - Transfusion of Infected Blood
+S522G     AIDS transmission - Other
+S522H     AIDS transmission - Don't know
+S523A     AIDS from handshaking
+S523B     AIDS from kissing
+S523C     AIDS from sharing clothes
+S523D     AIDS from eating utensils
+S523E     AIDS from touching dead person
+S523F     AIDS from mosquito/flea/bedbug bites
+S524      Healthy person with AIDS
+S525      Child with AIDS
+S526      Protection from AIDS
+S527A     Protection - No sex at all
+S527B     Protection - Limit sexual partners
+S527C     Protection - Use condoms
+S527D     Protection - Sterilize needles
+S527E     Protection - Avoid prostitutes
+S527F     Protection - Other
+S528      Knows somebody with AIDS
+S529      Can catch AIDS
+S530      How can you catch AIDS
+Notes on Recode File
+
+RECH0.
+
+1.   HV023     The following sample domains were defined for the DHS III
+               Kenya survey.
+
+               Clusters       =>   Domain;
+               445-473        =>   1;   { Nairobi }
+               481-508        =>   2;   { Mombasa }
+               474-480,509-536=>   3;   { Other Urban }
+               17-40          =>   4;   { Muranga Rural }
+               46-69          =>   5;   { Nyery Rural }
+               70-93          =>   6;   { Kilifi Rural }
+               100-123        =>   7;   { Taita Taveta Rural }
+               140-163        =>   8;   { Machakos Rural }
+               164-187        =>   9;   { Meru Rural }
+               188-211        =>   10;  { Kisii/Nyamira Rural }
+               219-242        =>   11;  { Siaya Rural }
+               243-266        =>   12;  { South Nyanza Rural }
+               271-294        =>   13;  { Kericho Rural }
+               298-321        =>   14;  { Nakuru Rural }
+               322-345        =>   15;  { Nandi Rural }
+               364-387        =>   16;  { Uasin Gishu Rural }
+               391-414        =>   17;  { Bungoma Rural }
+               421-444        =>   18;  { Kakamega Rural }
+                              =>   19;  { Other Rural }
+
+               The following clusters were not interviewed for various
+               reasons: 125,251,281,284,296,317,367,384,385,386,387,433,515
+               and 516.
+
+2.   HV024     Taken as province, which is the largest region variable in
+               the Kenya DHS III.
+               Rift Valley South and North are combined into Rift Valley.
+
+3.   HV026     Locality has been defined as follows in Kenya DHS III:
+
+               Inhabitants:        Name:               Locality:
+
+               500,000+       Nairobi/Mombasa     Capital, Large City: 0
+
+               50,000-500,000 Eldoret             Small City: 1
+                              Kisumu
+                              Kitale
+                              Machakos
+                              Meru
+                              Nakuru
+                              Nyeri
+                              Thika
+
+               < 50,000                           Towns :     2
+               Rural                              Rural :     3
+
+RECH1.
+
+1.   HV105     96 = 96+ Age of household member; 99 = Missing.
+
+2.   HV106     Education in the household. The questionnaire used in the
+               Kenya DHS III survey included level "0" (Nursery), which has
+               been considered as "No education".
+
+3.   HV108     Education in single years. See also V133. The educational
+               system in Kenya changed twice some years ago.
+               The maximum years of primary and secondary school have been
+               approximated as follows:
+               If the age of the household member is less or equal to 21
+               then completed primary is considered as 8 years of education
+               and completed secondary as an additional 4 years of
+               education.
+               If age is larger than 21 and smaller or equal to 41 then
+               completed primary is considered as 7 years of education and
+               completed secondary as an additional 6 years of education.
+               If age is larger than 41 and smaller or equal to 96 then
+               completed primary is considered as 8 years of education and
+               completed secondary as an additional 6 years of education.
+               If age is missing the current system is assumed.
+
+
+               Educational system:      before 1965:   8-4-2-3
+                              1965-1985:     7-4-2-3
+                              1985-present:  8-4-4
+
+4.   HV110     If household member is still in school. Kenya uses a level
+               of education category "0", nursery. This is considered in
+               the recode file as not having any formal education.
+               Consequently, the member of the household is considered as
+               not going to school.
+
+RECH2.
+
+
+1.   HV220     Age of household head; 96 = 96+
+
+
+REC11.
+
+1.   V101      De facto region of residence. See note on HV024.
+
+2.   V133      Education in single years. See notes on HV108.
+
+3.   V134      See notes on HV026.
+
+6.   V152      Introduced a label (Age of household head); 98 = UnknownREC31.
+
+1.             "Rhythm, Counting Days" and "Natural FP" have been recoded
+               as "Periodic Abstinence". Variables in contraceptive table
+               and those referring to current method use and future method
+               use have been included as country specific variables (S301,
+               S302, S303 and S304 for the contraceptive table, S312 for
+               current use and S327 for preferred future method).
+
+REC32.
+
+1.   V312      See notes on REC31.
+
+2.   V326      Last source for current users. Recoding of Q318 in the
+               questionnaire.
+               - Mobile clinic               under          PUBLIC (14)
+               - Community based distributor under          PRIVATE MEDICAL
+                                                            (27)
+               - Shop                        under          PRIVATE OTHER (31)
+               - Friends/Relatives           under          PRIVATE OTHER (32)
+
+3.   V365      Heard radio message last month about Family Planning. In
+               Kenya the time reference is six month. Included as Country
+               Specific variable (S334).
+
+4.   V363      See notes on REC31.
+
+5.   V366      Acceptability of media messages on Family Planning in Kenya
+               is different. Q335: "Information about Family Planning
+               should be available to young people". Plus there is one more
+               category: Other (3). Included as CS variable (S335).
+
+6.   V376      Reason not to use method in the future. Code "6" in Raw Data
+               File, "Fears it will make her sterile" has been coded under
+               "Other Health Concerns" in the recode file.  Code "16" in
+               recode, "Not married" was not a category in Kenya.
+
+7.   V377      See notes on V326.
+
+8.   V378      See notes on V327.
+
+9.   V379      See notes on V326.
+
+10.  V381      Time to source for a method.
+               Coded as "Source comes to respondent" for :
+                    27 -> Mobile Clinic
+                    28 -> Community Based Distributor
+                    32 -> Friends, relatives
+                    41 -> Other
+
+REC41.
+
+1.   M2C       Auxiliary Midwife. Not a category in Kenya.
+
+2.   M3C       Idem.
+
+REC42.
+
+
+1.   V423      Recoded quantities for ORS preparation.
+               In Kenya the number of containers used for preparing ORS was
+               also asked, so the quantity is multiplied by the number of
+               containers.
+
+               Small Kimbo, 1/2 Kg. as  500 cl.
+               Large Kimbo, 1 Kg.   as 1000 cl.
+               Tusker Beer Bottle   as  500 cl.
+               Premium Beer Bottle  as  330 cl.
+
+2.   V424C     Source for Oral Rehydration Sachets (ORS). Government
+               Dispensary has been coded as Government Health Post.
+
+3.   V424T     Source for ORS. Herbalist recoded as Traditional
+               Practitioner.
+
+4.   V424D     Source for ORS. Mobile Clinic is recoded under Public
+               Sector.
+
+5.   V424E     Source for ORS. Community Health Worker is coded under
+               Public Sector.
+
+
+REC51.
+
+1.   V510      Flag for completeness of date of marriage information. Code
+               4 (Year and Age, Year ignored) has been added to the recode
+               dictionary to reflect the imputation process used for Kenya
+               DHS III.
+
+REC71.
+
+1.   V704      The following occupation codes were used in Kenya DHS III.
+
+               11 - Professional, Technical and Related Workers
+               12 - Medical, Paramedical and Nursing Workers
+               13 - Physical and Life Scientists
+               14 - Human Related Resources Workers
+               15 - Statisticians, Mathematicians and Economists
+               16 - Teachers, Lectures, Instructors
+               17 - Jurists and Legal Practitioners
+               18 - Cultural Workers
+               19 - Other Professional and Related Workers
+               21 - Public Administrators
+               22 - Private/Parastatal Managers/Administrators
+               23 - Accountants, Bookkeepers, Cashiers
+               24 - Office Clerks and Office Machine Operators
+               25 - Transport Supervisors and Clerks
+               26 - Radio & Telecom Supervisors and Clerks
+               29 - Other Administrative, Managerial and Clerical
+               30 - Sales Workers
+               41 - Service Workers
+               42 - Lodging, Catering and Cleaning Services
+               43 - Personnel Service Workers
+               49 - Other Service Workers
+               51 - Agricultural Workers
+               52 - Forestry Workers
+               53 - Fishermen
+               54 - Wildlife Workers
+               59 - Other Agricultural, Forestry and Related
+               61 - Production Supervisor and Controllers
+               62 - Mine, Quarry and Related Workers
+               63 - Chemical and Mineral Processing Workers
+               64 - Metal Fabrication Workers
+               65 - Wood and Paper Preparers
+               66 - Textile Preparers
+               67 - Textile and Leather Goods Makers
+               68 - Food, Beverage and Tobacco Processors
+               69 - Wood Workers and Woodworking Machine Operators
+               70 - Smiths, Welders and Sheet-Metal Workers
+               71 - Metal Work Machine Operators, Machine Fitters
+               72 - Engine Maintenance Workers
+               73 - Electrical and Electronic Workers
+               74 - Printing and Reproduction Workers
+               75 - Other Manufacturing Workers
+               76 - Painters
+               77 - Construction Workers
+               78 - Stationary Engine Operators
+               79 - Other Production and Maintenance Workers
+               81 - Packers and Packing Machine Operators
+               82 - Loading and Storage Workers
+               83 - Transport Workers
+               91 - Other Laborers
+               95 - Military Personnel
+               96 - Does not Work
+               98 - Don't Know
+               99 - Missing
+
+
+2.   V715 Education in single years for husband. Husbands age is unknown,
+          so the respondent's age is used to determine which educational
+          system should be applied to the husband. See notes on variable
+          HV108.
+
+3.   V716 Occupation codes as used in Kenya DHS III: see notes on variable
+          V704.
+
+4.   V718 Earns cash for work. If respondent declared to be self employed
+          and did not earn any cash for her work, she will still be
+          classified as self-employed. Self-employed in this case does not
+          imply that she earns cash for her work as in some other DHSII
+          surveys.
+
+
+Inconsistencies in the Data File
+
+1.        There are 9 cases with a birth interval less than 9 months.
+
+2.        There are 2 cases where the calculated age at first birth is less
+          than 10 years.
+
+3.        Calculated duration of pregnancy. There are three cases where the
+          duration of pregnancy exceeds time since last born child.
+
+4.        Six respondents said they had never menstruated, but did have
+          children. Flag variable in V227 was set to 8 for these cases.
+
+5.        Brand name of pill was not asked, but cost of package was asked.
+          There is one case with a cost for pills of 991 shillings, which
+          is far out of the range of all the other answers to this
+          question.
+
+6.        Vaccination dates. There are six unedited cases with a
+          vaccination date before the date of birth of the child.
+
+7.        Births in the last five years. There are eight cases where the
+          imputed date of birth falls within the five year of interview
+          date, but these children were not entered in the health sections
+          during data entry, because their year of birth was unknown (and
+          most of the time also the month of birth). These cases have been
+          included with missing data assigned to the relevant variables.
+
+8.        There are 27 cases where twins have been coded differently for
+          the variables M1-M17.
+
+9.        There is one case, that has a result code "1" for measurement
+          (completed), but both the height and weight are missing. This
+          caused the data entry program to skip the date of measurement,
+          i.e. made the date of measurement not applicable. For this date
+          the date of measurement of the previous case has been taken. The
+          result code is inconsistent for this case.
+
+10.       There are three cases where time of the beginning of the
+          interview is later then time when interview ended.
+
+11.       There are 530 cases where the height of a child was measured
+          differently from the recommended way of measuring (i.e. younger
+          than 24 months lying down and older than 24 months standing up).
+
+12.       There are 15 cases where death of child was reported outside
+          recommended questionnaire ranges (days if less than one month,
+          months if less than two years or else years).
+
+13.       There are two cases where the calculated age at first birth is
+          less than 10 years.
+
+14.       There are 6 cases where the respondent declared having her last
+          period before the last born child and never had children or
+          declared that she never had a period but did have children.
+
+15.       Eight cases where time when liquids or foods were given for the
+          first time surpasses current age of child or age at death.
+
+16.       Three cases where the interviewer saw a health card, but it
+          contained no vaccination dates.
+
+17.       Twenty two cases where the respondent or one of her children
+          under five year of age where partly measured, while the result
+          indicated full measurement.
+
+18.       There are five cases where the first member of the household
+          listing was not the head of the household.
+
+19.       There are 333 cases where there is a inconsistency between
+          observed BCG scar and vaccination for BCG (either a scar was
+          observed and no vaccination date was given or a vaccination date
+          was given and no scar observed).
+
+20.       There are five cases in which the number of single years of
+          education exceeds the amount expected based on the age of the
+          respondent.
+
+Coding Additions.
+
+Country specific question S109B has been added to reflect the educational
+grouping as used in the DHS Kenya Final Report:
+
+          0 = No education
+          1 = Primary incomplete
+          2 = Primary complete
+          3 = Secondary and more
+
+
+                                MALE RECODE
+
+Sections and Variables Unused
+
+INDIVIDUAL:
+
+MREC01    MV030     MV031     MV032
+
+MREC11    MV105     MV111
+
+MREC22    MV201     MV202     MV203     MV204     MV205
+          MV206     MV207     MV213     MV225
+
+MREC32    MV366A    MV366B    MV367     MV375A    MV384B
+          MV384C    MV384D    MV384E
+
+MREC51    MV534     MV535
+
+MREC61    MV630B-X
+
+MREC71    MV719     MV731     MV732     MV733     MV736
+          MV740
+
+MREC75    MV752H    MV752J    MV752M    MV752N    MV752O
+          MV753     MV754A    MV754D    MV754F-K  MV754N
+          MV754O    MV755B-F  MV755L-O  MV755X    MV755Z
+          MV757     MV758     MV760A-G  MV760I    MV760L-P
+          MV760V-Z  MV761     MV763     MV765
+
+MREC85    Not Used
+Sections Added
+
+REC91     Country specific - single variables
+
+SM104     Previous place of residence
+SM108     Education as in the final report (see MV149)
+SM109A    Highest certificate obtained
+SM117     Works on whose land
+SM118     Earns regular wage or salary
+SM122     Usual place of residence
+SM123     Usual district of residence
+SM124     Source of non-drinking water
+SM125     Time to water and back (mins)
+SM126     Drinking from same source
+SM127     Source of drinking water
+SM128     Type of toilet facility
+SM129A    Electricity
+SM129B    Radio
+SM129C    Television
+SM129D    Refrigerator
+SM130     Rooms for sleeping (male n.r.)
+SM131     Main material of floor
+SM132     Main material of the wall
+SM133     Main material of the roof
+SM134A    Bicycle
+SM134B    Motorcycle
+SM134C    Car
+SM134D    Land
+SM134E    Cattle, goats, sheep
+SM134F    Cash crops
+SM308     Living children at first use
+SM311     Source of current method
+SM312     Time to get to source (Minutes)
+SM314M    Month of sterilization
+SM314Y    Year of sterilization
+SM315     Duration of current use (month)
+SM316     Use of condom last four weeks
+SM317     Cost of condom
+SM322     Source for future method
+SM324     Know source for FP
+SM325     Source for FP
+SM326     Time from home to place (Minutes)
+SM327     First heard about family planning
+SM328     Got the most information
+SM330A    Mwenda Pole
+SM330B    Panga Uzazi
+SM330C    Maisha Ya Jamii Yako
+SM330D    Jifunze Na Uendelea
+SM330E    Maisha Bora
+SM330F    Afya Yako
+SM330G    Daktari Akushauri
+SM330H    Kuelewana Ni Kusungumza
+SM330I    Other
+SM330J    Don't Know/Don't Remember
+SM331     Information for young people
+SM332     Services for young people
+SM333     Community supplier
+SM334     Times visited
+SM335     Greatest change of pregnancy
+SM314C    Date of sterilization (CMC)
+SM314F    Date flag for B314C
+SM404     Usual coital frequency
+SM406     Number of different women
+SM407     Use of condom
+SM408     Total number of women
+SM412A    AIDS: Sex
+SM412B    AIDS: Shaving/Razors
+SM412C    AIDS: Injections
+SM412D    AIDS: Circumcision, Tattoos
+SM412E    AIDS: Mother to Child
+SM412F    AIDS: Transfusions
+SM412G    AIDS: Other
+SM412H    AIDS: Does Not Know
+SM413A    AIDS from handshaking
+SM413B    AIDS from kissing
+SM413C    AIDS from sharing clothes
+SM413D    AIDS from eating utensils
+SM413E    AIDS from touching dead person
+SM413F    AIDS from mosquito/flea/bedbug
+SM415     Child with AIDS
+SM418     Knows somebody with AIDS
+SM419     Can catch AIDS
+SM420     How can you catch AIDS
+SM421     Discharge from penis
+SM422A    Presence of Children < 10
+SM422B    Presence of Wife
+SM422C    Presence of Other Males
+SM422D    Presence of Other Females
+SM507     Recommend sterilization
+SM508     Why not recommend
+SM510     Talked about cost of children
+SM513     Discussed no. of children
+SM515     Time to wait before sex (Months)
+SM516     Stop breastfeeding before sex
+SM519B    How many boys
+SM519G    How many girls
+SM520     Best Birth Interval (Months)
+SMLANI    Language of the Interview
+SMLANLO   Respondentþs Local Language
+SMTRANS   Whether a Translator was Used
+SMDISTRI  Individual District
+SMNASSEP  Household NASSEP District
+SM16A     First Wifeþs Line Number of Husband from Household
+SM16B     Second Wifeþs Line Number of Husband from Household
+Notes on Recode File
+
+1.   Five men reported that their wife is sterilized, but their current
+     contraception method is not sterilization.
+2.   There are seven cases where the manþs occupation is missing.
+3.   Two interviews took longer than three hours.
+4.   The wife of one man was reported in the household as being less than
+     15 years old.
+5.   There are two cases where the respondent was married before age 12.
+6.   Data for the wives of 33 men are not present in the individual
+     (womenþs) file because the interview was not complete, and 56 cases
+     where the wife was not eligible for interview.
+7.   Two men claim to have 50 children, one claims to have 60.
+8.   There are 1257 cases where data from the womenþs recode file can be
+     correctly matched with husbands in the male recode file.  This
+     includes polygynous relationships, where each couple is counted once.
+     There are 233 cases where the line numbers for husbands based on the
+     household questionnaire (SM16A and B) or MV034 are incorrect.
+9.   Sources for MV762, þSource for Condoms,þ are (1) SM311 (source for
+     current method) if the current method is condom, (2) SM322 if the
+     future preferred method is the condom, or (3), if the respondent knows
+     where to get condoms (based on the contraceptive table), MV762 is set
+     to missing.  Otherwise, MV762 is set to 98 (þdonþt know sourceþ).
+10.  The educational system in Kenya changed twice some years ago.
+     Education level as it appears in the final report is in SM108, a
+     country-specific variable.  For the standard education variables, the
+     maximum years of primary and secondary school have been approximated
+     as follows:
+
+     1.   If the age of the household member is 21 or less then completed
+          primary is considered as 8 years of education and completed
+          secondary as an additional 4 years of education.
+     2.   If the age is greater than 21 but less than or equal to 41 then
+          completed primary is considered as 7 years of education and
+          completed secondary as an additional 6 years of education.
+     3.   If the age is greater than 41 but less than or equal to 96 then
+          completed primary is considered as 8 years of education and
+          completed secondary as an additional 6 years of education.
+     4.   If the age is missing, the current system is assumed:
+          1.   before 1965:   8-4-2-3
+          2.   1965-1985:     7-4-2-3
+          3.   1985-present:  8-4-4
+
+11.  The following occupation codes were used in Kenya DHS III:
+               11 - Professional, Technical and Related Workers
+               12 - Medical, Paramedical and Nursing Workers
+               13 - Physical and Life Scientists
+               14 - Human Related Resources Workers
+               15 - Statisticians, Mathematicians and Economists
+               16 - Teachers, Lectures, Instructors
+               17 - Jurists and Legal Practitioners
+               18 - Cultural Workers
+               19 - Other Professional and Related Workers
+               21 - Public Administrators
+               22 - Private/Parastatal Managers/Administrators
+               23 - Accountants, Bookkeepers, Cashiers
+               24 - Office Clerks and Office Machine Operators
+               25 - Transport Supervisors and Clerks
+               26 - Radio & Telecom Supervisors and Clerks
+               29 - Other Administrative, Managerial and Clerical
+               30 - Sales Workers
+               41 - Service Workers
+               42 - Lodging, Catering and Cleaning Services
+               43 - Personnel Service Workers
+               49 - Other Service Workers
+               51 - Agricultural Workers
+               52 - Forestry Workers
+               53 - Fishermen
+               54 - Wildlife Workers
+               59 - Other Agricultural, Forestry and Related
+               61 - Production Supervisor and Controllers
+               62 - Mine, Quarry and Related Workers
+               63 - Chemical and Mineral Processing Workers
+               64 - Metal Fabrication Workers
+               65 - Wood and Paper Preparers
+               66 - Textile Preparers
+               67 - Textile and Leather Goods Makers
+               68 - Food, Beverage and Tobacco Processors
+               69 - Wood Workers and Woodworking Machine Operators
+               70 - Smiths, Welders and Sheet-Metal Workers
+               71 - Metal Work Machine Operators, Machine Fitters
+               72 - Engine Maintenance Workers
+               73 - Electrical and Electronic Workers
+               74 - Printing and Reproduction Workers
+               75 - Other Manufacturing Workers
+               76 - Painters
+               77 - Construction Workers
+               78 - Stationary Engine Operators
+               79 - Other Production and Maintenance Workers
+               81 - Packers and Packing Machine Operators
+               82 - Loading and Storage Workers
+               83 - Transport Workers
+               91 - Other Laborers
+               95 - Military Personnel
+               96 - Does not Work
+               98 - Don't Know
+               99 - Missing
+
+
+Inconsistencies in the Data File
+
+1.   Four men include line numbers for a wife but have indicated that they
+     are not currently married.
+2.   Eight men indicated that their wife is sterilized but they are not
+     currently using a contraception method.
+3.   There is one case where the reported end of interview is earlier than
+     when it began.
+4.   In 13 cases, the ideal number of children is not equal to the ideal
+     numbers of boys plus girls plus either.  This is due in part to the
+     non-standard structure of the questionnaire and its skip pattern.
+5.   In 8 cases, the literacy (MV108) variable is missing, although the
+     respondent reportedly read a newspaper at least once a week.
+
+
+Coding Additions
+
+MV218
+    99: Missing value
+
+MV510
+     4: Year and age given, year ignored
+
+MV376
+    27: Difficult to get pregnant
+    35: Fatalistic
+    43: Lack of knowledge
+    57: Fears sterility
+
+MV384A
+    8: Donþt Know
+
+

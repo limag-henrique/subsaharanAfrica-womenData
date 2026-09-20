@@ -1,0 +1,600 @@
+                         INDIVIDUAL RECODE DOCUMENTATION
+
+
+BURKINA FASO (DHSII)            Version 1 Doc 01                             BF2
+
+Name of Survey      Enquˆte D‚mographique et de Sant‚ du
+                    Burkina Faso  (EDSBF)
+
+Executing Agency    Institut National de la Statistique et de la D‚mographie
+
+Year of fieldwork   December 1992 - Mars 1993
+
+Universe            All women, 15-49 years
+                    All men from one 1/3 of the households, 15 years and older
+
+Coverage            National, 100%
+
+Size                5143 Households
+                    6354 Women
+                    1845 Men
+                    1149 Couples
+
+Weights             Household           Individual
+               Women      Men      Women      Men
+
+     Capital:  455089    46539     452336    478698
+     Urban:    475614    467910    495814    526159
+     Rural:   1370303   1370233   1400669   1365224
+
+Contents            DHSII B-Core + AIDS + Male + Service Availability
+
+Language            French, Moor‚, Dioula, Fulfuld‚
+
+Anthropometry       Mothers, Children aged 0-59 months
+
+Calendar            None
+
+Supplementary Data  Household schedule
+Files               Male questionnaire
+                    Service Availability
+
+Recode Structure    DHSII (male recode=DHSIII)
+
+Record size         Individual Flat File: 3989
+                    Individual Hierarchical and Rectangular File: 172  maximum
+                    Household Flat File: 1286
+                    Household Hierarchical and Rectangular File: 100  maximum
+                    Male Flat File: 467
+                    Male Hierarchical and Rectangular File: 132 maximum
+                    Couples Flat File: 1858
+                    Couples Hierarchical and Rectangular File: 152 maximum
+
+Records per case in Individual:    62
+Rectangular file    Household:     75
+                    Male:          10
+                    Couples:       42
+
+Maximum entries in  36
+household schedule
+Sections and Variables Unused
+
+
+HOUSEHOLD:
+
+RECH2          HV214     HV215
+
+
+
+INDIVIDUAL:
+
+
+REC11          V111     V128    V129    V144    V145    V146    V147
+               V153     V154
+
+REC22          V229     V230    V231    V232    V233    V234    V235
+
+REC32          V359     V360    V369    V370    V371    V375    V385
+               V386     V387    V388    V389
+               V390     V391    V392
+
+REC41          M2D      M2E     M2H     M2J     M2L     M2M     M3D
+               M3E      M3J     M3L     M3M
+
+REC42          V413A    V413B   V413C   V413D   V414B   V414C   V424D
+               V424E    V424J   V424M   V424N   V424Q   V424R   V424S
+               V424V    V424W   V424Y   V427    V428    V429    V430
+               V431     V432    V433    V434    V435
+
+REC43          H12D     H12E    H12J    H12M    H12N    H12Q    H12R
+               H12S     H12V    H12W    H15E    H15F    H15G    H15H
+               H32D     H32E    H32J    H32M    H32N    H32Q    H32R
+               H32S     H32V    H32W    H35     H37B    H37C    H37D
+
+REC71          V724     V725    V726    V727    V728
+Sections Added
+
+
+RECH3     Country specific household single variables
+
+SHPROV    Province
+SHDEPART  Department
+SHLANGUE  Language of questionnaire
+SHLANGIN  Language of interview
+SHINTERP  Translator needed
+
+RECH4     Country specific household schedule variables
+
+IDXH4     Index to household schedule
+SH09A     Highest education level
+SH09B     Highest year of education
+SH17      Line number of each eligible woman's husband
+
+REC91     Country specific single variables
+
+SPROV     Province
+SDEPART   Department
+SLANGUE   Language of questionnaire
+SLANGINT  Language of interview
+SINTERP   Translator needed
+S108      Highest education level
+S109      Highest year of education
+S116      Citizenship
+S120      Location of residence for nonresident
+S222C     Number of miscarriages, abortions, stillbirths
+S317A     Number of menstrual cycles per pills box
+S317B     How is this (contraceptive) pill used
+S325      From whom got advice on sterilization
+S338      Main information source about family planning
+S487A     Volume of water used last time to prepare ORS bag
+
+REC94     Country specific maternity variables (child born since 01/87)
+
+IDX94     Index to birth history
+S437C     Herbal tea given
+S437E     Baby food given
+S439      Bottle fed with something last night
+
+REC95     Country specific health history variables (child born since 01/87)
+
+IDX95     Index to birth history
+S445      Got vaccinations non registered
+S457A     Fever/cough treatment
+S471A     Diarrhea treatment source
+S476      First time received ORS after diarrhea started
+S4B       BCG
+S4BD      BCG day
+S4BM      BCG month
+S4BY      BCG year
+S4P0      Polio 0 received
+S4P0D     Polio 0 day
+S4P0M     Polio 0 month
+S4P0Y     Polio 0 year
+S4P1      Polio 1 received
+S4P1D     Polio 1 day
+S4P1M     Polio 1 month
+S4P1Y     Polio 1 year
+S4P2      Polio 2 received
+S4P2D     Polio 2 day
+S4P2M     Polio 2 month
+S4P2Y     Polio 2 year
+S4P3      Polio 3 received
+S4P3D     Polio 3 day
+S4P3M     Polio 3 month
+S4P3Y     Polio 3 year
+S4D1      DPT 1 received
+S4D1D     DPT 1 day
+S4D1M     DPT 1 month
+S4D1Y     DPT 1 year
+S4D2      DPT 2 received
+S4D2D     DPT 2 day
+S4D2M     DPT 2 month
+S4D2Y     DPT 2 year
+S4D3      DPT 3 received
+S4D3D     DPT 3 day
+S4D3M     DPT 3 month
+S4D3Y     DPT 3 year
+S4M       Measle received
+S4MD      Measle day
+S4MM      Measle month
+S4MY      Measle year
+S4F       Yellow fever received
+S4FD      Yellow fever day
+S4FM      Yellow fever month
+S4FY      Yellow fever year
+S4I1      Immovax 1 received
+S4I1D     Immovax 1 day
+S4I1M     Immovax 1 month
+S4I1Y     Immovax 1 year
+S4I2      Immovax 2 received
+S4I2D     Immovax 2 day
+S4I2M     Immovax 2 month
+S4I2Y     Immovax 2 year
+S4IN      Number of Immovax shots
+S4PN      Number of Polio shots
+
+REC98     Country specific Aids variables
+
+S801      Heard about Aids
+S802      From whom heard about AIDS
+S803      Attended to any AIDS conferences
+S804      How to get AIDS
+S805      What to do to avoid AIDS
+S806      How to recognize AIDS patient
+S807      AIDS woman can give birth to AIDS baby
+S808      A heathy looking person can have AIDS
+S809      What to do with AIDS patient
+S810      Got shots for the last two months
+S811      Who/Where shots were given to/from
+S813      Used condoms during sex those last two months
+S815      Used condoms every time, sometimes, rarely
+S816      Condoms source
+S817      Husband/Partner condoms brand
+S818      Number of sex partners those last two months
+Notes on Recode File
+
+
+1.   The 230 clusters were numbered from 1 to 222 and from 261 to 411 (in the
+     following sequence: 261 291 321 371 381 391 401 411) due to a subdivision of
+     E.A. in the capital where the population increased a lot since the last
+     census. The sequences of those new numbers have a correspondence with the
+     cluster number they were extracted from. For example, cluster 261 is a
+     subdivision or a part of the previous cluster 26. For HV001, the cluster
+     numbering is the same as in the raw data, and for HV004 it is sequential up
+     to 230.
+
+2.   The education level presents a common particularity of many african french
+     speaking countries.  The secondary level is divided into the first and second
+     stages of secondary education. The first stage is four years and the second
+     one is 3 years. There are country specific variables to keep track of theses
+     two stages. However, they were recoded as in the standard in one stage
+     secondary education adding the number of years of the second stage to the
+     number of years of the first one.
+
+3.   A total of 6 years at primary, 5 and 4 years at first and second stages of
+     secondary level and 4 years at higher are necessary to complete those
+     education levels. However, a maximum of 7 years was assigned to complete
+     secondary level instead of nine years (5 + 4), because of the professional
+     training they added at the end of the two stages secondary level which is
+     optional.
+
+4.   The distribution of the respondentþs month of birth the distribution after
+     imputation is low for January. Itþs partly due to fact that during imputation
+     the year of birth reported was ignored assuming that people know their age
+     better than their date of birth (date of birth is month and year of birth)
+     and/or because the interviewers were inclined to subtract the year of birth
+     from the year of interview to report the age.
+
+5.   There are 222 women who know Norplant and only 17 of them declared  having
+     ever used it. Norplant was recoded in the raw data as a new category only in
+     section SEC31 and in variable Q329 to show the impact of a recent campaign
+     at the time of the survey. In the raw data there are 227 yes for the
+     knowledge but five of them are not Norplant (the difference comes from the
+     way the other answer can be recoded in SEC31) and 18 cases for the use with
+     the occurrence 13 (second 12 of the other answers) because one case had ever
+     used another traditional method which is the second traditional method ever
+     used: the occurrence is 13 but Q301(13)=12.
+
+6.   The recodification for variables M1-M32 can be slightly different from the
+     raw data in their distribution, due to the standard recode process of
+     breastfeeding, abstinence and amenorrhea. For example there are two cases
+     more in the raw data that are respectively 19 and 36 months of duration of
+     breastfeeding and they are missing in the recode data because of the way the
+     recode recalculate durations and recategorize special answers with others raw
+     variables.
+
+7.   Variable V416 is created from questions Q471, Q475, Q483, Q484, and variable
+     V208.  Variables V424A-X were created from Q488 and V416 (equal 2 or 3). It
+     was not possible to use question Q471A (V416 = 1) to create V424A because the
+     categories are different; so these questions were kept as country specific
+     variables (S471A-H).
+
+8.   Vaccination questions (Q444 and Q447) are recoded into standard recode
+     variables (H2-H9) and into country specific variables (S444 and S447) to keep
+     track of immovax which is a country specific vaccination. Two immovax shots
+     are equal to 3 Polio and 3 DPT injections.  When the mother reported more
+     than 3 shots, it is assumed that these extra shots (only two for immovax)
+     were for measles first and then yellow fever.
+
+9.   The distribution for the respondentþs month of marriage is unusual, as is the
+     case with the month of birth.  The month of marriage was imputed considering
+     the age at first marriage (if reported), and so the year was ignored assuming
+     that people better know their age at marriage than their date of marriage,
+     and also to adjust the fact that the interviewers were inclined to subtract
+     the year of marriage from the year of interview to report the age.
+
+10.  The labels PSP and CSPS are not translated because there is no equivalent in
+     English. Meanwhile, the label SMI (Sant‚ Maternel et Infantile) is translated
+     into MCH center (Maternal and Children Health center)
+
+
+Inconsistencies in the Data File
+
+1.   There are 2 cases in which the number of single years of education is close
+     to the age of the respondent (respectively V133 and V012). It is probably
+     that those respondents have skipped some grades.
+
+2.   There is one woman who takes pills and at the same time, her husband has been
+     sterilized
+
+3.   There are two missing answers for the brand pills and their costs.
+
+4.   There are two cases where V426=NOTAPPL and M4=0.  Both are dead children
+     breastfeed.
+
+5.   Two children got vaccination card without any vaccination dates on it.
+
+6.   Three cases in which the respondent declared not knowing if they had given
+     any treatment for diarrhea H21A=8 and they did not give anything
+     (H13=NOTAPPL, H14=0 H15-H15H=NOTAPPL) .
+
+7.   Twelve cases are inconsistent between the height the weight and the result
+     of the measurement (either one of the measure is 0 or missing and the result
+     is 0 or the result is not zero and the two measures are written down).
+
+8.   There is one woman married, living with her husband, she is his only wife,
+     and she never had sex at the time of interview, but she is only sixteen years
+     old.
+
+9.   Twenty-one respondents answered that they had their first intercourse more
+     than one year later than their first birth.
+
+10.  About 48 responses are inconsistent between time since last sex and whether
+     they had sex in the last four weeks or since last birth.
+
+11.  There are three MISSING responses for the time for future birth. In fact part
+     of the response is given (if it is in months or years), but the number of
+     months or years is missing.
+
+12.  Seven women are currently working, but their occupation is "no occupation."
+     It is probably due to the confusion between working and having a job.
+
+13.  One case is of a respondent working away but her occupation is missing:
+     V718=MISSING and V721=2.
+
+
+Coding Additions
+
+The labels of the following variables have been extended to include the Burkina
+Faso specific answers:
+
+In the individual questionnaire:
+
+* Q301    :    Norplant (13)
+* Q329    :    Norplant (13)
+* Q338    :    School (08)
+
+* Q405    :    DK (H)
+
+* Q412    :    Old women (I)
+
+* Q457A   :    At home (H)
+
+* Q471A   :    At home (H)
+
+* Q487A   :    1 liter bottle (06)
+
+* Q617    :    Depends on God (90)
+
+* Q802    :    School (08)
+
+* Q804    :    Blades, razors (M)
+
+* Q805    :    Abstinence (H)
+
+* Q806    :    Hair problems (J)
+
+* Q809    :    Help them (5)
+               Kill them (6)
+MALE RECODE:
+
+Sections and Variables Unused
+
+
+MREC01         MV030     MV031     M032
+
+MREC11         MV103     MV104     MV105     MV108     MV109
+               MV110     MV111     MV112
+
+MREC22         MV201     MV202     MV203     MV204     MV205
+               MV206     MV207     MV213     MV225
+
+MREC32         MV362     MV366A    MV366B    MV367     MV375A
+               MV384A    MV384B    MV384C    MV384D    MV384E
+
+MREC51         MV507     MV508     MV509     MV510     MV511
+               MV512     MV513     MV525     MV527     MV531
+               MV532
+
+MREC61         MV627     MV628     MV629     MV630A    MV630B
+               MV630C    MV630D    MV630E    MV630F    MV630G
+               MV630H    MV630I    MV630J    MV630K    MV630L
+               MV630X
+
+MREC71         MV719     MV731     MV732     MV733     MV736
+               MV740
+
+MREC75         MV751     MV752A    MV752B    MV752F    MV752H
+               MV752J    MV752N    MV752O    MV754A    MV754B
+               MV754C    MV754F    MV754G    MV754I    MV754J
+               MV754K    MV754M    MV754N    MV7540    MV755B
+               MV755C    MV755D    MV755E    MV755F    MV755L
+               MV755M    MV755N    MV755O    MV755X    MV755Z
+               MV757     MV758     MV760A    MV760B    MV760C
+               MV760D    MV760E    MV760F    MV760G    MV760I
+               MV760L    MV760M    MV760N    MV760O    MV760P
+               MV760V    MV760W    MV760X    MV760Y    MV760Z
+Sections Added
+
+
+REC91     Country specific single variables
+
+          SMPROV    :    Province
+          SMDEPART  :    Department
+          SMLANGUE  :    Language of questionnaire
+          SMLNGINT  :    Language of interview
+          SMINTERP  :    Translator needed
+          S105      :    Highest education level
+          S106      :    Highest year of education
+          S109      :    Citizenship
+          SM114     :    Intend to get one more wife
+          SM212     :    Pro/con FP camp. on radio/tv
+          SM213     :    Info. source on FP
+          SM306     :    Ever discus. about nb. of ch.
+          SM308     :    Time might wait until next ch.
+          SM308     :    Time might wait until next ch.
+          SM309     :    Mother should wait ...
+          SM312U    :    Best interval between 2 births (units)
+          SM312N    :    Best interval between 2 births (numbers)
+          SM403     :    Been to conferences on AIDS
+          SM404A    :    Sex with AIDS patient
+          SM404B    :    Sex with prostituts
+          SM404C    :    Sex. with different partners
+          SM404D    :    Homosexual relations
+          SM404E    :    Blood transfusion
+          SM404F    :    Eating in dish of a AIDS pat.
+          SM404G    :    Wearing AIDS patient suits
+          SM404H    :    Using syringes/needdles
+          SM404I    :    From mother to child
+          SM404J    :    Mosquitos/insects
+          SM404K    :    Other
+          SM404L    :    Don't know
+          SM404M    :    Blades, razors
+          SM406A    :    Slimming
+          SM406B    :    Diarrhee
+          SM406C    :    Vomiting
+          SM406D    :    Shivering, fever
+          SM406E    :    Blood analysis
+          SM406F    :    Eruptions
+          SM406G    :    Persistant cough
+          SM406H    :    Other
+          SM406I    :    Don't know
+          SM406J    :    Hair problems
+          SM407     :    AIDS women give birth AIDS ch.
+          SM409     :    What to do with AIDS people
+          SM410     :    Injection last 2 months
+          SM411     :    Where did you get this inject.
+          SM412     :    Sex. intercourse last 2 months
+          SM414     :    Use condom every/sometimes
+          SM415A    :    Used condom: avoid pregnancy
+          SM415B    :    Used condom: avoid STD
+          SM415C    :    Used condom: avoid Aids
+          SM415D    :    Used condom: other
+          SM415E    :    Used condom: donþt know
+          SM417     :    Condom brand
+
+Notes on Male Recode File
+
+
+1.   The recode file for the men is based on a DHSIII structure. That is why
+     we have þBF3" instead of þBF2" in the variable MV000, unlike in the
+     variable HV000 where þBF2"was coded, because the womenþs recode file is
+     based on a DHSII structure.
+     There are many others variables that are in the menþs, but not in the
+     womenþs recode file, because of this structure difference.
+
+2.   Like the women, the 230 clusters numbered from 1 to 222 and from 261 to
+     411 in the survey, in the following sequence: 261 291 321 371 381 391
+     401 411 (in the capital where the population increased a lot since the
+     last census the E.A.s 26 , 29, 32, 37, 38, 39, 40, 41 where subdivised
+     in two).For MV001, the cluster numbering is the same as in the raw data,
+     and for MV004 it is sequential up to 230.
+
+3.   In the education level, the secondary level is divided into the first
+     and second stage of secondary education. The first stage is four years
+     and the second one is 3 years. There are country specific recoded
+     variables (SM105 and SM 106) to keep track of theses two stages.
+     However, they were recoded as in the standart in one stage secondary
+     education adding the number of years of the second stage to the number
+     of years of the first one.
+
+4.   A total of 6 years at primary, 5 and 4 years at first and second stage
+     of secondary level and 4 years at higher are necessary to complete those
+     education level. However, the maximun put down in the recode application
+     is 7 years for the whole secondary level, instead of nine years (5 + 4),
+     because of the professional training they added at the end of the two
+     stages secondary level which is optional.
+
+5.   For the respondentþs month of birth the distribution after imputation is low
+     for January.
+     Itþs partly due to fact that during imputation the year of birth reported was
+     ignored assuming that people better know their age than their date of birth
+     (date of birth is month and year of birth) and/or the interviewers were
+     inclined to substract the year of birth from the year of interview to report
+     the age.
+
+6.   Three men were (supposed to be) born the last century. Their year and month
+     of birth (date of birth) were recoded in the category þ-1: Last centuryþ and
+     their age was recode þ97: 97 and olderþ.
+
+7.   The duration of interview is negative in twenty cases, and over than one
+     hour and a half in twelve cases.  There are few cases (two exactly)
+     where the duration was approximately about twelve hours and twenty
+     minutes, due to a confusion writing times in the format 1-12 am or pm
+     instead of 1-24 hours. For those two men, (cluster=31 household=1 line=1
+     and cluster=54 household=2 line=2), if the duration was positive, and
+     the ending interview time equal or over than 10pm, with the starting
+     interview time a bit more than 12 hours before (for cluster=31
+     household=1 line=1 starting time=10:15 ending time=22:34), twelve hours
+     are substracted to the ending time in the recode, or added to the
+     starting time of interview when the ending time is less than 10pm (after
+     recode cluster=31 household=1 line=1 starting time=10:15 ending
+     time=10:34) . If the duration was negative, (for cluster=54 household=2
+     line=1 starting time=19:25 ending time=7:38), and the starting time
+     equal or over 10pm, with th ending time a bit more than 12 hours before,
+     twelve hours are substracted to the starting time in the recode, or if
+     the starting time is less than 10pm, twelve hours are added to the
+     ending time of interview (after recode cluster=54 household=2 line=1
+     starting time=19:25 ending time=19:38).
+
+8.   There is no information about the husband line number in the female
+     questionnaire, but you can find it in the household schedules. So the husband
+     line number, was taken from the household data (M17), and recoded in a
+     country specific variable (SH17). The information was checked at the men and
+     women level matching the consistencies with other informations (checking the
+     marital status and in the menþs cases the wives line number) during the male
+     recoding process.
+
+9.   The variables MV763, MV764 and MV765 about number of partners and knowledge
+     and use of condom concern the population who had sex only the last two
+     months. In the questionnaire, only people who had sex the last two months
+     where interviewed about their use of condom and the number of their sexual
+     partners. However, the question M415 was recoded as well in a country
+     specific variables (SM415A-E) to keep track of informations about Aids and
+     STDs separatly.
+Inconsistencies in the Male Data File
+
+
+1.   There are 53 cases where the current marital status is different between
+     the household data and the male data (HV115<>MV501), and whithin thoses
+     53 cases, 44 of them with a difference between the past and present
+     marital status (HV116<>MV502). This is probably due to different
+     respondant and sometimes confusion in the definition of being married
+     (people who live together are often used to say that they are husband
+     and wife).
+
+2.   There are 3 cases where the wifeþs age is below fifteen, that make the
+     wives not eligible. These three household are the household=5 in
+     cluster=24, the household=14 in cluster=140, and the household=12 int
+     cluster=177.
+
+3.   In 33 cases the duration of interview is negative or over one hour and
+     a half. Two cases were corrected as described above, eleven were put in
+     the categorie of 95 minutes and over, and the twenty other cases were
+     recoded inconsistent (97).
+
+4.   Cluster=21 household=5 line=1, the man declare using a contraception
+     that is periodic abstinence and he declared not ever having used any.
+     (MV312=8 MV302=0 MV305=5).
+
+5.   Two men sterilized answered that they expected time for a future birth
+     soon or in few month. They could sterilized after the start of the last
+     pregnancy. Those two men are: cluster=123 household=21 line=1 and
+     cluster=261 household=37 line=3.
+
+      Coding Additions
+
+     The labels of the following variables have been extended to include the Burkina Faso specific answers:
+
+
+     In the individual questionnaire:
+
+          * M201    :    Norplan (13)
+
+          * M402    :    School (08)
+
+          * M404    :    Blades, razors (M)
+
+          * M405    :    Abstinence (H)
+
+          * M406    :    Donþt know (I)
+                         Hair problems (J)
+
+          * M409    :    Help them (5)
+                         Kill them (6)
+
+
+     In the male recode dictionary:
+
+          * MV762   :    Partner had one
+

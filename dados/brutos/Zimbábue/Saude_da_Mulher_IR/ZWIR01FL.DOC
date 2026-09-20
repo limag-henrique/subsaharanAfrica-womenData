@@ -1,0 +1,294 @@
+                      INDIVIDUAL RECODE DOCUMENTATION
+
+ZIMBABWE                     Version 01 Doc 01                           ZW
+
+Name of Survey      Demographic and Health Survey
+
+Executing Agency    Central Statistical Office
+                    Ministry of Finance, Economic Planning and Development
+
+Year of fieldwork   1988
+
+Universe            All women, 15-49
+
+Coverage            National, 100%
+
+Size                4201
+
+Weights             Self-weighted
+
+Contents            DHS A/B-Core + Pill compliance, Prenatal care for current
+                    pregnancy, Blood transfusions, Supplemental feeding,
+                    Acute respiratory illness, Sugar-salt-water solution
+                    preparation, AIDS knowledge, attitudes and practices,
+                    Woman's employment and childcare
+
+Languages           Shona, Ndebele, English
+
+Anthropometry       Children aged 3-60 months
+
+Record size         Flat file: 2727
+                    Hierarchical and Rectangular File: 196 maximum
+
+Supplementary Data  Household members
+FilesSections and Variables Unused
+
+REC31     Contraceptive Table - methods 11-12,14-15 are unused.  Method 13 is
+          Foam/Jelly.
+
+REC33     Contraceptive Practice History
+
+V103      V117-V119      V332-V334      V401           V514-V524 V612
+V105      V128-V129      V341-V349      V415-V416      V526      V709-V713
+V112      V132           V359-V360      H13-H38        V601
+V115      V314           V367           V505           V606-V609
+
+Sections Added
+
+REC91     Country specific single variables
+
+SSTRATA        Strata
+SLANG          Language of questionnaire
+SAGE           Current age as reported
+S102M          Current residence in months
+S104X          Sure of age
+S106           Currently enrolled at school
+S112D          Telephone in household
+S114           Distance to drinking water
+S115           Drought source of drinking water
+S117           Distance to household water
+S119           Communal toilet
+S120E          Household owns Scotch cart
+S120F          Household owns Cattle
+S120G          Household owns Goat
+S120H          Household owns Sheep
+S121           Cooking fuel
+S122           Lighting fuel
+S124           Type of housing
+S224           Respondent has health card for current pregnancy
+S225AN         Tetanus 1 given
+S225AD         Tetanus 1 date
+S225BN         Tetanus 2 given
+S225BD         Tetanus 2 date
+S226           Given injection for tetanus
+S227           Number of tetanus injections
+S228           Where received last tetanus injection
+S316           Interrupted pill use
+S317A          Reason: Side effects or illness
+S317B          Reason: Spotting/Bleeding
+S317C          Reason: Period did not come
+S317D          Reason: Ran out of pills
+S317E          Reason: Forgot/misplaced
+S317F          Reason: Not sexually active
+S317G          Reason: Other answers
+S318           What done last time forgot pill
+S338           Heard or read information about family planning
+S339A          Heard on radio
+S339B          Heard from health worker
+S339C          Read in newspaper or magazine
+S339D          Read in poster or pamphlet
+S339E          Heard or read from other source
+S340           Interested in learning about family planning
+S341A          Family planning information acceptable on radio
+S341B          Family planning information acceptable on TV
+S420A          Child given plain water
+S420B          Child given juice
+S420C          Child given powdered milk
+S420D          Child given cow's or goat's milk
+S420E          Child given formula
+S420F          Child given porridge
+S420G          Child given sadza
+S420H          Child given sour milk
+S420I          Child given fruit
+S420J          Child given potatoes
+S420K          Child given egg
+S420L          Child given any other liquid
+S420M          Child given any solid or mushy food
+S422A          Child fed with cup and spoon or just cup
+S422B          Child fed with plate
+S422C          Child fed with bottle
+S422D          Child fed by hand
+S422E          Child fed by other means
+S432           Breastfed with diarrhea
+S440           Ever heard of sugar-salt-water solution
+S441           Where learned of sugar-salt-water solution
+S442           Quantity of water to use
+S443           Quantity of sugar to use
+S444           Quantity of salt to use
+S445           How often solution given
+S504A          Time husband living away (units)
+S504B          Time husband living away (duration)
+S515           Problems if pregnant
+S516           Problem pregnancy would cause
+S517           Main reason not using a method
+S519           Heard of AIDS
+S520A          AIDS source: Sex with a person with AIDS
+S520B          AIDS source: Sex with a prostitute
+S520C          AIDS source: Many sex partners
+S520D          AIDS source: Homosexual sex
+S520E          AIDS source: Touching a person with AIDS
+S520F          AIDS source: Sharing a utensil with a PWA
+S520G          AIDS source: Blood transfusion
+S520H          AIDS source: Being born to woman with AIDS
+S520I          AIDS source: Donating blood
+S520J          AIDS source: Mosquito bites
+S520K          AIDS source: Injection with a dirty needle
+S520L          AIDS source: Other answer given
+S520LX         AIDS source: Other reason 1
+S520M          AIDS source: Other answer given
+S520MX         AIDS source: Other reason 2
+S520N          AIDS source: Don't know
+S521A          AIDS information heard on radio
+S521B          AIDS information heard from health worker
+S521C          AIDS information read in newspapers or magazines
+S521D          AIDS information read in pamphlet or poster
+S521E          AIDS information read or heard from other source
+S522A          AIDS treatment: Go to Nanga
+S522B          AIDS treatment: Go to hospital
+S522C          AIDS treatment: Go to clinic
+S522D          AIDS treatment: Do nothing
+S522E          AIDS treatment: Take herbs
+S522F          AIDS treatment: Other
+S522G          AIDS treatment: Don't know
+S523           Is there a cure for AIDS
+S524A          With AIDS: OK to go to school
+S524B          With AIDS: OK to be in public
+S524C          With AIDS: OK to donate blood
+S524D          With AIDS: OK to be quarantined
+S526           Done anything to avoid AIDS
+S527A          Avoiding AIDS: Used condoms
+S527B          Avoiding AIDS: Stay with one partner
+S527C          Avoiding AIDS: Avoid multiple partners
+S527D          Avoiding AIDS: Avoid bars
+S527E          Avoiding AIDS: Take herbs
+S527F          Other way of avoiding AIDS
+S527G          Other way of avoiding AIDS
+S528A          Not avoiding AIDS: Not at risk
+S528B          Not avoiding AIDS: Not having sex
+S528C          Not avoiding AIDS: Already using condoms
+S528D          Not avoiding AIDS: Cannot avoid AIDS
+S528E          Not avoiding AIDS: Other reason not avoiding AIDS
+S528F          Not avoiding AIDS: Other reason not avoiding AIDS
+S528G          Not avoiding AIDS: Don't know why
+S604           Desired age of youngest at future birth
+S606           Why partner disapproves of family planning
+S607           Ever discussed family planning
+S608           Times discussed family planning in last year
+S711           Respondent's occupation
+S713           Works mainly on family land
+S714           Works for money or crops
+S715           Sell crops
+S715A          Who runs work place
+S716           Works regularly
+S717           Hours worked per day
+S718A          Time to get to work (units)
+S718B          Time to get to work (duration)
+S719           Earnings
+S719A          Unit for earnings
+S720           Decides how money to be used
+S721           Ever worked regularly
+S722           Last occupation
+S725           Children with you at work
+S726           Who takes care of children
+REC92     Country specific birth history variables
+
+IDX92          Index to birth history
+S217X          Sure of child's age
+
+REC94     Country specific maternity history variables
+
+IDX94          Index to birth history
+S405           Place of delivery
+S406           Received blood transfusion
+S409           Why never breastfed
+S412           Reason stopped breastfeeding
+S413           Age when food supplemented
+
+REC95     Country specific health history variables
+
+IDX95          Index to birth history
+S425           Birth weight
+S426           Birth date on card
+SPBN           Polio booster given
+SPBD           Date of polio booster
+SDBN           DPT booster given
+SDBD           Date of DPT booster
+S433A          Diarrhea treatment: Sugar-salt-water solution
+S433B          Diarrhea treatment: Herbs
+S433C          Diarrhea treatment: Other
+S433D          Diarrhea treatment: Nothing special
+S434           Sugar-salt-water treatment for diarrhea last time
+S436A          ARI: Cough
+S436B          ARI: Fast/difficult breathing
+S436C          ARI: Noisy breathing
+S436D          ARI: Runny nose
+S436E          ARI: Sore throat
+S436F          ARI: Earache
+S436G          ARI: Fever
+S436H          ARI: Rash
+S437           Health facility visited for treatment
+S438A          Treatment: Home remedies
+S438B          Treatment: Injection
+S438C          Treatment: Oral antibiotics
+S438D          Treatment: Other tablets
+S438E          Treatment: OtherNotes on Recode File
+
+1.   The questions relating to literacy (V108 and V703) were asked for all
+     respondents and their partners, rather than restricting the question to
+     those respondents and partners with less than secondary education as in
+     the core questionnaire.  There are seven cases on V108 and three on V703
+     where the respondent or her partner could not read but had either
+     secondary or higher levels of education.  In addition, respondents were
+     asked only if they could or could not read and not whether they could
+     read easily, with difficulty or not at all.
+
+2.   There are 103 cases of the age at death reported as one year in the data
+     file.  This should not have been allowed by the interviewer as a
+     response as it is necessary to distinguish between infant and childhood
+     mortality.
+
+3.   There are five cases of the first children being born to respondents
+     before the age of 10 and nine cases of marriage before the age of 10.
+
+4.   There is one case here the respondent is currently breastfeeding, but
+     the child listed in the first entry of the maternity section is dead.
+     This is because the second child listed in the maternity section is its
+     twin and is still being breastfed.
+
+5.   The time of start and end of interview was recorded in a mixture of
+     systems.  In some cases the 12 hour clock system was used and in others
+     the 24 hour clock or military time was used.  In some questionnaires one
+     system has been used for the start of interview time and the other has
+     been used for the end of interview.  Variables V801 and V802 record the
+     time in the units originally used, and variable V803 gives the duration
+     of interview after resolving the different time systems.
+
+6.   Variable V367 (Wanted last child) is not used due to an oversight in the
+     design of the questionnaire.
+
+7.   An extra code (3) is included in variable V707 to indicate agricultural
+     work that was performed on communal lands.
+
+Inconsistencies in Recode File
+
+1.   There is one case of a respondent currently using an "other" method in
+     V312, but she has never used any "other" methods according to V305 in
+     the contraceptive knowledge and use table.
+
+2.   There is one case of a woman being sterilized two months before the date
+     of her last birth.
+
+3.   There are four cases of methods being used in V340 (method used in the
+     same month as the current method) but have not been used according to
+     V305 in the contraceptive knowledge and use table.  In addition there
+     are three methods reported as being used in the same month, which are
+     the same methods as the current method recorded in V312.
+
+4.   There are 18 cases of immunizations being reported as less than seven
+     days after the preceding immunization.  Many of these cases are recorded
+     as having the same immunization date for two different doses of the same
+     immunization.
+
+5.   There are three cases in V525 where the age at first sex is recorded as
+     after the age at first birth of the respondent.
+
