@@ -5,34 +5,27 @@ O projeto adota o tema **Saúde da Mulher na África Subsaariana**, utilizando m
 
 ---
 
-## ⚡ Início Rápido: Como Baixar e Processar os Dados
+## 📥 Como Baixar o Repositório
 
-### 1️⃣ Como Baixar os Microdados do DHS
-Os dados já estão baixados e descompactados em `dados/brutos/` via Git LFS. Caso precise baixar novamente ou obter novos países:
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
+cd subsaharanAfrica-womenData
 
-1. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. **Configure suas credenciais** (cadastro acadêmico gratuito em [dhsprogram.com](https://dhsprogram.com)):
-   Crie um arquivo `.env` na raiz do projeto:
-   ```env
-   DHS_USER=seu_email@dominio.com
-   DHS_PASSWORD=sua_senha_aqui
-   ```
-3. **Execute o download focado em Saúde da Mulher:**
-   ```bash
-   # Baixar dados de Saúde da Mulher (IR) de países específicos com extração automática
-   python database_python/baixar_datasets.py --country AO,MZ --women-health-only --extract
-   ```
+# 2. Baixar os microdados de saúde (arquivos .DTA via Git LFS)
+git lfs pull
+
+# 3. Instalar as dependências
+pip install -r requirements.txt
+```
 
 ---
 
-### 2️⃣ Como Processar os Dados e Carregar no SQLite
+## Como Processar os Dados e Carregar no SQLite
 
 Como os arquivos `.DTA` possuem milhares de colunas, processe de forma simples e rápida:
 
-#### Opção A: Direto no Jupyter Notebook (`tp_template.ipynb` - Recomendado para a entrega)
+### Opção A: Direto no Jupyter Notebook (`tp_template.ipynb` - Recomendado para a entrega)
 Abra o notebook e execute o processamento na **Seção 3**:
 
 ```python
@@ -63,28 +56,11 @@ df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
 print("Tabela Mulher criada com sucesso no SQLite!")
 ```
 
-#### Opção B: Via Script de Linha de Comando
+### Opção B: Via Script de Linha de Comando
 Para carregar um arquivo `.DTA` inteiro ou em lotes para testes:
 ```bash
 python database_python/carregar_sqlite.py "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA" --db saude_africa.db --table mulheres_angola
 ```
-
----
-
-## 📋 Sumário
-1. [Início Rápido: Como Baixar e Processar os Dados](#-início-rápido-como-baixar-e-processar-os-dados)
-2. [Visão Geral e Objetivos do Trabalho](#1-visão-geral-e-objetivos-do-trabalho)
-3. [Estrutura do Repositório](#2-estrutura-do-repositório)
-4. [Entendendo os Dados em `dados/brutos`](#3-entendendo-os-dados-em-dadosbrutos)
-5. [Dicionário Prático de Variáveis-Chave do DHS (IR)](#4-dicionário-prático-de-variáveis-chave-do-dhs-ir)
-6. [Guia Passo a Passo da Metodologia Bottom-Up](#5-guia-passo-a-passo-da-metodologia-bottom-up)
-   - [Passo 1: Seleção do Escopo](#passo-1-seleção-do-escopo)
-   - [Passo 2: Normalização e Atendimento aos Requisitos](#passo-2-normalização-e-atendimento-aos-requisitos)
-   - [Passo 3: Carga no SQLite e Jupyter Notebook](#passo-3-carga-no-sqlite-e-jupyter-notebook)
-   - [Passo 4: As 10 Consultas SQL](#passo-4-as-10-consultas-sql)
-   - [Passo 5: Otimização de Consultas (+20% Extra)](#passo-5-otimização-de-consultas-20-extra)
-7. [Calendário de Entregas](#6-calendário-de-entregas)
-
 ---
 
 ## 1. Visão Geral e Objetivos do Trabalho
