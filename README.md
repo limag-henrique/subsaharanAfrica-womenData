@@ -1,9 +1,4 @@
 # Projeto: Análise de Dados de Saúde da Mulher na África Subsaariana
-### DCC011 - Introdução a Banco de Dados (Trabalho Prático)
-
-O projeto adota o tema **Saúde da Mulher na África Subsaariana**, utilizando microdados reais do **The DHS Program (Demographic and Health Surveys)**.
-
----
 
 ## Me baixe!
 
@@ -80,19 +75,7 @@ O objetivo é projetar e implementar um banco de dados relacional para análise 
 
 ---
 
-## 2. Estrutura do Repositório
-
-```text
-África Subsaariana/
-├── README.md                  # Este guia completo do projeto e dos dados
-├── descrição.txt              # Enunciado, regras e critérios de avaliação do professor
-├── tp_template.ipynb          # Notebook oficial para elaboração do relatório parcial e final
 ├── catalogo_datasets.csv      # Mapeamento de 1.419 datasets com URLs, fases e países
-├── requirements.txt           # Bibliotecas Python (pandas, sqlite3, jupyter, matplotlib)
-├── database_python/           # Scripts utilitários de download e carga
-│   ├── baixar_datasets.py     # Script para baixar e autenticar no portal DHS
-│   ├── carregar_sqlite.py     # Script para carregar arquivos .DTA diretamente no SQLite
-│   └── catalogo.py            # Dicionário de códigos e gerador de catálogo
 └── dados/
     └── brutos/                # Microdados de 37 países organizados por país
         ├── Angola/
@@ -111,8 +94,6 @@ O objetivo é projetar e implementar um banco de dados relacional para análise 
 
 ## 3. Entendendo os Dados em `dados/brutos`
 
-Dentro da pasta `dados/brutos/`, cada país conta com a pasta temática **`Saude_da_Mulher_IR`**.
-
 ### O que é o Questionário IR (*Individual Recode*)?
 O módulo **IR** do DHS é focado exclusivamente em **mulheres em idade fértil (15 a 49 anos)**. É o levantamento mais detalhado sobre saúde reprodutiva e materna do mundo, cobrindo:
 - Perfil sociodemográfico (idade, escolaridade, residência urbana/rural, nível de riqueza).
@@ -126,8 +107,6 @@ O módulo **IR** do DHS é focado exclusivamente em **mulheres em idade fértil 
 | :--- | :--- |
 | **`.DTA`** | **Arquivo de Microdados (Stata):** É a tabela com os dados brutos de todas as entrevistas. Cada linha representa uma mulher entrevistada. Possui milhares de colunas com as variáveis codificadas. |
 | **`.DOC` / `.docx` / `.PDF`** | **Dicionário de Variáveis:** Documento de texto que traduz os nomes codificados das colunas (ex: `v012 = Idade`, `v106 = Nível de escolaridade`, `v201 = Total de filhos`). **Consulte este arquivo para escolher os atributos das suas tabelas!** |
-
-> **Atenção:** Os arquivos auxiliares de frequências (`.frq`, `.frw`), mapas (`.map`) e scripts proprietários do Stata (`.dct`, `.do`) foram removidos para deixar o diretório leve e com foco estrito na modelagem.
 
 ---
 
