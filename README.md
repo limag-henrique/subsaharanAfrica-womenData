@@ -5,7 +5,7 @@ O projeto adota o tema **Saúde da Mulher na África Subsaariana**, utilizando m
 
 ---
 
-## 📥 Como Baixar o Repositório
+## Me baixe!
 
 ```bash
 # 1. Clonar o repositório
