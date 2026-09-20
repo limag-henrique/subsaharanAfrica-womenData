@@ -56,6 +56,7 @@ Para carregar um arquivo `.DTA` inteiro ou em lotes para testes:
 ```bash
 python database_python/carregar_sqlite.py "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA" --db saude_africa.db --table mulheres_angola
 ```
+
 ---
 
 ## 1. Visão Geral e Objetivos do Trabalho
@@ -75,6 +76,10 @@ O objetivo é projetar e implementar um banco de dados relacional para análise 
 
 ---
 
+## 2. Estrutura do Repositório
+
+```text
+África Subsaariana/
 ├── catalogo_datasets.csv      # Mapeamento de 1.419 datasets com URLs, fases e países
 └── dados/
     └── brutos/                # Microdados de 37 países organizados por país
