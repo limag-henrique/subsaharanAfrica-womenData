@@ -5,18 +5,85 @@ O projeto adota o tema **Saúde da Mulher na África Subsaariana**, utilizando m
 
 ---
 
+## ⚡ Início Rápido: Como Baixar e Processar os Dados
+
+### 1️⃣ Como Baixar os Microdados do DHS
+Os dados já estão baixados e descompactados em `dados/brutos/` via Git LFS. Caso precise baixar novamente ou obter novos países:
+
+1. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Configure suas credenciais** (cadastro acadêmico gratuito em [dhsprogram.com](https://dhsprogram.com)):
+   Crie um arquivo `.env` na raiz do projeto:
+   ```env
+   DHS_USER=seu_email@dominio.com
+   DHS_PASSWORD=sua_senha_aqui
+   ```
+3. **Execute o download focado em Saúde da Mulher:**
+   ```bash
+   # Baixar dados de Saúde da Mulher (IR) de países específicos com extração automática
+   python database_python/baixar_datasets.py --country AO,MZ --women-health-only --extract
+   ```
+
+---
+
+### 2️⃣ Como Processar os Dados e Carregar no SQLite
+
+Como os arquivos `.DTA` possuem milhares de colunas, processe de forma simples e rápida:
+
+#### Opção A: Direto no Jupyter Notebook (`tp_template.ipynb` - Recomendado para a entrega)
+Abra o notebook e execute o processamento na **Seção 3**:
+
+```python
+import sqlite3
+import pandas as pd
+
+# 1. Selecionar apenas as colunas necessárias para as suas entidades
+colunas_interesse = [
+    'caseid', 'v001', 'v002', 'v012', 'v025', 
+    'v106', 'v190', 'v201', 'v212', 'v312', 'm14_1', 'v457'
+]
+
+# 2. Ler o arquivo Stata (.DTA) do país escolhido (ex: Angola)
+df = pd.read_stata(
+    "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA",
+    columns=colunas_interesse,
+    convert_categoricals=False
+)
+
+# 3. Conectar ao SQLite e gerar as tabelas do banco
+conn = sqlite3.connect("saude_africa.db")
+
+# Exemplo: criando a tabela Mulher
+df_mulher = df[['caseid', 'v012', 'v106', 'v201', 'v212', 'v457']].copy()
+df_mulher.columns = ['id_mulher', 'idade', 'escolaridade', 'total_filhos', 'idade_primeiro_parto', 'status_anemia']
+df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
+
+print("Tabela Mulher criada com sucesso no SQLite!")
+```
+
+#### Opção B: Via Script de Linha de Comando
+Para carregar um arquivo `.DTA` inteiro ou em lotes para testes:
+```bash
+python database_python/carregar_sqlite.py "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA" --db saude_africa.db --table mulheres_angola
+```
+
+---
+
 ## 📋 Sumário
-1. [Visão Geral e Objetivos do Trabalho](#1-visão-geral-e-objetivos-do-trabalho)
-2. [Estrutura do Repositório](#2-estrutura-do-repositório)
-3. [Entendendo os Dados em `dados/brutos`](#3-entendendo-os-dados-em-dadosbrutos)
-4. [Dicionário Prático de Variáveis-Chave do DHS (IR)](#4-dicionário-prático-de-variáveis-chave-do-dhs-ir)
-5. [Guia Passo a Passo da Metodologia Bottom-Up](#5-guia-passo-a-passo-da-metodologia-bottom-up)
+1. [Início Rápido: Como Baixar e Processar os Dados](#-início-rápido-como-baixar-e-processar-os-dados)
+2. [Visão Geral e Objetivos do Trabalho](#1-visão-geral-e-objetivos-do-trabalho)
+3. [Estrutura do Repositório](#2-estrutura-do-repositório)
+4. [Entendendo os Dados em `dados/brutos`](#3-entendendo-os-dados-em-dadosbrutos)
+5. [Dicionário Prático de Variáveis-Chave do DHS (IR)](#4-dicionário-prático-de-variáveis-chave-do-dhs-ir)
+6. [Guia Passo a Passo da Metodologia Bottom-Up](#5-guia-passo-a-passo-da-metodologia-bottom-up)
    - [Passo 1: Seleção do Escopo](#passo-1-seleção-do-escopo)
    - [Passo 2: Normalização e Atendimento aos Requisitos](#passo-2-normalização-e-atendimento-aos-requisitos)
    - [Passo 3: Carga no SQLite e Jupyter Notebook](#passo-3-carga-no-sqlite-e-jupyter-notebook)
    - [Passo 4: As 10 Consultas SQL](#passo-4-as-10-consultas-sql)
    - [Passo 5: Otimização de Consultas (+20% Extra)](#passo-5-otimização-de-consultas-20-extra)
-6. [Calendário de Entregas](#6-calendário-de-entregas)
+7. [Calendário de Entregas](#6-calendário-de-entregas)
 
 ---
 
@@ -42,11 +109,14 @@ O objetivo é projetar e implementar um banco de dados relacional para análise 
 ```text
 África Subsaariana/
 ├── README.md                  # Este guia completo do projeto e dos dados
-├── Descriçao trabalho.txt     # Enunciado, regras e critérios de avaliação do professor
+├── descrição.txt              # Enunciado, regras e critérios de avaliação do professor
 ├── tp_template.ipynb          # Notebook oficial para elaboração do relatório parcial e final
 ├── catalogo_datasets.csv      # Mapeamento de 1.419 datasets com URLs, fases e países
-├── carregar_sqlite.py         # Script utilitário em Python para carga otimizada no SQLite
 ├── requirements.txt           # Bibliotecas Python (pandas, sqlite3, jupyter, matplotlib)
+├── database_python/           # Scripts utilitários de download e carga
+│   ├── baixar_datasets.py     # Script para baixar e autenticar no portal DHS
+│   ├── carregar_sqlite.py     # Script para carregar arquivos .DTA diretamente no SQLite
+│   └── catalogo.py            # Dicionário de códigos e gerador de catálogo
 └── dados/
     └── brutos/                # Microdados de 37 países organizados por país
         ├── Angola/
