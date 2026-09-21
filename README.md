@@ -148,58 +148,59 @@ Ao abrir um arquivo `.DTA` (ex: `AOIR81FL.DTA`), as colunas seguem a codificaç�
 
 ---
 
-## 5. Guia Passo a Passo da Metodologia Bottom-Up
+## 5. Proposta da Primeira Entrega (25/09) - Escopo Integrado Continental (37 Países)
 
-### Passo 1: Seleção do Escopo
-Recomenda-se escolher **um país principal** com dados recentes (ex: **Angola** - arquivo `dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA` - DHS Fase 8) ou combinar 2 a 3 países de língua portuguesa/regiões próximas (ex: Angola e Moçambique).
+> **Contexto Macro:** Análise integrada em escala continental cobrindo 37 países da África Subsaariana (população de ~1,3 bilhão, comparável à da China), com base em **503.733 entrevistas individuais** de mulheres em idade reprodutiva coletadas pelo *Demographic and Health Surveys* (DHS).
 
 ---
 
-### Passo 2: Normalização e Atendimento aos Requisitos
+### 1. Entidades Propostas e Número de Instâncias
 
-No arquivo `.DTA`, todas as variáveis vêm em uma única tabela gigantesca ("não-normalizada"). O objetivo principal da disciplina é realizar a **decomposição e normalização (1FN, 2FN, 3FN)**.
+| Entidade | Descrição e Atributos | Chave Primária (PK) / Estrangeira (FK) | Total de Instâncias Reais |
+| :--- | :--- | :--- | :---: |
+| **`Pais`** | Identificação geopolítica do país (`nome_pais`, `codigo_iso`, `regiao_africana`: Ocidental, Central, Oriental, Austral) | **PK:** `codigo_pais` (ex: `AO`, `MZ`, `NG`) | **37** países |
+| **`Domicilio`** | Unidade habitacional (`tipo_residencia`: Urbano/Rural, `quintil_riqueza`: 1-Muito Pobre a 5-Muito Rico) | **PK:** `id_domicilio` (`codigo_pais` + `cluster` + `household`)<br>**FK:** `codigo_pais` | **~368.000** domicílios |
+| **`Mulher`** | Entrevistada em idade reprodutiva (15-49 anos) (`idade`, `escolaridade`, `total_filhos`, `idade_primeiro_parto`, `status_anemia`) | **PK:** `id_mulher` (`caseid` com prefixo do país)<br>**FK:** `id_domicilio` | **503.733** mulheres |
+| **`Gestacao_Parto`** | Histórico obstétrico recente dos últimos 5 anos (`consultas_prenatal`, `local_parto`, `parto_assistido_profissional`) | **PK:** `id_gestacao`<br>**FK:** `id_mulher` | **~208.000** partos/gestações |
+| **`Metodo_Contraceptivo`** | Catálogo oficial de métodos anticoncepcionais do DHS/OMS (`nome_metodo`, `classificacao`: Moderno/Tradicional/Permanente) | **PK:** `id_metodo` | **18** métodos |
 
-#### Proposta de Esquema Relacional com 4+ Entidades e Relacionamento N:M:
+---
 
-1. **`Pais`** (Dimensão geográfica/institucional):
-   - `codigo_pais` (PK, VARCHAR)
-   - `nome_pais` (VARCHAR)
-   - `regiao_geografica` (VARCHAR)
+### 2. Relacionamentos e Instâncias de cada Relacionamento
 
-2. **`Domicilio`** (Condições do lar):
-   - `id_domicilio` (PK, VARCHAR gerado por `v001_v002`)
-   - `codigo_pais` (FK referenciando `Pais`)
-   - `tipo_residencia` (VARCHAR: Urbano / Rural)
-   - `quintil_riqueza` (VARCHAR: Muito Pobre a Muito Rico)
+| Relacionamento | Cardinalidade | Regra de Negócio | Total de Instâncias |
+| :--- | :---: | :--- | :---: |
+| **`Pertence_A`**<br>(`Domicilio` ➔ `Pais`) | **N : 1** | Cada domicílio pertence a um país soberano; cada país tem milhares de domicílios amostrados. | **~368.000** associações |
+| **`Reside_Em`**<br>(`Mulher` ➔ `Domicilio`) | **N : 1** | Cada mulher reside em um domicílio específico. | **503.733** associações |
+| **`Teve_Gestacao`**<br>(`Mulher` ➔ `Gestacao_Parto`) | **1 : N** | Uma mulher pode ter registrado partos recentes (últimos 5 anos). | **~208.000** associações |
+| **`Uso_Contracepcao`**<br>(`Mulher` ⮂ `Metodo_Contraceptivo`) | **N : M** *(Requisito Obrigatório)* | Uma mulher pode usar/conhecer vários métodos contraceptivos; cada método é adotado por milhares de mulheres. | **~118.000** associações ativas |
 
-3. **`Mulher`** (Dados individuais da entrevistada):
-   - `id_mulher` (PK, VARCHAR gerado por `caseid`)
-   - `id_domicilio` (FK referenciando `Domicilio`)
-   - `idade` (INTEGER)
-   - `escolaridade` (VARCHAR)
-   - `total_filhos` (INTEGER)
-   - `idade_primeiro_parto` (INTEGER)
-   - `status_anemia` (VARCHAR)
+> **Implementação do Relacionamento N:M:** No banco físico relacional, esse relacionamento é materializado na tabela associativa `Uso_Contracepcao` (composta pelas chaves `id_mulher` e `id_metodo`, além de atributos como `uso_atual` e `conhece`).
 
-4. **`Gestacao_Parto`** (Histórico de maternidade - relação 1:N com Mulher):
-   - `id_gestacao` (PK, INTEGER AUTOINCREMENT)
-   - `id_mulher` (FK referenciando `Mulher`)
-   - `consultas_prenatal` (INTEGER)
-   - `local_parto` (VARCHAR: Hospital, Posto de Saúde, Casa)
-   - `parto_assistido_profissional` (BOOLEAN)
+---
 
-5. **`Metodo_Contraceptivo`** e **`Mulher_Metodo`** (Relacionamento N:M!):
-   - **`Metodo_Contraceptivo`**:
-     - `id_metodo` (PK, INTEGER)
-     - `nome_metodo` (VARCHAR: Pílula, DIU, Camisinha, Injetável, etc.)
-     - `classificacao` (VARCHAR: Moderno, Tradicional, Permanente)
-   - **`Uso_Contracepcao` (Tabela Associativa N:M)**:
-     - `id_mulher` (PK, FK referenciando `Mulher`)
-     - `id_metodo` (PK, FK referenciando `Metodo_Contraceptivo`)
-     - `uso_atual` (BOOLEAN)
-     - `conhecimento_previo` (BOOLEAN)
+### 3. Estratégia de Otimização e Carga dos Dados
 
-> Esse arranjo atende **100% dos critérios do professor**: 5 entidades, 4 relacionamentos, e cardinalidade N:M explícita na associação entre Mulheres e Métodos de Saúde/Contracepção.
+> **Otimização:** Os arquivos `.DTA` de 37 países contêm mais de 7.000 colunas cada (dezenas de gigabytes brutos). Se tentar carregar tudo na memória, o Python travará. O segredo é fazer um loop em Python que carrega apenas as 12-14 colunas de interesse (ex: `caseid`, `v001`, `v002`, `v012`, `v025`, `v106`, `v190`, `v201`, `v212`, `v312`, `m14_1`, `m15_1`, `v457`). Ao carregar apenas essas variáveis, o banco de dados SQLite consolidado terá em torno de **80 MB a 120 MB**, operando de forma ultrarrápida no SQLite com consultas que rodam em frações de segundo.
+
+---
+
+### 4. Investigações em Alto Nível: Top 3 Países com Dados Alarmantes
+
+#### 🚨 1. "Deserto Pré-natal e Partos Desassistidos"
+* **Pergunta:** Quais os 3 países com maior proporção de partos domiciliares sem assistência médica, e qual a correlação com a escolaridade materna?
+* **Lógica SQL:** Junção entre `Pais`, `Mulher` e `Gestacao_Parto`. Filtrar partos onde `local_parto` é domiciliar e agrupar por `Pais` calculando a porcentagem de partos não assistidos (`COUNT(*) * 100.0 / TOTAL`).
+* **Hipótese:** Países da região do Sahel (ex: Chade, Níger, Mali) apresentam taxas superiores a 60% de partos domiciliares sem profissional capacitado.
+
+#### 🚨 2. "A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano"
+* **Pergunta:** Qual a prevalência de anemia moderada a severa entre mulheres em idade fértil, e quais os 3 países onde a desigualdade entre zonas rurais e urbanas é mais crítica?
+* **Lógica SQL:** Junção entre `Pais`, `Domicilio` e `Mulher`. Calcular a taxa de anemia (`v457 IN (1, 2)`) agrupada por país e tipo de residência (`Urbano` vs `Rural`).
+* **Hipótese:** No meio rural, o isolamento geográfico e a insegurança alimentar elevam a taxa de anemia a níveis de emergência nutricional pública.
+
+#### 🚨 3. "Iniquidade Econômica no Planejamento Familiar Moderno"
+* **Pergunta:** Quais os 3 países com o maior abismo de acesso a métodos contraceptivos modernos entre as mulheres mais ricas (quintil 5) e as mais pobres (quintil 1)?
+* **Lógica SQL:** Junção de 4 tabelas (`Pais`, `Domicilio`, `Mulher`, `Uso_Contracepcao` e `Metodo_Contraceptivo`). Calcular a diferença percentual de uso de métodos modernos entre o quintil 1 e o quintil 5.
+* **Hipótese:** Mulheres em situação de extrema vulnerabilidade têm taxa de cobertura inferior a 10%, contra mais de 45% entre mulheres de maior renda.
 
 ---
 
