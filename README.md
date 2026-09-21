@@ -18,9 +18,9 @@ pip install -r requirements.txt
 
 ## Como Processar os Dados e Carregar no SQLite
 
-Como os arquivos `.DTA` possuem milhares de colunas, processe de forma simples e rápida:
+Como os arquivos `.DTA` possuem milhares de colunas:
 
-### Opção A: Direto no Jupyter Notebook (`tp_template.ipynb` - Recomendado para a entrega)
+### Direto no Jupyter Notebook
 Abra o notebook e execute o processamento na **Seção 3**:
 
 ```python
@@ -28,76 +28,13 @@ import sqlite3
 import pandas as pd
 
 # 1. Selecionar apenas as colunas necessárias para as suas entidades
-colunas_interesse = [
-    'caseid', 'v001', 'v002', 'v012', 'v025', 
-    'v106', 'v190', 'v201', 'v212', 'v312', 'm14_1', 'v457'
-]
-
-# 2. Ler o arquivo Stata (.DTA) do país escolhido (ex: Angola)
-df = pd.read_stata(
-    "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA",
-    columns=colunas_interesse,
-    convert_categoricals=False
-)
-
+# 2. Ler o arquivo Stata (.DTA) do país escolhido e em contexto unificado
 # 3. Conectar ao SQLite e gerar as tabelas do banco
-conn = sqlite3.connect("saude_africa.db")
-
-# Exemplo: criando a tabela Mulher
-df_mulher = df[['caseid', 'v012', 'v106', 'v201', 'v212', 'v457']].copy()
-df_mulher.columns = ['id_mulher', 'idade', 'escolaridade', 'total_filhos', 'idade_primeiro_parto', 'status_anemia']
-df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
-
-print("Tabela Mulher criada com sucesso no SQLite!")
-```
-
-### Opção B: Via Script de Linha de Comando
-Para carregar um arquivo `.DTA` inteiro ou em lotes para testes:
-```bash
-python database_python/carregar_sqlite.py "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA" --db saude_africa.db --table mulheres_angola
 ```
 
 ---
 
-## 1. Visão Geral e Objetivos do Trabalho
-
-O objetivo é projetar e implementar um banco de dados relacional para análise de saúde seguindo um **processo bottom-up**:
-1. Partir de uma base não-relacional existente (os microdados brutos do DHS em formato Stata `.dta`).
-2. Analisar os dados e **normalizar** o esquema conceitual e relacional.
-3. Mapear o esquema normalizado para o **Diagrama ER (Entidade-Relacionamento)**.
-4. Inserir os dados processados em um banco **SQLite** manipulado dentro do Jupyter Notebook oficial (`tp_template.ipynb`).
-5. Formular e executar **10 consultas analíticas em SQL** e analisar os resultados em saúde pública.
-
-### Requisitos Mínimos Obrigatórios:
-- **Pelo menos 4 entidades**, cada uma com ao menos 2 atributos (além da Chave Primária).
-- **Pelo menos 3 tipos de relacionamento**, contendo ao menos **1 relacionamento com cardinalidade N:M**.
-- **10 consultas SQL** categorizadas rigorosamente conforme a especificação.
-- **SGBD**: SQLite embarcado no Jupyter Notebook (`tp_template.ipynb`).
-
----
-
-## 2. Estrutura do Repositório
-
-```text
-África Subsaariana/
-├── catalogo_datasets.csv      # Mapeamento de 1.419 datasets com URLs, fases e países
-└── dados/
-    └── brutos/                # Microdados de 37 países organizados por país
-        ├── Angola/
-        │   └── Saude_da_Mulher_IR/
-        │       ├── AOIR81FL.DTA   # Microdados brutos Stata (pesquisa mais recente)
-        │       ├── AOIR81FL.docx  # Questionário e dicionário oficial de variáveis
-        │       └── ...
-        ├── Mocambique/
-        │   └── Saude_da_Mulher_IR/
-        │       ├── MZIR62FL.DTA
-        │       └── MZIR62FL.DOC
-        └── ...
-```
-
----
-
-## 3. Entendendo os Dados em `dados/brutos`
+## Entendendo os Dados em `dados/brutos`
 
 ### O que é o Questionário IR (*Individual Recode*)?
 O módulo **IR** do DHS é focado exclusivamente em **mulheres em idade fértil (15 a 49 anos)**. É o levantamento mais detalhado sobre saúde reprodutiva e materna do mundo, cobrindo:
@@ -187,24 +124,24 @@ Ao abrir um arquivo `.DTA` (ex: `AOIR81FL.DTA`), as colunas seguem a codificaç�
 
 ### 4. Investigações em Alto Nível: Top 3 Países com Dados Alarmantes
 
-#### 🚨 1. "Deserto Pré-natal e Partos Desassistidos"
+#### 1. "Deserto Pré-natal e Partos Desassistidos"
 * **Pergunta:** Quais os 3 países com maior proporção de partos domiciliares sem assistência médica, e qual a correlação com a escolaridade materna?
 * **Lógica SQL:** Junção entre `Pais`, `Mulher` e `Gestacao_Parto`. Filtrar partos onde `local_parto` é domiciliar e agrupar por `Pais` calculando a porcentagem de partos não assistidos (`COUNT(*) * 100.0 / TOTAL`).
 * **Hipótese:** Países da região do Sahel (ex: Chade, Níger, Mali) apresentam taxas superiores a 60% de partos domiciliares sem profissional capacitado.
 
-#### 🚨 2. "A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano"
+#### 2. "A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano"
 * **Pergunta:** Qual a prevalência de anemia moderada a severa entre mulheres em idade fértil, e quais os 3 países onde a desigualdade entre zonas rurais e urbanas é mais crítica?
 * **Lógica SQL:** Junção entre `Pais`, `Domicilio` e `Mulher`. Calcular a taxa de anemia (`v457 IN (1, 2)`) agrupada por país e tipo de residência (`Urbano` vs `Rural`).
 * **Hipótese:** No meio rural, o isolamento geográfico e a insegurança alimentar elevam a taxa de anemia a níveis de emergência nutricional pública.
 
-#### 🚨 3. "Iniquidade Econômica no Planejamento Familiar Moderno"
+#### 3. "Iniquidade Econômica no Planejamento Familiar Moderno"
 * **Pergunta:** Quais os 3 países com o maior abismo de acesso a métodos contraceptivos modernos entre as mulheres mais ricas (quintil 5) e as mais pobres (quintil 1)?
 * **Lógica SQL:** Junção de 4 tabelas (`Pais`, `Domicilio`, `Mulher`, `Uso_Contracepcao` e `Metodo_Contraceptivo`). Calcular a diferença percentual de uso de métodos modernos entre o quintil 1 e o quintil 5.
 * **Hipótese:** Mulheres em situação de extrema vulnerabilidade têm taxa de cobertura inferior a 10%, contra mais de 45% entre mulheres de maior renda.
 
 ---
 
-### Passo 3: Carga no SQLite e Jupyter Notebook
+### Carga no SQLite e Jupyter Notebook
 
 No arquivo `tp_template.ipynb` (Seção 3), você implementará o carregamento via Python. 
 
@@ -215,31 +152,14 @@ import sqlite3
 import pandas as pd
 
 # Conectar ao banco SQLite
-conn = sqlite3.connect("saude_africa.db")
-
 # Carregar apenas as colunas desejadas do arquivo .DTA
-cols_desejadas = [
-    'caseid', 'v000', 'v001', 'v002', 'v012', 'v025', 
-    'v106', 'v190', 'v201', 'v212', 'v312', 'm14_1', 'm15_1', 'v457'
-]
-
-df_raw = pd.read_stata(
-    "dados/brutos/Angola/Saude_da_Mulher_IR/AOIR81FL.DTA",
-    columns=cols_desejadas,
-    convert_categoricals=False
-)
-
 # Criar tabela Mulher
-df_mulher = df_raw[['caseid', 'v001', 'v002', 'v012', 'v106', 'v201', 'v212', 'v457']].copy()
-df_mulher.columns = ['id_mulher', 'cluster', 'num_domicilio', 'idade', 'escolaridade', 'total_filhos', 'idade_primeiro_parto', 'status_anemia']
-
 # Inserir no SQLite
-df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
 ```
 
 ---
 
-### Passo 4: As 10 Consultas SQL
+### As 10 Consultas SQL
 
 O trabalho exige exatamente 10 consultas divididas nas 4 categorias da Seção 6 do template:
 
@@ -254,7 +174,7 @@ O trabalho exige exatamente 10 consultas divididas nas 4 categorias da Seção 6
 
 ---
 
-### Passo 5: Otimização de Consultas (+20% Extra)
+### Otimização de Consultas (+20% Extra)
 
 Para garantir a pontuação extra de otimização:
 1. Identifique uma consulta com junção ou filtros frequentes (ex: filtro por `idade` ou `id_domicilio`).
@@ -276,3 +196,22 @@ Para garantir a pontuação extra de otimização:
 | **23/10** | **Relatório Parcial** | `.ipynb` + `.pdf` | Seções 1 a 5 do template: Título, Membros, Descrição dos Dados, Diagrama ER e Diagrama Relacional. |
 | **23/11** | **Relatório Final** | `.ipynb` + `.pdf` | Todas as seções completas, incluindo as 10 consultas SQL executadas, otimização e autoavaliação. |
 | **23 a 30/11** | **Apresentação** | Slides (máx. 6 min) | Apresentação em grupo sobre a modelagem e as conclusões analíticas. |
+
+---
+
+## 1. Visão Geral e Objetivos do Trabalho
+
+O objetivo é projetar e implementar um banco de dados relacional para análise de saúde seguindo um **processo bottom-up**:
+1. Partir de uma base não-relacional existente (os microdados brutos do DHS em formato Stata `.dta`).
+2. Analisar os dados e **normalizar** o esquema conceitual e relacional.
+3. Mapear o esquema normalizado para o **Diagrama ER (Entidade-Relacionamento)**.
+4. Inserir os dados processados em um banco **SQLite** manipulado dentro do Jupyter Notebook oficial (`tp_template.ipynb`).
+5. Formular e executar **10 consultas analíticas em SQL** e analisar os resultados em saúde pública.
+
+### Requisitos Mínimos Obrigatórios:
+- **Pelo menos 4 entidades**, cada uma com ao menos 2 atributos (além da Chave Primária).
+- **Pelo menos 3 tipos de relacionamento**, contendo ao menos **1 relacionamento com cardinalidade N:M**.
+- **10 consultas SQL** categorizadas rigorosamente conforme a especificação.
+- **SGBD**: SQLite embarcado no Jupyter Notebook (`tp_template.ipynb`).
+
+---
