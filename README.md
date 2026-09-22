@@ -1,235 +1,225 @@
-# Projeto: Análise de Dados de Saúde da Mulher na África Subsaariana
+# Projeto: Análise de Dados de Saúde da Mulher na África Subsaariana (DHS)
 
 ## Me baixe!
 
+Siga as instruções abaixo para baixar o repositório ou sincronizar os dados atualizados em sua máquina local:
+
+### 1. Novo Clone (Primeiro Acesso)
 ```bash
 # 1. Clonar o repositório
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
 cd subsaharanAfrica-womenData
 
-# 2. Baixar os microdados de saúde (arquivos .DTA via Git LFS)
-git lfs pull
-
-# 3. Instalar as dependências
+# 2. Instalar as dependências do ambiente Python
 pip install -r requirements.txt
 ```
 
+### 2. Atualização e Sincronização via Pull (Para quem já clonou anteriormente)
+Se você já clonou o repositório antes da consolidação dos dados para CSV, execute a sincronização pull para remover os arquivos brutos pesados e baixar as novas bases consolidadas:
+
+```bash
+# Sincronizar o repositório e obter os dados compactados em dados/relevantes/
+git pull origin main
+```
+
+## Estrutura dos Dados Consolidados (`dados/relevantes`)
+
+A pasta [`dados/relevantes`](dados/relevantes) reúne os microdados estritamente necessários para as entidades e relacionamentos do modelo conceitual, eliminando redundâncias temporais e padronizando identificadores.
+
+### Critério de Construção da Base Comparável
+Em vez de somar dados de múltiplas ondas temporais (o que gerava repetições de países e indivíduos entrevistados em anos diferentes), selecionou-se a **onda mais recente e comparável por país** (maior fase DHS). Foram excluídos registros históricos e amostras de teste (como `OS` - África do Sul histórica), resultando na **Base Comparável de 37 Países**.
+
+Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já incluem colunas padronizadas de rastreabilidade: `pais_codigo`, `pais_nome`, `levantamento_id` (ex: `AO_81`), `fase`, `arquivo_origem`, `linha_origem` e chaves unificadas (`id_mulher_global`, `id_domicilio`, `id_nascimento`, etc.).
+
+### Arquivos Disponíveis
+
+| Arquivo | Recode | Descrição do Conteúdo | Cobertura na Base Comparável | Registros Reais |
+| :--- | :---: | :--- | :---: | :---: |
+| [`IR.csv.gz`](dados/relevantes/IR.csv.gz) | **IR** | Mulheres entrevistadas (15 a 49 anos): perfil sociodemográfico, fertilidade, contracepção e saúde | 37 países | **407.600** mulheres |
+| [`BR.csv.gz`](dados/relevantes/BR.csv.gz) | **BR** | Histórico completo de partos e nascimentos de cada mulher | 37 países | **877.412** nascimentos |
+| [`HR.csv.gz`](dados/relevantes/HR.csv.gz) | **HR** | Domicílios: tipo de habitação, bens duráveis, água, esgoto e eletricidade | 36 países | **385.457** domicílios |
+| [`PR.csv.gz`](dados/relevantes/PR.csv.gz) | **PR** | Moradores do domicílio: composição demográfica completa | 36 países | **1.884.683** moradores |
+| [`KR.csv.gz`](dados/relevantes/KR.csv.gz) | **KR** | Crianças menores de 5 anos: vacinação, aleitamento e episódios de doenças | 37 países | **282.641** crianças |
+| [`HW.csv.gz`](dados/relevantes/HW.csv.gz) | **HW** | Antropometria e dosagem de hemoglobina/anemia materna e infantil | 28 países | 2.816 medições diretas |
+| [`CR.csv.gz`](dados/relevantes/CR.csv.gz) | **CR** | Casais pareados: entrevistas conjuntas entre cônjuges | 36 países | 67.006 casais |
+| [`MR.csv.gz`](dados/relevantes/MR.csv.gz) | **MR** | Homens/parceiros entrevistados em idade reprodutiva | 36 países | 144.714 parceiros |
+| [`SQ.csv.gz`](dados/relevantes/SQ.csv.gz) | **SQ** | Infraestrutura comunitária e serviços de saúde locais | 19 países | 6.548 registros |
+| [`WI.csv.gz`](dados/relevantes/WI.csv.gz) | **WI** | Índice de riqueza (*wealth index*) adicional do DHS | 26 países | 5.551 registros |
+
+> [!TIP]
+> O arquivo [`dados/relevantes/manifesto_selecao.csv`](dados/relevantes/manifesto_selecao.csv) contém o registro de governança completo, detalhando o arquivo de origem, a fase DHS, a contagem de linhas e cada uma das colunas selecionadas em cada país.
+
 ---
 
-## Como Processar os Dados e Carregar no SQLite
+## Como Carregar os Dados no SQLite (Jupyter Notebook)
 
-Como os arquivos `.DTA` possuem milhares de colunas:
-
-### Direto no Jupyter Notebook
-Abra o notebook e execute o processamento na **Seção 3**:
+Com a consolidação em `.csv.gz`, a carga dos dados no SQLite dentro do notebook oficial `tp_template.ipynb` tornou-se direta:
 
 ```python
 import sqlite3
 import pandas as pd
 
-# 1. Selecionar apenas as colunas necessárias para as suas entidades
-# 2. Ler o arquivo Stata (.DTA) do país escolhido e em contexto unificado
-# 3. Conectar ao SQLite e gerar as tabelas do banco
+# Conectar (ou criar) o banco de dados SQLite local
+conn = sqlite3.connect("saude_mulher_dhs.db")
+
+# 1. Carregar a tabela de Mulheres (IR)
+print("Carregando Mulher (IR)...")
+df_mulher = pd.read_csv("dados/relevantes/IR.csv.gz", compression="gzip")
+df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
+
+# 2. Carregar a tabela de Nascimentos / Gestação e Parto (BR)
+print("Carregando Nascimento (BR)...")
+df_nascimento = pd.read_csv("dados/relevantes/BR.csv.gz", compression="gzip")
+df_nascimento.to_sql("Nascimento", conn, if_exists="replace", index=False)
+
+# 3. Carregar Domicílios (HR)
+print("Carregando Domicilio (HR)...")
+df_domicilio = pd.read_csv("dados/relevantes/HR.csv.gz", compression="gzip")
+df_domicilio.to_sql("Domicilio", conn, if_exists="replace", index=False)
+
+print("Carga concluída com sucesso!")
 ```
 
----
-
-## Entendendo os Dados em `dados/brutos`
-
-## Versão compacta utilizada no projeto
-
-Os microdados completos não fazem parte da versão de trabalho do repositório. A pasta [`dados/relevantes`](dados/relevantes) contém apenas os campos usados pelas entidades e relacionamentos do modelo integrado, em arquivos CSV gzip:
-
-- cinco recodes centrais (`IR`, `BR`, `HR`, `PR`, `KR`), usando a mesma fase por país;
-- módulos opcionais (`HW`, `CR`, `MR`, `SQ`, `WI`), preservando a fase no manifesto;
-- uma onda recente para cada um dos 37 países comparáveis, sem o grupo histórico da África do Sul;
-- IDs auxiliares e metadados de país, levantamento, arquivo de origem e linha original.
-
-O arquivo [`manifesto_selecao.csv`](dados/relevantes/manifesto_selecao.csv) registra as fases, arquivos, colunas e quantidades selecionadas. Para reduzir o tamanho do repositório, não versionar novamente os arquivos brutos `.DTA`, `.DOC` e `.zip`.
-
-### O que é o Questionário IR (*Individual Recode*)?
-O módulo **IR** do DHS é focado exclusivamente em **mulheres em idade fértil (15 a 49 anos)**. É o levantamento mais detalhado sobre saúde reprodutiva e materna do mundo, cobrindo:
-- Perfil sociodemográfico (idade, escolaridade, residência urbana/rural, nível de riqueza).
-- Histórico completo de partos e nascimentos.
-- Pré-natal, assistência ao parto e vacinas maternas (ex: tétano).
-- Acesso e uso de métodos contraceptivos.
-- Indicadores antropométricos e de saúde (anemia, IMC, peso, altura).
-
-### Tipos de Arquivos Presentes:
-| Extensão | Função no Trabalho |
-| :--- | :--- |
-| **`.DTA`** | **Arquivo de Microdados (Stata):** É a tabela com os dados brutos de todas as entrevistas. Cada linha representa uma mulher entrevistada. Possui milhares de colunas com as variáveis codificadas. |
-| **`.DOC` / `.docx` / `.PDF`** | **Dicionário de Variáveis:** Documento de texto que traduz os nomes codificados das colunas (ex: `v012 = Idade`, `v106 = Nível de escolaridade`, `v201 = Total de filhos`). **Consulte este arquivo para escolher os atributos das suas tabelas!** |
+Se desejar inspecionar o script responsável por extrair e gerar os CSVs a partir dos dados brutos originais do DHS, consulte [`database_python/preparar_dados_projeto.py`](database_python/preparar_dados_projeto.py).
 
 ---
 
-## 4. Dicionário Prático de Variáveis-Chave do DHS (IR)
+## Repertório Analítico e Auditorias (`analises` e `analises_completo`)
 
-Ao abrir um arquivo `.DTA` (ex: `AOIR81FL.DTA`), as colunas seguem a codificação internacional do DHS. Abaixo estão as variáveis mais recomendadas para compor suas entidades no banco relacional:
+Para fundamentar as escolhas de modelagem e garantir rigor estatístico, foram realizadas auditorias semânticas sobre o inventário completo do DHS. Os resultados encontram-se documentados e versionados nas pastas [`analises/`](analises) e [`analises_completo/`](analises_completo):
 
-### Identificação e Demografia
-- `caseid`: Identificador único da mulher entrevistada (Chave Primária ideal).
-- `v001`: Número do cluster / conglomerado amostral.
-- `v002`: Número do domicílio.
-- `v012`: Idade da entrevistada (em anos completos).
-- `v024`: Região do país (província/estado).
-- `v025`: Tipo de residência (`1 = Urbano`, `2 = Rural`).
-- `v106`: Maior nível de escolaridade concluído (`0 = Nenhum`, `1 = Primário`, `2 = Secundário`, `3 = Superior`).
-- `v190`: Índice de riqueza do domicílio (`1 = Muito Pobre`, `2 = Pobre`, `3 = Médio`, `4 = Rico`, `5 = Muito Rico`).
+1. **Modelagem e Comparabilidade Continental:**
+   - [`analises_completo/tabela_alternativas_modelagem.md`](analises_completo/tabela_alternativas_modelagem.md): Compara o inventário bruto total (1.409 arquivos, 2,13 milhões de mulheres com repetições entre ondas) contra a **Base Comparável Recomendada (37 países e 407.600 mulheres)**, fundamentando a estrutura de entidades e cardinalidades.
 
-### Saúde Materna e Reprodutiva
-- `v201`: Total de nascidos vivos (número de filhos que teve ao longo da vida).
-- `v212`: Idade que a mulher tinha quando deu à luz ao primeiro filho.
-- `v312`: Método contraceptivo em uso atual (`0 = Nenhum`, `1 = Pílula`, `2 = DIU`, `3 = Injetável`, etc.).
-- `v313`: Tipo de método contraceptivo (`0 = Nenhum`, `1 = Tradicional`, `2 = Moderno`).
+2. **Auditoria de Variáveis e Famílias Semânticas:**
+   - [`analises_completo/relatorio_entidades_saude_mulher.md`](analises_completo/relatorio_entidades_saude_mulher.md) e [`analises/relatorio_entidades_saude_mulher.md`](analises/relatorio_entidades_saude_mulher.md): Diagnóstico aprofundado dos dicionários de variáveis do DHS. Identificou **559 variáveis com nomes estritamente idênticos** presentes em todos os países comparáveis ([`variaveis_comuns_37_paises.csv`](analises_completo/variaveis_comuns_37_paises.csv)).
+   - [`analises_completo/denominacoes_normalizadas.csv`](analises_completo/denominacoes_normalizadas.csv): Mapeamento e desambiguação de rótulos entre diferentes fases e línguas de aplicação dos questionários.
+   - [`analises_completo/familias_semanticas.csv`](analises_completo/familias_semanticas.csv): Agrupamento semântico de variáveis por temas de interesse.
 
-### Pré-natal e Assistência ao Parto (Último Filho)
-- `m14_1`: Número de consultas pré-natais realizadas durante a gravidez.
-- `m15_1`: Local de realização do parto (`10-19 = Domiciliar`, `20-39 = Hospital/Clínica Pública`, `40-49 = Clínica Privada`).
-- `m3a_1`: Parto assistido por médico (`0 = Não`, `1 = Sim`).
-- `m3b_1`: Parto assistido por enfermeira/parteira (`0 = Não`, `1 = Sim`).
-
-### Indicadores de Nutrição e Saúde Geral
-- `v445`: Índice de Massa Corporal (IMC com 2 casas decimais implícitas, ex: 2250 = 22.50).
-- `v453`: Nível de hemoglobina ajustado (diagnóstico de anemia).
-- `v457`: Nível de anemia (`1 = Severa`, `2 = Moderada`, `3 = Leve`, `4 = Não anêmica`).
+3. **Cobertura Temática por Domínio:**
+   Conforme detalhado em [`analises_completo/cobertura_temas.csv`](analises_completo/cobertura_temas.csv), as variáveis cobrem 10 grandes dimensões nos 37 países:
+   - **História Reprodutiva e Fecundidade:** Fecundidade total, filhos sobreviventes, gravidez atual.
+   - **Saúde Materna e Assistência ao Parto:** Pré-natal, assistência qualificada, local de parto.
+   - **Planejamento Familiar:** Métodos modernos vs. tradicionais, conhecimento e uso.
+   - **Nutrição e Anemia:** Antropometria, hemoglobina materna e infantil.
+   - **Condições Socioeconômicas:** Quintil de riqueza, saneamento, acesso a água e luz.
+   - **Violência de Gênero e Autonomia:** Presente em 35 dos 37 países (módulo específico de violência doméstica e poder decisório).
 
 ---
 
-## 5. Proposta da Primeira Entrega (25/09) - Escopo Integrado Continental (37 Países)
+## Modelo Conceitual e Proposta de Banco de Dados
 
-> **Contexto Macro:** Análise integrada em escala continental cobrindo 37 países da África Subsaariana (população de ~1,3 bilhão, comparável à da China), com base em **503.733 entrevistas individuais** de mulheres em idade reprodutiva coletadas pelo *Demographic and Health Surveys* (DHS).
+### 1. Entidades Propostas e Instâncias Reais (Base Comparável)
 
----
+A auditoria demonstrou a importância crucial de instituir a entidade **`Levantamento`** como dimensão agregadora, prevenindo ambiguidades entre dados de coletas amostrais distintas e mantendo a integridade referencial:
 
-### 1. Entidades Propostas e Número de Instâncias
-
-| Entidade | Descrição e Atributos | Chave Primária (PK) / Estrangeira (FK) | Total de Instâncias Reais |
+| Entidade | Descrição e Atributos Principais | Chave Primária (PK) / Estrangeira (FK) | Instâncias Reais |
 | :--- | :--- | :--- | :---: |
-| **`Pais`** | Identificação geopolítica do país (`nome_pais`, `codigo_iso`, `regiao_africana`: Ocidental, Central, Oriental, Austral) | **PK:** `codigo_pais` (ex: `AO`, `MZ`, `NG`) | **37** países |
-| **`Domicilio`** | Unidade habitacional (`tipo_residencia`: Urbano/Rural, `quintil_riqueza`: 1-Muito Pobre a 5-Muito Rico) | **PK:** `id_domicilio` (`codigo_pais` + `cluster` + `household`)<br>**FK:** `codigo_pais` | **~368.000** domicílios |
-| **`Mulher`** | Entrevistada em idade reprodutiva (15-49 anos) (`idade`, `escolaridade`, `total_filhos`, `idade_primeiro_parto`, `status_anemia`) | **PK:** `id_mulher` (`caseid` com prefixo do país)<br>**FK:** `id_domicilio` | **503.733** mulheres |
-| **`Gestacao_Parto`** | Histórico obstétrico recente dos últimos 5 anos (`consultas_prenatal`, `local_parto`, `parto_assistido_profissional`) | **PK:** `id_gestacao`<br>**FK:** `id_mulher` | **~208.000** partos/gestações |
-| **`Metodo_Contraceptivo`** | Catálogo oficial de métodos anticoncepcionais do DHS/OMS (`nome_metodo`, `classificacao`: Moderno/Tradicional/Permanente) | **PK:** `id_metodo` | **18** métodos |
+| **`Pais`** | Identificação geopolítica (`nome_pais`, `regiao_africana`) | **PK:** `pais_codigo` (ex: `AO`, `MZ`, `NG`) | **37** países |
+| **`Levantamento`** | Rodada de pesquisa DHS realizada (`ano_fase`, `versao_questionario`) | **PK:** `levantamento_id` (ex: `AO_81`)<br>**FK:** `pais_codigo` | **37** levantamentos |
+| **`Domicilio`** | Unidade habitacional (`tipo_residencia`: Urbano/Rural, `quintil_riqueza`, `fonte_agua`, `tipo_sanitario`) | **PK:** `id_domicilio`<br>**FK:** `pais_codigo`, `levantamento_id` | **385.457** domicílios |
+| **`Mulher`** | Entrevistada (15 a 49 anos) (`idade`, `escolaridade`, `total_filhos`, `idade_primeiro_parto`, `status_anemia`) | **PK:** `id_mulher_global`<br>**FK:** `id_domicilio`, `levantamento_id`, `pais_codigo` | **407.600** mulheres |
+| **`Nascimento`** / `Gestacao_Parto` | Registro obstétrico detalhado (`ordem_nascimento`, `consultas_prenatal`, `local_parto`, `parto_assistido`) | **PK:** `id_nascimento`<br>**FK:** `id_mulher_global` | **877.412** nascimentos |
+| **`Crianca`** *(Opcional)* | Crianças de 0 a 5 anos (`peso`, `altura`, `vacinacao`, `aleitamento`) | **PK:** `id_crianca`<br>**FK:** `id_mulher_global` | **282.641** crianças |
+| **`Metodo_Contraceptivo`** | Catálogo oficial DHS/OMS de métodos contraceptivos (`nome_metodo`, `classificacao`: Moderno/Tradicional/Permanente) | **PK:** `id_metodo` | **18** métodos |
 
 ---
 
-### 2. Relacionamentos e Instâncias de cada Relacionamento
+### 2. Relacionamentos e Cardinalidades
 
-| Relacionamento | Cardinalidade | Regra de Negócio | Total de Instâncias |
+| Relacionamento | Cardinalidade | Regra de Negócio | Instâncias Reais Comprovadas |
 | :--- | :---: | :--- | :---: |
-| **`Pertence_A`**<br>(`Domicilio` ➔ `Pais`) | **N : 1** | Cada domicílio pertence a um país soberano; cada país tem milhares de domicílios amostrados. | **~368.000** associações |
-| **`Reside_Em`**<br>(`Mulher` ➔ `Domicilio`) | **N : 1** | Cada mulher reside em um domicílio específico. | **503.733** associações |
-| **`Teve_Gestacao`**<br>(`Mulher` ➔ `Gestacao_Parto`) | **1 : N** | Uma mulher pode ter registrado partos recentes (últimos 5 anos). | **~208.000** associações |
-| **`Uso_Contracepcao`**<br>(`Mulher` ⮂ `Metodo_Contraceptivo`) | **N : M** *(Requisito Obrigatório)* | Uma mulher pode usar/conhecer vários métodos contraceptivos; cada método é adotado por milhares de mulheres. | **~118.000** associações ativas |
+| **`Pertence_A`**<br>(`Domicilio` ➔ `Pais`) | **N : 1** | Cada domicílio amostrado pertence a um país. | **385.457** vínculos |
+| **`Realizado_Em`**<br>(`Levantamento` ➔ `Pais`) | **N : 1** | Cada levantamento pertence ao histórico de um país. | **37** vínculos |
+| **`Participa_De`**<br>(`Mulher` ➔ `Levantamento`) | **N : 1** | Cada mulher foi entrevistada em um levantamento específico. | **407.600** vínculos |
+| **`Reside_Em`**<br>(`Mulher` ➔ `Domicilio`) | **N : 1** | Cada mulher reside em um domicílio cadastrado. | **407.600** vínculos |
+| **`Tem_Nascimento`**<br>(`Mulher` ➔ `Nascimento`) | **1 : N** | Uma mulher pode ter múltiplos nascimentos registrados ao longo da vida fértil. | **877.412** vínculos |
+| **`Tem_Crianca`**<br>(`Mulher` ➔ `Crianca`) | **1 : N** | Crianças com acompanhamento de saúde vinculadas à mãe respondente. | **282.641** vínculos |
+| **`Uso_Contracepcao`**<br>(`Mulher` ⮂ `Metodo_Contraceptivo`) | **N : M** *(Requisito Obrigatório)* | Uma mulher conhece e/ou utiliza múltiplos métodos ao longo do tempo; cada método é utilizado por milhares de mulheres. | Materializado via tabela associativa |
 
-> **Implementação do Relacionamento N:M:** No banco físico relacional, esse relacionamento é materializado na tabela associativa `Uso_Contracepcao` (composta pelas chaves `id_mulher` e `id_metodo`, além de atributos como `uso_atual` e `conhece`).
-
----
-
-### 3. Estratégia de Otimização e Carga dos Dados
-
-> **Otimização:** Os arquivos `.DTA` de 37 países contêm mais de 7.000 colunas cada (dezenas de gigabytes brutos). Se tentar carregar tudo na memória, o Python travará. O segredo é fazer um loop em Python que carrega apenas as 12-14 colunas de interesse (ex: `caseid`, `v001`, `v002`, `v012`, `v025`, `v106`, `v190`, `v201`, `v212`, `v312`, `m14_1`, `m15_1`, `v457`). Ao carregar apenas essas variáveis, o banco de dados SQLite consolidado terá em torno de **80 MB a 120 MB**, operando de forma ultrarrápida no SQLite com consultas que rodam em frações de segundo.
-
----
-
-### 4. Investigações em Alto Nível: Top 3 Países com Dados Alarmantes
-
-#### 1. "Deserto Pré-natal e Partos Desassistidos"
-* **Pergunta:** Quais os 3 países com maior proporção de partos domiciliares sem assistência médica, e qual a correlação com a escolaridade materna?
-* **Lógica SQL:** Junção entre `Pais`, `Mulher` e `Gestacao_Parto`. Filtrar partos onde `local_parto` é domiciliar e agrupar por `Pais` calculando a porcentagem de partos não assistidos (`COUNT(*) * 100.0 / TOTAL`).
-* **Hipótese:** Países da região do Sahel (ex: Chade, Níger, Mali) apresentam taxas superiores a 60% de partos domiciliares sem profissional capacitado.
-
-#### 2. "A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano"
-* **Pergunta:** Qual a prevalência de anemia moderada a severa entre mulheres em idade fértil, e quais os 3 países onde a desigualdade entre zonas rurais e urbanas é mais crítica?
-* **Lógica SQL:** Junção entre `Pais`, `Domicilio` e `Mulher`. Calcular a taxa de anemia (`v457 IN (1, 2)`) agrupada por país e tipo de residência (`Urbano` vs `Rural`).
-* **Hipótese:** No meio rural, o isolamento geográfico e a insegurança alimentar elevam a taxa de anemia a níveis de emergência nutricional pública.
-
-#### 3. "Iniquidade Econômica no Planejamento Familiar Moderno"
-* **Pergunta:** Quais os 3 países com o maior abismo de acesso a métodos contraceptivos modernos entre as mulheres mais ricas (quintil 5) e as mais pobres (quintil 1)?
-* **Lógica SQL:** Junção de 4 tabelas (`Pais`, `Domicilio`, `Mulher`, `Uso_Contracepcao` e `Metodo_Contraceptivo`). Calcular a diferença percentual de uso de métodos modernos entre o quintil 1 e o quintil 5.
-* **Hipótese:** Mulheres em situação de extrema vulnerabilidade têm taxa de cobertura inferior a 10%, contra mais de 45% entre mulheres de maior renda.
+> [!NOTE]
+> **Implementação do Relacionamento N:M:**  
+> O relacionamento N:M é implementado por meio da tabela associativa `Uso_Contracepcao` (`id_mulher_global`, `id_metodo`), incorporando atributos de histórico como `conhece` (derivado de `v304_*`), `ja_usou` (`v307_*`) e `uso_atual` (`v312`).
 
 ---
 
-### Carga no SQLite e Jupyter Notebook
+## Dicionário Prático de Variáveis Selecionadas
 
-No arquivo `tp_template.ipynb` (Seção 3), você implementará o carregamento via Python. 
+As principais variáveis DHS já presentes nos arquivos consolidados em [`dados/relevantes`](dados/relevantes):
 
-Exemplo prático de extração filtrada e carga:
+### Identificação e Demografia (`IR.csv.gz`, `HR.csv.gz`)
+- `pais_codigo` / `levantamento_id`: Identificador soberano e fase da pesquisa.
+- `caseid` / `id_mulher_global`: Chave primária da mulher entrevistada.
+- `v012`: Idade da mulher (em anos completos, 15–49).
+- `v024`: Região/província dentro do país.
+- `v025` / `hv025`: Tipo de local de residência (`1 = Urbano`, `2 = Rural`).
+- `v106`: Maior nível de escolaridade concluído (`0 = Sem escolaridade`, `1 = Primário`, `2 = Secundário`, `3 = Superior`).
+- `v190` / `hv270`: Índice de riqueza do domicílio em quintis (`1 = Mais Pobre` a `5 = Mais Rico`).
 
-```python
-import sqlite3
-import pandas as pd
+### Saúde Materna e Histórico Obstétrico (`BR.csv.gz`)
+- `bidx`: Índice do nascimento para a mãe respondente.
+- `bord`: Ordem de nascimento da criança.
+- `b4`: Sexo da criança (`1 = Masculino`, `2 = Feminino`).
+- `b5`: Sobrevivência da criança (`0 = Falecida`, `1 = Viva`).
+- `m14`: Número de consultas de pré-natal durante a gestação.
+- `m15`: Local de ocorrência do parto (`10-19 = Domiciliar`, `20-39 = Hospital/Centro de Saúde Público`, `40-49 = Clínica Privada`).
+- `m3a` / `m3b`: Parto assistido por médico (`m3a = 1`) ou parteira/enfermeira (`m3b = 1`).
 
-# Conectar ao banco SQLite
-# Carregar apenas as colunas desejadas do arquivo .DTA
-# Criar tabela Mulher
-# Inserir no SQLite
-```
+### Contracepção e Planejamento Familiar (`IR.csv.gz`)
+- `v312`: Método contraceptivo em uso atual (`0 = Nenhum`, `1 = Pílula`, `2 = DIU`, `3 = Injetável`, `11 = Preservativo masculino`, etc.).
+- `v313`: Tipo de método utilizado (`0 = Nenhum`, `1 = Folclórico/Tradicional`, `2 = Moderno`).
+- `v301`: Conhecimento geral de qualquer método contraceptivo.
+
+### Indicadores de Nutrição e Saúde da Mulher (`IR.csv.gz`, `HW.csv.gz`)
+- `v445`: Índice de Massa Corporal (IMC com 2 decimais implícitas, ex: `2250` = `22.50`).
+- `v453`: Nível de hemoglobina corrigido para altitude e tabagismo.
+- `v457`: Nível de anemia diagnosticado (`1 = Severa`, `2 = Moderada`, `3 = Leve`, `4 = Não anêmica`).
 
 ---
 
-### As 10 Consultas SQL
+## Perguntas Analíticas e Consultas SQL
 
-O trabalho exige exatamente 10 consultas divididas nas 4 categorias da Seção 6 do template:
+As 10 consultas SQL distribuem-se conforme o regulamento do trabalho nas 4 categorias obrigatórias:
 
-1. **Seleção e Projeção (2 consultas):**
-   - *Exemplo:* Listar mulheres com mais de 30 anos residentes em áreas rurais.
-2. **Junção de 2 relações (3 consultas):**
-   - *Exemplo:* Cruzar a tabela `Mulher` com `Domicilio` para ver a distribuição de partos por quintil de riqueza.
-3. **Junção de 3 ou mais relações (3 consultas):**
-   - *Exemplo:* Relacionar `Pais`, `Mulher` e `Gestacao_Parto` para analisar se a média de consultas pré-natais varia entre países ou níveis de escolaridade.
-4. **Agregações sobre Junção de 2+ relações (2 consultas):**
-   - *Exemplo:* Calcular a média de filhos e percentual de partos hospitalares agrupados por faixa de renda e nível de escolaridade (`COUNT`, `AVG`, `GROUP BY`, `HAVING`).
+### Linhas de Investigação em Saúde Pública
+1. **Deserto Pré-natal e Partos Desassistidos:**
+   - *Pergunta:* Quais os países com maior proporção de partos domiciliares sem assistência qualificada, e como a escolaridade materna mitiga esse risco?
+   - *SQL:* Junção entre `Pais`, `Mulher` e `Nascimento`.
+2. **A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano:**
+   - *Pergunta:* Qual a prevalência de anemia moderada a severa entre mulheres em idade fértil, e onde a disparidade urbano-rural é mais acentuada?
+   - *SQL:* Junção entre `Pais`, `Domicilio` e `Mulher`, agrupando por `tipo_residencia`.
+3. **Iniquidade Econômica no Planejamento Familiar Moderno:**
+   - *Pergunta:* Qual o gradiente de acesso a contraceptivos modernos entre mulheres do quintil mais rico (5) e do mais pobre (1)?
+   - *SQL:* Junção entre `Pais`, `Domicilio`, `Mulher` e `Metodo_Contraceptivo`.
+
+### Categorias das 10 Consultas SQL
+- **Seleção e Projeção (2 consultas):** Ex: Filtrar mulheres com mais de 35 anos em áreas rurais; listar partos ocorridos em ambiente domiciliar.
+- **Junção de 2 relações (3 consultas):** Ex: Cruzamento `Mulher` ⨝ `Domicilio` para análise de anemia por quintil de riqueza.
+- **Junção de 3 ou mais relações (3 consultas):** Ex: `Pais` ⨝ `Mulher` ⨝ `Nascimento` para avaliar médias de consultas pré-natais por região geopolítica.
+- **Agregações sobre Junção de 2+ relações (2 consultas):** Ex: `GROUP BY` com funções agregadas (`AVG`, `COUNT`, `HAVING`) calculando taxas de cobertura obstétrica por faixa de renda e país.
 
 ---
 
-### Otimização de Consultas (+20% Extra)
+## Otimização de Consultas (+20% de Pontuação)
 
-Para garantir a pontuação extra de otimização:
-1. Identifique uma consulta com junção ou filtros frequentes (ex: filtro por `idade` ou `id_domicilio`).
-2. Execute o comando `EXPLAIN QUERY PLAN <sua_consulta>;` e observe o scan completo (`SCAN TABLE`).
-3. Crie um índice:
+Para comprovação do ganho de desempenho via índices:
+1. Executar `EXPLAIN QUERY PLAN <consulta>` identificando operações de varredura completa (`SCAN TABLE`).
+2. Criar índices adequados nas colunas de filtro ou chave estrangeira:
    ```sql
-   CREATE INDEX idx_mulher_idade ON Mulher(idade);
+   CREATE INDEX idx_mulher_idade ON Mulher(v012);
+   CREATE INDEX idx_nascimento_mulher ON Nascimento(id_mulher_global);
    ```
-4. Execute novamente o `EXPLAIN QUERY PLAN` e comprove que o SQLite passou a utilizar o índice (`SEARCH TABLE ... USING INDEX`).
-5. Mostre o ganho de tempo de execução no notebook utilizando `%timeit`.
+3. Executar novamente o plano de execução comprovando o uso do índice (`SEARCH TABLE ... USING INDEX`).
+4. Medir e comparar o tempo de execução no Jupyter Notebook utilizando a diretiva `%timeit`.
 
 ---
 
-## 6. Calendário de Entregas
+## Calendário de Entregas
 
 | Data | Entrega | Formato | Detalhes |
 | :--- | :--- | :--- | :--- |
-| **25/09** | **Proposta** | `.pdf` (máx. 1 página) | Grupo, tema escolhido (Saúde da Mulher na África Subsaariana), descrição do dataset, entidades e relacionamentos preliminares. |
-| **23/10** | **Relatório Parcial** | `.ipynb` + `.pdf` | Seções 1 a 5 do template: Título, Membros, Descrição dos Dados, Diagrama ER e Diagrama Relacional. |
-| **23/11** | **Relatório Final** | `.ipynb` + `.pdf` | Todas as seções completas, incluindo as 10 consultas SQL executadas, otimização e autoavaliação. |
-| **23 a 30/11** | **Apresentação** | Slides (máx. 6 min) | Apresentação em grupo sobre a modelagem e as conclusões analíticas. |
+| **25/09** | **Proposta** | `.pdf` (máx. 1 página) | Tema (Saúde da Mulher na África Subsaariana), descrição do dataset consolidado, entidades e relacionamentos fundamentados na base de 37 países. |
+| **23/10** | **Relatório Parcial** | `.ipynb` + `.pdf` | Seções 1 a 5 do template: Título, Membros, Descrição dos Dados, Diagrama ER e Esquema Relacional Normalizado. |
+| **23/11** | **Relatório Final** | `.ipynb` + `.pdf` | Projeto completo: 10 consultas SQL executadas e comentadas, testes de otimização com índices e autoavaliação. |
+| **23 a 30/11** | **Apresentação** | Slides (máx. 6 min) | Apresentação em grupo sobre a modelagem de dados, arquitetura e achados analíticos. |
 
----
-
-## 1. Visão Geral e Objetivos do Trabalho
-
-O objetivo é projetar e implementar um banco de dados relacional para análise de saúde seguindo um **processo bottom-up**:
-1. Partir de uma base não-relacional existente (os microdados brutos do DHS em formato Stata `.dta`).
-2. Analisar os dados e **normalizar** o esquema conceitual e relacional.
-3. Mapear o esquema normalizado para o **Diagrama ER (Entidade-Relacionamento)**.
-4. Inserir os dados processados em um banco **SQLite** manipulado dentro do Jupyter Notebook oficial (`tp_template.ipynb`).
-5. Formular e executar **10 consultas analíticas em SQL** e analisar os resultados em saúde pública.
-
-### Requisitos Mínimos Obrigatórios:
-- **Pelo menos 4 entidades**, cada uma com ao menos 2 atributos (além da Chave Primária).
-- **Pelo menos 3 tipos de relacionamento**, contendo ao menos **1 relacionamento com cardinalidade N:M**.
-- **10 consultas SQL** categorizadas rigorosamente conforme a especificação.
-- **SGBD**: SQLite embarcado no Jupyter Notebook (`tp_template.ipynb`).
-
----
-
-Possíveis questões a serem respondidas:
-- desigualdade entre riqueza, escolaridade e uso de métodos contraceptivos;
-- associação entre residência rural, consultas pré-natais e parto assistido;
-- diferenças entre países na relação entre anemia, pobreza e acesso à saúde;
-- relação entre assistência materna e indicadores de saúde infantil;
-- países com alta prevalência de conhecimento contraceptivo, mas baixo uso efetivo.
