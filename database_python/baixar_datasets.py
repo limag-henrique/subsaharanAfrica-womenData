@@ -358,7 +358,7 @@ class DHSDownloader:
             print(f"[AVISO] Não foi possível extrair {filename}: {e}")
 
     def run(self,
-            urls_file: str = "urls_dhs.txt",
+        urls_file: str = "catalogo_datasets.csv",
             country_filter: Optional[List[str]] = None,
             recode_filter: Optional[List[str]] = None,
             survey_filter: Optional[List[str]] = None,
@@ -491,7 +491,11 @@ def main():
     parser = argparse.ArgumentParser(
         description="Baixa e organiza os dados do DHS Program para o projeto de Banco de Dados (DCC011)."
     )
-    parser.add_argument("--urls-file", default="urls_dhs.txt", help="Caminho do arquivo com URLs.")
+    parser.add_argument(
+        "--urls-file",
+        default="catalogo_datasets.csv",
+        help="Caminho do catálogo CSV exportado ou arquivo de URLs.",
+    )
     parser.add_argument("--country", "-c", help="Códigos dos países separados por vírgula (ex: AO,MZ,KE,GH).")
     parser.add_argument("--recode", "-r", help="Tipos de recode separados por vírgula (ex: IR para Saúde da Mulher, BR para Nascimentos).")
     parser.add_argument("--survey", "-s", help="IDs de surveys separados por vírgula.")

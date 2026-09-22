@@ -1,0 +1,360 @@
+country,recode,dataset_count
+Angola,BR,3
+Angola,CR,2
+Angola,HR,4
+Angola,IR,4
+Angola,KR,4
+Angola,MR,2
+Angola,PR,4
+Benin,BR,5
+Benin,CR,5
+Benin,HR,5
+Benin,HW,2
+Benin,IR,5
+Benin,KR,5
+Benin,MR,5
+Benin,PR,5
+Benin,SQ,3
+Benin,WI,2
+Burkina Faso,BR,5
+Burkina Faso,CR,5
+Burkina Faso,HR,7
+Burkina Faso,HW,3
+Burkina Faso,IR,7
+Burkina Faso,KR,7
+Burkina Faso,MR,5
+Burkina Faso,PR,7
+Burkina Faso,SQ,1
+Burkina Faso,WI,2
+Burundi,BR,3
+Burundi,CR,2
+Burundi,HH,1
+Burundi,HR,3
+Burundi,HW,1
+Burundi,IR,4
+Burundi,KR,4
+Burundi,MR,2
+Burundi,PR,3
+Burundi,SQ,1
+Camarões,BR,5
+Camarões,CR,5
+Camarões,HR,6
+Camarões,HW,3
+Camarões,IR,6
+Camarões,KR,6
+Camarões,MR,5
+Camarões,PR,6
+Camarões,SQ,1
+Camarões,WI,2
+Chade,BR,3
+Chade,CR,3
+Chade,HR,3
+Chade,HW,2
+Chade,IR,3
+Chade,KR,3
+Chade,MR,3
+Chade,PR,3
+Chade,SQ,2
+Chade,WI,1
+Comores,BR,2
+Comores,CR,2
+Comores,HR,2
+Comores,HW,1
+Comores,IR,2
+Comores,KR,2
+Comores,MR,2
+Comores,PR,2
+Comores,WI,1
+Congo (Brazzaville),BR,2
+Congo (Brazzaville),CR,2
+Congo (Brazzaville),HR,3
+Congo (Brazzaville),HW,1
+Congo (Brazzaville),IR,3
+Congo (Brazzaville),KR,2
+Congo (Brazzaville),MR,2
+Congo (Brazzaville),PR,3
+Congo (República Democrática),BR,3
+Congo (República Democrática),CR,3
+Congo (República Democrática),HR,3
+Congo (República Democrática),IR,3
+Congo (República Democrática),KR,3
+Congo (República Democrática),MR,3
+Congo (República Democrática),PR,3
+Costa do Marfim,BR,5
+Costa do Marfim,CR,4
+Costa do Marfim,HR,5
+Costa do Marfim,HW,2
+Costa do Marfim,IR,5
+Costa do Marfim,KR,5
+Costa do Marfim,MR,4
+Costa do Marfim,PR,5
+Costa do Marfim,SQ,1
+Costa do Marfim,WI,2
+Eswatini (Suazilândia),BR,1
+Eswatini (Suazilândia),CR,1
+Eswatini (Suazilândia),HR,1
+Eswatini (Suazilândia),IR,1
+Eswatini (Suazilândia),KR,1
+Eswatini (Suazilândia),MR,1
+Eswatini (Suazilândia),PR,1
+Etiópia,BR,6
+Etiópia,CR,5
+Etiópia,HR,6
+Etiópia,HW,2
+Etiópia,IR,6
+Etiópia,KR,6
+Etiópia,MR,5
+Etiópia,PR,6
+Etiópia,WI,1
+Gabão,BR,3
+Gabão,CR,3
+Gabão,HR,3
+Gabão,HW,1
+Gabão,IR,3
+Gabão,KR,3
+Gabão,MR,3
+Gabão,PR,3
+Gabão,SQ,1
+Gabão,WI,1
+Gana,BR,7
+Gana,CR,6
+Gana,HH,3
+Gana,HR,8
+Gana,HW,4
+Gana,IQ,2
+Gana,IR,9
+Gana,KR,9
+Gana,MR,6
+Gana,OD,1
+Gana,PR,8
+Gana,VA,3
+Gana,WI,2
+Guiné,BR,4
+Guiné,CR,4
+Guiné,HR,5
+Guiné,HW,2
+Guiné,IR,5
+Guiné,KR,5
+Guiné,MR,4
+Guiné,PR,5
+Guiné,SQ,1
+Guiné,WI,1
+Gâmbia,BR,2
+Gâmbia,CR,2
+Gâmbia,HR,2
+Gâmbia,IR,2
+Gâmbia,KR,2
+Gâmbia,MR,2
+Gâmbia,PR,2
+Lesoto,BR,4
+Lesoto,CR,4
+Lesoto,HR,4
+Lesoto,HW,1
+Lesoto,IR,4
+Lesoto,KR,4
+Lesoto,MR,4
+Lesoto,PR,4
+Libéria,BR,5
+Libéria,CR,3
+Libéria,HH,1
+Libéria,HR,7
+Libéria,IR,8
+Libéria,KR,8
+Libéria,MR,3
+Libéria,PR,7
+Madagascar,BR,5
+Madagascar,CR,3
+Madagascar,HR,8
+Madagascar,HW,3
+Madagascar,IR,8
+Madagascar,KR,8
+Madagascar,MR,3
+Madagascar,PR,8
+Madagascar,SQ,1
+Madagascar,WI,1
+Malaui,BR,6
+Malaui,CR,6
+Malaui,HH,1
+Malaui,HR,9
+Malaui,HW,3
+Malaui,IQ,1
+Malaui,IR,9
+Malaui,KR,9
+Malaui,ML,1
+Malaui,MR,6
+Malaui,PR,9
+Malaui,SQ,1
+Malaui,WI,2
+Mali,BR,7
+Mali,CR,6
+Mali,HH,1
+Mali,HR,9
+Mali,HW,3
+Mali,IR,9
+Mali,KR,9
+Mali,ML,1
+Mali,MR,6
+Mali,PR,9
+Mali,SQ,2
+Mali,WI,2
+Moçambique,BR,5
+Moçambique,CR,5
+Moçambique,HR,7
+Moçambique,HW,2
+Moçambique,IR,7
+Moçambique,KR,6
+Moçambique,MR,5
+Moçambique,OD,1
+Moçambique,PR,7
+Moçambique,WI,1
+Namíbia,BR,4
+Namíbia,CR,3
+Namíbia,HR,4
+Namíbia,HW,2
+Namíbia,IR,4
+Namíbia,KR,4
+Namíbia,MR,3
+Namíbia,PR,4
+Namíbia,WI,2
+Nigéria,BR,7
+Nigéria,CR,5
+Nigéria,HR,9
+Nigéria,HW,2
+Nigéria,IR,9
+Nigéria,KR,9
+Nigéria,MR,5
+Nigéria,PR,9
+Nigéria,SQ,1
+Nigéria,VA,1
+Nigéria,WI,1
+Níger,BR,4
+Níger,CR,4
+Níger,HR,5
+Níger,HW,3
+Níger,IR,5
+Níger,KR,5
+Níger,MR,4
+Níger,PR,5
+Níger,SQ,2
+Níger,WI,1
+Quênia,BR,7
+Quênia,CR,6
+Quênia,HH,1
+Quênia,HR,8
+Quênia,HW,3
+Quênia,IR,9
+Quênia,KR,9
+Quênia,MR,6
+Quênia,PR,8
+Quênia,SQ,1
+Quênia,WI,2
+República Centro-Africana,BR,1
+República Centro-Africana,CR,1
+República Centro-Africana,HR,1
+República Centro-Africana,HW,1
+República Centro-Africana,IR,1
+República Centro-Africana,KR,1
+República Centro-Africana,MR,1
+República Centro-Africana,PR,1
+República Centro-Africana,SQ,1
+República Centro-Africana,WI,1
+Ruanda,BR,8
+Ruanda,CR,7
+Ruanda,HH,1
+Ruanda,HR,11
+Ruanda,HW,3
+Ruanda,IQ,1
+Ruanda,IR,11
+Ruanda,KR,11
+Ruanda,MR,8
+Ruanda,PR,11
+Ruanda,WI,2
+Senegal,BR,14
+Senegal,CR,11
+Senegal,HH,2
+Senegal,HR,15
+Senegal,HW,3
+Senegal,IQ,1
+Senegal,IR,16
+Senegal,KR,16
+Senegal,ML,1
+Senegal,MR,11
+Senegal,PR,15
+Senegal,SQ,1
+Senegal,WI,1
+Serra Leoa,BR,3
+Serra Leoa,CR,3
+Serra Leoa,HR,4
+Serra Leoa,IR,4
+Serra Leoa,KR,4
+Serra Leoa,MR,3
+Serra Leoa,PR,4
+Sudão,BR,1
+Sudão,HH,1
+Sudão,IR,1
+Sudão,KR,1
+São Tomé e Príncipe,BR,1
+São Tomé e Príncipe,CR,1
+São Tomé e Príncipe,HR,1
+São Tomé e Príncipe,IR,1
+São Tomé e Príncipe,KR,1
+São Tomé e Príncipe,MR,1
+São Tomé e Príncipe,PR,1
+Tanzânia,BR,9
+Tanzânia,CR,7
+Tanzânia,HH,1
+Tanzânia,HR,11
+Tanzânia,HW,4
+Tanzânia,IQ,1
+Tanzânia,IR,11
+Tanzânia,KR,10
+Tanzânia,ML,1
+Tanzânia,MR,7
+Tanzânia,PR,11
+Tanzânia,SQ,1
+Tanzânia,WI,2
+Togo,BR,3
+Togo,CR,2
+Togo,HH,1
+Togo,HR,3
+Togo,HW,2
+Togo,IR,4
+Togo,KR,4
+Togo,MR,2
+Togo,PR,3
+Togo,SQ,1
+Togo,WI,1
+Zimbábue,BR,6
+Zimbábue,CR,5
+Zimbábue,HH,1
+Zimbábue,HR,5
+Zimbábue,HW,4
+Zimbábue,IR,6
+Zimbábue,KR,6
+Zimbábue,MR,5
+Zimbábue,PR,5
+Zimbábue,SQ,2
+Zimbábue,WI,2
+Zâmbia,BR,7
+Zâmbia,CR,6
+Zâmbia,HR,7
+Zâmbia,HW,3
+Zâmbia,IR,7
+Zâmbia,KR,7
+Zâmbia,MR,6
+Zâmbia,PR,7
+Zâmbia,WI,2
+África do Sul,BR,2
+África do Sul,CR,1
+África do Sul,HR,2
+África do Sul,IR,2
+África do Sul,KR,2
+África do Sul,MR,1
+África do Sul,OD,1
+África do Sul,PR,2
+África do Sul,WI,1
+África do Sul (Histórico/Outro),BR,1
+África do Sul (Histórico/Outro),HH,1
+África do Sul (Histórico/Outro),HW,1
+África do Sul (Histórico/Outro),IR,1
+África do Sul (Histórico/Outro),KR,1

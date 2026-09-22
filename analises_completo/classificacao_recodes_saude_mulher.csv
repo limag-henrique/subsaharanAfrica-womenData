@@ -1,0 +1,22 @@
+recode,women_health_category,women_health_role,catalog_dataset_count,local_dta_count,recommended
+AT,mortalidade,Certificados de óbito; usar apenas se pertinente,0,1,True
+BR,gestacao_parto,"Nascimentos, gestações e histórico obstétrico",169,167,True
+CR,casal_parceiro,Informações conjugais e do parceiro,143,141,True
+DV,violencia_genero,Módulo de violência doméstica,0,1,True
+HA,modulo_especial,Módulo auxiliar; validar pelo dicionário,0,1,True
+HB,modulo_especial,Módulo auxiliar; validar pelo dicionário,0,1,True
+HH,modulo_especial,Questionário domiciliar especial,16,15,True
+HR,domicilio_contexto,"Domicílio, saneamento, bens e contexto",196,194,True
+HW,antropometria,"Peso, altura, anemia e medidas corporais",67,67,True
+IA,saude_infantil,Módulo relacionado à infância,0,1,True
+IQ,modulo_especial,Questionário individual especial,6,6,True
+IR,mulher_nucleo,Entrevista individual da mulher; fonte principal,205,203,True
+KR,saude_infantil,"Saúde, nutrição e vacinação de crianças",202,200,True
+ML,malaria,"Prevenção, diagnóstico e tratamento de malária",4,4,True
+MR,casal_parceiro,Informações masculinas relacionadas ao casal,144,142,True
+OD,modulo_especial,Outros dados/módulos complementares,3,0,True
+OL,adolescencia,Módulo relacionado à adolescência,0,1,True
+PR,moradores_contexto,Moradores do domicílio e composição familiar,196,195,True
+SQ,servicos_saude,Disponibilidade e infraestrutura de serviços,25,25,True
+VA,mortalidade,Autópsia verbal e causa de morte,4,5,True
+WI,socioeconomico,Índice de riqueza e contexto socioeconômico,39,39,True

@@ -171,10 +171,14 @@ def parse_dhs_url(url: str) -> Dict[str, str]:
 
 
 def load_catalog(urls_file: str = "urls_dhs.txt") -> List[Dict[str, str]]:
-    """Lê as URLs do arquivo e gera a lista de registros estruturados."""
+    """Lê um arquivo de URLs ou o catálogo CSV exportado pelo projeto."""
     path = Path(urls_file)
     if not path.exists():
         raise FileNotFoundError(f"Arquivo de URLs não encontrado: {urls_file}")
+
+    if path.suffix.lower() == ".csv":
+        with open(path, "r", newline="", encoding="utf-8-sig") as f:
+            return [row for row in csv.DictReader(f) if row.get("url")]
 
     catalog = []
     with open(path, "r", encoding="utf-8") as f:

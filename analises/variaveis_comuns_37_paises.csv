@@ -1,0 +1,484 @@
+variable,country_count,file_count,labels,themes
+awfacte,37,181,All woman factor - educational | all woman factor - educatio-na | all woman factor - education | all woman factor - educational | na - all woman factor - educational,outros | socioeconomico
+awfactr,37,181,All woman factor - regional | all woman factor - region | all woman factor - regional | all woman factor - regional-na | all woman factor - regions | na - all woman factor - regional,demografia
+awfactt,37,181,All woman factor - total | all woman factor - total | all woman factor - total   -na | na - all woman factor - total,outros
+awfactu,37,181,All woman factor - urban/rural | all woman factor - urban/ru-na | all woman factor - urban/rural | all woman factor-urban/rural | na - all woman factor - urban/rural,outros
+b0_01,37,198,Child is twin | b0$02 | child is twin,historia_reprodutiva | outros
+b0_02,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_03,37,198,Child is twin | b0$04 | child is twin,historia_reprodutiva | outros
+b0_04,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_05,37,198,Child is twin | b0$06 | child is twin,historia_reprodutiva | outros
+b0_06,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_07,37,198,Child is twin | b0$08 | child is twin,historia_reprodutiva | outros
+b0_08,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_09,37,198,Child is twin | b0$10 | child is twin,historia_reprodutiva | outros
+b0_10,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_11,37,198,Child is twin | b0$12 | child is twin,historia_reprodutiva | outros
+b0_12,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_13,37,198,Child is twin | b0$14 | child is twin,historia_reprodutiva | outros
+b0_14,37,198,Child is twin | child is twin,historia_reprodutiva | outros
+b0_15,37,198,Child is twin | b0$16 | child is twin,historia_reprodutiva | outros
+b0_16,37,197,Child is twin | child is twin,historia_reprodutiva | outros
+b0_17,37,197,Child is twin | b0$18 | child is twin,historia_reprodutiva | outros
+b0_18,37,197,Child is twin | child is twin,historia_reprodutiva | outros
+b0_19,37,197,"Child is twin | b0$20    ""child is twin"" | b0$20    'child is twin' | child is twin",historia_reprodutiva
+b0_20,37,197,Child is twin | child is twin,historia_reprodutiva | outros
+b10_01,37,198,Completeness of information | b10$02 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_02,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_03,37,198,Completeness of information | b10$04 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_04,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_05,37,198,Completeness of information | b10$06 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_06,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_07,37,198,Completeness of information | b10$08 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_08,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_09,37,198,Completeness of information | b10$10 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_10,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_11,37,198,Completeness of information | b10$12 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_12,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_13,37,198,Completeness of information | b10$14 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_14,37,198,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_15,37,198,Completeness of information | b10$16 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_16,37,197,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_17,37,197,Completeness of information | b10$18 | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_18,37,197,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b10_19,37,197,"Completeness of information | b10$20   ""completeness of information"" | b10$20   'completeness of information' | completeness of information | completeness of information for date of birth",historia_reprodutiva | outros
+b10_20,37,197,Completeness of information | completeness of information | completeness of information for date of birth,historia_reprodutiva | outros
+b11_01,37,198,Preceding birth interval (months) | b11$02 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_02,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_03,37,198,Preceding birth interval (months) | b11$04 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_04,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_05,37,198,Preceding birth interval (months) | b11$06 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_06,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_07,37,198,Preceding birth interval (months) | b11$08 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_08,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_09,37,198,Preceding birth interval (months) | b11$10 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_10,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_11,37,198,Preceding birth interval (months) | b11$12 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_12,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_13,37,198,Preceding birth interval (months) | b11$14 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_14,37,198,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_15,37,198,Preceding birth interval (months) | b11$16 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_16,37,197,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_17,37,197,Preceding birth interval (months) | b11$18 | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_18,37,197,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b11_19,37,197,"Preceding birth interval (months) | b11$20   ""preceding birth interval"" | b11$20   'preceding birth interval' | preceding birth interval | preceding birth interval (months)",historia_reprodutiva
+b11_20,37,197,Preceding birth interval (months) | preceding birth interval | preceding birth interval (months),historia_reprodutiva | outros
+b12_01,37,198,Succeeding birth interval (months) | b12$02 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_02,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_03,37,198,Succeeding birth interval (months) | b12$04 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_04,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_05,37,198,Succeeding birth interval (months) | b12$06 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_06,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_07,37,198,Succeeding birth interval (months) | b12$08 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_08,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_09,37,198,Succeeding birth interval (months) | b12$10 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_10,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_11,37,198,Succeeding birth interval (months) | b12$12 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_12,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_13,37,198,Succeeding birth interval (months) | b12$14 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_14,37,198,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_15,37,198,Succeeding birth interval (months) | b12$16 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_16,37,197,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_17,37,197,Succeeding birth interval (months) | b12$18 | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_18,37,197,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b12_19,37,197,"Succeeding birth interval (months) | b12$20   ""succeeding birth interval"" | b12$20   'succeeding birth interval' | succeeding birth interval | succeeding birth interval (months)",historia_reprodutiva
+b12_20,37,197,Succeeding birth interval (months) | succeeding birth interval | succeeding birth interval (months),historia_reprodutiva | outros
+b1_01,37,198,Month of birth | b1$02 | month of birth,historia_reprodutiva | outros
+b1_02,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_03,37,198,Month of birth | b1$04 | month of birth,historia_reprodutiva | outros
+b1_04,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_05,37,198,Month of birth | b1$06 | month of birth,historia_reprodutiva | outros
+b1_06,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_07,37,198,Month of birth | b1$08 | month of birth,historia_reprodutiva | outros
+b1_08,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_09,37,198,Month of birth | b1$10 | month of birth,historia_reprodutiva | outros
+b1_10,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_11,37,198,Month of birth | b1$12 | month of birth,historia_reprodutiva | outros
+b1_12,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_13,37,198,Month of birth | b1$14 | month of birth,historia_reprodutiva | outros
+b1_14,37,198,Month of birth | month of birth,historia_reprodutiva | outros
+b1_15,37,198,Month of birth | b1$16 | month of birth,historia_reprodutiva | outros
+b1_16,37,197,Month of birth | month of birth,historia_reprodutiva | outros
+b1_17,37,197,Month of birth | b1$18 | month of birth,historia_reprodutiva | outros
+b1_18,37,197,Month of birth | month of birth,historia_reprodutiva | outros
+b1_19,37,197,"Month of birth | b1$20    ""month of birth"" | b1$20    'month of birth' | month of birth",historia_reprodutiva
+b1_20,37,197,Month of birth | month of birth,historia_reprodutiva | outros
+b2_01,37,198,Year of birth | b2$02 | year of birth,historia_reprodutiva | outros
+b2_02,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_03,37,198,Year of birth | b2$04 | year of birth,historia_reprodutiva | outros
+b2_04,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_05,37,198,Year of birth | b2$06 | year of birth,historia_reprodutiva | outros
+b2_06,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_07,37,198,Year of birth | b2$08 | year of birth,historia_reprodutiva | outros
+b2_08,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_09,37,198,Year of birth | b2$10 | year of birth,historia_reprodutiva | outros
+b2_10,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_11,37,198,Year of birth | b2$12 | year of birth,historia_reprodutiva | outros
+b2_12,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_13,37,198,Year of birth | b2$14 | year of birth,historia_reprodutiva | outros
+b2_14,37,198,Year of birth | year of birth,historia_reprodutiva | outros
+b2_15,37,198,Year of birth | b2$16 | year of birth,historia_reprodutiva | outros
+b2_16,37,197,Year of birth | year of birth,historia_reprodutiva | outros
+b2_17,37,197,Year of birth | b2$18 | year of birth,historia_reprodutiva | outros
+b2_18,37,197,Year of birth | year of birth,historia_reprodutiva | outros
+b2_19,37,197,"Year of birth | b2$20    ""year of birth"" | b2$20    'year of birth' | year of birth",historia_reprodutiva
+b2_20,37,197,Year of birth | year of birth,historia_reprodutiva | outros
+b3_01,37,198,Date of birth (CMC) | b3$02 | date of birth (cmc),historia_reprodutiva | outros
+b3_02,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_03,37,198,Date of birth (CMC) | b3$04 | date of birth (cmc),historia_reprodutiva | outros
+b3_04,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_05,37,198,Date of birth (CMC) | b3$06 | date of birth (cmc),historia_reprodutiva | outros
+b3_06,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_07,37,198,Date of birth (CMC) | b3$08 | date of birth (cmc),historia_reprodutiva | outros
+b3_08,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_09,37,198,Date of birth (CMC) | b3$10 | date of birth (cmc),historia_reprodutiva | outros
+b3_10,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_11,37,198,Date of birth (CMC) | b3$12 | date of birth (cmc),historia_reprodutiva | outros
+b3_12,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_13,37,198,Date of birth (CMC) | b3$14 | date of birth (cmc),historia_reprodutiva | outros
+b3_14,37,198,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_15,37,198,Date of birth (CMC) | b3$16 | date of birth (cmc),historia_reprodutiva | outros
+b3_16,37,197,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_17,37,197,Date of birth (CMC) | b3$18 | date of birth (cmc),historia_reprodutiva | outros
+b3_18,37,197,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b3_19,37,197,"Date of birth (CMC) | b3$20    ""date of birth (cmc)"" | b3$20    'date of birth (cmc)' | date of birth (cmc)",historia_reprodutiva
+b3_20,37,197,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva | outros
+b4_01,37,198,Sex of child | b4$02 | sex of child,historia_reprodutiva | outros
+b4_02,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_03,37,198,Sex of child | b4$04 | sex of child,historia_reprodutiva | outros
+b4_04,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_05,37,198,Sex of child | b4$06 | sex of child,historia_reprodutiva | outros
+b4_06,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_07,37,198,Sex of child | b4$08 | sex of child,historia_reprodutiva | outros
+b4_08,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_09,37,198,Sex of child | b4$10 | sex of child,historia_reprodutiva | outros
+b4_10,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_11,37,198,Sex of child | b4$12 | sex of child,historia_reprodutiva | outros
+b4_12,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_13,37,198,Sex of child | b4$14 | sex of child,historia_reprodutiva | outros
+b4_14,37,198,Sex of child | sex of child,historia_reprodutiva | outros
+b4_15,37,198,Sex of child | b4$16 | sex of child,historia_reprodutiva | outros
+b4_16,37,197,Sex of child | sex of child,historia_reprodutiva | outros
+b4_17,37,197,Sex of child | b4$18 | sex of child,historia_reprodutiva | outros
+b4_18,37,197,Sex of child | sex of child,historia_reprodutiva | outros
+b4_19,37,197,"Sex of child | b4$20    ""sex of child"" | b4$20    'sex of child' | sex of child",historia_reprodutiva
+b4_20,37,197,Sex of child | sex of child,historia_reprodutiva | outros
+b5_01,37,198,Child is alive | b5$02 | child is alive,historia_reprodutiva | outros
+b5_02,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_03,37,198,Child is alive | b5$04 | child is alive,historia_reprodutiva | outros
+b5_04,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_05,37,198,Child is alive | b5$06 | child is alive,historia_reprodutiva | outros
+b5_06,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_07,37,198,Child is alive | b5$08 | child is alive,historia_reprodutiva | outros
+b5_08,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_09,37,198,Child is alive | b5$10 | child is alive,historia_reprodutiva | outros
+b5_10,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_11,37,198,Child is alive | b5$12 | child is alive,historia_reprodutiva | outros
+b5_12,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_13,37,198,Child is alive | b5$14 | child is alive,historia_reprodutiva | outros
+b5_14,37,198,Child is alive | child is alive,historia_reprodutiva | outros
+b5_15,37,198,Child is alive | b5$16 | child is alive,historia_reprodutiva | outros
+b5_16,37,197,Child is alive | child is alive,historia_reprodutiva | outros
+b5_17,37,197,Child is alive | b5$18 | child is alive,historia_reprodutiva | outros
+b5_18,37,197,Child is alive | child is alive,historia_reprodutiva | outros
+b5_19,37,197,"Child is alive | b5$20    ""child is alive"" | b5$20    'child is alive' | child is alive",historia_reprodutiva
+b5_20,37,197,Child is alive | child is alive,historia_reprodutiva | outros
+b6_01,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$02 | na - age at death,demografia | outros
+b6_02,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_03,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$04 | na - age at death,demografia | outros
+b6_04,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_05,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$06 | na - age at death,demografia | outros
+b6_06,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_07,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$08 | na - age at death,demografia | outros
+b6_08,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_09,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$10 | na - age at death,demografia | outros
+b6_10,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_11,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$12 | na - age at death,demografia | outros
+b6_12,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_13,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$14 | na - age at death,demografia | outros
+b6_14,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_15,37,193,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$16 | na - age at death,demografia | outros
+b6_16,37,192,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_17,37,192,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$18 | na - age at death,demografia | outros
+b6_18,37,192,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b6_19,37,192,"NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | b6$20    ""age at death"" | b6$20    'age at death' | na - age at death",demografia
+b6_20,37,192,NA - Age at death | age at death | age at death               -na | age at death (as in questionnaire) | na - age at death,demografia | outros
+b7_01,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$02 | na - age at death (months, imputed)",demografia | outros
+b7_02,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_03,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$04 | na - age at death (months, imputed)",demografia | outros
+b7_04,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_05,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$06 | na - age at death (months, imputed)",demografia | outros
+b7_06,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_07,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$08 | na - age at death (months, imputed)",demografia | outros
+b7_08,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_09,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$10 | na - age at death (months, imputed)",demografia | outros
+b7_10,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_11,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$12 | na - age at death (months, imputed)",demografia | outros
+b7_12,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_13,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$14 | na - age at death (months, imputed)",demografia | outros
+b7_14,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_15,37,193,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$16 | na - age at death (months, imputed)",demografia | outros
+b7_16,37,192,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_17,37,192,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$18 | na - age at death (months, imputed)",demografia | outros
+b7_18,37,192,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b7_19,37,192,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | b7$20    ""age at death (months-imputed)"" | b7$20    'age at death (months-imputed)' | b7$20    'age at death months(imputed)' | na - age at death (months, imputed)",demografia
+b7_20,37,192,"NA - Age at death (months, imputed) | age at death (months - imput) | age at death (months, imputed) | age at death (months-impute-na | age at death (months-imputed) | age at death in months imputed | na - age at death (months, imputed)",demografia | outros
+b8_01,37,198,Current age of child | b8$02 | current age of child,historia_reprodutiva | outros
+b8_02,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_03,37,198,Current age of child | b8$04 | current age of child,historia_reprodutiva | outros
+b8_04,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_05,37,198,Current age of child | b8$06 | current age of child,historia_reprodutiva | outros
+b8_06,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_07,37,198,Current age of child | b8$08 | current age of child,historia_reprodutiva | outros
+b8_08,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_09,37,198,Current age of child | b8$10 | current age of child,historia_reprodutiva | outros
+b8_10,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_11,37,198,Current age of child | b8$12 | current age of child,historia_reprodutiva | outros
+b8_12,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_13,37,198,Current age of child | b8$14 | current age of child,historia_reprodutiva | outros
+b8_14,37,198,Current age of child | current age of child,historia_reprodutiva | outros
+b8_15,37,198,Current age of child | b8$16 | current age of child,historia_reprodutiva | outros
+b8_16,37,197,Current age of child | current age of child,historia_reprodutiva | outros
+b8_17,37,197,Current age of child | b8$18 | current age of child,historia_reprodutiva | outros
+b8_18,37,197,Current age of child | current age of child,historia_reprodutiva | outros
+b8_19,37,197,"Current age of child | b8$20    ""current age of child"" | b8$20    'current age of child' | current age of child",historia_reprodutiva
+b8_20,37,197,Current age of child | current age of child,historia_reprodutiva | outros
+b9_01,37,198,Child lives with whom | b9$02 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_02,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_03,37,198,Child lives with whom | b9$04 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_04,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_05,37,198,Child lives with whom | b9$06 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_06,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_07,37,198,Child lives with whom | b9$08 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_08,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_09,37,198,Child lives with whom | b9$10 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_10,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_11,37,198,Child lives with whom | b9$12 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_12,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_13,37,198,Child lives with whom | b9$14 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_14,37,198,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_15,37,198,Child lives with whom | b9$16 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_16,37,197,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_17,37,197,Child lives with whom | b9$18 | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_18,37,197,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+b9_19,37,197,"Child lives with whom | b9$20    ""child lives with respondent"" | b9$20    'child lives with respondent' | child lives with respondent | child lives with whom | who child lives with",historia_reprodutiva
+b9_20,37,197,Child lives with whom | child lives with respondent | child lives with whom | who child lives with,historia_reprodutiva | outros
+bidx_01,37,198,Birth column number | bidx$02 | birth column number,historia_reprodutiva | outros
+bidx_02,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_03,37,198,Birth column number | bidx$04 | birth column number,historia_reprodutiva | outros
+bidx_04,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_05,37,198,Birth column number | bidx$06 | birth column number,historia_reprodutiva | outros
+bidx_06,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_07,37,198,Birth column number | bidx$08 | birth column number,historia_reprodutiva | outros
+bidx_08,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_09,37,198,Birth column number | bidx$10 | birth column number,historia_reprodutiva | outros
+bidx_10,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_11,37,198,Birth column number | bidx$12 | birth column number,historia_reprodutiva | outros
+bidx_12,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_13,37,198,Birth column number | bidx$14 | birth column number,historia_reprodutiva | outros
+bidx_14,37,198,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_15,37,198,Birth column number | bidx$16 | birth column number,historia_reprodutiva | outros
+bidx_16,37,197,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_17,37,197,Birth column number | bidx$18 | birth column number,historia_reprodutiva | outros
+bidx_18,37,197,Birth column number | birth column number,historia_reprodutiva | outros
+bidx_19,37,197,"Birth column number | bidx$20  ""birth column number"" | bidx$20  'birth column number' | birth column number",historia_reprodutiva
+bidx_20,37,197,Birth column number | birth column number,historia_reprodutiva | outros
+bord_01,37,198,Birth order number | birth order number | bord$02,historia_reprodutiva | outros
+bord_02,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_03,37,198,Birth order number | birth order number | bord$04,historia_reprodutiva | outros
+bord_04,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_05,37,198,Birth order number | birth order number | bord$06,historia_reprodutiva | outros
+bord_06,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_07,37,198,Birth order number | birth order number | bord$08,historia_reprodutiva | outros
+bord_08,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_09,37,198,Birth order number | birth order number | bord$10,historia_reprodutiva | outros
+bord_10,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_11,37,198,Birth order number | birth order number | bord$12,historia_reprodutiva | outros
+bord_12,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_13,37,198,Birth order number | birth order number | bord$14,historia_reprodutiva | outros
+bord_14,37,198,Birth order number | birth order number,historia_reprodutiva | outros
+bord_15,37,198,Birth order number | birth order number | bord$16,historia_reprodutiva | outros
+bord_16,37,197,Birth order number | birth order number,historia_reprodutiva | outros
+bord_17,37,197,Birth order number | birth order number | bord$18,historia_reprodutiva | outros
+bord_18,37,197,Birth order number | birth order number,historia_reprodutiva | outros
+bord_19,37,197,"Birth order number | birth order number | bord$20  ""birth order number"" | bord$20  'birth order number'",historia_reprodutiva
+bord_20,37,197,Birth order number | birth order number,historia_reprodutiva | outros
+caseid,37,202,1 | Case Identification | case identification | filler,identificacao_amostragem
+v000,37,202,Country code and phase | country code | country code and phase,outros
+v001,37,202,Cluster number | cluster number,identificacao_amostragem
+v002,37,202,Household number | household number | household number            na,socioeconomico
+v003,37,202,Respondent's line number | line number | respondent's line number,identificacao_amostragem
+v004,37,202,Ultimate area unit | enumeration area | ultimate area unit,identificacao_amostragem | outros
+v005,37,202,Women's individual sample weight (6 decimals) | sample weight | women's individual sample weight (6 decimals),nutricao_anemia
+v006,37,202,Month of interview | month of interview,identificacao_amostragem
+v007,37,202,Year of interview | year of interview,identificacao_amostragem
+v008,37,202,Date of interview (CMC) | date of interview (cmc),identificacao_amostragem
+v009,37,202,Respondent's month of birth | respondent's month of birth,historia_reprodutiva
+v010,37,202,Respondent's year of birth | respondent's year of birth,historia_reprodutiva
+v011,37,202,Date of birth (CMC) | date of birth (cmc),historia_reprodutiva
+v012,37,202,Respondent's current age | current age - respondent | respondent's current age,demografia
+v013,37,202,Age in 5-year groups | age 5-year groups | age in 5-year groups,demografia
+v014,37,202,Completeness of age information | completeness of age information | completeness of information,demografia | outros
+v101,37,202,Region | Transmission Zones | district | province | province code | region | region (prfecture) | region of residence | zone (codes are as per sample frame),demografia | outros
+v102,37,202,Type of place of residence | type of place of residence,demografia
+v103,37,187,NA - Childhood place of residence | [na] childhood place of residence | childhood place of reside - na | childhood place of reside - na! | childhood place of residen- na | childhood place of residenc-na | childhood place of residence | childhood place of residence - na | na - childhood place of residence | na-childhood place of residence,historia_reprodutiva
+v104,37,188,NA - Years lived in place of residence | na - years lived in place of res. | na - years lived in place of residence | na-years lived in place of residence | years lived in place of r - na! | years lived in place of res-na | years lived in place of res. | years lived in place of res. - na | years lived in place of res.na | years lived in place of residence,demografia | outros
+v105,37,187,NA - Type of place of previous residence | na - type of place of previous res. | na - type of place of previous residence | na-type of place of previous residence | type of place of previous - na | type of place of previous - na! | type of place of previous r-na | type of place of previous rena | type of place of previous res | type of place of previous res. | type of place of previous res. - na | type of place of previous residence,demografia | outros
+v106,37,202,Highest educational level | highest educational level,socioeconomico
+v107,37,202,Highest year of education | highest year of education,socioeconomico
+v113,37,202,Source of drinking water | source of drinking water,socioeconomico
+v115,37,199,Time to get to water source | na - time to get to water source | time (minutes) to get to water source | time to get to water sour - na | time to get to water source | time to get to water source (minutes) | time to get to water source - minutes,socioeconomico
+v116,37,202,Type of toilet facility | type of toilet facility,socioeconomico
+v119,37,202,Household has: electricity | has electricity | household has: electricity,socioeconomico
+v120,37,202,Household has: radio | has radio | household has: radio,socioeconomico
+v121,37,202,Household has: television | has television | has television            - na | household has: color television | household has: television | household has: television (see swh111d and swh111e),socioeconomico
+v122,37,202,Household has: refrigerator | has refrigerator | has refrigerator           -na | has refrigerator          - na | household has: refrigerator,socioeconomico
+v123,37,202,Household has: bicycle | has bicycle | household has: bicycle,outros | socioeconomico
+v124,37,202,Household has: motorcycle/scooter | has moped | has motorcycle | has motorcycle -            na | has motorcycle/scooter | household has: motorcycle/scooter,outros | socioeconomico
+v125,37,202,Household has: car/truck | has car | has car -                   na | has car/truck | household has: car/truck,outros | socioeconomico
+v127,37,202,Main floor material | main floor material,socioeconomico
+v128,37,201,Main wall material | main wall material | main wall material          na | main wall material          na! | main wall material         -na | main wall material        - na | main wall material        - na! | main wall material        -na | main wall material   na   - na | main wall material - na | main wall material -na | na - main wall material,socioeconomico
+v129,37,201,Main roof material | main roof material | main roof material          na | main roof material          na! | main roof material         -na | main roof material        - na | main roof material        - na! | main roof material        -na | main roof material  na    - na | main roof material - na | main roof material -na | na - main roof material,socioeconomico
+v130,37,200,NA - Religion | Religion | na - religion | religion | religion                   -na | religion                  - na | religion                  -na | religion -na,demografia
+v131,37,200,NA - Ethnicity | [na] ethnicity | dialect | ethnicity | ethnicity                   na | ethnicity                  -na | ethnicity                 - na | ethnicity                 -na | ethnicity - language spoken hm | ethnicity {first language} | na - ethnicity | na-ethnicity,demografia | outros
+v133,37,202,Education in single years | education in single years,socioeconomico
+v134,37,197,NA - De facto place of residence | [na] de facto place of residence | de facto place of residen - na | de facto place of residence | de facto place of residence - na | de facto place of residence-na | na - de facto place of residence | na-de facto place of residence | place of residence        - na,demografia | outros
+v135,37,202,Usual resident or visitor | usual resident or visitor,identificacao_amostragem
+v136,37,202,Number of household members (listed) | household members | number of household members | number of household members (listed),socioeconomico
+v137,37,202,Number of children 5 and under in household (de jure) | children resident under 5 | number of children 14 and under in household (de jure) | number of children 5 and under | number of children 5 and under in household (de jure) | number of children resident in the hh 5 and under,historia_reprodutiva
+v138,37,202,Number of eligible women in household (de facto) | Number of eligible women/men in household (de facto) | eligible women in compound | eligible women in household | number of eligible women in hh | number of eligible women in household (de facto),outros | socioeconomico
+v201,37,202,Total children ever born | total children ever born,historia_reprodutiva
+v202,37,200,Sons at home | sons at home,outros
+v203,37,200,Daughters at home | daughters at home,outros
+v204,37,200,Sons elsewhere | sons elsewhere,outros
+v205,37,200,Daughters elsewhere | daughters elsewhere,outros
+v206,37,200,Sons who have died | sons who have died,outros
+v207,37,200,Daughters who have died | daughters who have died,outros
+v208,37,201,Births in last five years | births in last five years | births in last three years | na - births in last five years,historia_reprodutiva
+v209,37,201,Births in past year | births in past year | na - births in past year,historia_reprodutiva
+v210,37,201,Births in month of interview | births in month of interview | na - births in month of interview,historia_reprodutiva
+v211,37,185,NA - Date of first birth (CMC) | date of first birth (cmc) | date of first birth (cmc)  -na | na - date of first birth (cmc),historia_reprodutiva
+v212,37,188,NA - Age of respondent at 1st birth | age of respondent at 1st bi-na | age of respondent at 1st birth | na -  age of respondent at 1st birth | na - age of respondent at 1st birth,demografia | historia_reprodutiva
+v213,37,202,Currently pregnant | currently pregnant,saude_materna
+v214,37,200,Duration of current pregnancy | duration of current pregnancy | duration of current pregnancy in months | na - duration of current pregnancy,saude_materna
+v215,37,182,NA - Time since last menstrual period | na - time since last menstrual perd | na - time since last menstrual period | time since last menstrual - na | time since last menstrual p-na | time since last menstrual perd | time since last menstrual period,historia_reprodutiva
+v216,37,182,NA - Menstruated in last six weeks | menstruated in last six w - na | menstruated in last six wee-na | menstruated in last six weeks | na - menstruated in last six weeks,historia_reprodutiva
+v217,37,182,NA - Knowledge of ovulatory cycle | knowledge of ovulatory cy - na | knowledge of ovulatory cycl-na | knowledge of ovulatory cycle | na - knowledge of ovulatory cycle,outros
+v218,37,201,NA - Number of living children | Number of living children | na - number of living children | number of living children,historia_reprodutiva
+v219,37,201,Living children + current pregnancy | NA - Living children + current pregnancy | living children + current preg | living children + current pregnancy | na - living children + current preg,historia_reprodutiva | saude_materna
+v220,37,201,Living children + current pregnancy (grouped) | NA - Living children + current pregnancy (grouped) | living children + curr preg 6+ | living children + current pregnancy (grouped) | living children + current pregnancy 6+ | na - living children + curr preg 6+,historia_reprodutiva | saude_materna
+v221,37,185,NA - Marriage to first birth interval (months) | marriage to first birth int-na | marriage to first birth int. | marriage to first birth interval | marriage to first birth interval (cmc) | marriage to first birth interval (months) | na - marriage to first birth int. | na - marriage to first birth interval (months),historia_reprodutiva
+v222,37,200,Last birth to interview (months) | NA - Last birth to interview (months) | last birth to interview | last birth to interview    -na | last birth to interview (months) | na - last birth to interview | na - last birth to interview (months),historia_reprodutiva
+v223,37,200,Completeness of current pregnancy information | NA - Completeness of current pregnancy information | completeness of curr preg. inf | completeness of current pregnancy inf | completeness of current pregnancy info | completeness of current pregnancy information | completeness of information | na - completeness of curr preg. inf | na - completeness of current pregnancy information,outros | saude_materna
+v224,37,201,Entries in birth history | entries in birth history | na - entries in birth history,historia_reprodutiva
+v301,37,161,knowledge of any method | na - knowledge of any method,outros
+v302,37,161,ever use of any method | ever use of any method - na | na - ever use of any method | na-ever use of any method,outros
+v304_01,37,161,knows method | na - knows method | v304$02,outros
+v304_02,37,161,knows method | na - knows method,outros
+v304_03,37,161,knows method | na - knows method | v304$04,outros
+v304_04,37,161,knows method | na - knows method,outros
+v304_05,37,161,knows method | na - knows method | v304$06,outros
+v304_06,37,161,knows method | na - knows method,outros
+v304_07,37,161,knows method | na - knows method | v304$08,outros
+v304_08,37,161,knows method | na - knows method,outros
+v304_09,37,161,knows method | na - knows method | v304$10,outros
+v304_10,37,161,knows method | na - knows method,outros
+v304_11,37,161,knows method | na - knows method | v304$12,outros
+v304_12,37,161,knows method | na - knows method,outros
+v304_13,37,161,knows method | na - knows method | v304$14,outros
+v304_14,37,161,knows method | na - knows method,outros
+v304_15,37,161,knows method | na - knows method,outros
+v305_01,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$02,outros
+v305_02,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_03,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$04,outros
+v305_04,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_05,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$06,outros
+v305_06,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_07,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$08,outros
+v305_08,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_09,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$10,outros
+v305_10,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_11,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$12,outros
+v305_12,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_13,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method | v305$14,outros
+v305_14,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v305_15,37,161,ever used method | ever used method           -na | ever used method -na | na - ever used method | na-ever used method,outros
+v310,37,162,living children at first  - na | living children at first us-na | living children at first use | na - living children at first use | na-living children at first use,historia_reprodutiva
+v311,37,162,children at first use (gr - na | children at first use (grou-na | children at first use (grouped) | children at first use (grpd) | na - children at first use (grouped) | na - children at first use (grpd) | na-children at first use (grouped),historia_reprodutiva
+v312,37,164,current contraceptive method | na - current contraceptive method,planejamento_familiar
+v313,37,164,current use by method type | na - current use by method type,outros
+v315,37,162,month of start of use of me-na | month of start of use of method | month of start of use of sterilization (female and/or male) | month of sterilization | na - month of start of use of method,outros | planejamento_familiar
+v316,37,162,na - year of start of use of method | year of start of use of met-na | year of start of use of method | year of start of use of sterilization (female and/or male) | year of sterilization | year of sterilization {extended up to 97},outros | planejamento_familiar
+v317,37,162,date of start of use of met-na | date of start of use of method | date of start of use of method (cmc) | date of sterilization (cmc) | na - date of start of use of method (cmc),outros | planejamento_familiar
+v318,37,162,completeness of information | completeness of information for date started using method | completeness of information-na | na - completeness of information,outros
+v319,37,162,na - years since sterilization | years since sterilization | years since sterilization  -na,planejamento_familiar
+v320,37,162,age at sterilization | age at sterilization       -na | na - age at sterilization,planejamento_familiar
+v321,37,162,marital duration at sterili-na | marital duration at steriliz. | marital duration at sterilization | na - marital duration at sterilization | years since first union at sterilization,demografia | planejamento_familiar
+v322,37,162,na - parity at sterilization | parity at sterilization | parity at sterilization    -na,planejamento_familiar
+v323,37,139,[na] brand of pill used | brand of pill used | brand of pill used         -na | brand of pill used        - na | brand of pill used -        na | brand of pill used - na | brand of pill used -na | brand of pill used {na} | brand of pills reported | na - brand of pill used,outros
+v326,37,163,last source for current users | na - last source for current users,outros
+v327,37,163,"last source for users by type | last source for users by type ** modified home delivery/cbd"" | na - last source for users by type",outros | saude_materna
+v337,37,162,months of use of current - na | months of use of current me-na | months of use of current meth | months of use of current method | months of use of current method {na} | na - months of use of current method,outros
+v359,37,162,[na] last method disc. last 5 years | last method disc last 5 y - na | last method disc last 5 yrs na | last method disc. last 5  - na | last method disc. last 5  - na! | last method disc. last 5 y- na | last method disc. last 5 y-na | last method disc. last 5 ye na | last method disc. last 5 ye-na | last method disc. last 5 yeana | last method disc. last 5 yeana! | last method disc. last 5 years | last method disc. last 5 years - na | last method disc. last 5 years {na} | last method disc. lst 5 yr- na | last method disc.last 5 y - na | last method discontinued in last 5 years | last method discontinued in-na | lst mthd disc. lst 5 y. -   na | na - last method disc. last 5 years | na - last method discontinued in last 5 years | na-last method disc. last 5 years,outros
+v360,37,162,[na] reason of last discontinuation | na - reason of last discontinuation | na-reason of last discontinuation | reason last discont. -      na | reason of last discontin.   na | reason of last discontin. - na | reason of last discontinu - na | reason of last discontinu - na! | reason of last discontinu-  na | reason of last discontinua- na | reason of last discontinua-na | reason of last discontinuat na | reason of last discontinuat-na | reason of last discontinuatina | reason of last discontinuatina! | reason of last discontinuation | reason of last discontinuation - na | reason of last discontinuation {na} | reason of lst discont -     na,outros
+v361,37,162,na - pattern of use | pattern of use,outros
+v362,37,162,intention to use | na - intention to use,outros
+v363,37,162,na - preferred future method | na-preferred future method | preferred future method | preferred future method    -na | preferred future method   - na,outros
+v364,37,162,contraceptive use & intention | contraceptive use and intention | na - contraceptive use & intention | na - contraceptive use and intention,planejamento_familiar
+v367,37,162,na - wanted last child | wanted last child,historia_reprodutiva
+v401,37,173,NA - Last birth a caesarean section | last birth a caesarean section | last birth a cesarean section | last birth caesarean section | last birth ceasarean sect - na | last birth ceasarean section | na - last birth a caesarean section | na - last birth caesarean section | na - last birth ceasarean section,historia_reprodutiva | saude_materna
+v404,37,173,Currently breastfeeding | NA - Currently breastfeeding | currently breast-feeding | currently breastfeeding | na - currently breastfeeding,outros | saude_infantil
+v405,37,172,NA - Currently amenorrheic | currently amenorrheic | na - currently amenorrheic,outros
+v406,37,172,NA - Currently abstaining | currently abstaining | currently abstaining      - na | na - currently abstaining,outros
+v407,37,171,NA - Number of times breastfed during night | na - number of times breastfed during night | na - times breastfed during night | na-number of times breastfed during night | number of times breastfed during night | number of times breastfed during night-na | times breastfed during ni - na | times breastfed during night,identificacao_amostragem
+v408,37,171,NA - Number of times breastfed during day | na - number of times breastfed during day | na - times breastfed during day | na-number of times breastfed during day | number of times breastfed during day | number of times breastfed during day-na | times breastfed during da - na | times breastfed during day,identificacao_amostragem
+v409,37,146,NA - Gave child plain water | gave child plain or sugar water | gave child plain water | gave child plain water {na} | na - gave child plain water | na - na - gave child plain water,historia_reprodutiva
+v410,37,146,"NA - Gave child juice | [na] gave child juice | child drank: juice or juice drinks | gave child                 -na | gave child fruit juice/fruit flavored drinks | gave child juice | gave child juice           -na | gave child juice          - na | gave child juice {na} | gave child juice, juice drinks | na - gave child juice | na-gave child juice",historia_reprodutiva
+v411,37,146,"NA - Gave child tinned, powdered or fresh milk | gave child powder/tinned  - na | gave child powder/tinned mi-na | gave child powder/tinned milk | gave child powder/tinned milna | gave child powdered milk | gave child tinned, powdered or fresh animal milk | gave child tinned, powdered or fresh milk | gave child tinned/powder or fresh milk | gave child tinned/powder or fresh milk {na} | na - gave child tinned, powdered or fresh milk | na - gave child tinned/powder or fresh milk",historia_reprodutiva
+v412,37,146,NA - Gave child fresh milk | [na] gave child fresh milk | gave child                 -na | gave child cows or goats milk | gave child fresh milk | gave child fresh milk      -na | gave child fresh milk     - na | gave child fresh milk -na | gave child fresh milk {na} | na - gave child fresh milk | na-gave child fresh milk,historia_reprodutiva
+v413,37,146,NA - Gave child other liquid | gave child other liquid | gave child other liquid     na | gave child other liquid   - na | gave child other liquid {na} | na - gave child other liquid,historia_reprodutiva
+v415,37,171,NA - Drank from bottle with nipple yesterday/last night | drank from bottle with nipple | drank from bottle with nipple yesterday/last night | drank from bottle with nipplna! | fed food in bottle with nipple | na - drank from bottle with nipple | na - drank from bottle with nipple yesterday/last night,outros
+v416,37,171,NA - Heard of oral rehydration | heard of oral rehydration | heard of oral rehydration  -na | heard of oral rehydration - na | na - heard of oral rehydration,saude_infantil
+v417,37,194,Entries in maternity table | entries in maternity table | entries in maternity table -na | entries in pregnancy and intermittent care roster | entries in pregnancy and postnatal care roster | na - entries in maternity table | na - entries in pregnancy and postnatal care roster,outros | saude_materna
+v418,37,181,Entries in health table | entries in health table | entries in health table    -na | entries in immunization roster | na - entries in health table | na - entries in immunization roster,outros
+v419,37,190,Entries in height/weight table | entries in anemia/malaria table | entries in height/weight roster | entries in height/weight ta-na | entries in height/weight table | entries in hemoglobin roster | na - entries in height/weight roster | na - entries in height/weight table,nutricao_anemia
+v420,37,171,"NA - Measurer's code | [na] measurer's code | measure s code | measurer""s code | measurer's code | measurer's code             na | measurer's code            -na | measurer's code           - na | measurer's code           -na | measurer's code {na} | na - measurer's code | na-measurer's code",outros
+v421,37,171,"NA - Assistant measurer's code | [na] assistant measurer's code | assistant measurer s code | assistant measurer"" s code | assistant measurer's code | assistant measurer's code   ma | assistant measurer's code  -na | assistant measurer's code - na | assistant measurer's code -na | assistant measurer's code {na} | na - assistant measurer's code | na-assistant measurer's code",outros
+v501,37,167,Current marital status | current marital status | na - current marital status,demografia
+v502,37,167,Currently/formerly/never in union | currently/formerly/never in union | currently/formerly/never marr. | currently/formerly/never married | na - currently/formerly/never in union | na - currently/formerly/never marr.,outros
+v503,37,167,Number of unions | na - number of unions | number of unions | number of unions - na,outros
+v504,37,167,Currently residing with husband/partner | currently residing with husband/partner | husband lives in house | na - currently residing with husband/partner | na - husband lives in house | partner lives in house,outros
+v505,37,167,Number of other wives | na - number of other wives | number of other wives | number of other wives     - na,outros
+v506,37,165,na - respondent's rank among wives | na - wife rank number | respondent's rank among wives | wife rank number | wife rank number            na | wife rank number           -na | wife rank number          - na | wife rank number -          na | wife rank number - na,identificacao_amostragem | outros
+v507,37,167,Month of first cohabitation | month of first cohabitation | month of first marriage | na - month of first cohabitation | na - month of first marriage,demografia | outros
+v508,37,167,Year of first cohabitation | na - year of first cohabitation | na - year of first marriage | year of first cohabitation | year of first marriage,demografia | outros
+v509,37,167,Date of first cohabitation (CMC) | date of first cohabitation (cmc) | date of first marriage (cmc) | na - date of first cohabitation (cmc) | na - date of first marriage (cmc),demografia | outros
+v510,37,167,Completeness of date information in V509 | completeness of date inform. | completeness of date information | completeness of date information in v509 | completeness of v509 information | na - completeness of date inform. | na - completeness of date information in v509,outros
+v511,37,167,Age at first cohabitation | age at first cohabitation | age at first marriage | na - age at first cohabitation | na - age at first marriage,demografia
+v512,37,167,Years since first cohabitation | na - years since first cohabitation | na - years since first marriage | years since first cohabitaion | years since first cohabitation | years since first marriage,demografia | outros
+v513,37,167,Cohabitation duration (grouped) | cohabitation duration (grouped) | marital duration (grouped) | na - cohabitation duration (grouped) | na - marital duration (grouped),demografia | outros
+v525,37,167,Age at first sex | age at first intercourse | age at first intercourse  - na | age at first sex | na - age at first intercourse | na - age at first sex,demografia
+v527,37,167,Time since last sex | na - time since last intercourse | na - time since last sex | time since last intercour - na | time since last intercourse | time since last sex,identificacao_amostragem
+v528,37,167,Time since last sex (in days) | na - time since last intercourse(g) | na - time since last sex (in days) | time (days) since last intercourse(g) | time in days since last intercourse(g) | time since last intercour - na | time since last intercourse (days) | time since last intercourse(g) | time since last sex (in days),identificacao_amostragem
+v602,37,162,fertility preference | na - fertility preference,planejamento_familiar
+v603,37,162,na - preferred waiting time | na - preferred waiting time for birth of a/another child | preferred waiting time | preferred waiting time for birth of a/another child,historia_reprodutiva | identificacao_amostragem
+v604,37,162,na - preferred waiting time (grpd) | na - preferred waiting time for birth of a/another child (grouped) | preferred waiting time (grouped) | preferred waiting time (grpd) | preferred waiting time for birth of a/another child (grouped),historia_reprodutiva | identificacao_amostragem
+v605,37,162,desire for more children | na - desire for more children,historia_reprodutiva
+v613,37,162,ideal number of children | na - ideal number of children,historia_reprodutiva
+v614,37,162,ideal number of children (grouped) | ideal number of children (grp) | na - ideal number of children (grouped) | na - ideal number of children (grp),historia_reprodutiva
+v701,37,163,husband's education level | husband/partner's education level | na - husband/partner's education level | na - partner's education level | partner's education level | partner's education level - na | partner's education level - na!,socioeconomico
+v702,37,163,highest year of education | highest year of education - na | highest year of education - na! | husband/partner's highest year of education (at level in v701) | na - highest year of education | na - husband/partner's highest year of education (at level in v701) | partner's highest year of education,socioeconomico
+v704,37,163,husband's occupation | husband/partner's occupation | na - husband/partner's occupation | na - partner's occupation | partner's occupation | partner's occupation       -na | partner's occupation      - na | partner's occupation      - na!,socioeconomico
+v705,37,163,husband's occupation | husband/partner's occupation (grouped) | na - husband/partner's occupation (grouped) | na - partner's occupation | partner's occupation | partner's occupation      - na | partner's occupation      - na! | partner's occupation (grouped),socioeconomico
+v714,37,167,Respondent currently working | na - na - respondent currently working | na - respondent currently working | respondent currently working,socioeconomico
+v715,37,162,husband s education-single yrs | husband's education-single yrs | husband's years of education | husband/partner's total number of years of education | husbands education-single - na | husbands education-single - na! | husbands education-single years | husbands education-single yrs | na - husband/partner's total number of years of education | na - husbands education-single yrs | partner's education in single years,socioeconomico
+v801,37,202,Time interview started (hhmm - 24 hour clock) | na - time interview started | time interview started | time interview started (hhmm - 24 hour clock),identificacao_amostragem
+v802,37,202,Time interview ended (hhmm - 24 hour clock) | na - time interview ended | time interview ended | time interview ended (hhmm - 24 hour clock),identificacao_amostragem
+v803,37,202,Length of interview in minutes | length of interview in minutes | na - length of interview in minutes,identificacao_amostragem
+v804,37,202,Number of visits | na - number of visits | number of visits,identificacao_amostragem
+v805,37,202,Interviewer identification | interviewer identification | interviewer identification -na | na - interviewer identification,identificacao_amostragem
+v806,37,197,Keyer identification | NA - Keyer identification | keyer identification | na - keyer identification | na-keyer identification,identificacao_amostragem
+v811,37,185,NA - Presence of children < 10 for 'Wife beating justified' questions | na - pres. children < 10 (sec 7) | na - presence of children < 10 for 'wife beating justified' questions | pres. children < 10 (sec  - na | pres. children < 10 (sec 5) | pres. children < 10 (sec 5)-na | pres. children < 10 (sec 7) | pres. children < 10 (sec 7) - na | pres. children < 10 (sec 7)-na | pres. children < 10 (sec 8) | presence of children < 10 for 'wife beating justified' questions,historia_reprodutiva
+v812,37,185,NA - Presence of husband for 'Wife beating justified' questions | na - pres. husband (sec 7) | na - presence of husband for 'wife beating justified' questions | pres. husband (sec 5) | pres. husband (sec 5)      -na | pres. husband (sec 5)     - na | pres. husband (sec 5) -na | pres. husband (sec 7) | pres. husband (sec 7)      -na | pres. husband (sec 7)     - na | pres. husband (sec 7) - na | pres. husband (sec 8) | presence of husband for 'wife beating justified' questions,outros
+v813,37,185,NA - Presence of other males for 'Wife beating justified' questions | na - pres. other males (sec 7) | na - presence of other males for 'wife beating justified' questions | pres. other males (sec 5) | pres. other males (sec 5)  -na | pres. other males (sec 5) - na | pres. other males (sec 5) -na | pres. other males (sec 7) | pres. other males (sec 7)  -na | pres. other males (sec 7) - na | pres. other males (sec 8) | presence of other males for 'wife beating justified' questions,outros
+v814,37,185,NA - Presence of other females for 'Wife beating justified' questions | na - pres. other females (sec 7) | na - presence of other females for 'wife beating justified' questions | pres. other females (sec  - na | pres. other females (sec 5) | pres. other females (sec 5)-na | pres. other females (sec 7) | pres. other females (sec 7) - na | pres. other females (sec 7)-na | pres. other females (sec 8) | presence of other females for 'wife beating justified' questions,outros

@@ -36,6 +36,17 @@ import pandas as pd
 
 ## Entendendo os Dados em `dados/brutos`
 
+## Versão compacta utilizada no projeto
+
+Os microdados completos não fazem parte da versão de trabalho do repositório. A pasta [`dados/relevantes`](dados/relevantes) contém apenas os campos usados pelas entidades e relacionamentos do modelo integrado, em arquivos CSV gzip:
+
+- cinco recodes centrais (`IR`, `BR`, `HR`, `PR`, `KR`), usando a mesma fase por país;
+- módulos opcionais (`HW`, `CR`, `MR`, `SQ`, `WI`), preservando a fase no manifesto;
+- uma onda recente para cada um dos 37 países comparáveis, sem o grupo histórico da África do Sul;
+- IDs auxiliares e metadados de país, levantamento, arquivo de origem e linha original.
+
+O arquivo [`manifesto_selecao.csv`](dados/relevantes/manifesto_selecao.csv) registra as fases, arquivos, colunas e quantidades selecionadas. Para reduzir o tamanho do repositório, não versionar novamente os arquivos brutos `.DTA`, `.DOC` e `.zip`.
+
 ### O que é o Questionário IR (*Individual Recode*)?
 O módulo **IR** do DHS é focado exclusivamente em **mulheres em idade fértil (15 a 49 anos)**. É o levantamento mais detalhado sobre saúde reprodutiva e materna do mundo, cobrindo:
 - Perfil sociodemográfico (idade, escolaridade, residência urbana/rural, nível de riqueza).
@@ -215,3 +226,10 @@ O objetivo é projetar e implementar um banco de dados relacional para análise 
 - **SGBD**: SQLite embarcado no Jupyter Notebook (`tp_template.ipynb`).
 
 ---
+
+Possíveis questões a serem respondidas:
+- desigualdade entre riqueza, escolaridade e uso de métodos contraceptivos;
+- associação entre residência rural, consultas pré-natais e parto assistido;
+- diferenças entre países na relação entre anemia, pobreza e acesso à saúde;
+- relação entre assistência materna e indicadores de saúde infantil;
+- países com alta prevalência de conhecimento contraceptivo, mas baixo uso efetivo.
