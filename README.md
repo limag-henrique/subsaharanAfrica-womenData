@@ -58,13 +58,51 @@ Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já in
 
 O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) reúne todas as entidades consolidadas do DHS. Ele é versionado via Git LFS e pode ser obtido pelo clone/pull, ou baixado e recriado conforme abaixo:
 
-> **Visualização dos Dados sem Programar (DB Browser for SQLite):**
-> Para visualizar, buscar e filtrar os registros das tabelas com interface visual estilo planilha (sem precisar de código):
-> 1. Baixe o software gratuito **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/).
-> 2. Abra o programa, clique em **"Abrir Banco de Dados"** e selecione o arquivo `saude_mulher_dhs.db`.
-> 3. Na aba **"Navegar Dados"**, selecione a tabela desejada (`Mulher`, `Nascimento`, `Domicilio`, etc.) para visualizar os dados em grade interativa.
+### Como Visualizar e Explorar as Tabelas
 
-Para recriá-lo a partir dos dez recodes e do manifesto após atualizar os CSVs, execute na raiz do repositório:
+Os microdados do DHS utilizam códigos técnicos de variáveis (como `v012`, `v025`, `v106`, `b4`) e valores numéricos codificados (como `1`, `2`, `3`) que representam categorias sociodemográficas. Para facilitar a exploração, o repositório oferece duas formas de visualização:
+
+#### Opção 1: Visualizador Web Interativo com Tradução Automática (Recomendado) 🚀
+
+O projeto disponibiliza um visualizador web sob medida (construído em Python/Flask) que **traduz automaticamente as nomenclaturas enigmáticas e os códigos numéricos para seus significados diretos em português** (tanto cabeçalhos quanto valores das células), com filtros rápidos, paginação e exportação.
+
+**Como executar o visualizador:**
+
+1. **Instalar dependências** (caso ainda não tenha feito):
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Iniciar o servidor do visualizador**:
+   ```bash
+   cd database_python
+   python server.py
+   ```
+3. **Acessar no navegador**:
+   Abra seu navegador no endereço: **[http://localhost:5050](http://localhost:5050)**
+
+**Principais recursos:**
+- **Navegação entre Tabelas:** Alterne com um clique entre todas as tabelas do banco (`Mulher`, `Nascimento`, `Domicilio`, `Morador`, `Crianca`, `Parceiro`, `Indice_Riqueza`, etc.) com a contagem de registros exibida no menu.
+- **Tradução Automática de Códigos (Chave "Traduzir"):** Ativa por padrão. Substitui códigos como `v025` por *Tipo de Residência*, `v106` por *Escolaridade*, `b4` por *Sexo da Criança*, e decodifica valores numéricos (ex: `1` ➔ *Urbano*, `2` ➔ *Rural*; `1` ➔ *Masculino*, `2` ➔ *Feminino*).
+- **Modo Inspeção Técnica (Chave "Código [raw]"):** Quando ativado, exibe o código original junto ao rótulo legível (ex: `[1] Urbano`), útil para conferência durante a escrita de consultas SQL.
+- **Filtros por País e Fase DHS:** Filtre os registros instantaneamente por país (ex: Angola, Moçambique, Nigéria) e fase do levantamento DHS.
+- **Busca Rápida:** Campo de pesquisa para localizar registros por país, ID de caso ou código.
+- **Paginação e Atalhos:** Exibição configurável (25, 50, 100 ou 200 linhas por página). É possível navegar entre as páginas usando as setas do teclado (**`←`** para página anterior e **`→`** para próxima página).
+- **Exportação para Excel/CSV:** O botão **"Exportar CSV"** descarrega os dados exibidos ou filtrados com codificação UTF-8 BOM, abrindo diretamente no Excel sem erros de caracteres ou acentuação.
+
+---
+
+#### Opção 2: DB Browser for SQLite (Visualização Direta sem Tradução)
+
+Para navegar diretamente pelo arquivo SQLite ou formular consultas manuais em SQL:
+
+1. Baixe o software gratuito **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/).
+2. Abra o programa, clique em **"Abrir Banco de Dados"** e selecione o arquivo `saude_mulher_dhs.db`.
+3. Na aba **"Navegar Dados"**, selecione a tabela desejada (`Mulher`, `Nascimento`, `Domicilio`, etc.) para visualizar os dados em grade interativa.
+   > **Nota:** No DB Browser, os campos e valores permanecem com os códigos numéricos originais do DHS. Para entender cada campo e valor, consulte a seção [Dicionário Prático de Variáveis Selecionadas](#dicionário-prático-de-variáveis-selecionadas) abaixo.
+
+---
+
+### Reconstrução do Banco SQLite
 
 ```bash
 python database_python/carregar_sqlite.py

@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador DHS | Saúde da Mulher — África Subsaariana</title>
+  <meta name="description" content="Explorador interativo de dados DHS sobre saúde da mulher na África Subsaariana. Navegue por tabelas de mulheres, nascimentos, domicílios e moradores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --bg2: #161b22;
+      --bg3: #21262d;
+      --border: #30363d;
+      --accent: #7c3aed;
+      --accent2: #a855f7;
+      --accent-glow: rgba(124,58,237,0.15);
+      --text: #e6edf3;
+      --text2: #8b949e;
+      --text3: #6e7681;
+      --green: #3fb950;
+      --red: #f85149;
+      --yellow: #e3b341;
+      --blue: #58a6ff;
+      --hover: rgba(124,58,237,0.08);
+      --row-odd: rgba(22,27,34,0.6);
+      --row-even: rgba(13,17,23,0.4);
+      --header-row: rgba(124,58,237,0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Header */
+    header {
+      background: linear-gradient(135deg, rgba(124,58,237,0.2) 0%, rgba(88,166,255,0.1) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 20px var(--accent-glow);
+      flex-shrink: 0;
+    }
+    .header-text h1 { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+    .header-text p { font-size: 12px; color: var(--text2); margin-top: 1px; }
+    .header-badges { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge {
+      padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 600;
+      border: 1px solid;
+    }
+    .badge-purple { color: var(--accent2); border-color: rgba(168,85,247,0.4); background: rgba(168,85,247,0.08); }
+    .badge-blue   { color: var(--blue);   border-color: rgba(88,166,255,0.4);  background: rgba(88,166,255,0.08);  }
+    .badge-green  { color: var(--green);  border-color: rgba(63,185,80,0.4);   background: rgba(63,185,80,0.08);   }
+    /* Controls */
+    .controls {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .ctrl-group { display: flex; flex-direction: column; gap: 4px; }
+    .ctrl-group label { font-size: 10px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+    select, input[type=text] {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+      min-width: 140px;
+    }
+    select:focus, input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+    .ctrl-sep { width: 1px; height: 40px; background: var(--border); margin: 0 4px; }
+    .toggle-group { display: flex; gap: 8px; align-items: center; }
+    .toggle-label { font-size: 12px; color: var(--text2); }
+    .toggle {
+      position: relative; display: inline-block;
+      width: 36px; height: 20px;
+    }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      transition: .2s;
+    }
+    .slider:before {
+      position: absolute; content: "";
+      height: 14px; width: 14px;
+      left: 2px; bottom: 2px;
+      background: var(--text2);
+      border-radius: 50%;
+      transition: .2s;
+    }
+    input:checked + .slider { background: var(--accent); border-color: var(--accent); }
+    input:checked + .slider:before { transform: translateX(16px); background: white; }
+    .btn {
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); box-shadow: 0 4px 15px rgba(124,58,237,0.4); }
+    .btn-secondary {
+      background: var(--bg3);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent2); }
+    /* Stats bar */
+    .stats-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 12px;
+      color: var(--text2);
+    }
+    .stat { display: flex; align-items: center; gap: 6px; }
+    .stat strong { color: var(--text); font-weight: 600; }
+    /* Main table area */
+    .table-container {
+      flex: 1;
+      overflow: auto;
+      padding: 0;
+      position: relative;
+    }
+    .loading-overlay {
+      position: absolute; inset: 0;
+      background: rgba(13,17,23,0.8);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 50;
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .loading-overlay.active { opacity: 1; pointer-events: all; }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      table-layout: auto;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    thead th {
+      background: var(--bg2);
+      border-bottom: 2px solid var(--accent);
+      border-right: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s;
+    }
+    thead th:hover { background: var(--header-row); color: var(--accent2); }
+    thead th .th-inner { display: flex; align-items: center; gap: 6px; }
+    thead th .col-code { font-size: 9px; color: var(--text3); font-weight: 400; }
+    tbody tr {
+      border-bottom: 1px solid rgba(48,54,61,0.5);
+      transition: background 0.1s;
+    }
+    tbody tr:nth-child(odd)  { background: var(--row-odd); }
+    tbody tr:nth-child(even) { background: var(--row-even); }
+    tbody tr:hover { background: var(--hover); }
+    tbody td {
+      padding: 8px 12px;
+      border-right: 1px solid rgba(48,54,61,0.3);
+      white-space: nowrap;
+      max-width: 240px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    tbody td.null-val { color: var(--text3); font-style: italic; }
+    tbody td.tag-val span {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .tag-urban { background: rgba(63,185,80,0.15); color: var(--green); border: 1px solid rgba(63,185,80,0.3); }
+    .tag-rural { background: rgba(227,179,65,0.15); color: var(--yellow); border: 1px solid rgba(227,179,65,0.3); }
+    .tag-masc  { background: rgba(88,166,255,0.12); color: var(--blue); border: 1px solid rgba(88,166,255,0.3); }
+    .tag-fem   { background: rgba(248,81,73,0.12); color: var(--red); border: 1px solid rgba(248,81,73,0.3); }
+    .tag-yes   { background: rgba(63,185,80,0.12); color: var(--green); border: 1px solid rgba(63,185,80,0.3); }
+    .tag-no    { background: rgba(248,81,73,0.1); color: var(--red); border: 1px solid rgba(248,81,73,0.2); }
+    .tag-default { background: rgba(124,58,237,0.1); color: var(--accent2); border: 1px solid rgba(124,58,237,0.3); }
+    /* Pagination */
+    .pagination {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .page-info { color: var(--text2); font-size: 12px; margin-right: auto; }
+    .page-btn {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+    .page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent2); }
+    .page-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .page-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+    /* Empty / Error */
+    .empty-state {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 80px 24px;
+      text-align: center;
+      color: var(--text2);
+    }
+    .empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+    .empty-title { font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+    .empty-sub { font-size: 13px; max-width: 380px; line-height: 1.6; }
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      z-index: 999;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      transform: translateY(80px);
+      opacity: 0;
+      transition: all 0.3s ease;
+      max-width: 360px;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast.success { border-color: var(--green); }
+    .toast.error { border-color: var(--red); }
+    /* Column tooltip */
+    thead th { position: relative; }
+    thead th .tooltip {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg3);
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 11px;
+      color: var(--text);
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 100;
+      transition: opacity 0.15s;
+    }
+    thead th:hover .tooltip { opacity: 1; }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    /* Search input */
+    .search-wrap { position: relative; }
+    .search-wrap input { padding-left: 30px; }
+    .search-wrap .search-icon {
+      position: absolute; left: 10px; top: 50%;
+      transform: translateY(-50%);
+      color: var(--text3); font-size: 12px;
+      pointer-events: none;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .controls { flex-direction: column; align-items: flex-start; }
+      header { flex-wrap: wrap; }
+      .header-badges { margin-left: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌍</div>
+  <div class="header-text">
+    <h1>Visualizador DHS — Saúde da Mulher</h1>
+    <p>África Subsaariana · Demographic and Health Surveys</p>
+  </div>
+  <div class="header-badges" id="headerBadges">
+    <span class="badge badge-purple">Carregando...</span>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="ctrl-group">
+    <label>Tabela</label>
+    <select id="tableSelect" onchange="onTableChange()">
+      <option value="">Carregando tabelas...</option>
+    </select>
+  </div>
+
+  <div class="ctrl-sep"></div>
+
+  <div class="ctrl-group">
+    <label>País</label>
+    <select id="countrySelect" onchange="loadData(1)">
+      <option value="">Todos os países</option>
+    </select>
+  </div>
+
+  <div class="ctrl-group">
+    <label>Fase DHS</label>
+    <select id="phaseSelect" onchange="loadData(1)">
+      <option value="">Todas as fases</option>
+    </select>
+  </div>
+
+  <div class="ctrl-sep"></div>
+
+  <div class="ctrl-group">
+    <label>Pesquisar</label>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="País, ID do caso..." onkeydown="if(event.key==='Enter') loadData(1)" />
+    </div>
+  </div>
+
+  <div class="ctrl-sep"></div>
+
+  <div class="ctrl-group">
+    <label>Rótulos</label>
+    <div class="toggle-group">
+      <label class="toggle" title="Traduzir códigos para rótulos legíveis">
+        <input type="checkbox" id="translateToggle" checked onchange="loadData(currentPage)" />
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Traduzir</span>
+    </div>
+  </div>
+
+  <div class="ctrl-group">
+    <label>Código [raw]</label>
+    <div class="toggle-group">
+      <label class="toggle">
+        <input type="checkbox" id="showRawToggle" onchange="loadData(currentPage)" />
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Mostrar</span>
+    </div>
+  </div>
+
+  <div class="ctrl-sep"></div>
+
+  <div class="ctrl-group">
+    <label>Por página</label>
+    <select id="perPageSelect" onchange="loadData(1)">
+      <option value="25">25</option>
+      <option value="50" selected>50</option>
+      <option value="100">100</option>
+      <option value="200">200</option>
+    </select>
+  </div>
+
+  <button class="btn btn-primary" onclick="loadData(1)" style="align-self:flex-end;">🔄 Atualizar</button>
+  <button class="btn btn-secondary" onclick="exportCSV()" style="align-self:flex-end;">⬇ Exportar CSV</button>
+</div>
+
+<div class="stats-bar" id="statsBar">
+  <span class="stat">Selecione uma tabela para começar</span>
+</div>
+
+<div class="table-container" id="tableContainer">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+  </div>
+  <div class="empty-state" id="emptyState">
+    <div class="empty-icon">📊</div>
+    <div class="empty-title">Selecione uma tabela</div>
+    <div class="empty-sub">Escolha uma tabela no menu acima para visualizar os dados do banco DHS.</div>
+  </div>
+  <table id="dataTable" style="display:none;">
+    <thead id="tableHead"></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="pagination" id="pagination" style="display:none;"></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let currentPage = 1;
+let totalPages = 1;
+let currentTable = '';
+let lastData = null;
+let columnInfo = [];
+
+// Mapas de estilo de células especiais
+const TAG_STYLES = {
+  'Urbano':   'tag-urban',
+  'Rural':    'tag-rural',
+  'Masculino':'tag-masc',
+  'Feminino': 'tag-fem',
+  'Sim':      'tag-yes',
+  'Não':      'tag-no',
+  'Mais pobre':'tag-default',
+  'Pobre':    'tag-default',
+  'Médio':    'tag-default',
+  'Rico':     'tag-default',
+  'Mais rico':'tag-default',
+};
+
+function showToast(msg, type = 'default') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + type;
+  setTimeout(() => { t.className = 'toast'; }, 3000);
+}
+
+async function fetchJSON(url) {
+  const resp = await fetch(url);
+  if (!resp.ok) {
+    const err = await resp.json().catch(() => ({error: resp.statusText}));
+    throw new Error(err.error || resp.statusText);
+  }
+  return resp.json();
+}
+
+async function initTables() {
+  try {
+    const tables = await fetchJSON('/api/tables');
+    const sel = document.getElementById('tableSelect');
+    sel.innerHTML = '<option value="">-- Escolha uma tabela --</option>';
+    const priority = ['Mulher','Nascimento','Domicilio','Morador','Parceiro','Crianca','Indice_Riqueza','Levantamento','Pais','Manifesto_Selecao','Servico_Comunidade'];
+    const sorted = [...tables].sort((a,b) => {
+      const ia = priority.indexOf(a.name), ib = priority.indexOf(b.name);
+      if (ia !== -1 && ib !== -1) return ia - ib;
+      if (ia !== -1) return -1;
+      if (ib !== -1) return 1;
+      return a.name.localeCompare(b.name);
+    });
+    const tableLabels = {
+      'Mulher': '👩 Mulher (IR)',
+      'Nascimento': '👶 Nascimento (BR)',
+      'Domicilio': '🏠 Domicílio (HR)',
+      'Morador': '👥 Morador (PR)',
+      'Parceiro': '👨 Parceiro (MR)',
+      'Crianca': '🧒 Criança (KR)',
+      'Indice_Riqueza': '💰 Índice de Riqueza',
+      'Levantamento': '📋 Levantamento',
+      'Pais': '🌍 País',
+      'Manifesto_Selecao': '📄 Manifesto de Seleção',
+      'Servico_Comunidade': '🏥 Serviço Comunitário',
+    };
+    for (const t of sorted) {
+      const opt = document.createElement('option');
+      opt.value = t.name;
+      opt.textContent = (tableLabels[t.name] || t.name) + ' — ' + t.count.toLocaleString('pt-BR') + ' linhas';
+      sel.appendChild(opt);
+    }
+    // Badges
+    const totalRows = tables.reduce((s,t) => s + t.count, 0);
+    document.getElementById('headerBadges').innerHTML =
+      '<span class="badge badge-purple">' + tables.length + ' tabelas</span>' +
+      '<span class="badge badge-blue">' + totalRows.toLocaleString('pt-BR') + ' registros</span>' +
+      '<span class="badge badge-green">DHS Africa</span>';
+  } catch(e) {
+    showToast('Erro ao carregar tabelas: ' + e.message, 'error');
+  }
+}
+
+async function onTableChange() {
+  currentTable = document.getElementById('tableSelect').value;
+  if (!currentTable) return;
+  document.getElementById('countrySelect').innerHTML = '<option value="">Todos os países</option>';
+  document.getElementById('phaseSelect').innerHTML = '<option value="">Todas as fases</option>';
+  // Carregar países e fases
+  try {
+    const [countries, phases] = await Promise.all([
+      fetchJSON('/api/countries?table=' + encodeURIComponent(currentTable)),
+      fetchJSON('/api/phases?table=' + encodeURIComponent(currentTable)),
+    ]);
+    const csel = document.getElementById('countrySelect');
+    for (const c of countries) {
+      const opt = document.createElement('option');
+      opt.value = c.codigo;
+      opt.textContent = c.nome + ' (' + c.codigo + ')';
+      csel.appendChild(opt);
+    }
+    const psel = document.getElementById('phaseSelect');
+    const phaseNames = {'1':'Fase 1','2':'Fase 2','21':'Fase 2.1','22':'Fase 2.2','3':'Fase 3','31':'Fase 3.1','4':'Fase 4','41':'Fase 4.1','5':'Fase 5','51':'Fase 5.1','6':'Fase 6','61':'Fase 6.1','7':'Fase 7','71':'Fase 7.1','8':'Fase 8','81':'Fase 8.1','9':'Fase 9'};
+    for (const p of phases) {
+      const opt = document.createElement('option');
+      opt.value = p;
+      opt.textContent = (phaseNames[p] || 'Fase ' + p) + ' [' + p + ']';
+      psel.appendChild(opt);
+    }
+  } catch(e) { /* silently ignore */ }
+  loadData(1);
+}
+
+async function loadData(page) {
+  if (!currentTable) return;
+  currentPage = page;
+  const table = currentTable;
+  const country = document.getElementById('countrySelect').value;
+  const phase = document.getElementById('phaseSelect').value;
+  const search = document.getElementById('searchInput').value;
+  const translate = document.getElementById('translateToggle').checked;
+  const showRaw = document.getElementById('showRawToggle').checked;
+  const perPage = document.getElementById('perPageSelect').value;
+
+  setLoading(true);
+  document.getElementById('dataTable').style.display = 'none';
+  document.getElementById('emptyState').style.display = 'none';
+
+  let url = `/api/data?table=${encodeURIComponent(table)}&page=${page}&per_page=${perPage}` +
+    `&translate=${translate}&show_raw=${showRaw}`;
+  if (country) url += '&pais_codigo=' + encodeURIComponent(country);
+  if (phase)   url += '&fase=' + encodeURIComponent(phase);
+  if (search)  url += '&search=' + encodeURIComponent(search);
+
+  try {
+    const data = await fetchJSON(url);
+    lastData = data;
+    totalPages = data.total_pages;
+    renderTable(data, translate);
+    renderStats(data);
+    renderPagination(data.page, data.total_pages);
+    document.getElementById('dataTable').style.display = '';
+    document.getElementById('pagination').style.display = '';
+  } catch(e) {
+    showEmptyState('Erro ao carregar dados', e.message);
+    showToast('Erro: ' + e.message, 'error');
+  } finally {
+    setLoading(false);
+  }
+}
+
+function renderTable(data, translate) {
+  const head = document.getElementById('tableHead');
+  const body = document.getElementById('tableBody');
+  const cols = data.columns;
+  const labels = data.column_labels;
+
+  // Header
+  let headHtml = '<tr>';
+  for (const c of cols) {
+    const label = labels[c] || c;
+    const isDifferent = label !== c;
+    headHtml += `<th>
+      <div class="th-inner">
+        <span>${label}</span>
+        ${isDifferent ? `<span class="col-code">[${c}]</span>` : ''}
+      </div>
+      ${isDifferent ? `<div class="tooltip">${c}</div>` : ''}
+    </th>`;
+  }
+  headHtml += '</tr>';
+  head.innerHTML = headHtml;
+
+  // Body
+  if (data.rows.length === 0) {
+    showEmptyState('Nenhum registro encontrado', 'Tente ajustar os filtros ou a pesquisa.');
+    document.getElementById('dataTable').style.display = 'none';
+    return;
+  }
+
+  let bodyHtml = '';
+  for (const row of data.rows) {
+    bodyHtml += '<tr>';
+    for (const c of cols) {
+      const val = row[c];
+      bodyHtml += renderCell(c, val, translate);
+    }
+    bodyHtml += '</tr>';
+  }
+  body.innerHTML = bodyHtml;
+}
+
+function renderCell(col, val, translate) {
+  if (val === null || val === undefined) {
+    return '<td class="null-val">—</td>';
+  }
+  const valStr = String(val);
+
+  if (translate) {
+    // Aplicar estilos especiais a valores traduzidos
+    if (TAG_STYLES[valStr]) {
+      return `<td class="tag-val"><span class="${TAG_STYLES[valStr]}">${escHtml(valStr)}</span></td>`;
+    }
+    // Sim/Não por conteúdo
+    if (valStr === 'Sim') return `<td class="tag-val"><span class="tag-yes">✓ Sim</span></td>`;
+    if (valStr === 'Não') return `<td class="tag-val"><span class="tag-no">✗ Não</span></td>`;
+    if (valStr.includes('[')) {
+      // Show raw + label
+      const parts = valStr.match(/^(.*)\s+\[(\d+)\]$/);
+      if (parts) {
+        return `<td><span title="Código: ${parts[2]}">${escHtml(parts[1])} <span style="color:var(--text3);font-size:10px;">[${parts[2]}]</span></span></td>`;
+      }
+    }
+  }
+
+  // Colunas especiais sem tradução
+  if (col === 'pais_nome') return `<td><strong>${escHtml(valStr)}</strong></td>`;
+  if (col === 'pais_codigo') return `<td><span class="badge badge-blue" style="font-size:10px;padding:2px 6px;">${escHtml(valStr)}</span></td>`;
+  if (col === 'levantamento_id') return `<td><code style="font-size:11px;color:var(--accent2);">${escHtml(valStr)}</code></td>`;
+
+  return `<td>${escHtml(valStr)}</td>`;
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function renderStats(data) {
+  const start = (data.page - 1) * data.per_page + 1;
+  const end = Math.min(data.page * data.per_page, data.total);
+  document.getElementById('statsBar').innerHTML =
+    `<span class="stat">Tabela: <strong>${currentTable}</strong></span>
+     <span class="stat">Total: <strong>${data.total.toLocaleString('pt-BR')}</strong> registros</span>
+     <span class="stat">Mostrando: <strong>${start.toLocaleString('pt-BR')} – ${end.toLocaleString('pt-BR')}</strong></span>
+     <span class="stat">Colunas: <strong>${data.columns.length}</strong></span>
+     <span class="stat">Página: <strong>${data.page}</strong> de <strong>${data.total_pages.toLocaleString('pt-BR')}</strong></span>`;
+}
+
+function renderPagination(page, total) {
+  const pg = document.getElementById('pagination');
+  if (total <= 1) { pg.style.display = 'none'; return; }
+  pg.style.display = 'flex';
+
+  let html = `<span class="page-info">Página ${page} de ${total.toLocaleString('pt-BR')}</span>`;
+  html += `<button class="page-btn" onclick="loadData(1)" ${page===1?'disabled':''}>«</button>`;
+  html += `<button class="page-btn" onclick="loadData(${page-1})" ${page===1?'disabled':''}>‹</button>`;
+
+  // Window of pages
+  let pages = [];
+  const w = 2;
+  for (let p = Math.max(1, page-w); p <= Math.min(total, page+w); p++) pages.push(p);
+  if (pages[0] > 1) { html += `<button class="page-btn" onclick="loadData(1)">1</button>`; if (pages[0] > 2) html += `<span style="color:var(--text3);padding:0 4px;">…</span>`; }
+  for (const p of pages) {
+    html += `<button class="page-btn ${p===page?'active':''}" onclick="loadData(${p})">${p}</button>`;
+  }
+  if (pages[pages.length-1] < total) { if (pages[pages.length-1] < total-1) html += `<span style="color:var(--text3);padding:0 4px;">…</span>`; html += `<button class="page-btn" onclick="loadData(${total})">${total.toLocaleString('pt-BR')}</button>`; }
+  html += `<button class="page-btn" onclick="loadData(${page+1})" ${page===total?'disabled':''}>›</button>`;
+  html += `<button class="page-btn" onclick="loadData(${total})" ${page===total?'disabled':''}>»</button>`;
+  pg.innerHTML = html;
+}
+
+function setLoading(v) {
+  document.getElementById('loadingOverlay').classList.toggle('active', v);
+}
+
+function showEmptyState(title, sub) {
+  document.getElementById('emptyState').style.display = 'flex';
+  document.getElementById('emptyState').innerHTML =
+    `<div class="empty-icon">🔍</div>
+     <div class="empty-title">${escHtml(title)}</div>
+     <div class="empty-sub">${escHtml(sub)}</div>`;
+  document.getElementById('dataTable').style.display = 'none';
+  document.getElementById('pagination').style.display = 'none';
+}
+
+function exportCSV() {
+  if (!lastData || !lastData.rows.length) { showToast('Sem dados para exportar', 'error'); return; }
+  const cols = lastData.columns;
+  const labels = lastData.column_labels;
+  let csv = cols.map(c => `"${labels[c] || c}"`).join(',') + '\n';
+  for (const row of lastData.rows) {
+    csv += cols.map(c => {
+      const v = row[c];
+      if (v === null || v === undefined) return '';
+      return '"' + String(v).replace(/"/g, '""') + '"';
+    }).join(',') + '\n';
+  }
+  const blob = new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `DHS_${currentTable}_pagina${currentPage}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('CSV exportado com sucesso!', 'success');
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  if (e.key === 'ArrowRight' && currentPage < totalPages) loadData(currentPage + 1);
+  if (e.key === 'ArrowLeft'  && currentPage > 1)          loadData(currentPage - 1);
+});
+
+// Init
+initTables();
+</script>
+</body>
+</html>
