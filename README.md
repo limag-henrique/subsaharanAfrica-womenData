@@ -58,11 +58,6 @@ Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já in
 
 O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) reúne todas as entidades consolidadas do DHS. Ele é versionado via Git LFS e pode ser obtido pelo clone/pull, ou baixado e recriado conforme abaixo:
 
-> [!TIP]
-> **Download Avulso do Banco de Dados:**
-> Caso deseje baixar apenas o arquivo do banco de dados (~986 MB) diretamente pelo navegador sem o Git LFS, acesse [saude_mulher_dhs.db](https://github.com/limag-henrique/subsaharanAfrica-womenData/blob/main/saude_mulher_dhs.db) e clique no botão **Download** (ou **View raw**).
-
-> [!NOTE]
 > **Visualização dos Dados sem Programar (DB Browser for SQLite):**
 > Para visualizar, buscar e filtrar os registros das tabelas com interface visual estilo planilha (sem precisar de código):
 > 1. Baixe o software gratuito **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/).
