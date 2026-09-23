@@ -2,14 +2,17 @@
 
 ## Me baixe!
 
-Siga as instruções abaixo para baixar o repositório ou sincronizar os dados atualizados em sua máquina local:
+Caso você utilize Git e Python:
 
-### 1. Novo Clone (Primeiro Acesso)
+> [!NOTE]
+> Como o banco `.db` e outros arquivos grandes utilizam **Git LFS**, certifique-se de ter o Git LFS inicializado na sua máquina executando `git lfs install` uma vez antes de clonar.
+
+#### Novo Clone (Primeiro Acesso)
 ```bash
-# 1. Habilitar o Git LFS (necessário para baixar os arquivos grandes como o .db)
+# 1. Habilitar o Git LFS na sua máquina (caso ainda não tenha feito)
 git lfs install
 
-# 2. Clonar o repositório
+# 2. Clonar o repositório completo com os arquivos grandes
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
 cd subsaharanAfrica-womenData
 
@@ -17,11 +20,9 @@ cd subsaharanAfrica-womenData
 pip install -r requirements.txt
 ```
 
-### 2. Atualização e Sincronização via Pull (Para quem já clonou anteriormente)
-Se você já clonou o repositório antes da consolidação dos dados para CSV, execute a sincronização pull para remover os arquivos brutos pesados e baixar as novas bases consolidadas:
-
+#### Atualização e Sincronização via Pull (Para quem já clonou)
 ```bash
-# Sincronizar o repositório e obter os dados compactados em dados/relevantes/ e o banco SQLite
+# Sincronizar o repositório e obter os dados atualizados
 git pull origin main
 ```
 
