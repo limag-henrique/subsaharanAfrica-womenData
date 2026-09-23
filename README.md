@@ -1,51 +1,15 @@
 # Projeto: Análise de Dados de Saúde da Mulher na África Subsaariana (DHS)
 
-## Como Baixar o Projeto e os Dados
+## Me baixe!
 
-Você pode obter o projeto de duas formas: diretamente pelo navegador (recomendado para quem não tem Git/Python instalado) ou pelo terminal.
+Siga as instruções abaixo para baixar o repositório ou sincronizar os dados atualizados em sua máquina local:
 
----
-
-### Opção 1: Download Direto pelo Navegador (Sem instalar Git ou Python)
-
-Se você não tem ferramentas de desenvolvedor instaladas e deseja apenas explorar os dados e o banco de dados na sua máquina:
-
-#### 1. Baixar a pasta do repositório
-1. No topo desta página do GitHub, clique no botão verde **`<> Code`**.
-2. Clique na opção **Download ZIP**.
-3. No seu computador, abra a pasta *Downloads*, clique com o botão direito sobre o arquivo `.zip` baixado e escolha **Extrair Tudo...**.
-
-#### 2. Baixar o Banco de Dados SQLite (`saude_mulher_dhs.db`)
-> [!IMPORTANT]
-> Devido ao tamanho de quase 1 GB, o arquivo `saude_mulher_dhs.db` utiliza o sistema de arquivos grandes do GitHub (Git LFS). Por isso, o botão "Download ZIP" baixa apenas um atalho de texto para ele.
->
-> **Para baixar o arquivo de dados completo:**
-> 1. Navegue até a página do arquivo no GitHub: [saude_mulher_dhs.db](https://github.com/limag-henrique/subsaharanAfrica-womenData/blob/main/saude_mulher_dhs.db).
-> 2. Clique no botão **Download** (ou **View raw**). O navegador iniciará o download do arquivo de ~986 MB.
-> 3. Quando o download terminar, mova o arquivo `saude_mulher_dhs.db` para a pasta principal do projeto que você descompactou no passo anterior.
-
-#### 3. Como abrir e navegar pelos dados (Estilo Excel, sem programar)
-Para visualizar e filtrar os registros do banco sem precisar usar código:
-1. Baixe e instale o software gratuito e visual **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/) (disponível para Windows, macOS e Linux).
-2. Abra o programa e clique no botão **"Abrir Banco de Dados"** no canto superior esquerdo.
-3. Selecione o arquivo `saude_mulher_dhs.db`.
-4. Clique na aba **"Navegar Dados"**: escolha qualquer tabela (como `Mulher`, `Nascimento`, `Domicilio`) no menu suspenso para visualizar todas as linhas e colunas organizadas em formato de tabela interativa.
-
----
-
-### Opção 2: Via Terminal e Git (Para desenvolvedores e pesquisadores)
-
-Caso você utilize Git e Python:
-
-> [!NOTE]
-> Como o banco `.db` e outros arquivos grandes utilizam **Git LFS**, certifique-se de ter o Git LFS inicializado na sua máquina executando `git lfs install` uma vez antes de clonar.
-
-#### Novo Clone (Primeiro Acesso)
+### 1. Novo Clone (Primeiro Acesso)
 ```bash
-# 1. Habilitar o Git LFS na sua máquina (caso ainda não tenha feito)
+# 1. Habilitar o Git LFS (necessário para baixar os arquivos grandes como o .db)
 git lfs install
 
-# 2. Clonar o repositório completo com os arquivos grandes
+# 2. Clonar o repositório
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
 cd subsaharanAfrica-womenData
 
@@ -53,9 +17,11 @@ cd subsaharanAfrica-womenData
 pip install -r requirements.txt
 ```
 
-#### Atualização e Sincronização via Pull (Para quem já clonou)
+### 2. Atualização e Sincronização via Pull (Para quem já clonou anteriormente)
+Se você já clonou o repositório antes da consolidação dos dados para CSV, execute a sincronização pull para remover os arquivos brutos pesados e baixar as novas bases consolidadas:
+
 ```bash
-# Sincronizar o repositório e obter os dados atualizados
+# Sincronizar o repositório e obter os dados compactados em dados/relevantes/ e o banco SQLite
 git pull origin main
 ```
 
@@ -90,7 +56,20 @@ Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já in
 
 ## Banco SQLite do Projeto
 
-O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) é gerado a partir dos dez recodes e do manifesto. Para recriá-lo após baixar ou atualizar os CSVs, execute na raiz do repositório:
+O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) reúne todas as entidades consolidadas do DHS. Ele é versionado via Git LFS e pode ser obtido pelo clone/pull, ou baixado e recriado conforme abaixo:
+
+> [!TIP]
+> **Download Avulso do Banco de Dados:**
+> Caso deseje baixar apenas o arquivo do banco de dados (~986 MB) diretamente pelo navegador sem o Git LFS, acesse [saude_mulher_dhs.db](https://github.com/limag-henrique/subsaharanAfrica-womenData/blob/main/saude_mulher_dhs.db) e clique no botão **Download** (ou **View raw**).
+
+> [!NOTE]
+> **Visualização dos Dados sem Programar (DB Browser for SQLite):**
+> Para visualizar, buscar e filtrar os registros das tabelas com interface visual estilo planilha (sem precisar de código):
+> 1. Baixe o software gratuito **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/).
+> 2. Abra o programa, clique em **"Abrir Banco de Dados"** e selecione o arquivo `saude_mulher_dhs.db`.
+> 3. Na aba **"Navegar Dados"**, selecione a tabela desejada (`Mulher`, `Nascimento`, `Domicilio`, etc.) para visualizar os dados em grade interativa.
+
+Para recriá-lo a partir dos dez recodes e do manifesto após atualizar os CSVs, execute na raiz do repositório:
 
 ```bash
 python database_python/carregar_sqlite.py
