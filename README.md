@@ -5,18 +5,17 @@
 Caso você utilize Git e Python:
 
 > [!NOTE]
-> Como o banco `.db` e outros arquivos grandes utilizam **Git LFS**, certifique-se de ter o Git LFS inicializado na sua máquina executando `git lfs install` uma vez antes de clonar.
+> O repositório utiliza **Git LFS** para armazenar arquivos grandes (banco SQLite e microdados compactados). Certifique-se de executar `git lfs install` antes de clonar.
 
-#### Novo Clone (Primeiro Acesso)
 ```bash
-# 1. Habilitar o Git LFS na sua máquina (caso ainda não tenha feito)
+# 1. Habilitar o Git LFS
 git lfs install
 
-# 2. Clonar o repositório completo com os arquivos grandes
+# 2. Clonar o repositório
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
 cd subsaharanAfrica-womenData
 
-# 3. Instalar as dependências do ambiente Python
+# 3. Instalar dependências
 pip install -r requirements.txt
 ```
 
@@ -25,6 +24,99 @@ pip install -r requirements.txt
 # Sincronizar o repositório e obter os dados atualizados
 git pull origin main
 ```
+
+#### Opção 1: Visualizador Web
+
+O projeto disponibiliza um visualizador web sob medida (construído em Python/Flask) que **traduz automaticamente as nomenclaturas enigmáticas e os códigos numéricos para seus significados diretos em português** (tanto cabeçalhos quanto valores das células), com filtros rápidos, paginação e exportação.
+
+**Como executar:**
+```bash
+cd database_python
+python server.py
+```
+Acesse no navegador: **[http://localhost:5050](http://localhost:5050)**
+
+**Recursos:**
+- **Tradução Automática:** Converte códigos técnicos em termos legíveis (`v025` ➔ *Tipo de Residência*; valor `1` ➔ *Urbano*, `2` ➔ *Rural*).
+- **Filtros Dinâmicos:** Selecione qualquer tabela e filtre instantaneamente por País e Fase DHS.
+- **Modo Inspeção Técnica:** Ative a chave `Código [raw]` para visualizar o código original junto ao rótulo traduzido.
+- **Exportação CSV:** Baixe qualquer visualização filtrada com codificação UTF-8 BOM (compatível com Excel).
+- **Navegação Rápida:** Use as setas do teclado (**`←`** e **`→`**) para avançar e voltar páginas.
+
+### Opção 2: DB Browser for SQLite
+
+Para consultas SQL manuais ou navegação direta no banco:
+1. Baixe o software gratuito [DB Browser for SQLite](https://sqlitebrowser.org/dl/).
+2. Abra o arquivo `saude_mulher_dhs.db`.
+3. Na aba **"Navegar Dados"**, escolha a tabela desejada.
+   > **Nota:** No DB Browser, os campos permanecem com as siglas originais do DHS. Consulte o dicionário abaixo para a correspondência dos termos.
+
+---
+
+## 📊 Tabelas do Banco de Dados (`saude_mulher_dhs.db`)
+
+Base comparável da onda mais recente de **37 países**, reunindo 10 entidades principais:
+
+| Tabela SQL | Recode | Descrição | Registros | Cobertura |
+| :--- | :---: | :--- | ---: | :---: |
+| **`Mulher`** | IR | Mulheres de 15 a 49 anos (perfil sociodemográfico, fertilidade, saúde) | 407.600 | 37 países |
+| **`Nascimento`** | BR | Histórico de gestações e partos de cada mulher | 877.412 | 27 países |
+| **`Domicilio`** | HR | Habitação, saneamento, água, eletricidade e bens | 385.457 | 36 países |
+| **`Morador`** | PR | Composição demográfica completa dos domicílios | 1.884.683 | 35 países |
+| **`Crianca`** | KR | Crianças menores de 5 anos (saúde, vacinação, nutrição) | 282.641 | 36 países |
+| **`Parceiro`** | MR | Homens/parceiros entrevistados em idade reprodutiva | 236.070 | 36 países |
+| **`Indice_Riqueza`** | WI | Escala e pontuação de riqueza (*wealth index*) | 190.832 | 26 países |
+| **`Antropometria`** | HW | Medições de altura, peso e níveis de hemoglobina/anemia | 150.700 | 28 países |
+| **`Casal`** | CR | Entrevistas conjuntas pareadas entre cônjuges | 109.174 | 36 países |
+| **`Servico_Comunidade`** | SQ | Infraestrutura comunitária e serviços de saúde locais | 5.154 | 19 países |
+
+> Os microdados brutos padronizados também estão disponíveis em formato comprimido na pasta [`dados/relevantes/`](dados/relevantes/).
+
+---
+
+## 📖 Dicionário Prático de Variáveis Principais
+
+Principais variáveis consolidadas e seus significados:
+
+| Variável | Tabela | Descrição | Categorias / Valores |
+| :--- | :--- | :--- | :--- |
+| `v012` | Mulher | Idade da entrevistada | Anos completos (15 a 49) |
+| `v025` / `hv025` | Mulher / Domicílio | Tipo de residência | `1 = Urbano`, `2 = Rural` |
+| `v106` | Mulher | Escolaridade | `0 = Nenhuma`, `1 = Primário`, `2 = Secundário`, `3 = Superior` |
+| `v190` / `hv270` | Mulher / Domicílio | Quintil de riqueza | `1 = Mais Pobre` a `5 = Mais Rico` |
+| `b4` | Nascimento | Sexo da criança | `1 = Masculino`, `2 = Feminino` |
+| `b5` | Nascimento | Sobrevivência da criança | `0 = Falecida`, `1 = Viva` |
+| `m14` | Nascimento | Consultas pré-natal | Número de consultas durante a gestação |
+| `m15` | Nascimento | Local de parto | `10-19 = Domicílio`, `20-39 = Hospital Público`, `40-49 = Clínica Privada` |
+| `v312` | Mulher | Contraceptivo atual | `0 = Nenhum`, `1 = Pílula`, `2 = DIU`, `3 = Injetável`, `11 = Preservativo` |
+| `v457` | Mulher | Nível de anemia | `1 = Severa`, `2 = Moderada`, `3 = Leve`, `4 = Não anêmica` |
+
+---
+
+## 🔍 Exemplo de Consulta SQL
+
+Consulta para calcular a idade média e o total de mulheres entrevistadas por país:
+
+```sql
+SELECT p.nome_pais, COUNT(*) AS total_mulheres, ROUND(AVG(m.v012), 1) AS idade_media
+FROM Mulher AS m
+JOIN Pais AS p ON p.pais_codigo = m.pais_codigo
+GROUP BY p.pais_codigo, p.nome_pais
+ORDER BY total_mulheres DESC;
+```
+
+---
+
+## 🛠️ Reconstrução do Banco SQLite (Opcional)
+
+Para recriar o arquivo `saude_mulher_dhs.db` a partir dos arquivos CSV em `dados/relevantes/`:
+
+```bash
+python database_python/carregar_sqlite.py
+```
+
+> Relatórios aprofundados sobre governança de dados, normalização de termos e auditorias de variáveis encontram-se documentados nas pastas [`analises/`](analises) e [`analises_completo/`](analises_completo).
+
 
 ## Estrutura dos Dados Consolidados (`dados/relevantes`)
 
@@ -63,83 +155,6 @@ O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) reúne todas as en
 
 Os microdados do DHS utilizam códigos técnicos de variáveis (como `v012`, `v025`, `v106`, `b4`) e valores numéricos codificados (como `1`, `2`, `3`) que representam categorias sociodemográficas. Para facilitar a exploração, o repositório oferece duas formas de visualização:
 
-#### Opção 1: Visualizador Web Interativo com Tradução Automática (Recomendado) 🚀
-
-O projeto disponibiliza um visualizador web sob medida (construído em Python/Flask) que **traduz automaticamente as nomenclaturas enigmáticas e os códigos numéricos para seus significados diretos em português** (tanto cabeçalhos quanto valores das células), com filtros rápidos, paginação e exportação.
-
-**Como executar o visualizador:**
-
-1. **Instalar dependências** (caso ainda não tenha feito):
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. **Iniciar o servidor do visualizador**:
-   ```bash
-   cd database_python
-   python server.py
-   ```
-3. **Acessar no navegador**:
-   Abra seu navegador no endereço: **[http://localhost:5050](http://localhost:5050)**
-
-**Principais recursos:**
-- **Navegação entre Tabelas:** Alterne com um clique entre todas as tabelas do banco (`Mulher`, `Nascimento`, `Domicilio`, `Morador`, `Crianca`, `Parceiro`, `Indice_Riqueza`, etc.) com a contagem de registros exibida no menu.
-- **Tradução Automática de Códigos (Chave "Traduzir"):** Ativa por padrão. Substitui códigos como `v025` por *Tipo de Residência*, `v106` por *Escolaridade*, `b4` por *Sexo da Criança*, e decodifica valores numéricos (ex: `1` ➔ *Urbano*, `2` ➔ *Rural*; `1` ➔ *Masculino*, `2` ➔ *Feminino*).
-- **Modo Inspeção Técnica (Chave "Código [raw]"):** Quando ativado, exibe o código original junto ao rótulo legível (ex: `[1] Urbano`), útil para conferência durante a escrita de consultas SQL.
-- **Filtros por País e Fase DHS:** Filtre os registros instantaneamente por país (ex: Angola, Moçambique, Nigéria) e fase do levantamento DHS.
-- **Busca Rápida:** Campo de pesquisa para localizar registros por país, ID de caso ou código.
-- **Paginação e Atalhos:** Exibição configurável (25, 50, 100 ou 200 linhas por página). É possível navegar entre as páginas usando as setas do teclado (**`←`** para página anterior e **`→`** para próxima página).
-- **Exportação para Excel/CSV:** O botão **"Exportar CSV"** descarrega os dados exibidos ou filtrados com codificação UTF-8 BOM, abrindo diretamente no Excel sem erros de caracteres ou acentuação.
-
----
-
-#### Opção 2: DB Browser for SQLite (Visualização Direta sem Tradução)
-
-Para navegar diretamente pelo arquivo SQLite ou formular consultas manuais em SQL:
-
-1. Baixe o software gratuito **DB Browser for SQLite**: [sqlitebrowser.org/dl](https://sqlitebrowser.org/dl/).
-2. Abra o programa, clique em **"Abrir Banco de Dados"** e selecione o arquivo `saude_mulher_dhs.db`.
-3. Na aba **"Navegar Dados"**, selecione a tabela desejada (`Mulher`, `Nascimento`, `Domicilio`, etc.) para visualizar os dados em grade interativa.
-   > **Nota:** No DB Browser, os campos e valores permanecem com os códigos numéricos originais do DHS. Para entender cada campo e valor, consulte a seção [Dicionário Prático de Variáveis Selecionadas](#dicionário-prático-de-variáveis-selecionadas) abaixo.
-
----
-
-### Reconstrução do Banco SQLite
-
-```bash
-python database_python/carregar_sqlite.py
-```
-
-O carregador cria `Pais`, `Levantamento` e `Manifesto_Selecao`, além das dez entidades separadas:
-
-| Recode | Tabela SQL | Registros | Países |
-| :---: | :--- | ---: | ---: |
-| IR | `Mulher` | 407.600 | 37 |
-| BR | `Nascimento` | 877.412 | 27 |
-| HR | `Domicilio` | 385.457 | 36 |
-| PR | `Morador` | 1.884.683 | 35 |
-| KR | `Crianca` | 282.641 | 36 |
-| HW | `Antropometria` | 150.700 | 28 |
-| CR | `Casal` | 109.174 | 36 |
-| MR | `Parceiro` | 236.070 | 36 |
-| SQ | `Servico_Comunidade` | 5.154 | 19 |
-| WI | `Indice_Riqueza` | 190.832 | 26 |
-
-`Mulher` contém as mulheres entrevistadas no recode IR. As tabelas conservam as colunas DHS disponíveis, os identificadores de país/levantamento e os IDs derivados. `Manifesto_Selecao` mantém a origem e as colunas selecionadas por país e recode. Como os CSVs agregados têm conjuntos de colunas diferentes entre países, o carregador usa o manifesto para alinhar cada bloco durante a carga e valida as contagens, os metadados e as chaves estrangeiras sem alterar os arquivos de origem.
-
-Exemplo de consulta SQL para comparar idade média e quantidade de mulheres por país:
-
-```sql
-SELECT p.nome_pais, COUNT(*) AS mulheres, AVG(m.v012) AS idade_media
-FROM Mulher AS m
-JOIN Pais AS p ON p.pais_codigo = m.pais_codigo
-GROUP BY p.pais_codigo, p.nome_pais
-ORDER BY idade_media DESC;
-```
-
-Use `--db` para escolher outro arquivo SQLite ou `--data-dir` para indicar outra pasta de dados. Para inspecionar como os CSVs são preparados a partir dos dados DHS originais, consulte [`database_python/preparar_dados_projeto.py`](database_python/preparar_dados_projeto.py).
-
----
-
 ## Repertório Analítico e Auditorias (`analises` e `analises_completo`)
 
 Para fundamentar as escolhas de modelagem e garantir rigor estatístico, foram realizadas auditorias semânticas sobre o inventário completo do DHS. Os resultados encontram-se documentados e versionados nas pastas [`analises/`](analises) e [`analises_completo/`](analises_completo):
@@ -162,6 +177,18 @@ Para fundamentar as escolhas de modelagem e garantir rigor estatístico, foram r
    - **Violência de Gênero e Autonomia:** Presente em 35 dos 37 países (módulo específico de violência doméstica e poder decisório).
 
 ---
+## Otimização de Consultas (+20% de Pontuação)
+
+Para comprovação do ganho de desempenho via índices:
+1. Executar `EXPLAIN QUERY PLAN <consulta>` identificando operações de varredura completa (`SCAN TABLE`).
+2. Criar índices adequados nas colunas de filtro ou chave estrangeira:
+   ```sql
+   CREATE INDEX idx_mulher_idade ON Mulher(v012);
+   CREATE INDEX idx_nascimento_mulher ON Nascimento(id_mulher_global);
+   ```
+3. Executar novamente o plano de execução comprovando o uso do índice (`SEARCH TABLE ... USING INDEX`).
+4. Medir e comparar o tempo de execução no Jupyter Notebook utilizando a diretiva `%timeit`.
+
 
 ## Modelo Conceitual e Proposta de Banco de Dados
 
@@ -230,51 +257,3 @@ As principais variáveis DHS já presentes nos arquivos consolidados em [`dados/
 - `v445`: Índice de Massa Corporal (IMC com 2 decimais implícitas, ex: `2250` = `22.50`).
 - `v453`: Nível de hemoglobina corrigido para altitude e tabagismo.
 - `v457`: Nível de anemia diagnosticado (`1 = Severa`, `2 = Moderada`, `3 = Leve`, `4 = Não anêmica`).
-
----
-
-## Perguntas Analíticas e Consultas SQL
-
-As 10 consultas SQL distribuem-se conforme o regulamento do trabalho nas 4 categorias obrigatórias:
-
-### Linhas de Investigação em Saúde Pública
-1. **Deserto Pré-natal e Partos Desassistidos:**
-   - *Pergunta:* Quais os países com maior proporção de partos domiciliares sem assistência qualificada, e como a escolaridade materna mitiga esse risco?
-   - *SQL:* Junção entre `Pais`, `Mulher` e `Nascimento`.
-2. **A Crise Silenciosa da Anemia: Abismo Rural vs. Urbano:**
-   - *Pergunta:* Qual a prevalência de anemia moderada a severa entre mulheres em idade fértil, e onde a disparidade urbano-rural é mais acentuada?
-   - *SQL:* Junção entre `Pais`, `Domicilio` e `Mulher`, agrupando por `tipo_residencia`.
-3. **Iniquidade Econômica no Planejamento Familiar Moderno:**
-   - *Pergunta:* Qual o gradiente de acesso a contraceptivos modernos entre mulheres do quintil mais rico (5) e do mais pobre (1)?
-   - *SQL:* Junção entre `Pais`, `Domicilio`, `Mulher` e `Metodo_Contraceptivo`.
-
-### Categorias das 10 Consultas SQL
-- **Seleção e Projeção (2 consultas):** Ex: Filtrar mulheres com mais de 35 anos em áreas rurais; listar partos ocorridos em ambiente domiciliar.
-- **Junção de 2 relações (3 consultas):** Ex: Cruzamento `Mulher` ⨝ `Domicilio` para análise de anemia por quintil de riqueza.
-- **Junção de 3 ou mais relações (3 consultas):** Ex: `Pais` ⨝ `Mulher` ⨝ `Nascimento` para avaliar médias de consultas pré-natais por região geopolítica.
-- **Agregações sobre Junção de 2+ relações (2 consultas):** Ex: `GROUP BY` com funções agregadas (`AVG`, `COUNT`, `HAVING`) calculando taxas de cobertura obstétrica por faixa de renda e país.
-
----
-
-## Otimização de Consultas (+20% de Pontuação)
-
-Para comprovação do ganho de desempenho via índices:
-1. Executar `EXPLAIN QUERY PLAN <consulta>` identificando operações de varredura completa (`SCAN TABLE`).
-2. Criar índices adequados nas colunas de filtro ou chave estrangeira:
-   ```sql
-   CREATE INDEX idx_mulher_idade ON Mulher(v012);
-   CREATE INDEX idx_nascimento_mulher ON Nascimento(id_mulher_global);
-   ```
-3. Executar novamente o plano de execução comprovando o uso do índice (`SEARCH TABLE ... USING INDEX`).
-4. Medir e comparar o tempo de execução no Jupyter Notebook utilizando a diretiva `%timeit`.
-
----
-
-## Calendário de Entregas
-
-| Data | Entrega | Formato | Detalhes |
-| :--- | :--- | :--- | :--- |
-| **25/09** | **Proposta** | `.pdf` (máx. 1 página) | Tema (Saúde da Mulher na África Subsaariana), descrição do dataset consolidado, entidades e relacionamentos fundamentados na base de 37 países. |
-| **23/10** | **Relatório Parcial** | `.ipynb` + `.pdf` | Seções 1 a 5 do template: Título, Membros, Descrição dos Dados, Diagrama ER e Esquema Relacional Normalizado. |
-| **23/11** | **Relatório Final** | `.ipynb` + `.pdf` | Projeto completo: 10 consultas SQL executadas e comentadas, testes de otimização com índices e autoavaliação. |
-| **23 a 30/11** | **Apresentação** | Slides (máx. 6 min) | Apresentação em grupo sobre a modelagem de dados, arquitetura e achados analíticos. |
