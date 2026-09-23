@@ -36,51 +36,57 @@ Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já in
 | Arquivo | Recode | Descrição do Conteúdo | Cobertura na Base Comparável | Registros Reais |
 | :--- | :---: | :--- | :---: | :---: |
 | [`IR.csv.gz`](dados/relevantes/IR.csv.gz) | **IR** | Mulheres entrevistadas (15 a 49 anos): perfil sociodemográfico, fertilidade, contracepção e saúde | 37 países | **407.600** mulheres |
-| [`BR.csv.gz`](dados/relevantes/BR.csv.gz) | **BR** | Histórico completo de partos e nascimentos de cada mulher | 37 países | **877.412** nascimentos |
+| [`BR.csv.gz`](dados/relevantes/BR.csv.gz) | **BR** | Histórico completo de partos e nascimentos de cada mulher | 27 países | **877.412** nascimentos |
 | [`HR.csv.gz`](dados/relevantes/HR.csv.gz) | **HR** | Domicílios: tipo de habitação, bens duráveis, água, esgoto e eletricidade | 36 países | **385.457** domicílios |
-| [`PR.csv.gz`](dados/relevantes/PR.csv.gz) | **PR** | Moradores do domicílio: composição demográfica completa | 36 países | **1.884.683** moradores |
-| [`KR.csv.gz`](dados/relevantes/KR.csv.gz) | **KR** | Crianças menores de 5 anos: vacinação, aleitamento e episódios de doenças | 37 países | **282.641** crianças |
-| [`HW.csv.gz`](dados/relevantes/HW.csv.gz) | **HW** | Antropometria e dosagem de hemoglobina/anemia materna e infantil | 28 países | 2.816 medições diretas |
-| [`CR.csv.gz`](dados/relevantes/CR.csv.gz) | **CR** | Casais pareados: entrevistas conjuntas entre cônjuges | 36 países | 67.006 casais |
-| [`MR.csv.gz`](dados/relevantes/MR.csv.gz) | **MR** | Homens/parceiros entrevistados em idade reprodutiva | 36 países | 144.714 parceiros |
-| [`SQ.csv.gz`](dados/relevantes/SQ.csv.gz) | **SQ** | Infraestrutura comunitária e serviços de saúde locais | 19 países | 6.548 registros |
-| [`WI.csv.gz`](dados/relevantes/WI.csv.gz) | **WI** | Índice de riqueza (*wealth index*) adicional do DHS | 26 países | 5.551 registros |
+| [`PR.csv.gz`](dados/relevantes/PR.csv.gz) | **PR** | Moradores do domicílio: composição demográfica completa | 35 países | **1.884.683** moradores |
+| [`KR.csv.gz`](dados/relevantes/KR.csv.gz) | **KR** | Crianças menores de 5 anos: vacinação, aleitamento e episódios de doenças | 36 países | **282.641** crianças |
+| [`HW.csv.gz`](dados/relevantes/HW.csv.gz) | **HW** | Antropometria e dosagem de hemoglobina/anemia materna e infantil | 28 países | **150.700** medições |
+| [`CR.csv.gz`](dados/relevantes/CR.csv.gz) | **CR** | Casais pareados: entrevistas conjuntas entre cônjuges | 36 países | **109.174** casais |
+| [`MR.csv.gz`](dados/relevantes/MR.csv.gz) | **MR** | Homens/parceiros entrevistados em idade reprodutiva | 36 países | **236.070** parceiros |
+| [`SQ.csv.gz`](dados/relevantes/SQ.csv.gz) | **SQ** | Infraestrutura comunitária e serviços de saúde locais | 19 países | **5.154** registros |
+| [`WI.csv.gz`](dados/relevantes/WI.csv.gz) | **WI** | Índice de riqueza (*wealth index*) adicional do DHS | 26 países | **190.832** registros |
 
 > [!TIP]
 > O arquivo [`dados/relevantes/manifesto_selecao.csv`](dados/relevantes/manifesto_selecao.csv) contém o registro de governança completo, detalhando o arquivo de origem, a fase DHS, a contagem de linhas e cada uma das colunas selecionadas em cada país.
 
 ---
 
-## Como Carregar os Dados no SQLite (Jupyter Notebook)
+## Banco SQLite do Projeto
 
-Com a consolidação em `.csv.gz`, a carga dos dados no SQLite dentro do notebook oficial `tp_template.ipynb` tornou-se direta:
+O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) é gerado a partir dos dez recodes e do manifesto. Para recriá-lo após baixar ou atualizar os CSVs, execute na raiz do repositório:
 
-```python
-import sqlite3
-import pandas as pd
-
-# Conectar (ou criar) o banco de dados SQLite local
-conn = sqlite3.connect("saude_mulher_dhs.db")
-
-# 1. Carregar a tabela de Mulheres (IR)
-print("Carregando Mulher (IR)...")
-df_mulher = pd.read_csv("dados/relevantes/IR.csv.gz", compression="gzip")
-df_mulher.to_sql("Mulher", conn, if_exists="replace", index=False)
-
-# 2. Carregar a tabela de Nascimentos / Gestação e Parto (BR)
-print("Carregando Nascimento (BR)...")
-df_nascimento = pd.read_csv("dados/relevantes/BR.csv.gz", compression="gzip")
-df_nascimento.to_sql("Nascimento", conn, if_exists="replace", index=False)
-
-# 3. Carregar Domicílios (HR)
-print("Carregando Domicilio (HR)...")
-df_domicilio = pd.read_csv("dados/relevantes/HR.csv.gz", compression="gzip")
-df_domicilio.to_sql("Domicilio", conn, if_exists="replace", index=False)
-
-print("Carga concluída com sucesso!")
+```bash
+python database_python/carregar_sqlite.py
 ```
 
-Se desejar inspecionar o script responsável por extrair e gerar os CSVs a partir dos dados brutos originais do DHS, consulte [`database_python/preparar_dados_projeto.py`](database_python/preparar_dados_projeto.py).
+O carregador cria `Pais`, `Levantamento` e `Manifesto_Selecao`, além das dez entidades separadas:
+
+| Recode | Tabela SQL | Registros | Países |
+| :---: | :--- | ---: | ---: |
+| IR | `Mulher` | 407.600 | 37 |
+| BR | `Nascimento` | 877.412 | 27 |
+| HR | `Domicilio` | 385.457 | 36 |
+| PR | `Morador` | 1.884.683 | 35 |
+| KR | `Crianca` | 282.641 | 36 |
+| HW | `Antropometria` | 150.700 | 28 |
+| CR | `Casal` | 109.174 | 36 |
+| MR | `Parceiro` | 236.070 | 36 |
+| SQ | `Servico_Comunidade` | 5.154 | 19 |
+| WI | `Indice_Riqueza` | 190.832 | 26 |
+
+`Mulher` contém as mulheres entrevistadas no recode IR. As tabelas conservam as colunas DHS disponíveis, os identificadores de país/levantamento e os IDs derivados. `Manifesto_Selecao` mantém a origem e as colunas selecionadas por país e recode. Como os CSVs agregados têm conjuntos de colunas diferentes entre países, o carregador usa o manifesto para alinhar cada bloco durante a carga e valida as contagens, os metadados e as chaves estrangeiras sem alterar os arquivos de origem.
+
+Exemplo de consulta SQL para comparar idade média e quantidade de mulheres por país:
+
+```sql
+SELECT p.nome_pais, COUNT(*) AS mulheres, AVG(m.v012) AS idade_media
+FROM Mulher AS m
+JOIN Pais AS p ON p.pais_codigo = m.pais_codigo
+GROUP BY p.pais_codigo, p.nome_pais
+ORDER BY idade_media DESC;
+```
+
+Use `--db` para escolher outro arquivo SQLite ou `--data-dir` para indicar outra pasta de dados. Para inspecionar como os CSVs são preparados a partir dos dados DHS originais, consulte [`database_python/preparar_dados_projeto.py`](database_python/preparar_dados_projeto.py).
 
 ---
 
@@ -222,4 +228,3 @@ Para comprovação do ganho de desempenho via índices:
 | **23/10** | **Relatório Parcial** | `.ipynb` + `.pdf` | Seções 1 a 5 do template: Título, Membros, Descrição dos Dados, Diagrama ER e Esquema Relacional Normalizado. |
 | **23/11** | **Relatório Final** | `.ipynb` + `.pdf` | Projeto completo: 10 consultas SQL executadas e comentadas, testes de otimização com índices e autoavaliação. |
 | **23 a 30/11** | **Apresentação** | Slides (máx. 6 min) | Apresentação em grupo sobre a modelagem de dados, arquitetura e achados analíticos. |
-
