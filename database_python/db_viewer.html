@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -453,17 +453,32 @@ let columnInfo = [];
 
 // Mapas de estilo de células especiais
 const TAG_STYLES = {
-  'Urbano':   'tag-urban',
-  'Rural':    'tag-rural',
-  'Masculino':'tag-masc',
-  'Feminino': 'tag-fem',
-  'Sim':      'tag-yes',
-  'Não':      'tag-no',
-  'Mais pobre':'tag-default',
-  'Pobre':    'tag-default',
-  'Médio':    'tag-default',
-  'Rico':     'tag-default',
-  'Mais rico':'tag-default',
+  'Urbano':      'tag-urban',
+  'Rural':       'tag-rural',
+  'Masculino':   'tag-masc',
+  'Feminino':    'tag-fem',
+  'Sim':         'tag-yes',
+  'Não':         'tag-no',
+  'Nao':         'tag-no',
+  'Conhece':     'tag-yes',
+  'Não conhece': 'tag-no',
+  'Nao conhece': 'tag-no',
+  'Usa atualmente': 'tag-yes',
+  'Já usou':     'tag-default',
+  'Ja usou':     'tag-default',
+  'Nunca usou':  'tag-no',
+  'Não usa':     'tag-no',
+  'Nao usa':     'tag-no',
+  'Mais pobre':  'tag-default',
+  'Pobre':       'tag-default',
+  'Médio':       'tag-default',
+  'Rico':        'tag-default',
+  'Mais rico':   'tag-default',
+  'Não anêmica': 'tag-yes',
+  'Nao anemica': 'tag-yes',
+  'Anemia leve': 'tag-default',
+  'Anemia moderada': 'tag-default',
+  'Anemia severa': 'tag-no',
 };
 
 function showToast(msg, type = 'default') {
@@ -487,7 +502,7 @@ async function initTables() {
     const tables = await fetchJSON('/api/tables');
     const sel = document.getElementById('tableSelect');
     sel.innerHTML = '<option value="">-- Escolha uma tabela --</option>';
-    const priority = ['Mulher','Nascimento','Domicilio','Morador','Parceiro','Crianca','Indice_Riqueza','Levantamento','Pais','Manifesto_Selecao','Servico_Comunidade'];
+    const priority = ['Mulher','Nascimento','Domicilio','Morador','Parceiro','Crianca','Indice_Riqueza','Antropometria','Casal','Servico_Comunidade','Levantamento','Pais','Manifesto_Selecao'];
     const sorted = [...tables].sort((a,b) => {
       const ia = priority.indexOf(a.name), ib = priority.indexOf(b.name);
       if (ia !== -1 && ib !== -1) return ia - ib;
@@ -502,11 +517,13 @@ async function initTables() {
       'Morador': '👥 Morador (PR)',
       'Parceiro': '👨 Parceiro (MR)',
       'Crianca': '🧒 Criança (KR)',
-      'Indice_Riqueza': '💰 Índice de Riqueza',
+      'Indice_Riqueza': '💰 Índice de Riqueza (WI)',
+      'Antropometria': '📏 Antropometria (HW)',
+      'Casal': '👫 Casal (CR)',
+      'Servico_Comunidade': '🏥 Serviço Comunitário (SQ)',
       'Levantamento': '📋 Levantamento',
       'Pais': '🌍 País',
       'Manifesto_Selecao': '📄 Manifesto de Seleção',
-      'Servico_Comunidade': '🏥 Serviço Comunitário',
     };
     for (const t of sorted) {
       const opt = document.createElement('option');
@@ -647,7 +664,7 @@ function renderCell(col, val, translate) {
     }
     // Sim/Não por conteúdo
     if (valStr === 'Sim') return `<td class="tag-val"><span class="tag-yes">✓ Sim</span></td>`;
-    if (valStr === 'Não') return `<td class="tag-val"><span class="tag-no">✗ Não</span></td>`;
+    if (valStr === 'Não' || valStr === 'Nao') return `<td class="tag-val"><span class="tag-no">✗ Não</span></td>`;
     if (valStr.includes('[')) {
       // Show raw + label
       const parts = valStr.match(/^(.*)\s+\[(\d+)\]$/);

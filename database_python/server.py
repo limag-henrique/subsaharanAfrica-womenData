@@ -115,7 +115,11 @@ def get_data():
         conditions.append('"fase" = ?')
         params.append(filter_phase)
     if search and len(col_names) > 0:
-        search_cols = [c for c in col_names if c in ('pais_nome', 'caseid', 'hhid', 'mcaseid', 'whhid', 'pais_codigo')]
+        search_cols = [c for c in col_names if c in (
+            'pais_nome', 'caseid', 'hhid', 'mcaseid', 'whhid', 'hwhhid',
+            'pais_codigo', 'sqnom', 'vil', 'localite', 'cstate', 'saregion',
+            'id_mulher', 'id_nascimento', 'id_crianca', 'id_casal', 'id_servico', 'id_medicao'
+        )]
         if search_cols:
             like_conds = [f'CAST("{c}" AS TEXT) LIKE ?' for c in search_cols]
             conditions.append('(' + ' OR '.join(like_conds) + ')')
