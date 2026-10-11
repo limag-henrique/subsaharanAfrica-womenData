@@ -46,6 +46,63 @@ def fixture(path):
 
 
 class NotebookNormalizadoTest(unittest.TestCase):
+    def test_mapa_prenatal_tem_uma_linha_por_pais_com_duas_pesquisas(self):
+        import pandas as pd
+        import numpy as np
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        nb=json.loads((ROOT/'tp_template.ipynb').read_text(encoding='utf-8'))
+        codigo=next(''.join(c['source']) for c in nb['cells']
+                    if ''.join(c['source']).startswith('# Gradiente de pré-natal'))
+        r10=pd.DataFrame([['AO','Angola',1,40,40,40,10],['AO','Angola',5,40,40,40,30],
+                          ['KM','Comores',1,40,40,40,15],['KM','Comores',5,40,40,40,35]],
+                         columns=['codigo','nome','riqueza','nascimentos_recentes','n_validos','peso_valido','peso_quatro_mais'])
+        meio=pd.DataFrame([[p,n,q,40,40,40,20] for p,n in [('AO','Angola'),('KM','Comores')] for q in [2,3,4]],columns=r10.columns)
+        r10=pd.concat([r10,meio],ignore_index=True)
+        ns={'r10':r10,'cobertura':pd.DataFrame({'codigo':['AO','KM','KM'],'nome':['Angola','Comores','Comores']}),
+            'pd':pd,'np':np,'plt':plt,'display':lambda *args:None,'Markdown':lambda x:x}
+        exec(codigo,ns)
+        self.assertTrue(ns['matriz'].index.is_unique,'Múltiplos levantamentos não podem duplicar países no mapa.')
+        self.assertEqual(len(ns['matriz']),2)
+        self.assertEqual(len(ns['gradiente']),2)
+
+    def test_anos_de_dois_digitos_recuperados_da_data_cmc(self):
+        with tempfile.TemporaryDirectory() as directory:
+            origem = Path(directory) / 'origem.db'
+            destino = Path(directory) / 'normalizado.db'
+            fixture(origem)
+            with closing(sqlite3.connect(origem)) as c:
+                c.execute("UPDATE Mulher SET v007=23 WHERE levantamento_id='AO_81'")
+                c.execute("UPDATE Nascimento SET b2=22 WHERE levantamento_id='AO_81'")
+                c.commit()
+            pipeline()(origem,destino)
+            with closing(sqlite3.connect(destino)) as c:
+                self.assertEqual(c.execute("SELECT ano FROM Entrevista WHERE mulher_id LIKE 'AO%'").fetchone()[0],2023)
+                self.assertEqual(c.execute("SELECT ano FROM Nascimento WHERE origem='BR' AND mulher_id LIKE 'AO%'").fetchone()[0],2022)
+
+    def test_levantamento_completo_nao_transfere_respostas_entre_pesquisas(self):
+        import pandas as pd
+        import pyreadstat
+        with tempfile.TemporaryDirectory() as directory:
+            origem = Path(directory) / 'origem.db'
+            destino = Path(directory) / 'normalizado.db'
+            arquivo = Path(directory) / 'KMIR71FL.DTA'
+            fixture(origem)
+            with closing(sqlite3.connect(origem)) as c:
+                df = pd.read_sql_query("SELECT * FROM Mulher WHERE levantamento_id='KM_61'", c)
+            df = df.drop(columns=['levantamento_id', 'caseid'])
+            df['v007'] = 2020
+            df['v312'] = 5
+            pyreadstat.write_dta(df, str(arquivo))
+            pipeline()(origem, destino, [{'pais_codigo':'KM','fase':'71','caminho_origem':str(arquivo),'N':1}])
+            with closing(sqlite3.connect(destino)) as c:
+                self.assertEqual(c.execute('SELECT COUNT(*) FROM Mulher').fetchone()[0], 3)
+                respostas = c.execute("SELECT mulher_id,ano,usa_metodo,coorte FROM Entrevista WHERE mulher_id LIKE 'KM%' ORDER BY ano").fetchall()
+                self.assertEqual(respostas, [('KM_61|1|1|1',2013,0,'nucleo_exclusivo'),('KM_71|1|1|1',2020,1,'contracepcao')])
+                self.assertEqual(c.execute("SELECT COUNT(*) FROM Nascimento WHERE mulher_id LIKE 'KM_71%'").fetchone()[0],0)
+                self.assertEqual(c.execute('PRAGMA foreign_key_check').fetchall(), [])
+
     def test_carga_preserva_paises_e_conhecimento_sem_confundir_caseid(self):
         with tempfile.TemporaryDirectory() as directory:
             origem = Path(directory) / 'origem.db'

@@ -1,0 +1,1427 @@
+[
+  {
+    "pais_codigo": "CM",
+    "arquivo_origem": "CMIR71FL.DTA",
+    "fase": "71",
+    "N": 14677,
+    "anos": [
+      2018,
+      2019
+    ],
+    "v312_presentes": 13527,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "CMIR71DT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=CMIR71DT.zip&Tp=1&Ctry_Code=CM&surv_id=511&dm=1&dmode=nm",
+    "surv_id": "511",
+    "diretorio_relativo_catalogo": "Camarões/Saude_da_Mulher_IR/CMIR71DT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "GH",
+    "arquivo_origem": "GHIR8CFL.DTA",
+    "fase": "8C",
+    "N": 15014,
+    "anos": [
+      2022,
+      2023
+    ],
+    "v312_presentes": 15014,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "GHIR8CDT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=GHIR8CDT.zip&Tp=1&Ctry_Code=GH&surv_id=598&dm=1&dmode=nm",
+    "surv_id": "598",
+    "diretorio_relativo_catalogo": "Gana/Saude_da_Mulher_IR/GHIR8CDT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "GN",
+    "arquivo_origem": "GNIR71FL.DTA",
+    "fase": "71",
+    "N": 10874,
+    "anos": [
+      2018,
+      2018
+    ],
+    "v312_presentes": 10874,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "GNIR71DT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=GNIR71DT.zip&Tp=1&Ctry_Code=GN&surv_id=539&dm=1&dmode=nm",
+    "surv_id": "539",
+    "diretorio_relativo_catalogo": "Guiné/Saude_da_Mulher_IR/GNIR71DT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "KE",
+    "arquivo_origem": "KEIR8CFL.DTA",
+    "fase": "8C",
+    "N": 32156,
+    "anos": [
+      2022,
+      2022
+    ],
+    "v312_presentes": 32156,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "KEIR8CDT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=KEIR8CDT.zip&Tp=1&Ctry_Code=KE&surv_id=566&dm=1&dmode=nm",
+    "surv_id": "566",
+    "diretorio_relativo_catalogo": "Quênia/Saude_da_Mulher_IR/KEIR8CDT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "LB",
+    "arquivo_origem": "LBIR7AFL.DTA",
+    "fase": "7A",
+    "N": 8065,
+    "anos": [
+      2019,
+      2020
+    ],
+    "v312_presentes": 8065,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      13,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "LBIR7ADT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=LBIR7ADT.zip&Tp=1&Ctry_Code=LB&surv_id=537&dm=1&dmode=nm",
+    "surv_id": "537",
+    "diretorio_relativo_catalogo": "Libéria/Saude_da_Mulher_IR/LBIR7ADT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "ML",
+    "arquivo_origem": "MLIR8AFL.dta",
+    "fase": "8A",
+    "N": 20354,
+    "anos": [
+      2023,
+      2024
+    ],
+    "v312_presentes": 17202,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "MLIR8ADT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=MLIR8ADT.zip&Tp=1&Ctry_Code=ML&surv_id=613&dm=1&dmode=nm",
+    "surv_id": "613",
+    "diretorio_relativo_catalogo": "Mali/Saude_da_Mulher_IR/MLIR8ADT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "NG",
+    "arquivo_origem": "NGIR8BFL.dta",
+    "fase": "8B",
+    "N": 39050,
+    "anos": [
+      2023,
+      2024
+    ],
+    "v312_presentes": 39050,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "NGIR8BDT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=NGIR8BDT.zip&Tp=1&Ctry_Code=NG&surv_id=609&dm=1&dmode=nm",
+    "surv_id": "609",
+    "diretorio_relativo_catalogo": "Nigéria/Saude_da_Mulher_IR/NGIR8BDT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "NI",
+    "arquivo_origem": "NIIR61FL.DTA",
+    "fase": "61",
+    "N": 11160,
+    "anos": [
+      2012,
+      2012
+    ],
+    "v312_presentes": 11160,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      17
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other",
+      "11": "implants/norplant",
+      "12": "abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "oher modern method",
+      "18": "gris-gris",
+      "19": "decoction"
+    },
+    "download_filename": "NIIR61DT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=NIIR61DT.zip&Tp=1&Ctry_Code=NI&surv_id=407&dm=1&dmode=nm",
+    "surv_id": "407",
+    "diretorio_relativo_catalogo": "Níger/Saude_da_Mulher_IR/NIIR61DT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "SL",
+    "arquivo_origem": "SLIR7AFL.DTA",
+    "fase": "7A",
+    "N": 15574,
+    "anos": [
+      2019,
+      2019
+    ],
+    "v312_presentes": 15574,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      18
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "male condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other traditional",
+      "11": "implants/norplant",
+      "12": "prolonged abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "16": "emergency contraception",
+      "17": "other modern method",
+      "18": "standard days method (sdm)",
+      "19": "specific method 1",
+      "20": "specific method 2"
+    },
+    "download_filename": "SLIR7ADT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=SLIR7ADT.zip&Tp=1&Ctry_Code=SL&surv_id=545&dm=1&dmode=nm",
+    "surv_id": "545",
+    "diretorio_relativo_catalogo": "Serra Leoa/Saude_da_Mulher_IR/SLIR7ADT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  },
+  {
+    "pais_codigo": "TG",
+    "arquivo_origem": "TGIR61FL.DTA",
+    "fase": "61",
+    "N": 9480,
+    "anos": [
+      2013,
+      2014
+    ],
+    "v312_presentes": 9480,
+    "colunas_conhecimento": [
+      "v304_01",
+      "v304_02",
+      "v304_03",
+      "v304_04",
+      "v304_05",
+      "v304_06",
+      "v304_07",
+      "v304_08",
+      "v304_09"
+    ],
+    "valores_v312": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      14,
+      17
+    ],
+    "rotulos_v312": {
+      "0": "not using",
+      "1": "pill",
+      "2": "iud",
+      "3": "injections",
+      "4": "diaphragm",
+      "5": "condom",
+      "6": "female sterilization",
+      "7": "male sterilization",
+      "8": "periodic abstinence",
+      "9": "withdrawal",
+      "10": "other",
+      "11": "implants/norplant",
+      "12": "abstinence",
+      "13": "lactational amenorrhea (lam)",
+      "14": "female condom",
+      "15": "foam or jelly",
+      "17": "oher modern method",
+      "18": "specific method 1",
+      "19": "specific method 2",
+      "20": "specific method 3"
+    },
+    "download_filename": "TGIR61DT.zip",
+    "url_download": "https://dhsprogram.com/customcf/legacy/data/download_dataset.cfm?Filename=TGIR61DT.zip&Tp=1&Ctry_Code=TG&surv_id=328&dm=1&dmode=nm",
+    "surv_id": "328",
+    "diretorio_relativo_catalogo": "Togo/Saude_da_Mulher_IR/TGIR61DT.zip",
+    "colunas_basicas_disponiveis": [
+      "caseid",
+      "v001",
+      "v002",
+      "v003",
+      "v005",
+      "v006",
+      "v007",
+      "v012",
+      "v025",
+      "v106",
+      "v190",
+      "v312",
+      "v313"
+    ],
+    "rotulos_conhecimento": {
+      "v304_01": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_02": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_03": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_04": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_05": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_06": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_07": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_08": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      },
+      "v304_09": {
+        "0": "no",
+        "1": "yes",
+        "7": "not in contraception table, but as a current method",
+        "8": "not asked"
+      }
+    },
+    "rotulos_v313": {
+      "0": "no method",
+      "1": "folkloric method",
+      "2": "traditional method",
+      "3": "modern method"
+    }
+  }
+]

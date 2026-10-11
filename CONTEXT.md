@@ -16,3 +16,5 @@ _Evitar_: gestação, quando o dado representa exclusivamente nascidos vivos.
 **Conhecimento contraceptivo:** resposta sobre conhecer um método específico. Conhecer não implica ter usado ou utilizar atualmente.
 
 **Percentual por levantamento:** proporção calculada na amostra de uma pesquisa, com seus pesos quando disponíveis. A combinação dos pesos normalizados de países distintos não representa a população continental.
+
+**Coorte analítica:** participação da entrevista no núcleo original e/ou no tema contracepção. Os dez IR completos suplementares são observações de levantamentos independentes; não fornecem respostas para mulheres de outro levantamento. Planejamento familiar seleciona uma pesquisa por país; pré-natal e condições habitacionais mantêm o núcleo original.

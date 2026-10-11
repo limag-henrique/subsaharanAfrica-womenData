@@ -27,8 +27,11 @@ Construir pelo notebook um banco normalizado separado, a partir do banco de prep
 - Chaves naturais numéricas, evitando as diferenças de espaços em caseid.
 - Identificar domicílios sem HR e nascimentos suplementares de KR; não transformá-los em novos entrevistados.
 - Nove métodos de conhecimento com semântica estável; não reinterpretar v307 entre fases.
+- Anos de dois dígitos reconstruídos por CMC, com testes; as pesquisas de 1989–1990 e 1994–1995 não são apresentadas como recentes.
 - Pesos dentro de cada país; ajustes descritivos com suporte comum, sem inferência causal ou populacional continental.
 - Processamento, documentação, SQL, gráficos e benchmark executados no notebook.
+- Acrescentar dez IR completos locais (176.404 entrevistas), com seleção explícita em manifesto e coortes independentes. A seleção anterior perde fases alfanuméricas e escolhe arquivos sem módulo contraceptivo; não usar suas respostas ausentes como não uso.
+- Comparação contraceptiva em todos os 37 países, com uma pesquisa por país e período explícito; padronização possível em 35, pois Sudão/República Centro-Africana carecem de contexto socioeconômico necessário. Nunca unir mulheres entre pesquisas.
 
 ## Testes confirmados
 
