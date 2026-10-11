@@ -43,4 +43,10 @@ Inferir matrículas, contribuições pessoais, impactos causais, modelos prediti
 
 ## Notas
 
+## Apresentação visual — alinhamento de 11/10/2026
+
+O leitor deve conseguir avaliar as sete seções sem percorrer tabelas extensas ou a implementação da carga. Organização confirmada: dez comandos SQL visíveis, gráficos por consulta e tabelas completas sob demanda; código de preparação recolhido. A normalização, origem Stata, M:N, tema de saúde da mulher e benchmark de otimização permanecem verificáveis. Contribuições individuais e matrículas desconhecidas continuam pendentes.
+
+Preservar as consultas, coortes e fórmulas existentes. Validar pela execução completa do notebook, testes de integração já existentes e inspeção visual dos gráficos e diagramas. A execução de revisão usa um banco derivado temporário para preservar o banco local previamente alterado. Não publicar issue, mudar branch ou criar commits.
+
 Escopo e pontos de teste confirmados pelo usuário nesta conversa. A especificação é local; não foi solicitado publicar uma issue nem informado um fluxo de triagem do projeto.
