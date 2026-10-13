@@ -10,7 +10,47 @@ import os
 import sqlite3
 
 
-def construir_banco(origem, destino, suplementos=()):
+DDL_NORMALIZADO = """
+CREATE TABLE Pais(codigo TEXT PRIMARY KEY, nome TEXT NOT NULL UNIQUE);
+CREATE TABLE Levantamento(id TEXT PRIMARY KEY, pais_codigo TEXT NOT NULL REFERENCES Pais(codigo), fase TEXT NOT NULL, UNIQUE(pais_codigo,fase));
+CREATE TABLE Domicilio(
+  id TEXT PRIMARY KEY, levantamento_id TEXT NOT NULL REFERENCES Levantamento(id),
+  cluster INTEGER NOT NULL, numero INTEGER NOT NULL, regiao INTEGER,
+  residencia INTEGER CHECK(residencia IN(1,2)), riqueza INTEGER CHECK(riqueza BETWEEN 1 AND 5),
+  eletricidade INTEGER CHECK(eletricidade IN(0,1)), fonte_agua INTEGER, membros INTEGER,
+  origem TEXT NOT NULL CHECK(origem IN('HR','IR_sem_HR','IR_completo')),
+  UNIQUE(levantamento_id,cluster,numero));
+CREATE TABLE Mulher(
+  id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
+  idade INTEGER, escolaridade INTEGER CHECK(escolaridade BETWEEN 0 AND 3),
+  filhos_nascidos_vivos INTEGER, idade_primeiro_nascimento INTEGER,
+  UNIQUE(domicilio_id,linha));
+CREATE TABLE Entrevista(
+  mulher_id TEXT PRIMARY KEY REFERENCES Mulher(id), ano INTEGER, mes INTEGER,
+  data_cmc INTEGER, peso REAL CHECK(peso>0), usa_metodo INTEGER CHECK(usa_metodo IN(0,1)),
+  coorte TEXT NOT NULL CHECK(coorte IN('nucleo_e_contracepcao','nucleo_exclusivo','contracepcao')));
+CREATE TABLE Nascimento(
+  id TEXT PRIMARY KEY, mulher_id TEXT NOT NULL REFERENCES Mulher(id), indice INTEGER NOT NULL CHECK(indice>=1),
+  ano INTEGER, mes INTEGER, data_cmc INTEGER, sexo INTEGER CHECK(sexo IN(1,2)), vivo INTEGER CHECK(vivo IN(0,1)),
+  consultas_prenatal_codigo INTEGER, local_parto_codigo INTEGER, cesarea_codigo INTEGER,
+  assistencia_medico_codigo INTEGER, assistencia_m3b_codigo INTEGER,
+  origem TEXT NOT NULL CHECK(origem IN('BR','KR_sem_BR')), UNIQUE(mulher_id,indice));
+CREATE TABLE Crianca(
+  nascimento_id TEXT PRIMARY KEY REFERENCES Nascimento(id), idade_anos INTEGER,
+  diarreia_codigo INTEGER, cartao_vacina_codigo INTEGER);
+CREATE TABLE Morador(
+  id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
+  sexo INTEGER, idade INTEGER, escolaridade_codigo INTEGER, relacao_chefe_codigo INTEGER,
+  UNIQUE(domicilio_id,linha));
+CREATE TABLE Metodo(
+  id INTEGER PRIMARY KEY, nome TEXT NOT NULL UNIQUE, classe TEXT NOT NULL CHECK(classe IN('Moderno','Tradicional')));
+CREATE TABLE Conhecimento_Metodo(
+  mulher_id TEXT NOT NULL REFERENCES Mulher(id), metodo_id INTEGER NOT NULL REFERENCES Metodo(id),
+  nivel INTEGER NOT NULL CHECK(nivel BETWEEN 0 AND 7), PRIMARY KEY(mulher_id,metodo_id)) WITHOUT ROWID;
+"""
+
+
+def construir_banco(origem, destino, suplementos=(), ddl=None):
     """Transforma o núcleo DHS em relações com PK/FK, sem alterar a origem."""
     origem, destino = Path(origem).resolve(), Path(destino).resolve()
     if origem == destino:
@@ -25,43 +65,8 @@ def construir_banco(origem, destino, suplementos=()):
     mulher = dom + " || '|' || CAST(v003 AS INTEGER)"
     nasc = mulher + " || '|' || CAST(bidx AS INTEGER)"
     try:
+        c.executescript(ddl or DDL_NORMALIZADO)
         c.executescript('''
-        CREATE TABLE Pais(codigo TEXT PRIMARY KEY, nome TEXT NOT NULL UNIQUE);
-        CREATE TABLE Levantamento(id TEXT PRIMARY KEY, pais_codigo TEXT NOT NULL REFERENCES Pais(codigo), fase TEXT NOT NULL, UNIQUE(pais_codigo,fase));
-        CREATE TABLE Domicilio(
-          id TEXT PRIMARY KEY, levantamento_id TEXT NOT NULL REFERENCES Levantamento(id),
-          cluster INTEGER NOT NULL, numero INTEGER NOT NULL, regiao INTEGER,
-          residencia INTEGER CHECK(residencia IN(1,2)), riqueza INTEGER CHECK(riqueza BETWEEN 1 AND 5),
-          eletricidade INTEGER CHECK(eletricidade IN(0,1)), fonte_agua INTEGER, membros INTEGER,
-          origem TEXT NOT NULL CHECK(origem IN('HR','IR_sem_HR','IR_completo')),
-          UNIQUE(levantamento_id,cluster,numero));
-        CREATE TABLE Mulher(
-          id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
-          idade INTEGER, escolaridade INTEGER CHECK(escolaridade BETWEEN 0 AND 3),
-          filhos_nascidos_vivos INTEGER, idade_primeiro_nascimento INTEGER,
-          UNIQUE(domicilio_id,linha));
-        CREATE TABLE Entrevista(
-          mulher_id TEXT PRIMARY KEY REFERENCES Mulher(id), ano INTEGER, mes INTEGER,
-          data_cmc INTEGER, peso REAL CHECK(peso>0), usa_metodo INTEGER CHECK(usa_metodo IN(0,1)),
-          coorte TEXT NOT NULL CHECK(coorte IN('nucleo_e_contracepcao','nucleo_exclusivo','contracepcao')));
-        CREATE TABLE Nascimento(
-          id TEXT PRIMARY KEY, mulher_id TEXT NOT NULL REFERENCES Mulher(id), indice INTEGER NOT NULL CHECK(indice>=1),
-          ano INTEGER, mes INTEGER, data_cmc INTEGER, sexo INTEGER CHECK(sexo IN(1,2)), vivo INTEGER CHECK(vivo IN(0,1)),
-          consultas_prenatal_codigo INTEGER, local_parto_codigo INTEGER, cesarea_codigo INTEGER,
-          assistencia_medico_codigo INTEGER, assistencia_m3b_codigo INTEGER,
-          origem TEXT NOT NULL CHECK(origem IN('BR','KR_sem_BR')), UNIQUE(mulher_id,indice));
-        CREATE TABLE Crianca(
-          nascimento_id TEXT PRIMARY KEY REFERENCES Nascimento(id), idade_anos INTEGER,
-          diarreia_codigo INTEGER, cartao_vacina_codigo INTEGER);
-        CREATE TABLE Morador(
-          id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
-          sexo INTEGER, idade INTEGER, escolaridade_codigo INTEGER, relacao_chefe_codigo INTEGER,
-          UNIQUE(domicilio_id,linha));
-        CREATE TABLE Metodo(
-          id INTEGER PRIMARY KEY, nome TEXT NOT NULL UNIQUE, classe TEXT NOT NULL CHECK(classe IN('Moderno','Tradicional')));
-        CREATE TABLE Conhecimento_Metodo(
-          mulher_id TEXT NOT NULL REFERENCES Mulher(id), metodo_id INTEGER NOT NULL REFERENCES Metodo(id),
-          nivel INTEGER NOT NULL CHECK(nivel BETWEEN 0 AND 7), PRIMARY KEY(mulher_id,metodo_id)) WITHOUT ROWID;
         INSERT INTO Pais SELECT pais_codigo,nome_pais FROM fonte.Pais;
         INSERT INTO Levantamento SELECT levantamento_id,pais_codigo,fase FROM fonte.Levantamento;
         INSERT INTO Domicilio

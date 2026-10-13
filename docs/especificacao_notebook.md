@@ -50,3 +50,11 @@ O leitor deve conseguir avaliar as sete seções sem percorrer tabelas extensas 
 Preservar as consultas, coortes e fórmulas existentes. Validar pela execução completa do notebook, testes de integração já existentes e inspeção visual dos gráficos e diagramas. A execução de revisão usa um banco derivado temporário para preservar o banco local previamente alterado. Não publicar issue, mudar branch ou criar commits.
 
 Escopo e pontos de teste confirmados pelo usuário nesta conversa. A especificação é local; não foi solicitado publicar uma issue nem informado um fluxo de triagem do projeto.
+
+## Carga visível no notebook — 13/10/2026
+
+O notebook Saúde da Mulher na África Subsaariana mostra o DDL das dez tabelas e uma função de carga idempotente. Os CSVs IR/HR/PR/BR/KR são lidos em lotes, com seleção explícita de colunas; MR e CR não são lidos. O esquema por país é necessário porque os CSVs consolidados têm larguras variáveis. Como o manifesto original foi retirado, docs/esquemas_csv.csv conserva os 171 esquemas dos recodes centrais recuperados da versão de preparação bcfad39. Cabeçalhos, contagens e metadados são conferidos na leitura.
+
+Um banco populado é aberto somente para leitura e reutilizado após verificar o esquema e PRAGMA foreign_key_check. Banco ausente ou vazio dispara a carga em arquivo temporário; a normalização conserva chaves, ausências e origem dos registros antes de substituir o destino. Vínculos inválidos interrompem a execução. Os CSVs reproduzem as 407.600 entrevistas do núcleo; suplementos são opcionais e independentes, e o banco existente conserva os que já foram carregados.
+
+Verificação na interface pública SQL: carga com CSVs de larguras distintas, exclusão de MR, contexto familiar, conversão de peso/ano, M:N, banco vazio, reutilização sem alteração e bloqueio de FK inválida. A validação real usa um banco derivado temporário, sem alterar os bancos existentes.
