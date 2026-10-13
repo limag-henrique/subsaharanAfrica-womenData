@@ -1,11 +1,8 @@
-# Projeto: Análise de Dados de Saúde da Mulher na África Subsaariana (DHS)
+# Análise de Dados de Saúde da Mulher na África Subsaariana (DHS)
 
 ## Me baixe!
 
-Caso você utilize Git e Python:
-
-> [!NOTE]
-> O repositório utiliza **Git LFS** para armazenar arquivos grandes (banco SQLite e microdados compactados). Certifique-se de executar `git lfs install` antes de clonar.
+> Ao invés de usar um banco de dados online, usamos o **Git LFS** para armazenar o SQLite e os microdados compactados. Você deve executar `git lfs install` antes de clonar.
 
 ```bash
 # 1. Habilitar o Git LFS
@@ -21,42 +18,19 @@ pip install -r requirements.txt
 
 #### Atualização e Sincronização via Pull (Para quem já clonou)
 ```bash
-# Sincronizar o repositório e obter os dados atualizados
 git pull origin main
 ```
 
-#### Opção 1: Visualizador Web
-
-O projeto disponibiliza um visualizador web sob medida (construído em Python/Flask) que **traduz automaticamente as nomenclaturas enigmáticas e os códigos numéricos para seus significados diretos em português** (tanto cabeçalhos quanto valores das células), com filtros rápidos, paginação e exportação.
-
-**Como executar:**
+#### Visualizador web Python/Flask
 ```bash
 cd database_python
 python server.py
 ```
 Acesse no navegador: **[http://localhost:5050](http://localhost:5050)**
 
-**Recursos:**
-- **Tradução Automática:** Converte códigos técnicos em termos legíveis (`v025` ➔ *Tipo de Residência*; valor `1` ➔ *Urbano*, `2` ➔ *Rural*).
-- **Filtros Dinâmicos:** Selecione qualquer tabela e filtre instantaneamente por País e Fase DHS.
-- **Modo Inspeção Técnica:** Ative a chave `Código [raw]` para visualizar o código original junto ao rótulo traduzido.
-- **Exportação CSV:** Baixe qualquer visualização filtrada com codificação UTF-8 BOM (compatível com Excel).
-- **Navegação Rápida:** Use as setas do teclado (**`←`** e **`→`**) para avançar e voltar páginas.
-
-### Opção 2: DB Browser for SQLite
-
-Para consultas SQL manuais ou navegação direta no banco:
-1. Baixe o software gratuito [DB Browser for SQLite](https://sqlitebrowser.org/dl/).
-2. Abra o arquivo `saude_mulher_dhs.db`.
-3. Na aba **"Navegar Dados"**, escolha a tabela desejada.
-   > **Nota:** No DB Browser, os campos permanecem com as siglas originais do DHS. Consulte o dicionário abaixo para a correspondência dos termos.
-
 ---
 
-## 📊 Tabelas do Banco de Dados (`saude_mulher_dhs.db`)
-
-Base comparável da onda mais recente de **37 países**, reunindo 10 entidades principais:
-
+## Tabelas do Banco de Dados (`saude_mulher_dhs.db`)
 | Tabela SQL | Recode | Descrição | Registros | Cobertura |
 | :--- | :---: | :--- | ---: | :---: |
 | **`Mulher`** | IR | Mulheres de 15 a 49 anos (perfil sociodemográfico, fertilidade, saúde) | 407.600 | 37 países |
@@ -70,64 +44,7 @@ Base comparável da onda mais recente de **37 países**, reunindo 10 entidades p
 | **`Casal`** | CR | Entrevistas conjuntas pareadas entre cônjuges | 109.174 | 36 países |
 | **`Servico_Comunidade`** | SQ | Infraestrutura comunitária e serviços de saúde locais | 5.154 | 19 países |
 
-> Os microdados brutos padronizados também estão disponíveis em formato comprimido na pasta [`dados/relevantes/`](dados/relevantes/).
-
----
-
-## 📖 Dicionário Prático de Variáveis Principais
-
-Principais variáveis consolidadas e seus significados:
-
-| Variável | Tabela | Descrição | Categorias / Valores |
-| :--- | :--- | :--- | :--- |
-| `v012` | Mulher | Idade da entrevistada | Anos completos (15 a 49) |
-| `v025` / `hv025` | Mulher / Domicílio | Tipo de residência | `1 = Urbano`, `2 = Rural` |
-| `v106` | Mulher | Escolaridade | `0 = Nenhuma`, `1 = Primário`, `2 = Secundário`, `3 = Superior` |
-| `v190` / `hv270` | Mulher / Domicílio | Quintil de riqueza | `1 = Mais Pobre` a `5 = Mais Rico` |
-| `b4` | Nascimento | Sexo da criança | `1 = Masculino`, `2 = Feminino` |
-| `b5` | Nascimento | Sobrevivência da criança | `0 = Falecida`, `1 = Viva` |
-| `m14` | Nascimento | Consultas pré-natal | Número de consultas durante a gestação |
-| `m15` | Nascimento | Local de parto | `10-19 = Domicílio`, `20-39 = Hospital Público`, `40-49 = Clínica Privada` |
-| `v312` | Mulher | Contraceptivo atual | `0 = Nenhum`, `1 = Pílula`, `2 = DIU`, `3 = Injetável`, `11 = Preservativo` |
-| `v457` | Mulher | Nível de anemia | `1 = Severa`, `2 = Moderada`, `3 = Leve`, `4 = Não anêmica` |
-
----
-
-## 🔍 Exemplo de Consulta SQL
-
-Consulta para calcular a idade média e o total de mulheres entrevistadas por país:
-
-```sql
-SELECT p.nome_pais, COUNT(*) AS total_mulheres, ROUND(AVG(m.v012), 1) AS idade_media
-FROM Mulher AS m
-JOIN Pais AS p ON p.pais_codigo = m.pais_codigo
-GROUP BY p.pais_codigo, p.nome_pais
-ORDER BY total_mulheres DESC;
-```
-
----
-
-## 🛠️ Reconstrução do Banco SQLite (Opcional)
-
-Para recriar o arquivo `saude_mulher_dhs.db` a partir dos arquivos CSV em `dados/relevantes/`:
-
-```bash
-python database_python/carregar_sqlite.py
-```
-
-> Relatórios aprofundados sobre governança de dados, normalização de termos e auditorias de variáveis encontram-se documentados nas pastas [`analises/`](analises) e [`analises_completo/`](analises_completo).
-
-
-## Estrutura dos Dados Consolidados (`dados/relevantes`)
-
-A pasta [`dados/relevantes`](dados/relevantes) reúne os microdados estritamente necessários para as entidades e relacionamentos do modelo conceitual, eliminando redundâncias temporais e padronizando identificadores.
-
-### Critério de Construção da Base Comparável
-Em vez de somar dados de múltiplas ondas temporais (o que gerava repetições de países e indivíduos entrevistados em anos diferentes), selecionou-se a **onda mais recente e comparável por país** (maior fase DHS). Foram excluídos registros históricos e amostras de teste (como `OS` - África do Sul histórica), resultando na **Base Comparável de 37 Países**.
-
-Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já incluem colunas padronizadas de rastreabilidade: `pais_codigo`, `pais_nome`, `levantamento_id` (ex: `AO_81`), `fase`, `arquivo_origem`, `linha_origem` e chaves unificadas (`id_mulher_global`, `id_domicilio`, `id_nascimento`, etc.).
-
-### Arquivos Disponíveis
+> Os dados brutos estão em [`dados/relevantes/`](dados/relevantes/):
 
 | Arquivo | Recode | Descrição do Conteúdo | Cobertura na Base Comparável | Registros Reais |
 | :--- | :---: | :--- | :---: | :---: |
@@ -142,44 +59,12 @@ Todos os arquivos estão em formato CSV comprimido com Gzip (`.csv.gz`) e já in
 | [`SQ.csv.gz`](dados/relevantes/SQ.csv.gz) | **SQ** | Infraestrutura comunitária e serviços de saúde locais | 19 países | **5.154** registros |
 | [`WI.csv.gz`](dados/relevantes/WI.csv.gz) | **WI** | Índice de riqueza (*wealth index*) adicional do DHS | 26 países | **190.832** registros |
 
-> [!TIP]
 > O arquivo [`dados/relevantes/manifesto_selecao.csv`](dados/relevantes/manifesto_selecao.csv) contém o registro de governança completo, detalhando o arquivo de origem, a fase DHS, a contagem de linhas e cada uma das colunas selecionadas em cada país.
 
 ---
 
-## Banco SQLite do Projeto
-
-O banco completo [`saude_mulher_dhs.db`](saude_mulher_dhs.db) reúne todas as entidades consolidadas do DHS. Ele é versionado via Git LFS e pode ser obtido pelo clone/pull, ou baixado e recriado conforme abaixo:
-
-### Como Visualizar e Explorar as Tabelas
-
-Os microdados do DHS utilizam códigos técnicos de variáveis (como `v012`, `v025`, `v106`, `b4`) e valores numéricos codificados (como `1`, `2`, `3`) que representam categorias sociodemográficas. Para facilitar a exploração, o repositório oferece duas formas de visualização:
-
-## Repertório Analítico e Auditorias (`analises` e `analises_completo`)
-
-Para fundamentar as escolhas de modelagem e garantir rigor estatístico, foram realizadas auditorias semânticas sobre o inventário completo do DHS. Os resultados encontram-se documentados e versionados nas pastas [`analises/`](analises) e [`analises_completo/`](analises_completo):
-
-1. **Modelagem e Comparabilidade Continental:**
-   - [`analises_completo/tabela_alternativas_modelagem.md`](analises_completo/tabela_alternativas_modelagem.md): Compara o inventário bruto total (1.409 arquivos, 2,13 milhões de mulheres com repetições entre ondas) contra a **Base Comparável Recomendada (37 países e 407.600 mulheres)**, fundamentando a estrutura de entidades e cardinalidades.
-
-2. **Auditoria de Variáveis e Famílias Semânticas:**
-   - [`analises_completo/relatorio_entidades_saude_mulher.md`](analises_completo/relatorio_entidades_saude_mulher.md) e [`analises/relatorio_entidades_saude_mulher.md`](analises/relatorio_entidades_saude_mulher.md): Diagnóstico aprofundado dos dicionários de variáveis do DHS. Identificou **559 variáveis com nomes estritamente idênticos** presentes em todos os países comparáveis ([`variaveis_comuns_37_paises.csv`](analises_completo/variaveis_comuns_37_paises.csv)).
-   - [`analises_completo/denominacoes_normalizadas.csv`](analises_completo/denominacoes_normalizadas.csv): Mapeamento e desambiguação de rótulos entre diferentes fases e línguas de aplicação dos questionários.
-   - [`analises_completo/familias_semanticas.csv`](analises_completo/familias_semanticas.csv): Agrupamento semântico de variáveis por temas de interesse.
-
-3. **Cobertura Temática por Domínio:**
-   Conforme detalhado em [`analises_completo/cobertura_temas.csv`](analises_completo/cobertura_temas.csv), as variáveis cobrem 10 grandes dimensões nos 37 países:
-   - **História Reprodutiva e Fecundidade:** Fecundidade total, filhos sobreviventes, gravidez atual.
-   - **Saúde Materna e Assistência ao Parto:** Pré-natal, assistência qualificada, local de parto.
-   - **Planejamento Familiar:** Métodos modernos vs. tradicionais, conhecimento e uso.
-   - **Nutrição e Anemia:** Antropometria, hemoglobina materna e infantil.
-   - **Condições Socioeconômicas:** Quintil de riqueza, saneamento, acesso a água e luz.
-   - **Violência de Gênero e Autonomia:** Presente em 35 dos 37 países (módulo específico de violência doméstica e poder decisório).
-
----
 ## Otimização de Consultas (+20% de Pontuação)
 
-Para comprovação do ganho de desempenho via índices:
 1. Executar `EXPLAIN QUERY PLAN <consulta>` identificando operações de varredura completa (`SCAN TABLE`).
 2. Criar índices adequados nas colunas de filtro ou chave estrangeira:
    ```sql
@@ -189,46 +74,7 @@ Para comprovação do ganho de desempenho via índices:
 3. Executar novamente o plano de execução comprovando o uso do índice (`SEARCH TABLE ... USING INDEX`).
 4. Medir e comparar o tempo de execução no Jupyter Notebook utilizando a diretiva `%timeit`.
 
-
-## Modelo Conceitual e Proposta de Banco de Dados
-
-### 1. Entidades Propostas e Instâncias Reais (Base Comparável)
-
-A auditoria demonstrou a importância crucial de instituir a entidade **`Levantamento`** como dimensão agregadora, prevenindo ambiguidades entre dados de coletas amostrais distintas e mantendo a integridade referencial:
-
-| Entidade | Descrição e Atributos Principais | Chave Primária (PK) / Estrangeira (FK) | Instâncias Reais |
-| :--- | :--- | :--- | :---: |
-| **`Pais`** | Identificação geopolítica (`nome_pais`, `regiao_africana`) | **PK:** `pais_codigo` (ex: `AO`, `MZ`, `NG`) | **37** países |
-| **`Levantamento`** | Rodada de pesquisa DHS realizada (`ano_fase`, `versao_questionario`) | **PK:** `levantamento_id` (ex: `AO_81`)<br>**FK:** `pais_codigo` | **37** levantamentos |
-| **`Domicilio`** | Unidade habitacional (`tipo_residencia`: Urbano/Rural, `quintil_riqueza`, `fonte_agua`, `tipo_sanitario`) | **PK:** `id_domicilio`<br>**FK:** `pais_codigo`, `levantamento_id` | **385.457** domicílios |
-| **`Mulher`** | Entrevistada (15 a 49 anos) (`idade`, `escolaridade`, `total_filhos`, `idade_primeiro_parto`, `status_anemia`) | **PK:** `id_mulher_global`<br>**FK:** `id_domicilio`, `levantamento_id`, `pais_codigo` | **407.600** mulheres |
-| **`Nascimento`** / `Gestacao_Parto` | Registro obstétrico detalhado (`ordem_nascimento`, `consultas_prenatal`, `local_parto`, `parto_assistido`) | **PK:** `id_nascimento`<br>**FK:** `id_mulher_global` | **877.412** nascimentos |
-| **`Crianca`** *(Opcional)* | Crianças de 0 a 5 anos (`peso`, `altura`, `vacinacao`, `aleitamento`) | **PK:** `id_crianca`<br>**FK:** `id_mulher_global` | **282.641** crianças |
-| **`Metodo_Contraceptivo`** | Catálogo oficial DHS/OMS de métodos contraceptivos (`nome_metodo`, `classificacao`: Moderno/Tradicional/Permanente) | **PK:** `id_metodo` | **18** métodos |
-
 ---
-
-### 2. Relacionamentos e Cardinalidades
-
-| Relacionamento | Cardinalidade | Regra de Negócio | Instâncias Reais Comprovadas |
-| :--- | :---: | :--- | :---: |
-| **`Pertence_A`**<br>(`Domicilio` ➔ `Pais`) | **N : 1** | Cada domicílio amostrado pertence a um país. | **385.457** vínculos |
-| **`Realizado_Em`**<br>(`Levantamento` ➔ `Pais`) | **N : 1** | Cada levantamento pertence ao histórico de um país. | **37** vínculos |
-| **`Participa_De`**<br>(`Mulher` ➔ `Levantamento`) | **N : 1** | Cada mulher foi entrevistada em um levantamento específico. | **407.600** vínculos |
-| **`Reside_Em`**<br>(`Mulher` ➔ `Domicilio`) | **N : 1** | Cada mulher reside em um domicílio cadastrado. | **407.600** vínculos |
-| **`Tem_Nascimento`**<br>(`Mulher` ➔ `Nascimento`) | **1 : N** | Uma mulher pode ter múltiplos nascimentos registrados ao longo da vida fértil. | **877.412** vínculos |
-| **`Tem_Crianca`**<br>(`Mulher` ➔ `Crianca`) | **1 : N** | Crianças com acompanhamento de saúde vinculadas à mãe respondente. | **282.641** vínculos |
-| **`Uso_Contracepcao`**<br>(`Mulher` ⮂ `Metodo_Contraceptivo`) | **N : M** *(Requisito Obrigatório)* | Uma mulher conhece e/ou utiliza múltiplos métodos ao longo do tempo; cada método é utilizado por milhares de mulheres. | Materializado via tabela associativa |
-
-> [!NOTE]
-> **Implementação do Relacionamento N:M:**  
-> O relacionamento N:M é implementado por meio da tabela associativa `Uso_Contracepcao` (`id_mulher_global`, `id_metodo`), incorporando atributos de histórico como `conhece` (derivado de `v304_*`), `ja_usou` (`v307_*`) e `uso_atual` (`v312`).
-
----
-
-## Dicionário Prático de Variáveis Selecionadas
-
-As principais variáveis DHS já presentes nos arquivos consolidados em [`dados/relevantes`](dados/relevantes):
 
 ### Identificação e Demografia (`IR.csv.gz`, `HR.csv.gz`)
 - `pais_codigo` / `levantamento_id`: Identificador soberano e fase da pesquisa.
