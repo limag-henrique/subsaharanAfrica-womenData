@@ -1,7 +1,12 @@
-# Dados compactos do projeto
+# Dados compactos do projeto (Saúde da Mulher na África Subsaariana)
 
-Esta pasta contém apenas uma onda recente por país comparável (exclui `OS`, África do Sul histórica), os recodes do modelo integrado e as variáveis necessárias às entidades e relacionamentos. Os cinco recodes centrais (IR/BR/HR/PR/KR) usam a mesma fase; os módulos opcionais usam a fase mais recente disponível e só devem ser unidos quando as chaves forem compatíveis. Os arquivos estão em CSV gzip.
+Esta pasta contém exclusivamente os microdados essenciais para o estudo da Saúde da Mulher nos 37 países comparáveis da África Subsaariana, consolidados em formato CSV compactado (gzip).
 
-Consulte `manifesto_selecao.csv` para a origem, fase, quantidade de linhas e colunas de cada arquivo. Os microdados brutos não devem ser versionados.
+### Recodes Relevantes Mantidos:
+- **`IR.csv.gz` (Individual Recode - Mulher):** 407.600 observações de mulheres em idade fértil (15-49 anos), contendo dados reprodutivos, uso e conhecimento contraceptivo, idade e escolaridade.
+- **`BR.csv.gz` (Birth Recode - Nascimentos):** 877.412 registros de nascidos vivos, assistência ao pré-natal e ao parto.
+- **`HR.csv.gz` (Household Recode - Domicílios):** 385.457 domicílios com informações de residência (urbana/rural) e quintis de riqueza.
+- **`PR.csv.gz` (Household Member Recode - Moradores):** 1.884.683 moradores que compõem os agregados familiares.
+- **`KR.csv.gz` (Children's Recode - Crianças):** 282.641 crianças com dados de acompanhamento de saúde materna e vacinação.
 
-Resumo atual: `IR` 407.600 mulheres em 37 países; `BR` 877.412 nascimentos; `HR` 385.457 domicílios; `PR` 1.884.683 moradores; `KR` 282.641 crianças. Os módulos opcionais disponíveis são `HW` (28 países), `CR` (36), `MR` (36), `SQ` (19) e `WI` (26).
+> **Nota:** Todos os dados irrelevantes para o escopo do projeto (como inquéritos masculinos `MR`, casais `CR`, antropometria legada `HW`, postos de saúde `SQ` e índices avulsos `WI`) foram descartados.
