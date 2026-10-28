@@ -3,3 +3,8 @@
 __pycache__/
 *.pyc
 graphify-out/
+# Originais restaurados por scripts/restaurar_arquivos.py
+/saude_mulher_dhs.db
+/saude_mulher_normalizado.db
+/analises/presenca_variaveis_por_pais.csv
+/analises_completo/presenca_variaveis_por_pais.csv

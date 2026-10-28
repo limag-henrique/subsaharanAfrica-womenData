@@ -1,0 +1,85 @@
+[
+  {
+    "arquivo": "saude_mulher_dhs.db",
+    "bytes": 1034027008,
+    "sha256": "a4169b8dc8e4ec537c001b3523ecd55e02dc796bde4cb8279c51b565afb7790c",
+    "partes": [
+      {
+        "nome": "saude_mulher_dhs.db.gz.part001",
+        "sha256": "042d013dd714f7d3a1cd929a68f4a06c87bbe78c46c4fccdf1b4e068795b7626",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_dhs.db.gz.part002",
+        "sha256": "56bca572fc6068a8dbcb8c9d7db6b121bfc091b68c58c04befc60c5f6516377a",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_dhs.db.gz.part003",
+        "sha256": "8daf2adfd152edb19130bc58f950d5a997bac708b697fdfe0814a35278729744",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_dhs.db.gz.part004",
+        "sha256": "12cdd7ebdd719180858f6f962ab4a89fe10e1280ac0c739d813840ac2dbf15a0",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_dhs.db.gz.part005",
+        "sha256": "68f93bcd2ec210576937e084e2804cd3922ad149d016a889e93eacd3e89f69a2",
+        "bytes": 8346234
+      }
+    ]
+  },
+  {
+    "arquivo": "saude_mulher_normalizado.db",
+    "bytes": 685133824,
+    "sha256": "5a45ed7189c530bd4533e2aaebf61d38a3401dbbe7750744a8a28a351d210f7d",
+    "partes": [
+      {
+        "nome": "saude_mulher_normalizado.db.gz.part001",
+        "sha256": "95dad4fd86e7402d9d844eeffc217e18c4d44b70077c55bd74e1b97bca450a1c",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_normalizado.db.gz.part002",
+        "sha256": "5a65bdd5591384e4e61334d09c370ee7ee727233cc42cc44231fb5085480ff64",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_normalizado.db.gz.part003",
+        "sha256": "9ade45fab3fb286177fcf928d268ac349c72ca0afd74fb9bc7b5e761bb0dfaf2",
+        "bytes": 47185920
+      },
+      {
+        "nome": "saude_mulher_normalizado.db.gz.part004",
+        "sha256": "bc460e6eff28b002f256272bfeb4faa5636c63e01cabf576e65daf9f840c557f",
+        "bytes": 42289613
+      }
+    ]
+  },
+  {
+    "arquivo": "analises/presenca_variaveis_por_pais.csv",
+    "bytes": 39956880,
+    "sha256": "f19b6ce78cf3367720c70eb77df47b536c2215089aa443938bd0385fe2648b0c",
+    "partes": [
+      {
+        "nome": "analises__presenca_variaveis_por_pais.csv.gz.part001",
+        "sha256": "88a2f492eef52ec9b928f6992c69f9788813ae0cbdb09efba73d2c19fb4cbc2f",
+        "bytes": 2761997
+      }
+    ]
+  },
+  {
+    "arquivo": "analises_completo/presenca_variaveis_por_pais.csv",
+    "bytes": 95083207,
+    "sha256": "f79e0b5481ad74ec1fcd1384df4195be671b046e26786eb8f71520198a6b432d",
+    "partes": [
+      {
+        "nome": "analises_completo__presenca_variaveis_por_pais.csv.gz.part001",
+        "sha256": "07906f42765517071cfd5556d0ec5363f5bba5b2158ba2d49e6bf7d8eb1b9039",
+        "bytes": 5635178
+      }
+    ]
+  }
+]

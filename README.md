@@ -2,19 +2,34 @@
 
 ## Me baixe!
 
-> Ao invés de usar um banco de dados online, usamos o **Git LFS** para armazenar o SQLite e os microdados compactados. Você deve executar `git lfs install` antes de clonar.
+Os bancos SQLite e os CSVs grandes são distribuídos em gzip, em partes de até **45 MiB**, usando Git comum. Não é necessário instalar Git LFS. Os microdados em `dados/relevantes/*.csv.gz` já estão compactados e podem ser lidos diretamente pelo pandas.
 
 ```bash
-# 1. Habilitar o Git LFS
-git lfs install
-
-# 2. Clonar o repositório
+# 1. Clonar o repositório
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
 cd subsaharanAfrica-womenData
+
+# 2. Descompactar os bancos e CSVs grandes (Python 3.11 ou superior)
+python scripts/restaurar_arquivos.py
 
 # 3. Instalar dependências
 pip install -r requirements.txt
 ```
+
+### Como descompactar
+
+Execute `python scripts/restaurar_arquivos.py` na raiz do projeto, no Windows, Linux ou macOS (use `python3` se necessário). O script reúne as partes de `arquivos_compactados/`, descompacta e verifica o SHA-256 de cada parte e de cada arquivo restaurado com `manifesto.json`. Nenhuma biblioteca externa é necessária.
+
+São restaurados nos caminhos originais:
+
+- `saude_mulher_dhs.db`
+- `saude_mulher_normalizado.db`
+- `analises/presenca_variaveis_por_pais.csv`
+- `analises_completo/presenca_variaveis_por_pais.csv`
+
+Reserve cerca de **3 GiB livres** para os arquivos restaurados e os temporários. Arquivos existentes com o conteúdo esperado são preservados; se houver conteúdo diferente, o script interrompe para evitar sobrescrevê-lo. Execute a restauração antes dos notebooks ou do visualizador web. As partes `.gz.partNNN` precisam estar todas presentes; não devem ser abertas individualmente como arquivos gzip.
+
+Os arquivos restaurados ficam fora do controle de versão. O histórico anterior contém referências antigas do Git LFS; a versão atual usa os arquivos compactados e dispensa baixar esses objetos antigos.
 
 #### Atualização e Sincronização via Pull (Para quem já clonou)
 ```bash
