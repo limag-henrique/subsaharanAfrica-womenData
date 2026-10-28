@@ -18,12 +18,17 @@ CREATE TABLE Domicilio(
   cluster INTEGER NOT NULL, numero INTEGER NOT NULL, regiao INTEGER,
   residencia INTEGER CHECK(residencia IN(1,2)), riqueza INTEGER CHECK(riqueza BETWEEN 1 AND 5),
   eletricidade INTEGER CHECK(eletricidade IN(0,1)), fonte_agua INTEGER, membros INTEGER,
-  origem TEXT NOT NULL CHECK(origem IN('HR','IR_sem_HR','IR_completo')),
+  origem TEXT NOT NULL CHECK(origem IN('HR','IR_sem_HR','IR_completo','MR_sem_HR')),
   UNIQUE(levantamento_id,cluster,numero));
 CREATE TABLE Mulher(
   id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
   idade INTEGER, escolaridade INTEGER CHECK(escolaridade BETWEEN 0 AND 3),
   filhos_nascidos_vivos INTEGER, idade_primeiro_nascimento INTEGER,
+  UNIQUE(domicilio_id,linha));
+CREATE TABLE Parceiro(
+  id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
+  idade INTEGER, escolaridade INTEGER CHECK(escolaridade BETWEEN 0 AND 3),
+  total_filhos INTEGER, idade_primeiro_filho INTEGER,
   UNIQUE(domicilio_id,linha));
 CREATE TABLE Entrevista(
   mulher_id TEXT PRIMARY KEY REFERENCES Mulher(id), ano INTEGER, mes INTEGER,
@@ -38,6 +43,13 @@ CREATE TABLE Nascimento(
 CREATE TABLE Crianca(
   nascimento_id TEXT PRIMARY KEY REFERENCES Nascimento(id), idade_anos INTEGER,
   diarreia_codigo INTEGER, cartao_vacina_codigo INTEGER);
+CREATE TABLE Vacina_Remedio(
+  id INTEGER PRIMARY KEY, codigo TEXT NOT NULL UNIQUE, nome TEXT NOT NULL UNIQUE);
+CREATE TABLE Crianca_Vacina(
+  nascimento_id TEXT NOT NULL REFERENCES Crianca(nascimento_id),
+  vacina_id INTEGER NOT NULL REFERENCES Vacina_Remedio(id),
+  status_codigo INTEGER NOT NULL CHECK(status_codigo BETWEEN 0 AND 9),
+  PRIMARY KEY(nascimento_id,vacina_id)) WITHOUT ROWID;
 CREATE TABLE Morador(
   id TEXT PRIMARY KEY, domicilio_id TEXT NOT NULL REFERENCES Domicilio(id), linha INTEGER NOT NULL,
   sexo INTEGER, idade INTEGER, escolaridade_codigo INTEGER, relacao_chefe_codigo INTEGER,
@@ -58,12 +70,14 @@ def construir_banco(origem, destino, suplementos=(), ddl=None):
     temporario = destino.with_suffix('.tmp.db')
     if temporario.exists():
         temporario.unlink()
-    c = sqlite3.connect(temporario, uri=True)
+    c = sqlite3.connect(str(temporario))
     c.execute('PRAGMA foreign_keys=ON')
-    c.execute('ATTACH DATABASE ? AS fonte', (origem.as_uri()+'?mode=ro',))
+    c.execute('ATTACH DATABASE ? AS fonte', (str(origem),))
     dom = "levantamento_id || '|' || CAST(v001 AS INTEGER) || '|' || CAST(v002 AS INTEGER)"
     mulher = dom + " || '|' || CAST(v003 AS INTEGER)"
     nasc = mulher + " || '|' || CAST(bidx AS INTEGER)"
+    dom_mr = "levantamento_id || '|' || CAST(mv001 AS INTEGER) || '|' || CAST(mv002 AS INTEGER)"
+    parc = dom_mr + " || '|' || CAST(mv003 AS INTEGER)"
     try:
         c.executescript(ddl or DDL_NORMALIZADO)
         c.executescript('''
@@ -83,6 +97,18 @@ def construir_banco(origem, destino, suplementos=(), ddl=None):
                MAX(CASE WHEN v190 BETWEEN 1 AND 5 THEN v190 END),
                NULL,NULL,NULL,'IR_sem_HR'
         FROM fonte.Mulher GROUP BY levantamento_id,v001,v002''')
+        if c.execute("SELECT 1 FROM fonte.sqlite_master WHERE type='table' AND name='Parceiro'").fetchone():
+            c.execute(f'''INSERT OR IGNORE INTO Domicilio
+            SELECT {dom_mr},levantamento_id,mv001,mv002,MAX(mv024),
+                   MAX(CASE WHEN mv025 IN(1,2) THEN mv025 END),
+                   MAX(CASE WHEN mv190 BETWEEN 1 AND 5 THEN mv190 END),
+                   NULL,NULL,NULL,'MR_sem_HR'
+            FROM fonte.Parceiro GROUP BY levantamento_id,mv001,mv002''')
+            c.execute(f'''INSERT INTO main.Parceiro
+            SELECT {parc},{dom_mr},mv003,mv012,
+                   CASE WHEN mv106 BETWEEN 0 AND 3 THEN mv106 END,mv201,
+                   CASE WHEN mv212 BETWEEN 10 AND 60 THEN mv212 END
+            FROM fonte.Parceiro''')
         c.execute(f'''INSERT INTO Mulher
         SELECT {mulher},{dom},v003,v012,
                CASE WHEN v106 BETWEEN 0 AND 3 THEN v106 END,v201,
@@ -105,6 +131,15 @@ def construir_banco(origem, destino, suplementos=(), ddl=None):
             FROM fonte.{tabela}''',(origem_registro,))
         c.execute(f'''INSERT INTO Crianca
         SELECT {nasc},b8,h11,h1 FROM fonte.Crianca''')
+        c.executemany('INSERT INTO Vacina_Remedio VALUES(?,?,?)',[
+            (1,'h2','BCG'),(2,'h3','DTP 1'),(3,'h4','Polio 1'),(4,'h5','DTP 2'),
+            (5,'h6','Polio 2'),(6,'h7','DTP 3'),(7,'h8','Polio 3'),(8,'h9','Sarampo / Rubéola')])
+        colunas_kr = {r[1] for r in c.execute('PRAGMA fonte.table_info(Crianca)')}
+        for vid, col in [(1,'h2'),(2,'h3'),(3,'h4'),(4,'h5'),(5,'h6'),(6,'h7'),(7,'h8'),(8,'h9')]:
+            if col in colunas_kr:
+                c.execute(f'''INSERT INTO Crianca_Vacina
+                SELECT {nasc},?,CAST({col} AS INTEGER) FROM fonte.Crianca
+                WHERE {col} BETWEEN 0 AND 9''',(vid,))
         c.execute('''INSERT INTO Morador
         SELECT levantamento_id||'|'||CAST(hv001 AS INTEGER)||'|'||CAST(hv002 AS INTEGER)||'|'||CAST(hvidx AS INTEGER),
                levantamento_id||'|'||CAST(hv001 AS INTEGER)||'|'||CAST(hv002 AS INTEGER),
