@@ -2,8 +2,6 @@
 
 ## Me baixe!
 
-Os bancos SQLite e os CSVs grandes são distribuídos em gzip, em partes de até **45 MiB**, usando Git comum. Não é necessário instalar Git LFS. Os microdados em `dados/relevantes/*.csv.gz` já estão compactados e podem ser lidos diretamente pelo pandas.
-
 ```bash
 # 1. Clonar o repositório
 git clone https://github.com/limag-henrique/subsaharanAfrica-womenData.git
@@ -18,18 +16,9 @@ pip install -r requirements.txt
 
 ### Como descompactar
 
-Execute `python scripts/restaurar_arquivos.py` na raiz do projeto, no Windows, Linux ou macOS (use `python3` se necessário). O script reúne as partes de `arquivos_compactados/`, descompacta e verifica o SHA-256 de cada parte e de cada arquivo restaurado com `manifesto.json`. Nenhuma biblioteca externa é necessária.
+Execute `python scripts/restaurar_arquivos.py` na raiz do projeto, no Windows, Linux ou macOS (use `python3` se necessário).
 
-São restaurados nos caminhos originais:
-
-- `saude_mulher_dhs.db`
-- `saude_mulher_normalizado.db`
-- `analises/presenca_variaveis_por_pais.csv`
-- `analises_completo/presenca_variaveis_por_pais.csv`
-
-Reserve cerca de **3 GiB livres** para os arquivos restaurados e os temporários. Arquivos existentes com o conteúdo esperado são preservados; se houver conteúdo diferente, o script interrompe para evitar sobrescrevê-lo. Execute a restauração antes dos notebooks ou do visualizador web. As partes `.gz.partNNN` precisam estar todas presentes; não devem ser abertas individualmente como arquivos gzip.
-
-Os arquivos restaurados ficam fora do controle de versão. O histórico anterior contém referências antigas do Git LFS; a versão atual usa os arquivos compactados e dispensa baixar esses objetos antigos.
+Reserve cerca de **3 GiB livres** para os arquivos restaurados e os temporários.
 
 #### Atualização e Sincronização via Pull (Para quem já clonou)
 ```bash
