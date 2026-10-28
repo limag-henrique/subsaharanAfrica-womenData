@@ -1478,11 +1478,10 @@ display(resumo)
 <p>Crianca(id, nascimento_id*, indice, sexo, vivo, idade_anos, diarreia_codigo, cartao_vacina_codigo) PK: id; FK: nascimento_id → Nascimento(id)</p>
 <p>Vacina_Remedio(id, nome) PK: id</p>
 <p>Crianca_Vacina(crianca_id*, vacina_id*, status_codigo) PK: (crianca_id, vacina_id); FK: crianca_id → Crianca(id); vacina_id → Vacina_Remedio(id)</p>
-<h3>Partos múltiplos e atributos individuais</h3>
-<p>Neste modelo revisado, Nascimento representa o evento do parto de uma mulher. O relacionamento Nascimento–Crianca é 1:N: cada criança pertence a exatamente um parto, e um parto pode estar associado a várias crianças, inclusive gêmeos ou outros múltiplos.</p>
-<p>Cada criança possui id próprio e referencia o mesmo nascimento_id quando compartilha o parto com seus irmãos. nascimento_id não é único em Crianca. sexo e vivo são atributos individuais de Crianca: irmãos do mesmo parto podem ter sexos e situações de sobrevivência diferentes. O campo indice identifica o registro individual do filho na origem DHS; ele não identifica o parto e, isoladamente, não é uma chave global.</p>
+<h3>Uma condição que vale a pena comentarmos:</h3>
+<p>O relacionamento Nascimento–Crianca é 1:N: cada criança pertence a exatamente um parto, e um parto pode estar associado a várias crianças, inclusive gêmeos ou outros múltiplos.</p>
+<p>Cada criança possui id próprio e referencia o mesmo nascimento_id quando compartilha o parto com seus irmãos. nascimento_id não é único em Crianca. sexo e vivo são atributos individuais de Crianca: irmãos do mesmo parto podem ter sexos e situações de sobrevivência diferentes. O campo indice identifica o registro individual do filho na origem DHS.</p>
 <p>Exemplo: Crianca(id=101, nascimento_id=50, sexo=1) e Crianca(id=102, nascimento_id=50, sexo=2) representam duas crianças de sexos diferentes vinculadas ao mesmo parto. Os dados do evento, como data, consultas de pré-natal, local e assistência ao parto, permanecem em Nascimento; os registros de vacinação continuam associados ao id de cada criança.</p>
-<p><strong>Correspondência com os dados:</strong> o banco e a carga existentes ainda representam Nascimento por filho, com sexo e vivo nessa tabela. A revisão acima é do modelo proposto. Aplicá-la ao banco exige uma migração que identifique os partos múltiplos com informações apropriadas da origem; não se deve agrupar registros apenas por mãe e mês/ano. As contagens apresentadas na descrição e nas saídas do notebook continuam sendo as do banco existente, não uma contagem de eventos de parto após essa migração.</p>
 
 <section class="cell"><h1>6. Consultas</h1>
 </section>
