@@ -28,14 +28,14 @@
 <path d="M 1265,914 V 992 H 1270 V 1120" stroke="#485159" stroke-width="1.5" fill="none"/>
 <text x="1272" y="932" class="label" text-anchor="start">1</text>
 <text x="1277" y="1112" class="label" text-anchor="start">N</text>
-<path d="M 577,1488 V 1569 H 559.5 V 1650" stroke="#485159" stroke-width="1.5" fill="none"/>
-<text x="584" y="1506" class="label" text-anchor="start">1</text>
-<text x="566.5" y="1642" class="label" text-anchor="start">0..1</text>
-<path d="M 559.5,1802 V 1869 H 800 V 1920" stroke="#485159" stroke-width="1.5" fill="none"/>
-<text x="566.5" y="1820" class="label" text-anchor="start">1</text>
+<path d="M 577,1416 V 1533 H 559.5 V 1650" stroke="#485159" stroke-width="1.5" fill="none"/>
+<text x="584" y="1434" class="label" text-anchor="start">1</text>
+<text x="566.5" y="1642" class="label" text-anchor="start">N</text>
+<path d="M 559.5,1874 V 1905 H 800 V 1920" stroke="#485159" stroke-width="1.5" fill="none"/>
+<text x="566.5" y="1892" class="label" text-anchor="start">1</text>
 <text x="807" y="1912" class="label" text-anchor="start">N</text>
-<path d="M 1116,1754 V 1829 H 950 V 1920" stroke="#485159" stroke-width="1.5" fill="none"/>
-<text x="1123" y="1772" class="label" text-anchor="start">1</text>
+<path d="M 1113,1730 V 1817 H 950 V 1920" stroke="#485159" stroke-width="1.5" fill="none"/>
+<text x="1120" y="1748" class="label" text-anchor="start">1</text>
 <text x="957" y="1912" class="label" text-anchor="start">N</text>
 <rect x="470" y="20" width="172" height="80" fill="white" stroke="#be28e9" stroke-width="1.8"/>
 <rect x="470" y="20" width="172" height="32" fill="#be28e9" fill-opacity="0.09"/>
@@ -228,11 +228,11 @@
 <text x="1186" y="907" class="" text-anchor="start">string</text>
 <text x="1239" y="907" class="" text-anchor="start">classe</text>
 <text x="1293" y="907" class="" text-anchor="start"></text>
-<rect x="20" y="1120" width="256" height="128" fill="white" stroke="#8352e8" stroke-width="1.8"/>
+<rect x="20" y="1120" width="256" height="272" fill="white" stroke="#8352e8" stroke-width="1.8"/>
 <rect x="20" y="1120" width="256" height="32" fill="#8352e8" fill-opacity="0.09"/>
 <text x="148" y="1142" class="title" text-anchor="middle">Entrevista</text>
-<path d="M 72,1152 V 1248" stroke="#8352e8"/>
-<path d="M 214,1152 V 1248" stroke="#8352e8"/>
+<path d="M 72,1152 V 1392" stroke="#8352e8"/>
+<path d="M 214,1152 V 1392" stroke="#8352e8"/>
 <path d="M 20,1152 H 276" stroke="#8352e8"/>
 <text x="26" y="1169" class="" text-anchor="start">int</text>
 <text x="79" y="1169" class="" text-anchor="start">mulher_domicilio_id</text>
@@ -249,11 +249,35 @@
 <text x="26" y="1241" class="" text-anchor="start">string</text>
 <text x="79" y="1241" class="" text-anchor="start">nome</text>
 <text x="219" y="1241" class="" text-anchor="start"></text>
-<rect x="425" y="1120" width="304" height="368" fill="white" stroke="#ee4556" stroke-width="1.8"/>
+<path d="M 20,1248 H 276" stroke="#8352e8"/>
+<text x="26" y="1265" class="" text-anchor="start">int</text>
+<text x="79" y="1265" class="" text-anchor="start">ano</text>
+<text x="219" y="1265" class="" text-anchor="start"></text>
+<path d="M 20,1272 H 276" stroke="#8352e8"/>
+<text x="26" y="1289" class="" text-anchor="start">int</text>
+<text x="79" y="1289" class="" text-anchor="start">mes</text>
+<text x="219" y="1289" class="" text-anchor="start"></text>
+<path d="M 20,1296 H 276" stroke="#8352e8"/>
+<text x="26" y="1313" class="" text-anchor="start">int</text>
+<text x="79" y="1313" class="" text-anchor="start">data_cmc</text>
+<text x="219" y="1313" class="" text-anchor="start"></text>
+<path d="M 20,1320 H 276" stroke="#8352e8"/>
+<text x="26" y="1337" class="" text-anchor="start">real</text>
+<text x="79" y="1337" class="" text-anchor="start">peso</text>
+<text x="219" y="1337" class="" text-anchor="start"></text>
+<path d="M 20,1344 H 276" stroke="#8352e8"/>
+<text x="26" y="1361" class="" text-anchor="start">int</text>
+<text x="79" y="1361" class="" text-anchor="start">usa_metodo</text>
+<text x="219" y="1361" class="" text-anchor="start"></text>
+<path d="M 20,1368 H 276" stroke="#8352e8"/>
+<text x="26" y="1385" class="" text-anchor="start">string</text>
+<text x="79" y="1385" class="" text-anchor="start">coorte</text>
+<text x="219" y="1385" class="" text-anchor="start"></text>
+<rect x="425" y="1120" width="304" height="296" fill="white" stroke="#ee4556" stroke-width="1.8"/>
 <rect x="425" y="1120" width="304" height="32" fill="#ee4556" fill-opacity="0.09"/>
 <text x="577" y="1142" class="title" text-anchor="middle">Nascimento</text>
-<path d="M 477,1152 V 1488" stroke="#ee4556"/>
-<path d="M 667,1152 V 1488" stroke="#ee4556"/>
+<path d="M 477,1152 V 1416" stroke="#ee4556"/>
+<path d="M 667,1152 V 1416" stroke="#ee4556"/>
 <path d="M 425,1152 H 729" stroke="#ee4556"/>
 <text x="431" y="1169" class="" text-anchor="start">int</text>
 <text x="484" y="1169" class="" text-anchor="start">id</text>
@@ -268,48 +292,36 @@
 <text x="672" y="1217" class="" text-anchor="start">FK</text>
 <path d="M 425,1224 H 729" stroke="#ee4556"/>
 <text x="431" y="1241" class="" text-anchor="start">int</text>
-<text x="484" y="1241" class="" text-anchor="start">indice</text>
+<text x="484" y="1241" class="" text-anchor="start">ano</text>
 <text x="672" y="1241" class="" text-anchor="start"></text>
 <path d="M 425,1248 H 729" stroke="#ee4556"/>
 <text x="431" y="1265" class="" text-anchor="start">int</text>
-<text x="484" y="1265" class="" text-anchor="start">ano</text>
+<text x="484" y="1265" class="" text-anchor="start">mes</text>
 <text x="672" y="1265" class="" text-anchor="start"></text>
 <path d="M 425,1272 H 729" stroke="#ee4556"/>
 <text x="431" y="1289" class="" text-anchor="start">int</text>
-<text x="484" y="1289" class="" text-anchor="start">mes</text>
+<text x="484" y="1289" class="" text-anchor="start">data_cmc</text>
 <text x="672" y="1289" class="" text-anchor="start"></text>
 <path d="M 425,1296 H 729" stroke="#ee4556"/>
-<text x="431" y="1313" class="" text-anchor="start">int</text>
-<text x="484" y="1313" class="" text-anchor="start">data_cmc</text>
+<text x="431" y="1313" class="" text-anchor="start">string</text>
+<text x="484" y="1313" class="" text-anchor="start">consultas_prenatal_codigo</text>
 <text x="672" y="1313" class="" text-anchor="start"></text>
 <path d="M 425,1320 H 729" stroke="#ee4556"/>
-<text x="431" y="1337" class="" text-anchor="start">int</text>
-<text x="484" y="1337" class="" text-anchor="start">sexo</text>
+<text x="431" y="1337" class="" text-anchor="start">string</text>
+<text x="484" y="1337" class="" text-anchor="start">local_parto_codigo</text>
 <text x="672" y="1337" class="" text-anchor="start"></text>
 <path d="M 425,1344 H 729" stroke="#ee4556"/>
-<text x="431" y="1361" class="" text-anchor="start">int</text>
-<text x="484" y="1361" class="" text-anchor="start">vivo</text>
+<text x="431" y="1361" class="" text-anchor="start">string</text>
+<text x="484" y="1361" class="" text-anchor="start">cesarea_codigo</text>
 <text x="672" y="1361" class="" text-anchor="start"></text>
 <path d="M 425,1368 H 729" stroke="#ee4556"/>
 <text x="431" y="1385" class="" text-anchor="start">string</text>
-<text x="484" y="1385" class="" text-anchor="start">consultas_prenatal_codigo</text>
+<text x="484" y="1385" class="" text-anchor="start">assistencia_medico_codigo</text>
 <text x="672" y="1385" class="" text-anchor="start"></text>
 <path d="M 425,1392 H 729" stroke="#ee4556"/>
 <text x="431" y="1409" class="" text-anchor="start">string</text>
-<text x="484" y="1409" class="" text-anchor="start">local_parto_codigo</text>
+<text x="484" y="1409" class="" text-anchor="start">assistencia_m3b_codigo</text>
 <text x="672" y="1409" class="" text-anchor="start"></text>
-<path d="M 425,1416 H 729" stroke="#ee4556"/>
-<text x="431" y="1433" class="" text-anchor="start">string</text>
-<text x="484" y="1433" class="" text-anchor="start">cesarea_codigo</text>
-<text x="672" y="1433" class="" text-anchor="start"></text>
-<path d="M 425,1440 H 729" stroke="#ee4556"/>
-<text x="431" y="1457" class="" text-anchor="start">string</text>
-<text x="484" y="1457" class="" text-anchor="start">assistencia_medico_codigo</text>
-<text x="672" y="1457" class="" text-anchor="start"></text>
-<path d="M 425,1464 H 729" stroke="#ee4556"/>
-<text x="431" y="1481" class="" text-anchor="start">string</text>
-<text x="484" y="1481" class="" text-anchor="start">assistencia_m3b_codigo</text>
-<text x="672" y="1481" class="" text-anchor="start"></text>
 <rect x="1030" y="1120" width="256" height="128" fill="white" stroke="#4f79e8" stroke-width="1.8"/>
 <rect x="1030" y="1120" width="256" height="32" fill="#4f79e8" fill-opacity="0.09"/>
 <text x="1158" y="1142" class="title" text-anchor="middle">Conhecimento_Metodo</text>
@@ -331,11 +343,11 @@
 <text x="1036" y="1241" class="" text-anchor="start">int</text>
 <text x="1089" y="1241" class="" text-anchor="start">nivel</text>
 <text x="1229" y="1241" class="" text-anchor="start"></text>
-<rect x="425" y="1650" width="269" height="152" fill="white" stroke="#dba600" stroke-width="1.8"/>
+<rect x="425" y="1650" width="269" height="224" fill="white" stroke="#dba600" stroke-width="1.8"/>
 <rect x="425" y="1650" width="269" height="32" fill="#dba600" fill-opacity="0.09"/>
 <text x="559.5" y="1672" class="title" text-anchor="middle">Crianca</text>
-<path d="M 477,1682 V 1802" stroke="#dba600"/>
-<path d="M 632,1682 V 1802" stroke="#dba600"/>
+<path d="M 477,1682 V 1874" stroke="#dba600"/>
+<path d="M 632,1682 V 1874" stroke="#dba600"/>
 <path d="M 425,1682 H 694" stroke="#dba600"/>
 <text x="431" y="1699" class="" text-anchor="start">int</text>
 <text x="484" y="1699" class="" text-anchor="start">id</text>
@@ -343,36 +355,44 @@
 <path d="M 425,1706 H 694" stroke="#dba600"/>
 <text x="431" y="1723" class="" text-anchor="start">int</text>
 <text x="484" y="1723" class="" text-anchor="start">nascimento_id</text>
-<text x="637" y="1723" class="" text-anchor="start">FK,UQ</text>
+<text x="637" y="1723" class="" text-anchor="start">FK</text>
 <path d="M 425,1730 H 694" stroke="#dba600"/>
 <text x="431" y="1747" class="" text-anchor="start">int</text>
-<text x="484" y="1747" class="" text-anchor="start">idade_anos</text>
+<text x="484" y="1747" class="" text-anchor="start">indice</text>
 <text x="637" y="1747" class="" text-anchor="start"></text>
 <path d="M 425,1754 H 694" stroke="#dba600"/>
-<text x="431" y="1771" class="" text-anchor="start">string</text>
-<text x="484" y="1771" class="" text-anchor="start">diarreia_codigo</text>
+<text x="431" y="1771" class="" text-anchor="start">int</text>
+<text x="484" y="1771" class="" text-anchor="start">sexo</text>
 <text x="637" y="1771" class="" text-anchor="start"></text>
 <path d="M 425,1778 H 694" stroke="#dba600"/>
-<text x="431" y="1795" class="" text-anchor="start">string</text>
-<text x="484" y="1795" class="" text-anchor="start">cartao_vacina_codigo</text>
+<text x="431" y="1795" class="" text-anchor="start">int</text>
+<text x="484" y="1795" class="" text-anchor="start">vivo</text>
 <text x="637" y="1795" class="" text-anchor="start"></text>
-<rect x="1030" y="1650" width="172" height="104" fill="white" stroke="#ba35d6" stroke-width="1.8"/>
-<rect x="1030" y="1650" width="172" height="32" fill="#ba35d6" fill-opacity="0.09"/>
-<text x="1116" y="1672" class="title" text-anchor="middle">Vacina_Remedio</text>
-<path d="M 1082,1682 V 1754" stroke="#ba35d6"/>
-<path d="M 1140,1682 V 1754" stroke="#ba35d6"/>
-<path d="M 1030,1682 H 1202" stroke="#ba35d6"/>
+<path d="M 425,1802 H 694" stroke="#dba600"/>
+<text x="431" y="1819" class="" text-anchor="start">int</text>
+<text x="484" y="1819" class="" text-anchor="start">idade_anos</text>
+<text x="637" y="1819" class="" text-anchor="start"></text>
+<path d="M 425,1826 H 694" stroke="#dba600"/>
+<text x="431" y="1843" class="" text-anchor="start">string</text>
+<text x="484" y="1843" class="" text-anchor="start">diarreia_codigo</text>
+<text x="637" y="1843" class="" text-anchor="start"></text>
+<path d="M 425,1850 H 694" stroke="#dba600"/>
+<text x="431" y="1867" class="" text-anchor="start">string</text>
+<text x="484" y="1867" class="" text-anchor="start">cartao_vacina_codigo</text>
+<text x="637" y="1867" class="" text-anchor="start"></text>
+<rect x="1030" y="1650" width="166" height="80" fill="white" stroke="#ba35d6" stroke-width="1.8"/>
+<rect x="1030" y="1650" width="166" height="32" fill="#ba35d6" fill-opacity="0.09"/>
+<text x="1113" y="1672" class="title" text-anchor="middle">Vacina_Remedio</text>
+<path d="M 1082,1682 V 1730" stroke="#ba35d6"/>
+<path d="M 1134,1682 V 1730" stroke="#ba35d6"/>
+<path d="M 1030,1682 H 1196" stroke="#ba35d6"/>
 <text x="1036" y="1699" class="" text-anchor="start">int</text>
 <text x="1089" y="1699" class="" text-anchor="start">id</text>
-<text x="1145" y="1699" class="" text-anchor="start">PK</text>
-<path d="M 1030,1706 H 1202" stroke="#ba35d6"/>
+<text x="1139" y="1699" class="" text-anchor="start">PK</text>
+<path d="M 1030,1706 H 1196" stroke="#ba35d6"/>
 <text x="1036" y="1723" class="" text-anchor="start">string</text>
-<text x="1089" y="1723" class="" text-anchor="start">codigo</text>
-<text x="1145" y="1723" class="" text-anchor="start"></text>
-<path d="M 1030,1730 H 1202" stroke="#ba35d6"/>
-<text x="1036" y="1747" class="" text-anchor="start">string</text>
-<text x="1089" y="1747" class="" text-anchor="start">nome</text>
-<text x="1145" y="1747" class="" text-anchor="start"></text>
+<text x="1089" y="1723" class="" text-anchor="start">nome</text>
+<text x="1139" y="1723" class="" text-anchor="start"></text>
 <rect x="750" y="1920" width="218" height="104" fill="white" stroke="#ef3983" stroke-width="1.8"/>
 <rect x="750" y="1920" width="218" height="32" fill="#ef3983" fill-opacity="0.09"/>
 <text x="859" y="1942" class="title" text-anchor="middle">Crianca_Vacina</text>
@@ -390,5 +410,4 @@
 <text x="756" y="2017" class="" text-anchor="start">string</text>
 <text x="809" y="2017" class="" text-anchor="start">status_codigo</text>
 <text x="911" y="2017" class="" text-anchor="start"></text>
-<text x="20" y="2095" class="label" text-anchor="start">PK: chave primária  |  FK: chave estrangeira  |  UQ: valor único. Referências a Mulher usam o par (domicílio, linha).</text>
 </svg>
