@@ -1,0 +1,115 @@
+erDiagram
+    Pais {
+        string codigo PK
+        string nome
+    }
+    Levantamento {
+        int id PK
+        string pais_codigo FK
+        string classificacao
+        string nome
+    }
+    Domicilio {
+        int id PK
+        int levantamento_id FK
+        int cluster
+        int numero
+        int regiao
+        int residencia
+        int riqueza
+        int eletricidade
+        int fonte_agua
+        int membros
+        string origem
+    }
+    Morador {
+        int id PK
+        int domicilio_id FK
+        int linha
+        int sexo
+        int idade
+        int escolaridade_codigo
+        int relacao_chefe_codigo
+    }
+    Mulher {
+        int domicilio_id PK,FK
+        int linha PK
+        int idade
+        int escolaridade
+        int filhos_nascidos_vivos
+        int idade_primeiro_nascimento
+    }
+    Parceiro {
+        int domicilio_id PK,FK
+        int linha PK
+        int idade
+        int escolaridade
+        int total_filhos
+        int idade_primeiro_filho
+    }
+    Metodo {
+        int id PK
+        string nome
+        string classe
+    }
+    Entrevista {
+        int mulher_domicilio_id PK,FK
+        int mulher_linha PK,FK
+        string nome
+        int ano
+        int mes
+        int data_cmc
+        real peso
+        int usa_metodo
+        string coorte
+    }
+    Nascimento {
+        int id PK
+        int mulher_domicilio_id FK
+        int mulher_linha FK
+        int ano
+        int mes
+        int data_cmc
+        int consultas_prenatal_codigo
+        int local_parto_codigo
+        int cesarea_codigo
+        int assistencia_medico_codigo
+        int assistencia_m3b_codigo
+    }
+    Conhecimento_Metodo {
+        int mulher_domicilio_id PK,FK
+        int mulher_linha PK,FK
+        int metodo_id PK,FK
+        int nivel
+    }
+    Crianca {
+        int id PK
+        int nascimento_id FK
+        int indice
+        int sexo
+        int vivo
+        int idade_anos
+        int diarreia_codigo
+        int cartao_vacina_codigo
+    }
+    Vacina_Remedio {
+        int id PK
+        string nome
+    }
+    Crianca_Vacina {
+        int crianca_id PK,FK
+        int vacina_id PK,FK
+        int status_codigo
+    }
+    Pais ||--o{ Levantamento : realiza
+    Levantamento ||--o{ Domicilio : amostra
+    Domicilio ||--o{ Morador : abriga
+    Domicilio ||--o{ Mulher : reside
+    Domicilio ||--o{ Parceiro : reside
+    Mulher ||--o| Entrevista : responde
+    Mulher ||--o{ Nascimento : possui
+    Mulher ||--o{ Conhecimento_Metodo : informa
+    Metodo ||--o{ Conhecimento_Metodo : classifica
+    Nascimento ||--o{ Crianca : acompanha
+    Crianca ||--o{ Crianca_Vacina : recebe
+    Vacina_Remedio ||--o{ Crianca_Vacina : identifica
