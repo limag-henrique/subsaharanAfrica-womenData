@@ -11,3 +11,6 @@ graphify-out/
 /analises_completo/presenca_variaveis_por_pais.csv
 # Banco gerado pelo exercício IBD012
 /output
+
+# Ambiente virtual Python
+/.venv/

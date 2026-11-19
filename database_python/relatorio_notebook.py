@@ -312,13 +312,13 @@ def mapa(tabela, titulo, unidade='%'):
                     color='white' if not np.isnan(v) and v<45 else 'black')
     fig.colorbar(im,ax=ax,label=unidade); mostrar(fig)
 
-def pares(tabela, esquerda, direita, titulo, unidade='%'):
+def pares(tabela, esquerda, direita, titulo, unidade='%', limite=(0,100)):
     tabela=tabela[[esquerda,direita]].dropna().sort_values(direita)
     fig,ax=plt.subplots(figsize=(10,max(4,len(tabela)*.23)))
     y=np.arange(len(tabela)); ax.hlines(y,tabela[esquerda],tabela[direita],color='#a0b0bc')
     ax.scatter(tabela[esquerda],y,label=esquerda,color=AZUL,marker='o')
     ax.scatter(tabela[direita],y,label=direita,color=LARANJA,marker='s')
-    ax.set(yticks=y,yticklabels=tabela.index,title=titulo,xlabel=unidade,xlim=(0,100))
+    ax.set(yticks=y,yticklabels=tabela.index,title=titulo,xlabel=unidade,xlim=limite)
     ax.legend(loc='best'); ax.grid(axis='x',alpha=.15); mostrar(fig)
 
 
