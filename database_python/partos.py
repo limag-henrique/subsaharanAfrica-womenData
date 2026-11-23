@@ -103,9 +103,14 @@ def migrar_banco_partos(legado, origem, destino, ddl=DDL_PARTOS):
                     SELECT v.nascimento_id, n.mulher_id, {valores}, RTRIM({conflitos}, ',')
                     FROM _Nascimento_anterior n JOIN vinculo_parto v ON v.crianca_id=n.id
                     GROUP BY v.nascimento_id, n.mulher_id""")
-                banco.execute("""INSERT INTO Crianca
+                # O notebook omite variáveis KR que não usa; respeitar o DDL fornecido.
+                colunas_crianca = {r[1] for r in banco.execute('PRAGMA table_info(Crianca)')}
+                extras_kr = [nome for nome in ('diarreia_codigo', 'cartao_vacina_codigo')
+                             if nome in colunas_crianca]
+                projecao_kr = ''.join(f'k.{nome}, ' for nome in extras_kr)
+                banco.execute(f"""INSERT INTO Crianca
                     SELECT n.id, v.nascimento_id, n.indice, n.sexo, n.vivo,
-                           k.idade_anos, k.diarreia_codigo, k.cartao_vacina_codigo,
+                           k.idade_anos, {projecao_kr}
                            CASE WHEN v.b0 BETWEEN 0 AND 7 THEN v.b0 END,
                            k.nascimento_id IS NOT NULL, n.origem
                     FROM _Nascimento_anterior n JOIN vinculo_parto v ON v.crianca_id=n.id
@@ -115,8 +120,9 @@ def migrar_banco_partos(legado, origem, destino, ddl=DDL_PARTOS):
                 for consulta, mensagem in [
                     ("SELECT id,sexo,vivo,indice,origem FROM _Nascimento_anterior EXCEPT "
                      "SELECT id,sexo,vivo,indice,origem FROM Crianca", "Dados individuais alterados"),
-                    ("SELECT nascimento_id,idade_anos,diarreia_codigo,cartao_vacina_codigo FROM _Crianca_anterior EXCEPT "
-                     "SELECT id,idade_anos,diarreia_codigo,cartao_vacina_codigo FROM Crianca WHERE tem_registro_kr=1",
+                    ("SELECT nascimento_id,idade_anos" + ''.join(',' + nome for nome in extras_kr) +
+                     " FROM _Crianca_anterior EXCEPT SELECT id,idade_anos" +
+                     ''.join(',' + nome for nome in extras_kr) + " FROM Crianca WHERE tem_registro_kr=1",
                      "Dados KR alterados"),
                     ("SELECT * FROM _Crianca_Vacina_anterior EXCEPT SELECT * FROM Crianca_Vacina",
                      "Vacinação alterada"),

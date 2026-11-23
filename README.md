@@ -22,11 +22,27 @@ python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.time
 
 O comando executa todas as células em ordem e salva os resultados no próprio notebook.
 
+O relatório usa `saude_mulher_final.db`, gerado localmente a partir da preparação.
+Ano e mês são calculados nas views `Entrevista_Analitica` e `Nascimento_Analitico`;
+as tabelas guardam apenas a data CMC. As bases de preparação são preservadas.
+Os identificadores textuais mantêm os códigos de pesquisa, domicílio e pessoa;
+`linha` só identifica uma pessoa em conjunto com seu domicílio.
+
+Para reconstruir desde os CSVs e suplementos Stata autorizados, em um destino novo:
+
+```bash
+python scripts/reconstruir_relatorio.py --destino output/reconstrucao/saude_mulher_final.db --extraidos dados/completo/extraidos
+```
+
+O comando lê `docs/manifesto_contracepcao.json`; a pasta `--extraidos` deve conter
+os arquivos Stata dos suplementos, sem duplicatas. O ER fornecido pelos autores
+está em `docs/Diagrama_ER.jpg` e incorporado ao notebook.
+
 ### Como descompactar
 
 Execute `python scripts/restaurar_arquivos.py` na raiz do projeto, no Windows, Linux ou macOS (use `python3` se necessário).
 
-Reserve cerca de **3 GiB livres** para os arquivos restaurados e os temporários.
+Reserve pelo menos **6 GiB livres** para restauração, preparação e banco final.
 
 #### Atualização e Sincronização via Pull (Para quem já clonou)
 ```bash

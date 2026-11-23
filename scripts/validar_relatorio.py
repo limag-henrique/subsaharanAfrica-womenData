@@ -4,6 +4,7 @@ import json
 import sqlite3
 import unittest
 from pathlib import Path
+from contextlib import closing
 
 RAIZ = Path(__file__).resolve().parents[1]
 NOTEBOOK = RAIZ / 'Saúde da Mulher na África Subsaariana.ipynb'
@@ -30,6 +31,7 @@ class Denominadores(unittest.TestCase):
         self.banco.executescript('''
             CREATE TABLE Mulher(id, domicilio_id, linha, idade, escolaridade, filhos_nascidos_vivos);
             CREATE TABLE Entrevista(mulher_id, ano, usa_metodo, coorte);
+            CREATE VIEW Entrevista_Analitica AS SELECT * FROM Entrevista;
             CREATE TABLE Domicilio(id, residencia, levantamento_id);
             CREATE TABLE Morador(domicilio_id, linha, relacao_chefe_codigo);
             CREATE TABLE Levantamento(id, pais_codigo);
@@ -68,12 +70,34 @@ class Modelos(unittest.TestCase):
     def test_diagrama_corresponde_ao_ddl(self):
         from gerar_diagramas import esquema
         import re
-        with esquema() as banco:
+        with closing(esquema()) as banco:
             fonte = (RAIZ / 'docs/Diagrama Relacional.mmd').read_text(encoding='utf-8')
             for tabela, in banco.execute("SELECT name FROM sqlite_master WHERE type='table'"):
                 bloco = re.search(r'\b' + tabela + r' \{(.*?)\}', fonte, re.S).group(1)
                 atributos = [(l.split()[1], l.split()[0]) for l in bloco.splitlines() if l.strip()]
                 self.assertEqual(atributos, [(r[1],r[2]) for r in banco.execute(f'PRAGMA table_info({tabela})')])
+
+
+class Conhecimento(unittest.TestCase):
+    def test_codigo_sete_e_ausencias_nao_viram_desconhecimento(self):
+        sql = consultas()['sql_10']
+        # Executa o CTE real; 7 é conhecimento por uso atual, 8 não foi perguntado.
+        trecho = sql.split('conhecimento AS (', 1)[1].split('),\ncontracepcao AS (', 1)[0]
+        with closing(sqlite3.connect(':memory:')) as c:
+            c.executescript('''
+                CREATE TABLE Metodo(id INTEGER, classe TEXT);
+                CREATE TABLE Conhecimento_Metodo(mulher_id TEXT, metodo_id INTEGER, nivel INTEGER);
+                INSERT INTO Metodo VALUES (1,'Moderno'),(2,'Moderno'),(4,'Moderno');
+                INSERT INTO Conhecimento_Metodo VALUES
+                  ('uso',1,7),('uso',2,0),('nao',1,0),('nao',2,0),
+                  ('ignorado',1,8),('ignorado',2,8),('parcial',1,0),('parcial',2,8),
+                  ('ignorado',4,7),('parcial',4,7);
+            ''')
+            respostas = dict(c.execute(trecho))
+            self.assertEqual(respostas['uso'], 1)
+            self.assertEqual(respostas['nao'], 0)
+            self.assertIsNone(respostas['ignorado'])
+            self.assertIsNone(respostas['parcial'])
 
 
 if __name__ == '__main__':
