@@ -14,3 +14,4 @@ graphify-out/
 
 # Ambiente virtual Python
 /.venv/
+venv/
