@@ -75,16 +75,21 @@ Acesse no navegador: **[http://localhost:5050](http://localhost:5050)**
 
 ---
 
-## Otimização de Consultas (+20% de Pontuação)
+## Validação e exportação
 
-1. Executar `EXPLAIN QUERY PLAN <consulta>` identificando operações de varredura completa (`SCAN TABLE`).
-2. Criar índices adequados nas colunas de filtro ou chave estrangeira:
-   ```sql
-   CREATE INDEX idx_mulher_idade ON Mulher(v012);
-   CREATE INDEX idx_nascimento_mulher ON Nascimento(id_mulher_global);
-   ```
-3. Executar novamente o plano de execução comprovando o uso do índice (`SEARCH TABLE ... USING INDEX`).
-4. Medir e comparar o tempo de execução no Jupyter Notebook utilizando a diretiva `%timeit`.
+```bash
+python scripts/validar_relatorio.py
+python scripts/gerar_diagramas.py
+npm install --prefix tmp/diagramas --no-audit --no-fund mermaid
+python scripts/renderizar_diagramas.py
+python scripts/exportar_relatorio.py
+```
+
+O relacional usa o próprio Mermaid; o ER original é preservado pelos scripts.
+
+A exportação usa Microsoft Edge ou Chromium (`python -m playwright install chromium`). O PDF e o HTML ficam em `output/pdf/`. Tabelas longas exibem uma amostra identificada no PDF; os resultados integrais permanecem no notebook. Os diagramas recebem páginas A3 para preservar a leitura.
+
+A consulta 8 compara versões original e otimizada, verifica resultados idênticos e mede três execuções alternadas. O ganho depende do ambiente.
 
 ---
 

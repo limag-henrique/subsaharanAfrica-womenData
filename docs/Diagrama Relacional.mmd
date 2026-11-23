@@ -1,115 +1,121 @@
+---
+config:
+  theme: default
+  look: classic
+  layout: dagre
+---
 erDiagram
     Pais {
-        string codigo PK
-        string nome
+        TEXT codigo PK
+        TEXT nome UK
     }
     Levantamento {
-        int id PK
-        string pais_codigo FK
-        string classificacao
-        string nome
+        TEXT id PK
+        TEXT pais_codigo FK
+        TEXT fase
     }
     Domicilio {
-        int id PK
-        int levantamento_id FK
-        int cluster
-        int numero
-        int regiao
-        int residencia
-        int riqueza
-        int eletricidade
-        int fonte_agua
-        int membros
-        string origem
-    }
-    Morador {
-        int id PK
-        int domicilio_id FK
-        int linha
-        int sexo
-        int idade
-        int escolaridade_codigo
-        int relacao_chefe_codigo
+        TEXT id PK
+        TEXT levantamento_id FK
+        INTEGER cluster
+        INTEGER numero
+        INTEGER regiao
+        INTEGER residencia
+        INTEGER riqueza
+        INTEGER eletricidade
+        INTEGER fonte_agua
+        INTEGER membros
+        TEXT origem
     }
     Mulher {
-        int domicilio_id PK,FK
-        int linha PK
-        int idade
-        int escolaridade
-        int filhos_nascidos_vivos
-        int idade_primeiro_nascimento
+        TEXT id PK
+        TEXT domicilio_id FK
+        INTEGER linha
+        INTEGER idade
+        INTEGER escolaridade
+        INTEGER filhos_nascidos_vivos
+        INTEGER idade_primeiro_nascimento
     }
     Parceiro {
-        int domicilio_id PK,FK
-        int linha PK
-        int idade
-        int escolaridade
-        int total_filhos
-        int idade_primeiro_filho
-    }
-    Metodo {
-        int id PK
-        string nome
-        string classe
+        TEXT id PK
+        TEXT domicilio_id FK
+        INTEGER linha
+        INTEGER idade
+        INTEGER escolaridade
+        INTEGER total_filhos
+        INTEGER idade_primeiro_filho
     }
     Entrevista {
-        int mulher_domicilio_id PK,FK
-        int mulher_linha PK,FK
-        string nome
-        int ano
-        int mes
-        int data_cmc
-        real peso
-        int usa_metodo
-        string coorte
+        TEXT mulher_id PK,FK
+        INTEGER ano
+        INTEGER mes
+        INTEGER data_cmc
+        REAL peso
+        INTEGER usa_metodo
+        TEXT coorte
     }
     Nascimento {
-        int id PK
-        int mulher_domicilio_id FK
-        int mulher_linha FK
-        int ano
-        int mes
-        int data_cmc
-        int consultas_prenatal_codigo
-        int local_parto_codigo
-        int cesarea_codigo
-        int assistencia_medico_codigo
-        int assistencia_m3b_codigo
-    }
-    Conhecimento_Metodo {
-        int mulher_domicilio_id PK,FK
-        int mulher_linha PK,FK
-        int metodo_id PK,FK
-        int nivel
+        TEXT id PK
+        TEXT mulher_id FK
+        INTEGER ano
+        INTEGER mes
+        INTEGER data_cmc
+        INTEGER consultas_prenatal_codigo
+        INTEGER local_parto_codigo
+        INTEGER cesarea_codigo
+        INTEGER assistencia_medico_codigo
+        INTEGER assistencia_m3b_codigo
+        TEXT campos_conflitantes
     }
     Crianca {
-        int id PK
-        int nascimento_id FK
-        int indice
-        int sexo
-        int vivo
-        int idade_anos
-        int diarreia_codigo
-        int cartao_vacina_codigo
+        TEXT id PK
+        TEXT nascimento_id FK
+        INTEGER indice
+        INTEGER sexo
+        INTEGER vivo
+        INTEGER idade_anos
+        INTEGER ordem_multiplo
+        INTEGER tem_registro_kr
+        TEXT origem
     }
     Vacina_Remedio {
-        int id PK
-        string nome
+        INTEGER id PK
+        TEXT codigo UK
+        TEXT nome UK
     }
     Crianca_Vacina {
-        int crianca_id PK,FK
-        int vacina_id PK,FK
-        int status_codigo
+        TEXT crianca_id PK,FK
+        INTEGER vacina_id PK,FK
+        INTEGER status_codigo
     }
-    Pais ||--o{ Levantamento : realiza
-    Levantamento ||--o{ Domicilio : amostra
-    Domicilio ||--o{ Morador : abriga
-    Domicilio ||--o{ Mulher : reside
-    Domicilio ||--o{ Parceiro : reside
+    Morador {
+        TEXT id PK
+        TEXT domicilio_id FK
+        INTEGER linha
+        INTEGER sexo
+        INTEGER idade
+        INTEGER escolaridade_codigo
+        INTEGER relacao_chefe_codigo
+    }
+    Metodo {
+        INTEGER id PK
+        TEXT nome UK
+        TEXT classe
+    }
+    Conhecimento_Metodo {
+        TEXT mulher_id PK,FK
+        INTEGER metodo_id PK,FK
+        INTEGER nivel
+    }
+    Pais ||..o{ Levantamento : realiza
+    Levantamento ||..o{ Domicilio : amostra
+    Domicilio ||..o{ Morador : abriga
+    Domicilio ||..o{ Mulher : reside
+    Domicilio ||..o{ Parceiro : reside
     Mulher ||--o| Entrevista : responde
-    Mulher ||--o{ Nascimento : possui
+    Mulher ||..o{ Nascimento : tem_parto
+    Nascimento ||..o{ Crianca : origina
     Mulher ||--o{ Conhecimento_Metodo : informa
     Metodo ||--o{ Conhecimento_Metodo : classifica
-    Nascimento ||--o{ Crianca : acompanha
     Crianca ||--o{ Crianca_Vacina : recebe
     Vacina_Remedio ||--o{ Crianca_Vacina : identifica
