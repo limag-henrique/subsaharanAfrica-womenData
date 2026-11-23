@@ -272,7 +272,7 @@ def abrir_banco(raiz, destino=None):
 import html
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,
                      'axes.spines.right':False,'figure.dpi':115})
-AZUL, LARANJA = '#16758b', '#bc651b'
+AZUL, LARANJA = '#964B00', '#d98a3c'
 
 def detalhes(tabela, titulo='Resultado completo'):
     display(HTML('<details><summary>'+html.escape(titulo)+f' · {len(tabela):,} linhas</summary>'
@@ -301,7 +301,7 @@ def barras(valores, titulo, unidade, percentual=False):
 
 def mapa(tabela, titulo, unidade='%'):
     fig,ax=plt.subplots(figsize=(9,max(4,len(tabela)*.23)))
-    cmap=plt.get_cmap('cividis').copy(); cmap.set_bad('#dddddd')
+    cmap=plt.get_cmap('YlOrBr').copy(); cmap.set_bad('#dddddd')
     im=ax.imshow(tabela.to_numpy(dtype=float),aspect='auto',cmap=cmap,vmin=0,vmax=100)
     ax.set(yticks=np.arange(len(tabela)),yticklabels=tabela.index,
            xticks=np.arange(len(tabela.columns)),xticklabels=tabela.columns,title=titulo)
@@ -309,13 +309,13 @@ def mapa(tabela, titulo, unidade='%'):
     for y,row in enumerate(tabela.to_numpy(dtype=float)):
         for x,v in enumerate(row):
             ax.text(x,y,'—' if np.isnan(v) else f'{v:.0f}',ha='center',va='center',fontsize=7,
-                    color='white' if not np.isnan(v) and v<45 else 'black')
+                    color='white' if not np.isnan(v) and v>55 else 'black')
     fig.colorbar(im,ax=ax,label=unidade); mostrar(fig)
 
 def pares(tabela, esquerda, direita, titulo, unidade='%', limite=(0,100)):
     tabela=tabela[[esquerda,direita]].dropna().sort_values(direita)
     fig,ax=plt.subplots(figsize=(10,max(4,len(tabela)*.23)))
-    y=np.arange(len(tabela)); ax.hlines(y,tabela[esquerda],tabela[direita],color='#a0b0bc')
+    y=np.arange(len(tabela)); ax.hlines(y,tabela[esquerda],tabela[direita],color='#c8b8a8')
     ax.scatter(tabela[esquerda],y,label=esquerda,color=AZUL,marker='o')
     ax.scatter(tabela[direita],y,label=direita,color=LARANJA,marker='s')
     ax.set(yticks=y,yticklabels=tabela.index,title=titulo,xlabel=unidade,xlim=limite)
@@ -346,9 +346,9 @@ def comparar_residencias(r9, cobertura):
     print('Países com poucas respostas para esta comparação:', ', '.join(ausentes) or 'nenhum')
     fig,ax=plt.subplots(figsize=(11,max(7,len(ajustes)*.28)))
     y=np.arange(len(ajustes))
-    ax.hlines(y,ajustes.bruta_pp,ajustes.padronizada_pp,color='#a0b0bc')
-    ax.scatter(ajustes.bruta_pp,y,label='Bruta no suporte comum',color='#aa687c')
-    ax.scatter(ajustes.padronizada_pp,y,label='Padronizada: riqueza e escolaridade',color='#1a7a8c',marker='s')
+    ax.hlines(y,ajustes.bruta_pp,ajustes.padronizada_pp,color='#c8b8a8')
+    ax.scatter(ajustes.bruta_pp,y,label='Bruta no suporte comum',color=LARANJA)
+    ax.scatter(ajustes.padronizada_pp,y,label='Padronizada: riqueza e escolaridade',color=AZUL,marker='s')
     ax.set_yticks(y,ajustes.pais); ax.axvline(0,color='gray',lw=.7)
     ax.set_xlabel('Uso urbano − rural (pontos percentuais)'); ax.set_title('Quanto muda a diferença territorial ao padronizar riqueza e escolaridade?')
     ax.legend(loc='best'); ax.grid(axis='x',alpha=.2); fig.tight_layout(); display(fig); plt.close(fig)
@@ -393,13 +393,13 @@ def comparar_prenatal(r10, cobertura):
     matriz=prenatal.pivot(index='nome',columns='riqueza',values='percentual').reindex(cobertura.nome.drop_duplicates().sort_values())
     assert matriz.index.is_unique and len(matriz)==cobertura.codigo.nunique()
     fig,ax=plt.subplots(figsize=(9,12))
-    cmap=plt.get_cmap('cividis').copy(); cmap.set_bad('#dddddd')
+    cmap=plt.get_cmap('YlOrBr').copy(); cmap.set_bad('#dddddd')
     im=ax.imshow(matriz.to_numpy(),vmin=0,vmax=100,cmap=cmap,aspect='auto')
     ax.set_yticks(np.arange(len(matriz)),matriz.index); ax.set_xticks(np.arange(5),['Mais pobre','2','3','4','Mais rico'])
     for row in range(len(matriz)):
         for col in range(5):
             value=matriz.iloc[row,col]
-            if pd.notna(value): ax.text(col,row,f'{value:.0f}',ha='center',va='center',fontsize=7,color='white' if value<45 else 'black')
+            if pd.notna(value): ax.text(col,row,f'{value:.0f}',ha='center',va='center',fontsize=7,color='white' if value>55 else 'black')
     ax.set_title('Pré-natal ≥4 consultas: todos os países, por quintil de riqueza\nÚltimo nascimento recente; cinza = informação insuficiente')
     fig.colorbar(im,ax=ax,label='% ponderado entre respostas válidas'); fig.tight_layout(); display(fig); plt.close(fig)
     gradiente=matriz[[1,5]].dropna().copy(); gradiente['diferenca_pp']=gradiente[5]-gradiente[1]
