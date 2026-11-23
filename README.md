@@ -14,6 +14,14 @@ python scripts/restaurar_arquivos.py
 pip install -r requirements.txt
 ```
 
+### Executar o notebook
+
+```bash
+python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=-1 "Saúde da Mulher na África Subsaariana.ipynb"
+```
+
+O comando executa todas as células em ordem e salva os resultados no próprio notebook.
+
 ### Como descompactar
 
 Execute `python scripts/restaurar_arquivos.py` na raiz do projeto, no Windows, Linux ou macOS (use `python3` se necessário).
