@@ -19,3 +19,4 @@ venv/
 
 # Arquivos locais de geração e conferência
 /tmp/
+venv/
